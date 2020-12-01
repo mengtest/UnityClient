@@ -1,0 +1,8 @@
+VertexCount=129,
+Width=258,
+MinHeight=1.703789,
+MaxHeight=23.57639,
+WaterHeight=0,
+IsCurve=True,
+CurveRadius=377.1707,
+CurveDegree=40,

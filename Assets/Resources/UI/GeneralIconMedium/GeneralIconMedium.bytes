@@ -1,0 +1,20 @@
+package.xml|1466|<packageDescription id="4fhq5iy6" name="GeneralIconMedium">
+  <resources>
+    <image id="yqyk0" name="wujiang10_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqyk1" name="wujiang11_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqyk2" name="wujiang12_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqyk3" name="wujiang13_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqyk4" name="wujiang14_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqyk5" name="wujiang15_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqyk6" name="wujiang1_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqyk7" name="wujiang2_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqyk8" name="wujiang3_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqyk9" name="wujiang4_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqyka" name="wujiang5_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqykb" name="wujiang6_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqykc" name="wujiang7_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqykd" name="wujiang8_zhong" path="/" size="133,183" exported="true"/>
+    <image id="yqyke" name="wujiang9_zhong" path="/" size="133,183" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>

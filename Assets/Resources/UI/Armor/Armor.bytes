@@ -1,0 +1,594 @@
+10bfzb.xml|7988|<component size="1920,1080">
+  <controller name="Tab_C" pages="0,信息,1,升级,2,强化,3,宝石" selected="0"/>
+  <controller name="Type_C" pages="0,全部,1,武器,2,铠甲,3,护腿,4,饰品,5,头盔" selected="0"/>
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n13" name="Image_Background" src="l3hlozo0" pkg="s5cy5qnp" xy="561,152" size="1349,756" flip="vt">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n1" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="武将装备"/>
+    </component>
+    <list id="n6" name="List_General" xy="0,153" size="632,989" scale="0.9,0.9" overflow="scroll" scrollBarFlags="2" clipSoftness="0,40" lineGap="10" defaultItem="ui://rqtv1qewnxx2d">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n37" name="Button_EquipmentDetails" src="uezoozi9" pkg="s5cy5qnp" xy="1069,913">
+      <relation target="" sidePair="bottom-bottom,right-right"/>
+      <Button checked="true" title="装备信息" controller="Tab_C" page="0"/>
+    </component>
+    <component id="n38" name="Button_EquipmentLevel" src="uezoozi9" pkg="s5cy5qnp" xy="1289,913">
+      <relation target="" sidePair="bottom-bottom,right-right"/>
+      <Button title="装备升级" controller="Tab_C" page="1"/>
+    </component>
+    <component id="n39" name="Button_EquipmentStrengthen" src="uezoozi9" pkg="s5cy5qnp" xy="1509,913">
+      <relation target="" sidePair="bottom-bottom,right-right"/>
+      <Button title="装备强化" controller="Tab_C" page="2"/>
+    </component>
+    <component id="n214_an7w" name="Button_Gem" src="uezoozi9" pkg="s5cy5qnp" xy="1720,912" visible="false">
+      <relation target="" sidePair="bottom-bottom,right-right"/>
+      <Button title="宝石" controller="Tab_C" page="3"/>
+    </component>
+    <component id="n109" name="Component_UpgradeEquipment" src="10bfzv" xy="591,229">
+      <gearDisplay controller="Tab_C" pages="1,2"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n16" name="Component_Armor" src="nbqfv" pkg="rqtv1qew" xy="601,325" group="n77">
+      <Button controller="Type_C" page="1"/>
+    </component>
+    <component id="n17" name="Component_Helmet" src="nbqfv" pkg="rqtv1qew" xy="806,173" group="n77">
+      <Button controller="Type_C" page="5"/>
+    </component>
+    <component id="n18" name="Component_Bard" src="nbqfv" pkg="rqtv1qew" xy="601,501" group="n77">
+      <Button controller="Type_C" page="2"/>
+    </component>
+    <component id="n19" name="Component_Accessory" src="nbqfv" pkg="rqtv1qew" xy="1024,330" group="n77">
+      <Button controller="Type_C" page="4"/>
+    </component>
+    <component id="n20" name="Component_Leg" src="nbqfv" pkg="rqtv1qew" xy="1024,501" group="n77">
+      <Button controller="Type_C" page="3"/>
+    </component>
+    <component id="n112_uezo" name="Button_TaoZhuang" src="a20111o" xy="662,707" size="495,129" group="n77"/>
+    <image id="n36" name="Image_Human" src="10bfzf" xy="764,347" size="241,343" group="n77" alpha="0.4"/>
+    <list id="n42" name="List_Equipment" xy="1283,234" size="621,637" group="n77" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="8" defaultItem="ui://hpkxy5rl10bfzj">
+      <item/>
+      <item url="ui://hpkxy5rlmris101"/>
+      <item url="ui://hpkxy5rlmris101"/>
+      <item url="ui://hpkxy5rlmris101"/>
+      <item url="ui://hpkxy5rlmris101"/>
+      <item url="ui://hpkxy5rlmris101"/>
+    </list>
+    <component id="n44" name="Button_All" src="10bfzk" xy="1287,170" group="n77">
+      <Button checked="true" title="全部" titleColor="#ffffff" controller="Type_C" page="0"/>
+    </component>
+    <component id="n45" name="Button_ArmorPage" src="10bfzk" xy="1388,170" group="n77">
+      <Button title="武器" titleColor="#ffffff" controller="Type_C" page="1"/>
+    </component>
+    <component id="n46" name="Button_BardPage" src="10bfzk" xy="1486,170" group="n77">
+      <Button title="铠甲" titleColor="#ffffff" controller="Type_C" page="2"/>
+    </component>
+    <component id="n47" name="Button_LegPage" src="10bfzk" xy="1586,170" group="n77">
+      <Button title="护腿" titleColor="#ffffff" controller="Type_C" page="3"/>
+    </component>
+    <component id="n48" name="Button_AccessoryPage" src="10bfzk" xy="1689,170" group="n77">
+      <Button title="饰品" titleColor="#ffffff" controller="Type_C" page="4"/>
+    </component>
+    <component id="n49" name="Button_HelmetPage" src="10bfzk" xy="1787,170" group="n77">
+      <Button title="头盔" titleColor="#ffffff" controller="Type_C" page="5"/>
+    </component>
+    <component id="n76" name="Component_ReplaceEquipment" src="10bfzl" xy="1192,704" size="736,232" group="n77">
+      <gearDisplay controller="Type_C" pages="1,2,3,4,5"/>
+    </component>
+    <component id="n111" name="ProgressBar_Equipment" src="jpkq11m" xy="1330,208" group="n77"/>
+    <group id="n77" name="Group_Equipment" xy="601,170" size="1327,766" advanced="true">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n221_opzf" name="Image_BG_ChangeJob01" src="opzf12a" xy="581,180" scale="1.5,1.5">
+      <relation target="n13" sidePair="left-left,top-top"/>
+    </image>
+    <image id="n222_opzf" name="Image_BG_Tag13" src="effmozp9" pkg="s5cy5qnp" xy="1398,211" size="485,565"/>
+    <text id="n178_fkut" name="Text_Attribute1" xy="627,809" size="609,72" group="n215_g8cu" fontSize="22" color="#33ccff" align="center" vAlign="middle" letterSpacing="1" autoSize="shrink" text="武魄总加成 属性+NNN 属性+NNN 属性+NNN 属性+NNN">
+      <gearDisplay controller="Tab_C" pages="3"/>
+      <relation target="n13" sidePair="left-left,middle-middle"/>
+    </text>
+    <component id="n186_fkut" name="Button_Decorate" src="gr0bozdm" pkg="s5cy5qnp" xy="1685,770" group="n215_g8cu">
+      <gearDisplay controller="Tab_C" pages="3"/>
+      <relation target="n187_fkut" sidePair="left-right,middle-middle"/>
+      <Button title="一键镶嵌"/>
+    </component>
+    <component id="n187_fkut" name="Button_Remove" src="gr0bozdm" pkg="s5cy5qnp" xy="1364,776" group="n215_g8cu">
+      <gearDisplay controller="Tab_C" pages="3"/>
+      <relation target="n178_fkut" sidePair="left-right,middle-middle"/>
+      <Button title="一键卸下"/>
+    </component>
+    <component id="n211_lx9f" name="Component_ArmorHole1" src="dw1h11p" xy="1697,536" group="n215_g8cu">
+      <gearDisplay controller="Tab_C" pages="3"/>
+      <relation target="n13" sidePair="right-right,middle-middle"/>
+    </component>
+    <component id="n212_lx9f" name="Component_ArmorHole2" src="dw1h11p" xy="1587,284" group="n215_g8cu">
+      <gearDisplay controller="Tab_C" pages="3"/>
+      <relation target="n13" sidePair="middle-middle,center-center"/>
+    </component>
+    <component id="n213_lx9f" name="Component_ArmorHole3" src="dw1h11p" xy="1448,534" group="n215_g8cu">
+      <gearDisplay controller="Tab_C" pages="3"/>
+      <relation target="n211_lx9f" sidePair="right-left,middle-middle"/>
+    </component>
+    <component id="n216_dw1h" name="Button_GemBody1" src="dw1h11s" xy="667,209" group="n215_g8cu"/>
+    <component id="n217_dw1h" name="Button_GemBody2" src="dw1h11s" xy="638,453" group="n215_g8cu"/>
+    <component id="n218_dw1h" name="Button_GemBody5" src="dw1h11s" xy="1149,439" group="n215_g8cu"/>
+    <component id="n219_dw1h" name="Button_GemBody3" src="dw1h11s" xy="1040,226" group="n215_g8cu"/>
+    <component id="n220_dw1h" name="Button_GemBody4" src="dw1h11s" xy="932,632" group="n215_g8cu"/>
+    <group id="n215_g8cu" name="Group_Gem" xy="626,208" size="1262,672" advanced="true">
+      <gearDisplay controller="Tab_C" pages="3"/>
+    </group>
+  </displayList>
+</component>10bfzj.xml|448|<component size="622,651">
+  <displayList>
+    <list id="n40" name="List_Equipment" xy="-1,0" size="692,723" scale="0.9,0.9" layout="flow_hz" overflow="scroll" scrollBarFlags="2" lineGap="-7" colGap="-10" defaultItem="ui://rqtv1qewnbqfv">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>10bfzk.xml|579|<component size="100,35" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n6" name="icon" src="10bfz5" xy="13,4">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n4" name="title" xy="0,0" size="100,35" font="微软雅黑" fontSize="24" color="#999999" align="center" vAlign="middle" autoSize="none" singleLine="true" text="">
+      <gearColor controller="button" pages="1" values="#ffffff,#000000" default="#999999,#000000"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>10bfzl.xml|1930|<component size="712,203">
+  <displayList>
+    <graph id="n50" name="Graph_Base1" xy="0,-2" size="711,204" type="rect" lineSize="0" fillColor="#ff273757"/>
+    <graph id="n51" name="Graph_Base2" xy="25,7" size="183,167" type="rect" lineSize="0" fillColor="#ff384f7d"/>
+    <graph id="n52" name="Graph_Base3" xy="285,6" size="175,167" type="rect" lineSize="0" fillColor="#ff384f7d"/>
+    <component id="n53" name="Label_Current" src="no0zozhw" pkg="s5cy5qnp" xy="7,6" scale="0.5,0.5">
+      <Label title="当前"/>
+    </component>
+    <component id="n73" name="Button_Replace" src="gr0bozdm" pkg="s5cy5qnp" xy="469,37" size="238,92" controller="State_C,0">
+      <Button title="替换装备" titleColor="#ffffff" titleFontSize="30" sound="ui://s5cy5qnpjnmaz3b"/>
+    </component>
+    <text id="n74" name="Text_Instructions" xy="388,168" size="324,35" visible="false" font="微软雅黑" fontSize="24" color="#999999" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="替换装备时宝石将自动替换"/>
+    <image id="n75" name="Image_Arrow" src="uezoozia" pkg="s5cy5qnp" xy="209,56"/>
+    <text id="n78" name="Text_Current" xy="53,74" size="153,100" font="Noto Sans S Chinese Regular" fontSize="24" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" text="当前"/>
+    <text id="n79" name="Text_Change" xy="292,75" size="164,94" font="Noto Sans S Chinese Regular" fontSize="24" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" text=""/>
+    <text id="n80_rcph" name="Text_EquipmentName" xy="53,17" size="152,51" font="Noto Sans S Chinese Regular" fontSize="28" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" text="当前"/>
+    <text id="n81_rcph" name="Text_EquipmentName2" xy="293,15" size="164,51" font="Noto Sans S Chinese Regular" fontSize="28" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" text=""/>
+  </displayList>
+</component>10bfzv.xml|6134|<component size="1270,617">
+  <controller name="Tab_C" pages="0,武器,1,铠甲,2,护腿,3,饰品,4,头盔" selected="0"/>
+  <controller name="Type_C" pages="0,升级,1,强化" selected="0"/>
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n78" name="Button_Armor" src="nbqfv" pkg="rqtv1qew" xy="1,0">
+      <Button checked="true" controller="Tab_C" page="0"/>
+    </component>
+    <component id="n79" name="Button_Bard" src="nbqfv" pkg="rqtv1qew" xy="214,0">
+      <Button controller="Tab_C" page="1"/>
+    </component>
+    <component id="n80" name="Button_Leg" src="nbqfv" pkg="rqtv1qew" xy="427,0">
+      <Button controller="Tab_C" page="2"/>
+    </component>
+    <component id="n81" name="Button_Accessory" src="nbqfv" pkg="rqtv1qew" xy="640,0">
+      <Button controller="Tab_C" page="3"/>
+    </component>
+    <component id="n82" name="Button_Helmet" src="nbqfv" pkg="rqtv1qew" xy="853,0">
+      <Button controller="Tab_C" page="4"/>
+    </component>
+    <component id="n83" name="Button_LevelUpAll" src="gr0bozdm" pkg="s5cy5qnp" xy="1026,18" controller="State_C,0">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <Button title="全体升级"/>
+    </component>
+    <component id="n107" name="Button_LevelUp10" src="gr0bozdm" pkg="s5cy5qnp" xy="228,513" size="268,104" controller="State_C,0">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <Button title="升级10次" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <component id="n108" name="Button_LevelUp" src="gr0bozdm" pkg="s5cy5qnp" xy="700,512" size="268,104" controller="State_C,0">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <Button title="升级" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <component id="n146_o2hh" name="Button_Set" src="o2hh109" xy="1100,30" group="n120"/>
+    <list id="n126" name="List_Stars" xy="1097,133" size="103,20" group="n120" layout="row" selectionMode="none" autoItemSize="false" align="center">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <item url="ui://s5cy5qnpmlkfz32"/>
+      <item url="ui://s5cy5qnpmlkfz32"/>
+      <item url="ui://s5cy5qnpmlkfz30"/>
+      <item url="ui://s5cy5qnpmlkfz31"/>
+      <item url="ui://s5cy5qnpmlkfz31"/>
+    </list>
+    <group id="n120" name="Group_Set" xy="1097,30" size="103,123" advanced="true">
+      <gearDisplay controller="Type_C" pages="1"/>
+    </group>
+    <component id="n124" name="Button_Strengthen" src="gr0bozdm" pkg="s5cy5qnp" xy="487,510" size="268,105" controller="State_C,0">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <Button title="强化" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <image id="n84" name="Image_Background1" src="10bfz0" xy="0,228" size="1232,244" group="n135_t3ed"/>
+    <image id="n85" name="Image_Decoration" src="10bfz1" xy="19,204" group="n135_t3ed">
+      <gearXY controller="Tab_C" pages="0,1,2,3,4" values="19,204|229,204|444,204|658,204|872,204" tween="true"/>
+    </image>
+    <text id="n86" name="Text_EquipmentName" xy="25,247" size="277,50" group="n142_g4na" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="装备名字阿达">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <text id="n93" name="Text_Basement" xy="560,252" size="147,43" group="n142_g4na" font="微软雅黑" fontSize="30" color="#ffffff" text="基础属性+">
+      <gearDisplay controller="Type_C" pages="1"/>
+    </text>
+    <text id="n94" name="Text_Status" xy="706,253" size="111,43" group="n142_g4na" font="微软雅黑" fontSize="30" color="#ffffff" autoSize="height" text="100%">
+      <gearDisplay controller="Type_C" pages="1"/>
+    </text>
+    <list id="n125" name="List_Star" xy="270,249" size="219,45" group="n142_g4na" layout="row" autoItemSize="false">
+      <gearDisplay controller="Type_C" pages="1"/>
+    </list>
+    <text id="n104" name="Text_Require" xy="886,370" size="155,43" group="n142_g4na" font="微软雅黑" fontSize="30" color="#ffffff" text="消耗道具："/>
+    <component id="n127_c8c1" name="Component_Cost" src="hqutz3m" pkg="s5cy5qnp" xy="1064,318" size="130,130" group="n142_g4na">
+      <relation target="n84" sidePair="left-left,top-top"/>
+    </component>
+    <image id="n109" name="Image_Red" src="ur0iozi0" pkg="s5cy5qnp" xy="298,246" group="n142_g4na" color="#822b15">
+      <gearDisplay controller="Type_C" pages="0"/>
+    </image>
+    <text id="n110" name="Text_Level" xy="304,249" size="77,50" group="n142_g4na" alpha="0.99" font="微软雅黑" fontSize="36" color="#ffffff" text="等级">
+      <gearDisplay controller="Type_C" pages="0"/>
+    </text>
+    <text id="n111" name="Text_LevelNumber" xy="379,249" size="87,50" group="n142_g4na" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="80">
+      <gearDisplay controller="Type_C" pages="0"/>
+    </text>
+    <list id="n138_g4na" name="List_Description" xy="27,312" size="741,138" group="n142_g4na" selectionMode="none" overflow="scroll" defaultItem="ui://hpkxy5rlg4na104">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n142_g4na" name="Group_EquipmentName" xy="25,246" size="1169,204" group="n135_t3ed" advanced="true">
+      <gearDisplay controller="State_C" pages="0"/>
+    </group>
+    <group id="n135_t3ed" name="Group_EquipmentDetails" xy="0,204" size="1232,268" advanced="true">
+      <gearDisplay controller="Tab_C" pages="0,1,2,3,4"/>
+    </group>
+    <text id="n137_t3ed" name="Text_Empty" xy="434,333" size="365,62" font="微软雅黑" fontSize="45" color="#ffffff" text="没有穿戴任何装备">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <graph id="n148_exkv" name="Graph_RoundIcon" xy="1097,349" pivot="0.5,0.5" size="65,65" scale="2,2" alpha="0" type="rect" lineColor="#ffffffff" corner="1">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+  </displayList>
+  <transition name="strength_T">
+    <item time="0" type="Alpha" target="n148_exkv" tween="true" startValue="0" endValue="0.6" duration="12"/>
+    <item time="12" type="Alpha" target="n148_exkv" tween="true" startValue="0.6" endValue="0" duration="18"/>
+  </transition>
+</component>a20111o.xml|1052|<component size="448,121" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n4_a201" name="Image_Base" src="10bfz3" xy="0,0" size="448,121" color="#753707"/>
+    <image id="n5_a201" name="Image_Icon" src="10bfz6" xy="3,16"/>
+    <text id="n6_a201" name="Text_Set" xy="143,17" size="65,43" skew="1,0" font="微软雅黑" fontSize="30" color="#ffffff" text="套装"/>
+    <text id="n9_a201" name="Text_MoraleBg" xy="143,66" size="149,43" font="微软雅黑" fontSize="30" color="#ffffff" text="武将士气+"/>
+    <text id="n7_a201" name="Text_Morale" xy="291,66" size="95,43" font="微软雅黑" fontSize="30" color="#ffffff" text="90000"/>
+    <list id="n8_a201" name="List_Stars" xy="211,23" size="181,31" layout="row" autoItemSize="false">
+      <item url="ui://s5cy5qnpmlkfz2x"/>
+      <item url="ui://s5cy5qnpmlkfz2x"/>
+      <item url="ui://s5cy5qnpmlkfz2x"/>
+      <item url="ui://s5cy5qnpmlkfz2z"/>
+    </list>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>dw1h11p.xml|1166|<component size="113,113" extention="Button">
+  <controller name="Stage_C" pages="0,未解锁,1,已解锁有宝石镶嵌,2,已解锁无宝石镶嵌,3,已镶嵌,4,可升级" selected="0"/>
+  <displayList>
+    <image id="n0_dw1h" name="Image_GemHole_Bg" src="dw1h11q" xy="0,0"/>
+    <image id="n1_dw1h" name="Image_Lock" src="dw1h11r" xy="16,16">
+      <gearDisplay controller="Stage_C" pages="0"/>
+    </image>
+    <text id="n3_dw1h" name="Text_Condition" xy="-25,116" size="171,38" fontSize="30" color="#ff0000" align="center" vAlign="middle" autoSize="height" text="成长10解锁">
+      <gearDisplay controller="Stage_C" pages="0"/>
+    </text>
+    <image id="n4_dw1h" name="Image_SignArrow" src="g4naozec" pkg="s5cy5qnp" xy="79,54" rotation="-90">
+      <gearDisplay controller="Stage_C" pages="4"/>
+    </image>
+    <loader id="n6_dw1h" name="Loader_Gem" xy="-23,-23" pivot="0.5,0.5" size="160,160" scale="0.5,0.5" url="ui://4trbzbckyqyk0" autoSize="true">
+      <gearDisplay controller="Stage_C" pages="3,4"/>
+    </loader>
+    <image id="n7_evvc" name="Image_Button_Add" src="ucsk2i" pkg="s5cy5qnp" xy="31,30">
+      <gearDisplay controller="Stage_C" pages="1"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>dw1h11s.xml|832|<component size="160,160">
+  <controller name="Stage_C" pages="0,0颗宝石,1,1颗宝石,2,2颗宝石,3,3颗宝石" selected="3"/>
+  <displayList>
+    <component id="n3_dw1h" name="Button_Prop" src="hqutz3m" pkg="s5cy5qnp" xy="0,0" controller="button,0,Count_C,0,State_C,1,CornerMark_C,0"/>
+    <component id="n5_dw1h" name="Component_GemBody_Hole" src="dw1h11t" xy="63,6" controller="Stage_C,0">
+      <gearDisplay controller="Stage_C" pages="2,3"/>
+    </component>
+    <component id="n6_dw1h" name="Component_GemBody_Hole" src="dw1h11t" xy="10,112" controller="Stage_C,0">
+      <gearDisplay controller="Stage_C" pages="3"/>
+    </component>
+    <component id="n7_dw1h" name="Component_GemBody_Hole" src="dw1h11t" xy="119,115" controller="Stage_C,0">
+      <gearDisplay controller="Stage_C" pages="1,2,3"/>
+    </component>
+  </displayList>
+</component>dw1h11t.xml|438|<component size="33,33">
+  <controller name="Stage_C" pages="0,没镶嵌宝石,1,已镶嵌宝石" selected="1"/>
+  <displayList>
+    <image id="n7_dw1h" name="Image_GemHole_Bg" src="dw1h11q" xy="0,0" scale="0.3,0.3"/>
+    <loader id="n8_dw1h" name="Loader_Gem" xy="-64,-63" pivot="0.5,0.5" size="160,160" scale="0.2,0.2" url="ui://4trbzbckyqyk0" autoSize="true">
+      <gearDisplay controller="Stage_C" pages="1"/>
+    </loader>
+  </displayList>
+</component>dw1h11v.xml|462|<component size="113,113" extention="Button">
+  <displayList>
+    <image id="n0_dw1h" name="Image_GemHole_Bg" src="dw1h11q" xy="0,0"/>
+    <loader id="n1_dw1h" name="icon" xy="-23,-23" pivot="0.5,0.5" size="160,160" scale="0.5,0.5" url="ui://4trbzbckyqyk0" autoSize="true"/>
+    <component id="n4_dw1h" name="Text_GemLevel" src="no0zozhv" pkg="s5cy5qnp" xy="1,-3" size="34,81">
+      <Label title="22"/>
+    </component>
+  </displayList>
+  <Button/>
+</component>dw1h11x.xml|1746|<component size="954,595">
+  <displayList>
+    <component id="n0_dw1h" name="Label_PopupWindow" src="l2ckozou" pkg="s5cy5qnp" xy="1,-2" size="953,597" controller="Type_C,0,State_C,0,BG_C,0">
+      <Label title="宝石镶嵌"/>
+    </component>
+    <list id="n1_dw1h" name="List_Gem" xy="39,75" size="503,476" layout="flow_hz" overflow="scroll" lineGap="14" colGap="15" defaultItem="ui://hpkxy5rldw1h11v">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n2_dw1h" name="Button_GemItem" src="dw1h11v" xy="570,75"/>
+    <component id="n7_dw1h" name="Button_Mosaic" src="knyu29" pkg="s5cy5qnp" xy="644,470" controller="Time_C,0,Type_C,0">
+      <Button title="镶嵌" titleFontSize="30"/>
+    </component>
+    <text id="n8_dw1h" name="Text_GemName" xy="702,97" size="187,33" fontSize="25" color="#6e2618" bold="true" text="宝石名字七个字"/>
+    <text id="n11_dw1h" name="Text_GemBonus" xy="594,255" size="136,33" fontSize="25" color="#6e2618" bold="true" text="属性+12345"/>
+    <image id="n12_evvc" name="Image_TheProgressBar" src="qyn5ozy1" pkg="s5cy5qnp" xy="699,140"/>
+    <text id="n13_evvc" name="Text_AccordingToSchedule" xy="704,168" size="63,33" fontSize="25" color="#6e2618" autoSize="none" text="5/100"/>
+    <text id="n14_evvc" name="Text_GemBonus" xy="593,302" size="136,33" fontSize="25" color="#6e2618" bold="true" text="属性+12345"/>
+    <text id="n15_evvc" name="Text_GemBonus" xy="594,354" size="136,33" fontSize="25" color="#6e2618" bold="true" text="属性+12345"/>
+  </displayList>
+</component>dw1h121.xml|3917|<component size="952,595">
+  <controller name="Type_C" pages="0,替换,1,合成,2,获取" selected="0"/>
+  <displayList>
+    <component id="n0_dw1h" name="Label_PopupWindow" src="l2ckozou" pkg="s5cy5qnp" xy="0,0" size="952,596" controller="Type_C,0,State_C,0,BG_C,0">
+      <Label title="宝石合成" titleFontSize="25"/>
+    </component>
+    <list id="n4_dw1h" name="List_Gem" xy="40,69" size="473,489" layout="flow_hz" overflow="scroll" lineGap="30" colGap="60" defaultItem="ui://hpkxy5rldw1h126">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n30_dw1h" name="Button_Obtain" src="knyu29" pkg="s5cy5qnp" xy="633,491" controller="Time_C,0,Type_C,0">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <Button title="合成" titleFontSize="30"/>
+    </component>
+    <image id="n32_dw1h" name="Img_592" src="qydpa9" pkg="whwv8ghj" xy="522,102" size="401,374" color="#996666"/>
+    <image id="n35_dw1h" name="img_shupianfu" src="no0zozhq" pkg="s5cy5qnp" xy="588,47" size="278,63" color="#45312a">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n36_dw1h" name="Text_GemName" xy="655,66" size="139,51" fontSize="20" color="#f37451" autoSize="none" bold="true" text="一级攻击宝石"/>
+    <text id="n40_dw1h" name="Text_GemLevel1" xy="530,359" size="36,27" fontSize="20" color="#cc9900" bold="true" text="1级"/>
+    <text id="n42_dw1h" name="Text_GemLevel" xy="772,360" size="36,27" fontSize="20" color="#cc9900" bold="true" text="9级"/>
+    <image id="n43_dw1h" name="Image_SignArrow" src="g4naozec" pkg="s5cy5qnp" xy="686,370"/>
+    <text id="n44_dw1h" name="Text_GemAttribute" xy="530,394" size="139,27" fontSize="20" color="#eaccad" bold="true" text="属性：+123456"/>
+    <text id="n45_dw1h" name="Text_GemAttribute1" xy="772,398" size="139,27" fontSize="20" color="#eaccad" bold="true" text="属性：+123456"/>
+    <text id="n46_evvc" name="Text_GemNeed" xy="574,438" size="45,26" fontSize="20" color="#00ff33" text="消耗">
+      <gearDisplay controller="Type_C" pages="1"/>
+    </text>
+    <list id="n48_evvc" name="List_GemConsumption" xy="648,425" size="207,49" layout="flow_hz" overflow="scroll" colGap="42" defaultItem="ui://hpkxy5rlevvc128">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <loader id="n53_evvc" name="Loader_GemSynthetic" xy="681,192" size="155,151" scale="0.5,0.5" url="ui://4trbzbckyqyk0"/>
+    <component id="n54_evvc" name="Button_Obtain" src="knyu29" pkg="s5cy5qnp" xy="633,491" controller="Time_C,0,Type_C,0">
+      <gearDisplay controller="Type_C" pages="2"/>
+      <Button title="获取" titleFontSize="30"/>
+    </component>
+    <component id="n55_evvc" name="Button_Obtain1" src="knyu29" pkg="s5cy5qnp" xy="633,491" controller="Time_C,0,Type_C,0">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <Button title="替换" titleFontSize="30"/>
+    </component>
+    <text id="n56_evvc" name="Text_Replace" xy="648,439" size="145,26" fontSize="20" color="#00ff33" text="有更高等级宝石">
+      <gearDisplay controller="Type_C" pages="0"/>
+    </text>
+    <text id="n57_evvc" name="Text_Consumption" xy="531,436" size="145,26" fontSize="20" color="#ff0033" text="需要更多的宝石">
+      <gearDisplay controller="Type_C" pages="2"/>
+    </text>
+    <component id="n60_evvc" name="Button_Normal_Small" src="g52xozih" pkg="s5cy5qnp" xy="860,425" size="49,50">
+      <gearDisplay controller="Type_C" pages="2"/>
+      <Button title="？"/>
+    </component>
+    <component id="n70_evvc" name="ProgressBar_Exp" src="7sz4ozib" pkg="s5cy5qnp" xy="678,433" size="146,39">
+      <gearDisplay controller="Type_C" pages="2"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+  </displayList>
+</component>dw1h126.xml|505|<component size="114,116">
+  <displayList>
+    <image id="n0_dw1h" name="Image_GemHole_Bg" src="dw1h11q" xy="0,1"/>
+    <loader id="n1_dw1h" name="icon" xy="-21,-20" pivot="0.5,0.5" size="160,160" scale="0.5,0.5" url="ui://4trbzbckyqyk0" autoSize="true"/>
+    <image id="n2_dw1h" name="Image_592" src="qydpa9" pkg="whwv8ghj" xy="4,93" size="109,38" color="#8b6745"/>
+    <text id="n3_dw1h" name="Text_Level" xy="26,93" size="65,38" fontSize="30" color="#ffffff" text="1234"/>
+  </displayList>
+</component>evvc128.xml|485|<component size="41,43">
+  <displayList>
+    <image id="n0_evvc" name="Image_GemHole_Bg" src="dw1h11q" xy="0,0" size="41,42"/>
+    <image id="n4_evvc" name="Image_TextBox" src="qydp9r" pkg="whwv8ghj" xy="5,30" size="32,17"/>
+    <text id="n5_evvc" name="Text_Level" xy="14,26" size="17,26" fontSize="20" color="#ffffff" autoSize="none" text="4"/>
+    <loader id="n6_evvc" name="Loader_Gem" xy="5,6" size="30,30" url="ui://4trbzbckyqyk0" fill="scaleFree"/>
+  </displayList>
+</component>g4na104.xml|212|<component size="800,43">
+  <displayList>
+    <text id="n96" name="Text_Title" xy="0,0" size="800,43" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="height" text=""/>
+  </displayList>
+</component>jpkq11m.xml|1588|<component size="509,19" extention="ScrollBar">
+  <displayList>
+    <graph id="n2" name="bar" xy="0,0" size="510,19">
+      <relation target="" sidePair="width-width"/>
+    </graph>
+    <graph id="n11_jpkq" name="Graph_Line1" xy="21,8" size="75,2" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n12_jpkq" name="Graph_Line2" xy="119,8" size="75,2" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n13_jpkq" name="Graph_Line3" xy="217,8" size="75,2" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n14_jpkq" name="Graph_Round1" xy="98,0" size="19,19" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n15_jpkq" name="Graph_Round2" xy="0,0" size="19,19" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n16_jpkq" name="Graph_Round3" xy="196,0" size="19,19" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n17_jpkq" name="Graph_Round4" xy="294,0" size="19,19" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n18_jpkq" name="Graph_Line4" xy="315,7" size="75,2" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n19_jpkq" name="Graph_Line5" xy="413,7" size="75,2" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n20_jpkq" name="Graph_Round5" xy="392,0" size="19,19" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n21_jpkq" name="Graph_Round6" xy="490,0" size="19,19" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <component id="n3" name="grip" src="jpkq11n" xy="0,0"/>
+  </displayList>
+  <ScrollBar/>
+</component>jpkq11n.xml|321|<component size="19,19" extention="Button">
+  <controller name="button" pages="0,up" selected="0"/>
+  <displayList>
+    <graph id="n1" name="icon" xy="0,0" size="19,19" touchable="false" type="eclipse" lineSize="0">
+      <gearDisplay controller="button" pages="0"/>
+    </graph>
+  </displayList>
+  <Button/>
+</component>mris101.xml|442|<component size="623,470">
+  <displayList>
+    <list id="n40" name="List_Main" xy="0,0" size="692,522" scale="0.9,0.9" layout="flow_hz" overflow="scroll" scrollBarFlags="2" lineGap="-7" colGap="-10" defaultItem="ui://rqtv1qewnbqfv">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>o0ue116.xml|925|<component size="1920,1080">
+  <displayList>
+    <component id="n6_bva4" name="Component_GrapgBG" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_o0ue" name="Graph_Base" src="l2ckozou" pkg="s5cy5qnp" xy="701,225" size="531,541" alpha="0.96" controller="Type_C,0,State_C,0,BG_C,0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Label title="提供合成点数"/>
+    </component>
+    <list id="n4_o0ue" name="List_GemHelp" xy="744,293" size="439,463" layout="flow_hz" overflow="scroll" scroll="horizontal" lineGap="29" colGap="42" defaultItem="ui://hpkxy5rlopzf12b" vAlign="middle">
+      <relation target="n3_o0ue" sidePair=""/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>o2hh109.xml|426|<component size="94,94" extention="Button">
+  <displayList>
+    <image id="n1" name="icon" src="10bfz6" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3_oy9h" name="title" xy="14,62" size="65,43" font="微软雅黑" fontSize="30" color="#ffffff" strokeColor="#294d75" strokeSize="2" text="套装"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>opzf12b.xml|425|<component size="114,116">
+  <displayList>
+    <image id="n0_dw1h" name="Image_GemHole_Bg" src="dw1h11q" xy="0,1"/>
+    <loader id="n1_dw1h" name="icon" xy="-21,-20" pivot="0.5,0.5" size="160,160" scale="0.5,0.5" url="ui://4trbzbckyqyk0" autoSize="true"/>
+    <text id="n3_dw1h" name="Text_Level" xy="26,93" size="59,38" fontSize="30" color="#ffffff" align="center" autoSize="height" text="+1"/>
+  </displayList>
+</component>package.xml|2716|<packageDescription id="hpkxy5rl" name="Armor">
+  <resources>
+    <component id="10bfzj" name="Component_All" path="/Component/" size="622,651"/>
+    <component id="10bfzk" name="Button_EquipToggle" path="/Button/" size="100,35"/>
+    <component id="10bfzl" name="Component_ReplaceEquip" path="/Component/" size="712,203"/>
+    <component id="10bfzv" name="Component_UpgradeEquip" path="/Component/" size="1270,617"/>
+    <component id="a20111o" name="Button_TaoZhuang" path="/Button/" size="448,121"/>
+    <component id="dw1h11p" name="Button_GemHole" path="/Button/" size="113,113"/>
+    <component id="dw1h11s" name="Button_GemBody" path="/Button/" size="160,160"/>
+    <component id="dw1h11t" name="Component_GemBody_Hole" path="/Component/" size="33,33"/>
+    <component id="dw1h11v" name="Button_GemItem" path="/Button/" size="113,113"/>
+    <component id="dw1h126" name="Button_GemItem2" path="/Button/" size="114,116"/>
+    <component id="evvc128" name="Button_GemItem3" path="/Button/" size="41,43"/>
+    <component id="g4na104" name="Component_Equip" path="/Component/" size="800,43"/>
+    <component id="jpkq11n" name="Button_Grip" path="/Button/" size="19,19"/>
+    <component id="mris101" name="Component_Others" path="/Component/" size="623,470"/>
+    <component id="o2hh109" name="Button_Suit" path="/Button/" size="94,94"/>
+    <component id="opzf12b" name="Button_GemItem4" path="/Button/" size="114,116"/>
+    <image id="10bfz0" name="Image_02" path="/Image/" size="128,244" scale="9grid" scale9grid="32,61,64,122"/>
+    <image id="10bfz1" name="Image_01" path="/Image/" size="156,40"/>
+    <image id="10bfz3" name="Image_06" path="/Image/" size="414,105" scale="9grid" scale9grid="135,26,176,54"/>
+    <image id="10bfz5" name="Image_04" path="/Image/" size="76,29"/>
+    <image id="10bfz6" name="Image_03" path="/Image/" size="94,94"/>
+    <image id="10bfzf" name="Image_Model" path="/Image/" size="302,430"/>
+    <image id="dw1h11q" name="Image_GemHole_Bg" path="/Image/" size="113,113"/>
+    <image id="dw1h11r" name="Image_Lock" path="/Image/" size="81,80"/>
+    <image id="opzf12a" name="Image_BG_ChangeJob01" path="/Image/" size="548,442"/>
+    <component id="10bfzb" name="ArmorMain" path="/" size="1920,1080" exported="true"/>
+    <component id="dw1h11x" name="GemBag" path="/" size="954,595" exported="true"/>
+    <component id="dw1h121" name="GemSynthesis" path="/" size="952,595" exported="true"/>
+    <component id="jpkq11m" name="ScrollBar_EquipMenu" path="/ScrollBar/" size="509,19" exported="true"/>
+    <component id="o0ue116" name="GemHelp" path="/" size="1920,1080" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>

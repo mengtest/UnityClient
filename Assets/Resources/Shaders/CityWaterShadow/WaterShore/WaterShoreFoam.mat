@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WaterShoreFoam
+  m_Shader: {fileID: 4800000, guid: eb35fa2ddcc9e43439f610506f84798c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Bump:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 5931fbe633b67d94ba111aecbdcdbce9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EdgeTex:
+        m_Texture: {fileID: 2800000, guid: 62353743fbf645f4e9660f77ef8a9c3f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Foam:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FoamGradient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaveTex:
+        m_Texture: {fileID: 2800000, guid: 62353743fbf645f4e9660f77ef8a9c3f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpPower: -0.397
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _Depth: 5.4
+    - _DetailNormalMapScale: 1
+    - _DistanceCancellation: 2000
+    - _DstBlend: 0
+    - _EdgeRange: 0.17
+    - _FoamFactor: 1.8
+    - _FoamSize: 2
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _RimSize: 1.45
+    - _Rimfalloff: 1.29
+    - _ShoreDistance: 4
+    - _ShoreStrength: 1.5
+    - _Size: 0.015625
+    - _SmoothnessTextureChannel: 0
+    - _SpecPower: 1
+    - _SpecularHighlights: 1
+    - _Specularity: 0.3
+    - _SrcBlend: 1
+    - _Transparency: 0.956
+    - _UVSec: 0
+    - _WaveSize: 0.054
+    - _WaveSpeed: 2.31
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeColor: {r: 0.31617647, g: 0.3022275, b: 0.3022275, a: 0.366}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FakeUnderwaterColor: {r: 0.196, g: 0.262, b: 0.196, a: 1}
+    - _FarColor: {r: 0.99264705, g: 0.99264705, b: 0.99264705, a: 0.272}
+    - _GAmplitude: {r: 1, g: 3, b: -9.8, a: 0.5}
+    - _GDirectionAB: {r: 0.5, g: 0, b: 0.1, a: 1}
+    - _GDirectionCD: {r: 0.1, g: 0, b: 0.5, a: 1}
+    - _GFrequency: {r: 2, g: 0, b: 2, a: 1}
+    - _GSpeed: {r: 1, g: 0, b: 1, a: 1}
+    - _GSteepness: {r: 1, g: 0, b: 1, a: 1}
+    - _LightColor: {r: 0.3455882, g: 0.23886244, b: 0.23886244, a: 1}
+    - _LightVector: {r: 0.16, g: 0.55, b: -0.1, a: 100}
+    - _RimColor: {r: 0.66176474, g: 0.66176474, b: 0.66176474, a: 1}
+    - _SunColor: {r: 1, g: 1, b: 0.901, a: 1}
+    - _SunDir: {r: 0.3, g: -0.6, b: -1, a: 0}
+    - _SurfaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _WaterColor: {r: 0.30103806, g: 0.5802936, b: 0.6397059, a: 1}
+    - _WaveDirection: {r: 0.1, g: 0.2, b: -0.2, a: -0.1}
+    - _WaveOffset: {r: 0, g: 0.04, b: 0, a: 0.01}

@@ -1,0 +1,101 @@
+m6df7.xml|4226|<component size="1337,647">
+  <displayList>
+    <image id="n6" name="Image_Background" src="cwf2k" pkg="s5cy5qnp" xy="0,0" size="1337,647">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n12" name="TextField_Info01" xy="117,499" size="160,43" font="微软雅黑" fontSize="30" color="#54ff54" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="5分钟">
+      <relation target="n28" sidePair="center-center,top-bottom"/>
+    </text>
+    <graph id="n23" name="n23" xy="350,321" size="164,164" group="n35" type="rect" lineSize="0" fillColor="#ff121a2d" corner="4"/>
+    <graph id="n24" name="n24" xy="582,321" size="164,164" group="n35" type="rect" lineSize="0" fillColor="#ff121a2d" corner="4"/>
+    <graph id="n25" name="n25" xy="814,321" size="164,164" group="n35" type="rect" lineSize="0" fillColor="#ff121a2d" corner="4"/>
+    <graph id="n26" name="n26" xy="1046,321" size="164,164" group="n35" type="rect" lineSize="0" fillColor="#ff121a2d" corner="4"/>
+    <graph id="n21" name="n21" xy="118,321" size="164,164" group="n35" type="rect" lineSize="0" fillColor="#ff121a2d" corner="4"/>
+    <group id="n35" name="Group_Base" xy="118,321" size="1092,164" advanced="true">
+      <relation target="n6" sidePair="left-left,top-top"/>
+    </group>
+    <text id="n13" name="TextField_Info02" xy="350,499" size="164,43" font="微软雅黑" fontSize="30" color="#54ff54" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="10分钟">
+      <relation target="n29" sidePair="center-center,bottom-top"/>
+    </text>
+    <text id="n14" name="TextField_Info03" xy="582,499" size="166,43" font="微软雅黑" fontSize="30" color="#54ff54" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="30分钟">
+      <relation target="n30" sidePair="center-center,top-bottom"/>
+    </text>
+    <text id="n15" name="TextField_Info04" xy="818,499" size="160,43" font="微软雅黑" fontSize="30" color="#54ff54" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="60分钟">
+      <relation target="n31" sidePair="center-center,top-bottom"/>
+    </text>
+    <text id="n16" name="TextField_Money" xy="1045,499" size="165,43" font="微软雅黑" fontSize="30" color="#54ff54" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="立即完成">
+      <relation target="n33" sidePair="center-center,top-bottom"/>
+    </text>
+    <component id="n18" name="ProgressBar_Time" src="pnexozh5" pkg="s5cy5qnp" xy="127,198" size="1081,49">
+      <relation target="n19" sidePair="left-left,top-bottom"/>
+      <ProgressBar value="200" max="200"/>
+    </component>
+    <text id="n19" name="TextField_Time" xy="126,98" size="207,66" font="微软雅黑" fontSize="48" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="休息时间">
+      <relation target="n6" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n20" name="Text_CD" xy="349,98" size="368,66" font="微软雅黑" fontSize="48" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="02:55:24">
+      <relation target="n19" sidePair="left-right,top-top"/>
+    </text>
+    <component id="n28" name="Button_SpeedUpProp01" src="uaxj3" xy="120,322" size="161,161">
+      <relation target="n35" sidePair="left-left,top-top"/>
+      <Button icon="ui://s5cy5qnpblgr22"/>
+    </component>
+    <component id="n29" name="Button_SpeedUpProp02" src="uaxj3" xy="352,322" size="161,161">
+      <relation target="n35" sidePair="left-left,top-top"/>
+      <Button icon="ui://s5cy5qnpblgr23"/>
+    </component>
+    <component id="n30" name="Button_SpeedUpProp03" src="uaxj3" xy="584,322" size="161,161">
+      <relation target="n35" sidePair="left-left,top-top"/>
+      <Button icon="ui://s5cy5qnpblgr24"/>
+    </component>
+    <component id="n31" name="Button_SpeedUpProp04" src="uaxj3" xy="816,322" size="161,161">
+      <relation target="n35" sidePair="left-left,top-top"/>
+      <Button icon="ui://s5cy5qnpblgr25"/>
+    </component>
+    <component id="n33" name="Button_YuanBao" src="uaxj5" xy="1048,322" size="161,161">
+      <relation target="n35" sidePair="left-left,top-top"/>
+    </component>
+  </displayList>
+</component>package.xml|581|<packageDescription id="csmiyeo9" name="BuildersSpeedup">
+  <resources>
+    <component id="m6df7" name="Component_Window" path="/Component/" size="1337,647"/>
+    <component id="uaxj3" name="Button_Prop" path="/Button/" size="160,160"/>
+    <component id="uaxj5" name="Button_YuanBao" path="/Button/" size="160,160"/>
+    <image id="uaxj4" name="Image_Prop" path="/Image/" size="161,161"/>
+    <component id="uaxj0" name="BuildersSpeedupMain" path="/" size="1920,1080" exported="true"/>
+    <atlas id="atlas0" size="256,256" file="atlas0.png"/>
+  </resources>
+</packageDescription>uaxj0.xml|917|<component size="1920,1080">
+  <displayList>
+    <component id="n1" name="Component_BG" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n36" name="Component_WindowMain" src="m6df7" xy="291,216" pivot="0.5,0.5">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+  <transition name="Effect_T" options="2">
+    <item time="0" type="Alpha" target="n36" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Scale" target="n36" tween="true" startValue="0,0" endValue="1.05,1.05" duration="6"/>
+    <item time="6" type="Alpha" target="n36" tween="true" startValue="1" endValue="1" duration="2"/>
+    <item time="6" type="Scale" target="n36" tween="true" startValue="1.05,1.05" endValue="1,1" duration="2"/>
+  </transition>
+</component>uaxj3.xml|676|<component size="160,160" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n9" name="icon" xy="0,0" size="160,160" fill="scaleFree"/>
+    <image id="n6" name="Image_Item" src="uaxj4" xy="0,0" size="160,160"/>
+    <graph id="n7" name="Graph_Black" xy="0,116" size="160,44" alpha="0.6" type="rect" lineSize="0" fillColor="#ff000000" corner="4"/>
+    <text id="n8" name="title" xy="1,117" size="157,43" font="微软雅黑" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="×355"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>uaxj5.xml|684|<component size="160,160" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n10" name="Image_Base" src="blgr26" pkg="s5cy5qnp" xy="0,0" size="160,160"/>
+    <image id="n9" name="icon" src="phdsozjb" pkg="s5cy5qnp" xy="0,0" size="160,160"/>
+    <graph id="n7" name="Graph_Black" xy="0,116" size="160,44" alpha="0.6" type="rect" lineSize="0" fillColor="#ff000000" corner="4"/>
+    <text id="n8" name="title" xy="1,116" size="157,43" font="微软雅黑" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="100元宝"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>

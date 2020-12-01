@@ -1,0 +1,224 @@
+gbrxh.xml|5416|<component size="340,795">
+  <displayList>
+    <image id="n19" name="img_beimian" src="mjh75" xy="21,68" pivot="0.5,0.5" size="293,512"/>
+    <loader id="n40_t3ed" name="loader_yingzi" xy="25,593" size="289,197" url="ui://g6mcguopt3ed7i" fill="scaleFree"/>
+    <text id="n26" name="txt_wenzi" xy="99,18" size="121,42" alpha="0" font="微软雅黑" fontSize="29" color="#75c9f3" shadowColor="#000000" shadowOffset="1,1" text="点击招募"/>
+    <component id="n23" name="Component_GeneralCard" src="oz2o1z" pkg="rqtv1qew" xy="20,70" pivot="0.5,0.5" alpha="0"/>
+    <movieclip id="n33_ywcp" name="anim_fanka1" src="ywcp73" xy="-34,4" pivot="0.5,0.5" size="399,642" alpha="0"/>
+    <movieclip id="n37_h6za" name="anim_saoguang" src="fwpq3m" pkg="v7lqqrd6" xy="89,193" pivot="0.5,0.5" size="157,264" scale="2,2" alpha="0"/>
+    <image id="n41_mvdz" name="img_fanka" src="h6za75" xy="2,54" scale="2,2" alpha="0"/>
+    <image id="n42_gofm" name="img_yizhaomu" src="gofm7l" xy="0,47" pivot="0.5,0.5" alpha="0"/>
+  </displayList>
+  <transition name="Turn_T" options="2">
+    <item time="0" type="Alpha" target="n23" tween="true" startValue="0" endValue="0" duration="30"/>
+    <item time="0" type="Alpha" target="n33_ywcp" tween="true" startValue="1" endValue="1" duration="46"/>
+    <item time="0" type="Alpha" target="n19" tween="true" startValue="1" endValue="1" duration="18"/>
+    <item time="0" type="Alpha" target="n26" tween="true" startValue="0" endValue="0" duration="31"/>
+    <item time="0" type="Animation" target="n33_ywcp" value="1,p"/>
+    <item time="0" type="Scale" target="n19" value="1,1"/>
+    <item time="18" type="Alpha" target="n19" tween="true" startValue="1" endValue="1" duration="4"/>
+    <item time="18" type="Scale" target="n19" tween="true" startValue="1,1" endValue="0.1,1" duration="4" ease="Linear"/>
+    <item time="23" type="Alpha" target="n19" value="0"/>
+    <item time="30" type="Alpha" target="n23" tween="true" startValue="0" endValue="1" duration="3"/>
+    <item time="31" type="Alpha" target="n26" tween="true" startValue="0" endValue="1" duration="16"/>
+    <item time="47" type="Alpha" target="n19" value="1"/>
+    <item time="47" type="Alpha" target="n33_ywcp" value="0"/>
+    <item time="47" type="Scale" target="n19" value="1,1"/>
+  </transition>
+  <transition name="Convert_T" options="2">
+    <item time="0" type="Alpha" target="n23" value="1"/>
+    <item time="0" type="Alpha" target="n26" tween="true" startValue="1" endValue="0" duration="16"/>
+    <item time="0" type="Alpha" target="n41_mvdz" tween="true" startValue="0" endValue="0.99" duration="16"/>
+    <item time="0" type="Alpha" target="n19" tween="true" startValue="0" endValue="0" duration="24"/>
+    <item time="0" type="Scale" target="n19" tween="true" startValue="1,1" endValue="0,0" duration="24"/>
+    <item time="10" type="Alpha" target="n23" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="16" type="Alpha" target="n41_mvdz" tween="true" startValue="0.99" endValue="0" duration="14"/>
+    <item time="24" type="Alpha" target="n19" tween="true" startValue="0" endValue="0.78" duration="6"/>
+    <item time="24" type="Scale" target="n19" tween="true" startValue="0,0" endValue="1.1,1.1" duration="6"/>
+    <item time="30" type="Alpha" target="n19" tween="true" startValue="0.78" endValue="1" duration="3"/>
+    <item time="30" type="Alpha" target="n23" value="0"/>
+    <item time="30" type="Alpha" target="n41_mvdz" tween="true" startValue="0"/>
+    <item time="30" type="Scale" target="n19" tween="true" startValue="1.1,1.1" endValue="1,1" duration="3"/>
+    <item time="33" type="Alpha" target="n19" tween="true" startValue="1"/>
+  </transition>
+  <transition name="Fete_T" options="2">
+    <item time="0" type="Alpha" target="n26" value="0"/>
+    <item time="0" type="Alpha" target="n37_h6za" value="0"/>
+    <item time="0" type="Alpha" target="n23" value="1"/>
+    <item time="0" type="Alpha" target="n19" tween="true" startValue="0" endValue="0" duration="24"/>
+    <item time="0" type="Alpha" target="n42_gofm" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="0" type="Scale" target="n42_gofm" tween="true" startValue="2,2" endValue="1,1" duration="8" ease="Bounce.Out"/>
+    <item time="0" type="Scale" target="n19" tween="true" startValue="0,0" endValue="0,0" duration="24"/>
+    <item time="0" type="Visible" target="n26" value="false"/>
+    <item time="4" type="Alpha" target="n42_gofm" tween="true" startValue="1" endValue="1" duration="4"/>
+    <item time="4" type="Animation" target="n37_h6za" value="1,p"/>
+    <item time="5" type="Alpha" target="n37_h6za" value="0.6"/>
+    <item time="18" type="Alpha" target="n37_h6za" value="0"/>
+    <item time="20" type="Alpha" target="n42_gofm" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="20" type="Alpha" target="n23" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="24" type="Alpha" target="n19" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="24" type="Scale" target="n19" tween="true" startValue="0,0" endValue="1.1,1.1" duration="6"/>
+    <item time="30" type="Alpha" target="n19" tween="true" startValue="1" endValue="1" duration="3"/>
+    <item time="30" type="Scale" target="n19" tween="true" startValue="1.1,1.1" endValue="1,1" duration="3"/>
+    <item time="30" type="Scale" target="n42_gofm" value="1,1"/>
+  </transition>
+</component>j66h7b.xml|553|<component size="228,79" extention="Label">
+  <displayList>
+    <image id="n2_j66h" name="n2" src="mjh71" xy="58,26" size="131,41"/>
+    <text id="n1" name="title" xy="57,26" size="127,40" font="微软雅黑" fontSize="28" color="#ffffff" align="center" vAlign="middle" autoSize="none" shadowColor="#000033" shadowOffset="1,1" singleLine="true" text="25">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n6_j66h" name="icon" xy="5,0" size="74,74" url="ui://4trbzbckyqyk8" fill="scale"/>
+  </displayList>
+</component>mjh7a.xml|5494|<component size="1920,1080">
+  <controller name="State_C" pages="0,宴请前,1,宴请后" selected="0"/>
+  <displayList>
+    <graph id="n92_gr0b" name="Graph_BG" xy="0,0" size="1920,1080" alpha="0.9" type="rect" lineSize="0" lineColor="#ff01538d" fillColor="#ff01538d">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n0" name="Image_BG" src="mjh79" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n112_urr5" name="Component_Gossip" src="urr57k" xy="1587,240" pivot="0.5,0.5" anchor="true" size="800,800">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n100_gr0b" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,0">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="酒馆"/>
+    </component>
+    <text id="n16" name="Text_RestTimeTitle" xy="1623,919" size="167,39" font="微软雅黑" fontSize="26" color="#66b6ff" text="剩余宴请次数:">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n59" sidePair="left-left,bottom-top"/>
+    </text>
+    <text id="n17" name="Text_RestTimes" xy="1789,917" size="41,43" font="微软雅黑" fontSize="30" color="#ffffff" text="10">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n16" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n14" name="Text_qianghuafu" xy="592,986" size="140,39" group="n93_gr0b" font="微软雅黑" fontSize="26" color="#4698e3" letterSpacing="1" shadowColor="#000000" shadowOffset="1,1" text="武将强化符"/>
+    <image id="n96_gr0b" name="Image_01" src="gr0bozdp" pkg="s5cy5qnp" xy="573,975" group="n93_gr0b"/>
+    <component id="n87_j66h" name="Label_GreenBill" src="j66h7b" xy="582,912" group="n93_gr0b">
+      <Label title="1234" icon="ui://4trbzbckyqyk7"/>
+    </component>
+    <component id="n88_j66h" name="Label_BlueBill" src="j66h7b" xy="818,912" group="n93_gr0b">
+      <Label title="12" icon="ui://4trbzbckyqyk8"/>
+    </component>
+    <component id="n89_j66h" name="Label_PurpleBill" src="j66h7b" xy="1054,912" group="n93_gr0b">
+      <Label title="12" icon="ui://4trbzbckyqyka"/>
+    </component>
+    <component id="n91_j66h" name="Label_OrangeBill" src="j66h7b" xy="1287,912" group="n93_gr0b">
+      <Label title="12" icon="ui://4trbzbckyqyk9"/>
+    </component>
+    <graph id="n97_gr0b" name="gra_xian" xy="595,983" size="880,1" group="n93_gr0b" type="rect" lineSize="0" fillColor="#ff1b4a75"/>
+    <image id="n98_gr0b" name="img_zhuangshi" src="gr0bozdp" pkg="s5cy5qnp" xy="1480,975" group="n93_gr0b"/>
+    <group id="n93_gr0b" name="Group_Bill" xy="573,912" size="942,113" advanced="true">
+      <relation target="n94_gr0b" sidePair="left-right,top-top"/>
+    </group>
+    <component id="n114_109to" name="Button_Card06" src="gbrxh" xy="1580,210">
+      <relation target="n106_qbu8" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n106_qbu8" name="Button_Card05" src="gbrxh" xy="1259,109" size="340,691" scale="0.98,0.98">
+      <relation target="n109_qbu8" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n109_qbu8" name="Button_Card04" src="gbrxh" xy="952,68" size="340,691" scale="0.94,0.94">
+      <relation target="n108_qbu8" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n108_qbu8" name="Button_Card03" src="gbrxh" xy="645,68" size="340,691" scale="0.94,0.94">
+      <relation target="n105_qbu8" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n105_qbu8" name="Button_Card02" src="gbrxh" xy="328,109" size="340,691" scale="0.98,0.98">
+      <relation target="n104_t3ed" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n104_t3ed" name="Button_Card01" src="gbrxh" xy="6,210" size="340,691">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n94_gr0b" name="Button_Intensify" src="gr0bozdm" pkg="s5cy5qnp" xy="309,937">
+      <relation target="n95_gr0b" sidePair="right-right,top-top"/>
+      <Button title="强化" titleColor="#ffffff" titleFontSize="34"/>
+    </component>
+    <component id="n79" name="Label_Tips" src="pui2oz41" pkg="s5cy5qnp" xy="1697,870" size="132,60">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n16" sidePair="left-left,top-top"/>
+      <Label title="每小时增加1次"/>
+    </component>
+    <component id="n95_gr0b" name="Button_General" src="gr0bozdm" pkg="s5cy5qnp" xy="39,937">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <Button title="武将" titleColor="#ffffff" titleFontSize="34"/>
+    </component>
+    <component id="n59" name="Button_Fete" src="knyu29" pkg="s5cy5qnp" xy="1633,958" controller="Time_C,1,Type_C,0">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Button title="宴请"/>
+    </component>
+    <component id="n15" name="Button_Convert" src="knyu29" pkg="s5cy5qnp" xy="1633,958" controller="Time_C,0,Type_C,0">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Button title="兑换"/>
+    </component>
+    <component id="n69" name="Button_HuKe" src="jtoyozw2" pkg="s5cy5qnp" xy="1820,98" size="80,71">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button icon="ui://s5cy5qnpo3io1g"/>
+    </component>
+  </displayList>
+</component>package.xml|1578|<packageDescription id="g6mcguop" name="Tavern">
+  <resources>
+    <component id="gbrxh" name="Component_Card" path="/Component/" size="340,795"/>
+    <component id="j66h7b" name="Label_Bill" path="/Label/" size="228,79"/>
+    <component id="urr57k" name="Component_Gossip" path="/Component/" size="400,400"/>
+    <image id="g4na7j" name="bagua" path="/Image/" size="333,333"/>
+    <image id="gofm7l" name="yizhaomu" path="/Image/" size="192,190"/>
+    <image id="h6za75" name="baika" path="/Image/" size="165,275"/>
+    <image id="mjh71" name="modi" path="/Image/" size="42,42" scale="9grid" scale9grid="11,0,5,41"/>
+    <image id="mjh75" name="paifan" path="/Image/" size="204,356"/>
+    <image id="mjh79" name="jiuguanbg" path="/Image/" size="1920,1079"/>
+    <image id="t3ed7i" name="kabei_di" path="/Image/" size="209,163"/>
+    <movieclip id="ywcp73" name="MovieClip_Crad" path="/MovieClip/" size="200,325"/>
+    <component id="mjh7a" name="TavernMain" path="/" size="1920,1080" exported="true"/>
+    <component id="uzz47s" name="Reference" path="/" size="400,400" exported="true"/>
+    <image id="gce77n" name="wujiang1" path="/Component/Large/" size="200,296" exported="true"/>
+    <image id="gce77r" name="img_hero_z1" path="/Component/soliderType/" size="50,50" exported="true"/>
+    <atlas id="atlas_mjh79" size="2048,2048" file="atlas_mjh79.png"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <atlas id="atlas1" size="1024,1024" file="atlas1.png"/>
+    <atlas id="atlas100" size="512,512" file="atlas1_1.png"/>
+  </resources>
+</packageDescription>urr57k.xml|444|<component size="400,400">
+  <displayList>
+    <image id="n1_urr5" name="n1" src="g4na7j" xy="33,33" pivot="0.51,0.51">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <transition name="bagua" autoPlay="true" autoPlayRepeat="0">
+    <item time="0" type="Rotation" target="n1_urr5" tween="true" startValue="0" endValue="360" duration="120" ease="Linear" repeat="-1"/>
+  </transition>
+</component>uzz47s.xml|159|<component size="400,400">
+  <displayList>
+    <image id="n0_uzz4" name="n0" src="yqyk2" pkg="4auusrtu" xy="28,44" alpha="0.99"/>
+  </displayList>
+</component>ywcp73.xml|882|<movieclip interval="83" frameCount="24">
+  <frames>
+    <frame rect="100,162,0,0"/>
+    <frame rect="22,28,161,269"/>
+    <frame rect="21,22,164,280"/>
+    <frame rect="16,13,173,297"/>
+    <frame rect="16,13,173,297"/>
+    <frame rect="15,14,173,296"/>
+    <frame rect="12,15,174,293"/>
+    <frame rect="10,17,177,290"/>
+    <frame rect="9,18,178,287"/>
+    <frame rect="10,75,177,176"/>
+    <frame rect="100,162,0,0"/>
+    <frame rect="100,162,0,0"/>
+    <frame rect="91,26,18,273"/>
+    <frame rect="64,26,72,273"/>
+    <frame rect="35,26,131,273"/>
+    <frame rect="17,26,166,273"/>
+    <frame rect="17,26,167,273"/>
+    <frame rect="17,26,167,273"/>
+    <frame rect="17,26,167,273"/>
+    <frame rect="18,26,165,273"/>
+    <frame rect="18,26,165,273"/>
+    <frame rect="19,27,164,271"/>
+    <frame rect="20,28,161,269"/>
+    <frame rect="100,162,0,0"/>
+  </frames>
+</movieclip>

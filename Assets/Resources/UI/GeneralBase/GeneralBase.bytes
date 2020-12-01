@@ -1,0 +1,396 @@
+nbqfr.xml|461|<component size="29,29">
+  <controller name="State_C" pages="0,Full,1,Half,2,Empty" selected="0"/>
+  <displayList>
+    <loader id="n3_g8cu" name="Loader_Icon" xy="0,0" size="29,29" url="ui://rqtv1qewnbqfs" autoSize="true">
+      <gearIcon controller="State_C" pages="1,2" values="ui://rqtv1qewnbqft|ui://rqtv1qewnbqfu" default="ui://rqtv1qewnbqfs"/>
+    </loader>
+  </displayList>
+  <relation target="n3_g8cu" sidePair="width-width,height-height"/>
+</component>nbqfv.xml|3400|<component size="180,180" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <controller name="State_C" pages="0,有装备,1,有装备可装,2,没装备空的,4,灰底" selected="0"/>
+  <controller name="Quality_C" pages="0,白,1,绿,2,蓝,3,紫,4,橙,5,红" selected="0"/>
+  <displayList>
+    <image id="n7" name="n7" src="gce7ozjt" pkg="s5cy5qnp" xy="0,0" size="180,180">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n28_ijyo" name="n28" src="blgr1y" pkg="s5cy5qnp" xy="8,10" size="161,161">
+      <gearDisplay controller="State_C" pages="1,2,4"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n3" name="Loader_Quality" xy="9,9" size="161,161" url="ui://s5cy5qnpblgr22" fill="scale">
+      <gearIcon controller="Quality_C" pages="0,1,3,4,5" values="ui://s5cy5qnpblgr22|ui://s5cy5qnpblgr23|ui://s5cy5qnpblgr25|ui://s5cy5qnpblgr26|ui://s5cy5qnpblgr28" default="ui://s5cy5qnpblgr24"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n4" name="icon" xy="9,9" size="160,160" url="ui://48zstrjkyqyk13" fill="scale">
+      <gearDisplay controller="State_C" pages="0,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <graph id="n8" name="n8" xy="9,126" size="161,44" alpha="0.6" type="rect" lineSize="0" fillColor="#ff000000" corner="4">
+      <gearDisplay controller="State_C" pages="0,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n22" name="title" xy="11,11" size="47,50" font="微软雅黑" fontSize="36" color="#ffffff" text="88">
+      <gearDisplay controller="State_C" pages="0,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <image id="n24" name="img_jia" src="ucsk2i" pkg="s5cy5qnp" xy="47,40" size="83,82">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n25" name="Text_BodyPart" xy="55,127" size="65,43" font="微软雅黑" fontSize="30" color="#99ff00" text="文字">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n26" name="Text_BodyPart_None" xy="59,65" size="65,43" font="微软雅黑" fontSize="30" color="#99ff00" text="文字">
+      <gearDisplay controller="State_C" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <list id="n27" name="List_EquipStar" xy="10,131" size="157,33" layout="row" selectionMode="none" defaultItem="ui://rqtv1qewnbqfr" autoItemSize="false" align="center">
+      <gearDisplay controller="State_C" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <graph id="n29_exkv" name="tran_guang" xy="49,50" pivot="0.5,0.5" size="81,81" scale="2,2" alpha="0" type="rect" lineColor="#ffffffff" corner="1">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+  </displayList>
+  <Button mode="Check"/>
+  <transition name="Effect_C">
+    <item time="0" type="Alpha" target="n29_exkv" tween="true" startValue="0" endValue="0.8" duration="12"/>
+    <item time="12" type="Alpha" target="n29_exkv" tween="true" startValue="0.8" endValue="0" duration="18"/>
+  </transition>
+</component>nxx2d.xml|3445|<component size="622,271" extention="Button">
+  <controller name="General_C" pages="0,有武将,1,没武将加号" selected="0"/>
+  <controller name=" Type_C" pages="0,有星号,1,没星号" selected="0"/>
+  <controller name="Quality_C" pages="0,白,1,绿,2,蓝,3,紫,4,橙,5,红" selected="0"/>
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <image id="n48_nbqf" name="n48" src="nbqfq" xy="21,11" size="601,275">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <graph id="n26" name="gra_di" xy="22,23" size="564,192" alpha="0.8" type="rect" lineSize="0" fillColor="#ff414e6a">
+      <gearDisplay controller="General_C" pages="1,2"/>
+    </graph>
+    <image id="n27" name="img_jia" src="qyn5ozy6" xy="249,70" pkg="s5cy5qnp">
+      <gearDisplay controller="General_C" pages="1"/>
+    </image>
+    <image id="n2" name="img_di" src="nxx2f" xy="39,35" size="567,213" group="n42_pdjy">
+      <gearDisplay controller="General_C" pages="0"/>
+    </image>
+    <image id="n40_ujpi" name="img_xian" src="nxx2g" xy="251,50" group="n42_pdjy" color="#666666">
+      <gearDisplay controller="General_C" pages="0"/>
+    </image>
+    <text id="n8" name="title" xy="267,49" size="231,43" group="n42_pdjy" font="微软雅黑" fontSize="30" color="#012639" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="武将名字七个字">
+      <gearDisplay controller="General_C" pages="0"/>
+      <relation target="n2" sidePair="left-left,top-top"/>
+    </text>
+    <image id="n36_ujpi" name="Image_HeroBag_BG_Job" src="nxx2h" xy="495,62" size="74,71" group="n42_pdjy">
+      <gearDisplay controller="General_C" pages="0"/>
+    </image>
+    <component id="n7" name="Label_SoldierType" src="g3jhozvv" pkg="s5cy5qnp" xy="509,71" group="n42_pdjy">
+      <gearDisplay controller="General_C" pages="0"/>
+    </component>
+    <text id="n9" name="Text_Level" xy="263,84" size="219,40" group="n42_pdjy" font="微软雅黑" fontSize="28" color="#015b88" ubb="true" autoSize="height" singleLine="true" text="50级">
+      <gearDisplay controller="General_C" pages="0"/>
+    </text>
+    <list id="n41_ntr0" name="List_EquipIcon" xy="234,147" size="360,77" group="n42_pdjy" layout="row" colGap="2" defaultItem="ui://rqtv1qewnxx2k">
+      <gearDisplay controller="General_C" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n38_ujpi" name="List_RelifeStar" xy="379,11" size="174,32" group="n42_pdjy" visible="false" layout="row" defaultItem="ui://rqtv1qewnxx2o" align="right">
+      <gearDisplay controller=" Type_C" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n42_pdjy" name="Group_Info" xy="39,11" size="567,237" advanced="true">
+      <gearDisplay controller="General_C" pages="0"/>
+    </group>
+    <loader id="n47_jr5m" name="Loader_Quality" xy="0,24" size="192,143" group="n46_jr5m" scale="1.4,1.4" url="ui://rqtv1qewnxx21">
+      <gearIcon controller="Quality_C" pages="0,1,2,3,4,5" values="ui://rqtv1qewnxx21|ui://rqtv1qewnxx22|ui://rqtv1qewnxx23|ui://rqtv1qewnxx24|ui://rqtv1qewnxx25|ui://rqtv1qewnxx26"/>
+    </loader>
+    <loader id="n44_jr5m" name="icon" xy="51,24" size="143,145" group="n46_jr5m" url="ui://s5cy5qnpdp8uoz5c" fill="scaleFree"/>
+    <group id="n46_jr5m" name="Group_GeneralIcon" xy="0,24" size="268,200" advanced="true">
+      <gearDisplay controller="General_C" pages="0"/>
+    </group>
+  </displayList>
+  <Button mode="Radio"/>
+</component>nxx2k.xml|1019|<component size="70,70">
+  <controller name="State_C" pages="0,有装备,1,有装备没穿,2,无装备" selected="0"/>
+  <controller name="Quality_C" pages="0,白,1,绿,2,蓝,3,紫,4,橙,5,红" selected="0"/>
+  <displayList>
+    <loader id="n28_wg4m" name="Loader_Quality" xy="0,0" size="70,70" url="ui://s5cy5qnpblgr22" fill="scale">
+      <gearIcon controller="Quality_C" pages="0,1,2,3,4,5" values="ui://s5cy5qnpblgr22|ui://s5cy5qnpblgr23|ui://s5cy5qnpblgr24|ui://s5cy5qnpblgr25|ui://s5cy5qnpblgr26|ui://s5cy5qnpblgr28"/>
+    </loader>
+    <image id="n24_ujpi" name="Image_BG" src="blgr1y" pkg="s5cy5qnp" xy="0,0" size="70,70">
+      <gearDisplay controller="State_C" pages="2"/>
+    </image>
+    <loader id="n22" name="Loader_Icon" xy="0,0" size="70,70" url="ui://s5cy5qnpp26oozcs" fill="scaleFree">
+      <gearDisplay controller="State_C" pages="0"/>
+    </loader>
+    <image id="n26_wg4m" name="Image_Button_Add" src="ucsk2i" pkg="s5cy5qnp" xy="10,10">
+      <gearDisplay controller="State_C" pages="1"/>
+    </image>
+  </displayList>
+</component>nxx2o.xml|122|<component size="34,24">
+  <displayList>
+    <image id="n0" name="n0" src="nxx2p" xy="0,0"/>
+  </displayList>
+</component>oz2o1e.xml|4399|<component size="484,779">
+  <controller name="Team_C" pages="0,未处于队伍,1,处于队伍中" selected="0"/>
+  <controller name="Expedition_C" pages="0,未出征,1,出征中" selected="0"/>
+  <controller name="Quality_C" pages="0,白,1,绿,2,蓝,3,紫,4,橙,5,红" selected="0"/>
+  <controller name="ReLife_C" pages="0,未转生过,1,N转" selected="0"/>
+  <controller name="BG_C" pages="0,有底板,1,无底板" selected="0"/>
+  <controller name="Soul_C" pages="0,默认,1,将魂附身" selected="0"/>
+  <controller name="Develop_C" pages="0,不显示成长,1,显示成长,2,不显示成长上限" selected="0"/>
+  <controller name="Level_C" pages="0,显示等级,1,不显示等级" selected="0"/>
+  <controller name="SoldierType_C" pages="1,无职业,0,有职业" selected="0"/>
+  <displayList>
+    <image id="n15_g75h" name="Image_BG" src="oz2o1f" xy="0,0" size="484,779" group="n31_g75h">
+      <gearDisplay controller="BG_C" pages="0"/>
+    </image>
+    <component id="n16_g75h" name="Label_GeneralIcon" src="oz2o1g" xy="41,20" size="399,548" group="n31_g75h"/>
+    <image id="n17_g75h" name="Quality_Icon" src="nxx20" xy="26,23" size="429,482" group="n31_g75h" color="#dbdbdb">
+      <gearColor controller="Quality_C" pages="0,1,2,3,4,5" values="#dbdbdb|#aff743|#2bcffc|#ff73f1|#ff9a4f|#ff0000"/>
+    </image>
+    <text id="n18_g75h" name="Text_Name" xy="95,449" size="292,48" group="n31_g75h" fontSize="32" color="#faf2c8" align="center" autoSize="height" text="武将名字七个字&#xA;"/>
+    <image id="n28_g75h" name="Image_Tag_BG" src="nfhooznt" pkg="s5cy5qnp" xy="80,556" size="315,58" group="n31_g75h">
+      <gearDisplay controller="Level_C" pages="0"/>
+    </image>
+    <text id="n29_g75h" name="Text_Level" xy="161,563" size="181,46" group="n31_g75h" font="Noto Sans S Chinese Regular" fontSize="30" color="#faeb99" autoSize="shrink" text="等级：22">
+      <gearDisplay controller="Level_C" pages="0"/>
+      <relation target="n28_g75h" sidePair="center-center,middle-middle"/>
+    </text>
+    <group id="n31_g75h" name="Group_Base" xy="0,0" size="484,779" advanced="true"/>
+    <image id="n20_g75h" name="Image_Decorate01" src="l3hloznx" pkg="s5cy5qnp" xy="92,657" size="312,20" group="n22_g75h"/>
+    <text id="n21_g75h" name="Text_Develop" xy="124,627" size="172,44" group="n22_g75h" fontSize="29" color="#ffbaad" text="成长：22222"/>
+    <group id="n22_g75h" name="Group_Develop" xy="92,626" size="312,50" advanced="true">
+      <gearDisplay controller="Develop_C" pages="1,2"/>
+      <relation target="n31_g75h" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n23_g75h" name="Image_Decorate02" src="l3hloznx" pkg="s5cy5qnp" xy="85,721" size="312,20" group="n25_g75h"/>
+    <text id="n24_g75h" name="Text_DevelopLimit" xy="123,699" size="230,44" group="n25_g75h" fontSize="29" color="#ffbaad" text="成长上限：22222"/>
+    <group id="n25_g75h" name="Group_DevelopLimit" xy="85,699" size="312,44" advanced="true">
+      <gearDisplay controller="Develop_C" pages="1"/>
+      <relation target="n22_g75h" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n11_g8cu" name="Label_Expedition" src="pui2oz41" pkg="s5cy5qnp" xy="27,-60" size="240,99">
+      <gearDisplay controller="Expedition_C" pages="1"/>
+      <Label title="出征中" icon="ui://s5cy5qnpcwf2e"/>
+    </component>
+    <component id="n10_g8cu" name="Label_Team" src="no0zozhv" pkg="s5cy5qnp" xy="22,28" size="31,69">
+      <gearDisplay controller="Team_C" pages="1"/>
+      <Label title="1" titleFontSize="24"/>
+    </component>
+    <loader id="n13_g75h" name="Image_ReLifeLevel_BG" xy="391,14" size="76,76" group="n32_g75h" url="ui://s5cy5qnpl3hlozny" fill="scale">
+      <gearDisplay controller="ReLife_C" pages="1"/>
+    </loader>
+    <text id="n14_g75h" name="Text_ReLifeLevel" xy="397,24" size="57,60" group="n32_g75h" fontSize="25" color="#ffe7b7" align="center" vAlign="middle" autoSize="none" singleLine="true" text="一转">
+      <gearDisplay controller="ReLife_C" pages="1"/>
+    </text>
+    <group id="n32_g75h" name="Group_ReLife" xy="391,14" size="76,76" advanced="true"/>
+    <component id="n33_g75h" name="Button_Soul" src="gr0bozdl" pkg="s5cy5qnp" xy="152,671">
+      <gearDisplay controller="Soul_C" pages="1"/>
+      <relation target="n31_g75h" sidePair="center-center,top-bottom"/>
+      <Button title="将魂附身"/>
+    </component>
+    <component id="n3" name="Label_SoldierType" src="g3jhozvv" pkg="s5cy5qnp" xy="383,346">
+      <gearDisplay controller="SoldierType_C" pages="0"/>
+    </component>
+  </displayList>
+</component>oz2o1g.xml|494|<component size="273,376" extention="Label" mask="n1_nfho">
+  <displayList>
+    <loader id="n2_g75h" name="icon" xy="0,0" size="273,376" url="ui://4auusrtuyqyk6" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <graph id="n1_nfho" name="gra_zhezhao" xy="1,12" size="271,271" type="eclipse" lineSize="0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+  </displayList>
+</component>oz2o1t.xml|1983|<component size="130,130">
+  <controller name="Quality_C" pages="6,白,1,绿,2,蓝,3,紫,4,橙,5,红" selected="0"/>
+  <controller name="Level_C" pages="0,有等级信息,1,无等级信息" selected="0"/>
+  <controller name="SoldierType_C" pages="0,有职业（士兵）,1,无职业（君主）" selected="0"/>
+  <controller name="Name_C" pages="0,无名字,1,有名字" selected="0"/>
+  <displayList>
+    <graph id="n0" name="Graph_Quality" xy="0,0" size="130,130" type="rect" lineSize="0">
+      <gearColor controller="Quality_C" pages="6,2,3,4,5" values="#ffffff|#2374cf|#8e25d1|#ff6600|#ff0000" default="#60cb25"/>
+    </graph>
+    <loader id="n1" name="Loader_Icon" xy="5,5" size="120,120" url="ui://43m475k2yqyk6" fill="scaleFree">
+      <relation target="n0" sidePair="left-left,top-top"/>
+    </loader>
+    <graph id="n2" name="Graph_LevelBG" xy="5,4" size="30,30" alpha="0.6" type="rect" lineSize="0" fillColor="#ff000000">
+      <gearDisplay controller="Level_C" pages="0"/>
+      <relation target="n1" sidePair="left-left,top-top"/>
+    </graph>
+    <text id="n3" name="Text_Level" xy="4,4" size="33,35" font="微软雅黑" fontSize="24" color="#ffffff" align="center" vAlign="middle" text="55">
+      <gearDisplay controller="Level_C" pages="0"/>
+      <relation target="n2" sidePair="left-left,top-top"/>
+    </text>
+    <image id="n6_o9pk" name="Image_TitleBG" src="no0zozht" xy="-4,129" size="140,31" color="#4d2e1d" pkg="s5cy5qnp">
+      <gearDisplay controller="Name_C" pages="1"/>
+    </image>
+    <text id="n7_o9pk" name="Text_Name" xy="-3,128" size="137,34" font="Noto Sans S Chinese Regular" fontSize="22" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="武将名字名字">
+      <gearDisplay controller="Name_C" pages="1"/>
+    </text>
+    <component id="n5" name="Label_GeneralType" src="g3jhozvv" pkg="s5cy5qnp" xy="95,81" size="50,50">
+      <gearDisplay controller="SoldierType_C" pages="0"/>
+      <relation target="n1" sidePair="left-left,top-top"/>
+    </component>
+  </displayList>
+</component>oz2o1x.xml|563|<component size="223,240" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <component id="n10_o9pk" name="Component_GeneralIcon" src="oz2o1t" xy="8,32" size="129,130" scale="1.3,1.3" rotation="-9" controller="Quality_C,6,Level_C,0,SoldierType_C,0,Name_C,1"/>
+    <image id="n11_jr5m" name="Image_Light" src="nfhoozng" pkg="s5cy5qnp" xy="-12,16" size="158,158" scale="1.3,1.3" rotation="-9">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>oz2o1z.xml|378|<component size="296,577">
+  <displayList>
+    <loader id="n11_t3ed" name="n11" xy="1,398" size="295,179" url="ui://rqtv1qewoz2o20" fill="scaleFree"/>
+    <component id="n13_o9pk" name="Component_General" src="oz2o1e" pkg="rqtv1qew" xy="30,0" scale="0.5,0.5" controller="Team_C,0,Expedition_C,0,Quality_C,0,ReLife_C,0,BG_C,0,Soul_C,0,Develop_C,0"/>
+  </displayList>
+</component>oz2o21.xml|3770|<component size="559,770" opaque="false">
+  <controller name="Quality_C" pages="0,良将,1,骁将,2,名将,3,神将" selected="0"/>
+  <controller name="GeneralSoul" pages="0,带武将名字,1,不带武将名字" selected="0"/>
+  <controller name="OnlyCard_C" pages="0,,1,只有卡" selected="0"/>
+  <controller name="Substitued_C" pages="0,,1,附身按钮" selected="0"/>
+  <displayList>
+    <loader id="n7" name="Loader_Icon" xy="61,36" size="484,719" url="ui://4auusrtuyqyk6" fill="scale">
+      <relation target="n124_urdr" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n124_urdr" name="Image_GeneralSoul_Quality" src="nxx2b" xy="51,11" size="508,758" color="#b6fc6a" pkg="rqtv1qew">
+      <gearDisplay controller="OnlyCard_C" pages="0"/>
+      <gearColor controller="Quality_C" pages="0,1,2,3" values="#b6fc6a|#66e6ff|#ff7dff|#ff9a4f"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n117_l2ck" name="Label_GeneralSoul_QualityIcon" src="oz2o22" xy="-3,15">
+      <gearDisplay controller="OnlyCard_C" pages="0"/>
+      <gearIcon controller="Quality_C" pages="0,1,2,3" values="ui://rqtv1qewnxx29|ui://rqtv1qewnxx28|ui://rqtv1qewnxx27|ui://rqtv1qewnxx2a"/>
+      <relation target="n124_urdr" sidePair="left-left,top-top"/>
+      <Label icon="ui://rqtv1qewnxx29"/>
+    </component>
+    <text id="n111_l2ck" name="Text_GeneralSoul_Quality" xy="162,16" size="124,54" font="Noto Sans S Chinese Regular" fontSize="36" color="#bffb6e" autoSize="height" text="良将">
+      <gearDisplay controller="OnlyCard_C" pages="0"/>
+      <gearColor controller="Quality_C" pages="1,2,3" values="#a8f8ff,#000000|#ff9bd8,#000000|#ffd385,#000000" default="#bffb6e,#000000"/>
+      <gearText controller="Quality_C" pages="0,1,2,3" values="良将|骁将|名将|神将&#xA;"/>
+      <relation target="n124_urdr" sidePair="center-center,top-top"/>
+    </text>
+    <graph id="n112_l2ck" name="Graph_Round" xy="248,34" size="13,13" type="eclipse" lineSize="0" fillColor="#ffbffb6e">
+      <gearDisplay controller="OnlyCard_C" pages="0"/>
+      <gearColor controller="Quality_C" pages="1,2,3" values="#a8f8ff|#ff9bd8|#ffd385" default="#bffb6e"/>
+      <relation target="n111_l2ck" sidePair="left-right,middle-middle"/>
+    </graph>
+    <text id="n116_l2ck" name="Text_SoulName" xy="288,16" size="133,54" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffece6" vAlign="middle" leading="0" ubb="true" autoSize="shrink" singleLine="true" text="将魂名字">
+      <gearDisplay controller="OnlyCard_C" pages="0"/>
+      <relation target="n111_l2ck" sidePair="left-right,middle-middle"/>
+    </text>
+    <image id="n125_g75h" name="Image_Accessory" src="no0zozht" xy="38,693" size="534,58" alpha="0.68" color="#140d0d" pkg="s5cy5qnp">
+      <gearDisplay controller="GeneralSoul" pages="0"/>
+      <relation target="n124_urdr" sidePair="width-width,bottom-bottom"/>
+    </image>
+    <text id="n126_g75h" name="Text_GeneralName" xy="108,700" size="243,45" font="微软雅黑" fontSize="32" color="#fce6de" vAlign="middle" leading="0" ubb="true" autoSize="shrink" singleLine="true" text="武将名字六个个">
+      <gearDisplay controller="GeneralSoul" pages="0"/>
+      <relation target="n125_g75h" sidePair="left-left,middle-middle"/>
+    </text>
+    <text id="n127_g75h" name="Text_Develop" xy="353,700" size="151,45" font="微软雅黑" fontSize="32" color="#9ed244" ubb="true" autoSize="height" singleLine="true" text="成长:2222">
+      <gearDisplay controller="GeneralSoul" pages="0"/>
+      <relation target="n125_g75h" sidePair="right-right,bottom-bottom"/>
+    </text>
+    <component id="n129_ce3p" name="Button_Soul" src="knyu29" xy="218,778" controller="Time_C,0,Type_C,0" pkg="s5cy5qnp">
+      <gearDisplay controller="Substitued_C" pages="1"/>
+      <Button title="附身"/>
+    </component>
+  </displayList>
+</component>oz2o22.xml|301|<component size="117,117" extention="Label">
+  <displayList>
+    <loader id="n0_l2ck" name="icon" xy="0,0" size="117,117" url="ui://rqtv1qewnxx29" fill="scale">
+      <gearIcon controller=""/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+</component>oz2o26.xml|978|<component size="275,273" extention="Button">
+  <controller name="Quality_C" pages="0,,1,,2,,3," selected="0"/>
+  <displayList>
+    <loader id="n1_w7t3" name="icon" xy="22,31" size="230,231" url="ui://43m475k2yqyk6" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n0_l2ck" name="Image_GeneralSoul_Quality_Small" src="nxx2c" xy="0,0" size="275,273" color="#b6fc6a" pkg="rqtv1qew">
+      <gearColor controller="Quality_C" pages="0,1,2,3" values="#b6fc6a|#66e6ff|#ff7dff|#ffb64f"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n2_w7t3" name="Label_GeneralSoul_QualityIcon" src="oz2o22" xy="-14,-15" pkg="rqtv1qew">
+      <gearIcon controller="Quality_C" pages="0,1,2,3" values="ui://rqtv1qewnxx29|ui://rqtv1qewnxx28|ui://rqtv1qewnxx27|ui://rqtv1qewnxx2a"/>
+      <Label icon="ui://rqtv1qewnxx29"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+</component>oz2ow.xml|825|<component size="115,47" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="ujpiozgm" pkg="s5cy5qnp" xy="0,0" size="115,47">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2" name="title" xy="37,4" size="80,41" font="微软雅黑" fontSize="28" color="#ffd5d2" align="center" vAlign="middle" autoSize="none" singleLine="true" text="解雇">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n3" name="icon" xy="13,11" size="23,20" url="ui://s5cy5qnpujpiozgn" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>package.xml|3856|<packageDescription id="rqtv1qew" name="GeneralBase">
+  <resources>
+    <image id="nbqfq" name="Image_Light" path="/Image/" size="130,179" scale="9grid" scale9grid="62,0,3,179"/>
+    <image id="nbqfs" name="Image_Sign_Star_Full" path="/Image/" size="29,29"/>
+    <image id="nbqft" name="Image_Sign_Star_Half" path="/Image/" size="29,29"/>
+    <image id="nbqfu" name="Image_Sign_Star_Empty" path="/Image/" size="29,29"/>
+    <image id="nxx20" name="Image_General_Quality" path="/ImageQuality/" size="280,315"/>
+    <image id="nxx21" name="Image_GeneralBag_Quality0" path="/ImageQuality/" size="177,147"/>
+    <image id="nxx22" name="Image_GeneralBag_Quality1" path="/ImageQuality/" size="177,147"/>
+    <image id="nxx23" name="Image_GeneralBag_Quality2" path="/ImageQuality/" size="177,147"/>
+    <image id="nxx24" name="Image_GeneralBag_Quality3" path="/ImageQuality/" size="177,147"/>
+    <image id="nxx25" name="Image_GeneralBag_Quality4" path="/ImageQuality/" size="177,147"/>
+    <image id="nxx26" name="Image_GeneralBag_Quality5" path="/ImageQuality/" size="177,147"/>
+    <image id="nxx27" name="Image_GeneralSoulIcon_A" path="/ImageQuality/" size="89,88"/>
+    <image id="nxx28" name="Image_GeneralSoulIcon_B" path="/ImageQuality/" size="84,87"/>
+    <image id="nxx29" name="Image_GeneralSoulIcon_C" path="/ImageQuality/" size="84,84"/>
+    <image id="nxx2a" name="Image_GeneralSoulIcon_S" path="/ImageQuality/" size="89,88"/>
+    <image id="nxx2b" name="Image_GeneralSoul_Quality" path="/ImageQuality/" size="541,747" scale9grid="265,78,18,588"/>
+    <image id="nxx2c" name="Image_GeneralSoul_Quality_Small" path="/ImageQuality/" size="186,158" scale="9grid" scale9grid="90,40,1,72"/>
+    <image id="nxx2f" name="Image_HeroBag_BG" path="/Image/" size="103,141" scale="9grid" scale9grid="46,0,7,141"/>
+    <image id="nxx2g" name="Image_BG_Decorate14" path="/Image/" size="14,68"/>
+    <image id="nxx2h" name="Image_HeroBag_BG_Job" path="/Image/" size="52,50"/>
+    <image id="nxx2p" name="Image_Sign_Star_Relife" path="/Image/" size="34,24"/>
+    <image id="oz2o1f" name="Image_BG_Card" path="/Image/" size="340,203" scale="9grid" scale9grid="28,28,284,137"/>
+    <image id="oz2o20" name="Image_GeneralTavernCardShadow" path="/Image/" size="209,127"/>
+    <component id="nbqfr" name="Component_Star_Equip" path="/Component/" size="29,29" exported="true"/>
+    <component id="nbqfv" name="Button_General_Equip" path="/Button/" size="180,180" exported="true"/>
+    <component id="nxx2d" name="Button_General" path="/Button/" size="622,271" exported="true"/>
+    <component id="nxx2k" name="Component_EquipIcon" path="/Component/" size="70,70" exported="true"/>
+    <component id="nxx2o" name="Component_Star_GeneralRelife" path="/Component/" size="34,24" exported="true"/>
+    <component id="oz2o1e" name="Component_General" path="/Component/" size="484,779" exported="true"/>
+    <component id="oz2o1g" name="Label_GeneralIcon_CutOut" path="/Label/" size="273,376" exported="true"/>
+    <component id="oz2o1t" name="Component_GeneralIcon" path="/Component/" size="130,130" exported="true"/>
+    <component id="oz2o1x" name="Component_GeneralIcon_Slope" path="/Component/" size="223,240" exported="true"/>
+    <component id="oz2o1z" name="Component_GeneralTavernCard" path="/Component/" size="296,577" exported="true"/>
+    <component id="oz2o21" name="Component_GeneralSoul" path="/Component/" size="559,770" exported="true"/>
+    <component id="oz2o22" name="Label_GeneralSoul_QualityIcon" path="/Label/" size="117,117" exported="true"/>
+    <component id="oz2o26" name="Component_GeneralSoul_Small" path="/Component/" size="275,273" exported="true"/>
+    <component id="oz2ow" name="Button_General_Fire" path="/Button/" size="115,47" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>

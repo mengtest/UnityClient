@@ -1,0 +1,19 @@
+package.xml|1368|<packageDescription id="4trbzbck" name="ItemIcon">
+  <resources>
+    <image id="yqyk0" name="icon" path="/" size="160,160" exported="true"/>
+    <image id="yqyk1" name="item_gaojiqiancheng" path="/" size="160,160" exported="true"/>
+    <image id="yqyk2" name="item_jiasujianzu" path="/" size="112,112" exported="true"/>
+    <image id="yqyk3" name="item_jiasuyanjiu" path="/" size="112,112" exported="true"/>
+    <image id="yqyk4" name="item_jingyan" path="/" size="130,130" exported="true"/>
+    <image id="yqyk5" name="item_jingyanw" path="/" size="130,130" exported="true"/>
+    <image id="yqyk6" name="item_nanhaiqijing" path="/" size="112,112" exported="true"/>
+    <image id="yqyk7" name="item_qianghua1" path="/" size="112,112" exported="true"/>
+    <image id="yqyk8" name="item_qianghua2" path="/" size="112,112" exported="true"/>
+    <image id="yqyk9" name="item_qianghua3" path="/" size="112,112" exported="true"/>
+    <image id="yqyka" name="item_qianghua4" path="/" size="112,112" exported="true"/>
+    <image id="yqykb" name="item_qixingsha" path="/" size="112,112" exported="true"/>
+    <image id="yqykc" name="item_suijiqiancheng" path="/" size="160,160" exported="true"/>
+    <image id="yqykd" name="item_zb_suiji" path="/" size="130,130" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>

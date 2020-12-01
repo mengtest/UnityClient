@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1649182245906118}
+  m_IsPrefabParent: 1
+--- !u!1 &1649182245906118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4199158786046448}
+  - component: {fileID: 33955404742789930}
+  - component: {fileID: 23210970445113746}
+  - component: {fileID: 114797505861204602}
+  - component: {fileID: 64635172918207636}
+  - component: {fileID: 114087156250431434}
+  m_Layer: 17
+  m_Name: WorldMap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967294
+  m_IsActive: 1
+--- !u!4 &4199158786046448
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649182245906118}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23210970445113746
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649182245906118}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ed8789b0c92430d46bef5d72643ac90e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 0.1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33955404742789930
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649182245906118}
+  m_Mesh: {fileID: 4300004, guid: 5f5f4850e801da6439b081258380f213, type: 3}
+--- !u!64 &64635172918207636
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649182245906118}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: 5f5f4850e801da6439b081258380f213, type: 3}
+--- !u!114 &114087156250431434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649182245906118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3ce2834a4364acdb68d36d44618394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 0
+--- !u!114 &114797505861204602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649182245906118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 075db0d82bc83f742a8bc3a3c3fb7f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bControlUsingLua: 0
+  m_bCurve: 0
+  m_fCurveRadius: 0
+  m_fCurveDegree: 0
+  m_fGroundSize: 0
+  m_vHeightMinMax: {x: 0, y: 12}
+  m_vCameraDir: {x: 0, y: 1, z: 0}
+  m_vCameraPos: {x: 0, y: 0, z: 0}
+  m_vPlannerLeft: {x: -0.7071068, y: 0}
+  m_vPlannerUp: {x: 0, y: -0.7071069}
+  m_pArrawPrefab: {fileID: 1881072188322926, guid: ad472e453e028ac45ac803a7ffc622fb,
+    type: 2}
+  m_pCityPrefab: {fileID: 1238224430636872, guid: d03bdbaa9b5e93349b718408b133a71a,
+    type: 2}
+  m_pSawmillPrefab: {fileID: 1553716345762346, guid: 5d6001a2deca38c498222145c0c5263e,
+    type: 2}
+  m_pGoldMinePrefab: {fileID: 1918538281746620, guid: e2ba66378e6eba443978cd2680a11865,
+    type: 2}
+  m_pCroplandPrefab: {fileID: 1799534147438432, guid: 25122bce0e516ba4fade88343cf5968d,
+    type: 2}
+  m_pStonePitPrefab: {fileID: 1082928095924838, guid: 3c0deb87aaa0ccc4f9d1004f72f954f8,
+    type: 2}
+  m_pCampsitePrefab: {fileID: 1712646738257900, guid: 1158a9caa2237b54cb0a5bbfecaa3c12,
+    type: 2}
+  m_iGridHeight: 104
+  m_iDistanceFromEdge: 10
+  m_iSpawnCityCount: 0
+  m_iSpawnTreeCount: 0
+  m_fFogDistance: 100
+  m_cPlayerCityProjector: {r: 0, g: 1, b: 0, a: 1}
+  m_cPlayerUnionProjector: {r: 0, g: 0, b: 1, a: 1}
+  m_cNoUnionProjector: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  m_cEnemyUnionProjector: {r: 1, g: 0, b: 0, a: 1}
+  m_cPenetration: {r: 0.83137256, g: 0.39215687, b: 0.39215687, a: 1}
+  m_cCanPutCity: {r: 1, g: 1, b: 1, a: 0.728}
+  m_cCanNotPutCity: {r: 1, g: 0, b: 0, a: 1}
+  m_cCanPutCityGI: {r: 0, g: 1, b: 0, a: 0.5}
+  m_cCanNotPutCityGI: {r: 0.3602941, g: 0.21458693, b: 0.21458693, a: 0.653}
+  m_v4PutCityShaderParam: {x: 200, y: 0.5, z: 0, w: 0}

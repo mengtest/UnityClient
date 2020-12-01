@@ -1,0 +1,135 @@
+dp6h9.xml|2971|<component size="1920,1080">
+  <displayList>
+    <component id="n44_bove" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="仓库详情"/>
+    </component>
+    <image id="n4" name="img_lansedi" src="cwf2k" pkg="s5cy5qnp" xy="26,152" size="904,870">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </image>
+    <text id="n6" name="txt_cangkudengji" xy="55,180" size="149,50" font="微软雅黑" fontSize="36" color="#ffffff" text="仓库等级">
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n7" name="Text_Level" xy="205,180" size="26,50" font="微软雅黑" fontSize="36" color="#ffffff" text="7">
+      <relation target="n6" sidePair="left-right,middle-middle"/>
+    </text>
+    <image id="n8" name="img_liangshi" src="dp6h7" xy="58,307">
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </image>
+    <image id="n9" name="img_tongbi" src="dp6h0" xy="58,445">
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </image>
+    <image id="n10" name="img_mutou" src="dp6h6" xy="58,585">
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </image>
+    <image id="n11" name="img_shitou" src="dp6h8" xy="58,724">
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </image>
+    <component id="n42_mjup" name="Component_Tips" src="mjupf" xy="26,943">
+      <relation target="n4" sidePair="left-left,bottom-bottom"/>
+    </component>
+    <text id="n13" name="txt_zongliangshangxian" xy="147,284" size="127,35" font="微软雅黑" fontSize="24" color="#ffffff" text="(总量/上限)">
+      <relation target="n4" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n19" name="img_baohuse" src="dp6h5" xy="648,178" size="69,34">
+      <relation target="n20" sidePair="right-left,top-top"/>
+    </image>
+    <text id="n20" name="txt_baohuliang" xy="722,177" size="95,43" font="微软雅黑" fontSize="30" color="#ffffff" text="保护量">
+      <relation target="n21" sidePair="right-left,top-top"/>
+    </text>
+    <text id="n21" name="Text_Protected" xy="815,177" size="95,43" font="微软雅黑" fontSize="30" color="#ffffff" align="right" text="23000">
+      <relation target="n4" sidePair="right-right,top-top"/>
+    </text>
+    <component id="n34" name="Component_Food" src="vhxte" xy="149,322">
+      <relation target="n4" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n35" name="Component_Coin" src="vhxte" xy="149,460">
+      <relation target="n4" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n36" name="Component_Wood" src="vhxte" xy="149,598">
+      <relation target="n4" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n37" name="Component_Stone" src="vhxte" xy="149,736">
+      <relation target="n4" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>dp6hb.xml|623|<component size="69,50" extention="ProgressBar">
+  <controller name="c1" pages="0,正常,1,保护,2,爆了" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="dp6h2" xy="0,0" size="69,50">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="bar" src="dp6h4" xy="0,0" size="69,50">
+      <gearDisplay controller="c1" pages="0,1,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+      <gearColor controller="c1" pages="1,2" values="#00ff00|#ff9900" default="#ffffff"/>
+    </image>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>mjupf.xml|512|<component size="903,80">
+  <displayList>
+    <image id="n12" name="n12" src="cwf2j" pkg="s5cy5qnp" xy="0,0" size="903,80" color="#429edb"/>
+    <image id="n22" name="n22" src="dp6h1" xy="35,10">
+      <relation target="n12" sidePair="left-left,middle-middle"/>
+    </image>
+    <text id="n23" name="n23" xy="105,23" size="665,43" font="微软雅黑" fontSize="30" color="#ffffff" text="超出储存上限的资源会按照一定的时间自动损耗！">
+      <relation target="n22" sidePair="left-right,middle-middle"/>
+    </text>
+  </displayList>
+</component>package.xml|1282|<packageDescription id="zeic2d4k" name="Warehouse">
+  <resources>
+    <component id="dp6hb" name="ProgressBar_Orange" path="/ProgressBar/" size="69,50"/>
+    <component id="mjupf" name="Component_Tips" path="/Component/" size="903,80"/>
+    <component id="vhxtc" name="ProgressBar_Green" path="/ProgressBar/" size="69,50"/>
+    <component id="vhxtd" name="ProgressBar_Red" path="/ProgressBar/" size="69,50"/>
+    <component id="vhxte" name="Component_ResInfo" path="/Component/" size="723,50"/>
+    <image id="dp6h0" name="tutongqian" path="/Image/" size="76,76"/>
+    <image id="dp6h1" name="tishibiaozhi" path="/Image/" size="50,43"/>
+    <image id="dp6h2" name="sebg" path="/Image/" size="69,50"/>
+    <image id="dp6h3" name="se3" path="/Image/" size="69,50"/>
+    <image id="dp6h4" name="se2" path="/Image/" size="69,50"/>
+    <image id="dp6h5" name="se1" path="/Image/" size="69,50"/>
+    <image id="dp6h6" name="tumucai" path="/Image/" size="76,76"/>
+    <image id="dp6h7" name="tuliangcao" path="/Image/" size="76,76"/>
+    <image id="dp6h8" name="tukuangshi" path="/Image/" size="76,76"/>
+    <component id="dp6h9" name="WarehouseMain" path="/" size="1920,1080" exported="true"/>
+    <atlas id="atlas0" size="256,256" file="atlas0.png"/>
+  </resources>
+</packageDescription>vhxtc.xml|379|<component size="69,50" extention="ProgressBar">
+  <displayList>
+    <graph id="n1" name="n1" xy="0,0" size="69,50" visible="false" type="rect" lineColor="#ffa0a0a0" fillColor="#fff0f0f0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n2" name="bar" src="dp6h5" xy="0,0" size="69,50"/>
+  </displayList>
+  <ProgressBar/>
+</component>vhxtd.xml|379|<component size="69,50" extention="ProgressBar">
+  <displayList>
+    <graph id="n1" name="n1" xy="0,0" size="69,50" visible="false" type="rect" lineColor="#ffa0a0a0" fillColor="#fff0f0f0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n2" name="bar" src="dp6h3" xy="0,0" size="69,50"/>
+  </displayList>
+  <ProgressBar/>
+</component>vhxte.xml|1073|<component size="723,50">
+  <displayList>
+    <component id="n28" name="ProgressBar_Current" src="dp6hb" xy="0,0" size="723,50">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <component id="n33" name="ProgressBar_Ex" src="vhxtd" xy="0,0" size="723,50">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n32" name="ProgressBar_Protect" src="vhxtc" xy="0,0" size="723,50">
+      <ProgressBar value="10" max="100"/>
+    </component>
+    <text id="n34" name="Text_Value" xy="2,8" size="95,43" font="微软雅黑" fontSize="30" color="#ffffff" text="20000">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </text>
+    <text id="n35" name="n35" xy="95,8" size="18,43" font="微软雅黑" fontSize="30" color="#ffffff" text="/">
+      <relation target="n34" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n36" name="Text_Max" xy="112,7" size="95,43" font="微软雅黑" fontSize="30" color="#ffffff" text="20000">
+      <relation target="n35" sidePair="left-right,middle-middle"/>
+    </text>
+  </displayList>
+</component>

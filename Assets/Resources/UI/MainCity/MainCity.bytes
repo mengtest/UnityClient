@@ -1,0 +1,679 @@
+8ptb5t.xml|1153|<component size="280,120" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <graph id="n1" name="icon1" xy="0,0" size="280,120" touchable="false" type="rect" lineSize="0" fillColor="#fff0f0f0">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n2" name="icon2" xy="0,0" size="280,120" touchable="false" type="rect" lineSize="0" fillColor="#fffafafa">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n3" name="icon3" xy="0,0" size="280,120" touchable="false" type="rect" lineSize="0" fillColor="#ffcccccc">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n4_o9wa" name="title" xy="19,18" size="242,84" fontSize="40" align="center" vAlign="middle" autoSize="shrink" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>8ptb5u.xml|633|<component size="1920,1080" overflow="hidden" opaque="false">
+  <controller name="toggle" pages="0,off,1,on" selected="0"/>
+  <displayList>
+    <component id="n2_ee0z" name="Button_Tools" src="8ptb5v" xy="1820,550">
+      <gearXY controller="toggle" pages="0,1" values="1820,550|869,550" tween="true"/>
+      <relation target="" sidePair="right-right,middle-middle"/>
+      <Button title="GM" controller="toggle" page="1"/>
+    </component>
+    <component id="n5_mpj5" name="Component_GM" src="8ptb5w" xy="1921,96">
+      <relation target="n2_ee0z" sidePair="left-right,middle-middle"/>
+    </component>
+  </displayList>
+</component>8ptb5v.xml|444|<component size="100,100" extention="Button">
+  <displayList>
+    <image id="n5_vrkt" name="Image_Background" src="rmqpozfs" pkg="s5cy5qnp" xy="0,0" size="100,100"/>
+    <text id="n4" name="Text_Field" xy="7,11" size="85,85" fontSize="36" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="GM">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button mode="Check"/>
+</component>8ptb5w.xml|790|<component size="950,875">
+  <displayList>
+    <graph id="n0_ee0z" name="Graph_Background" xy="0,0" size="950,875" type="rect" fillColor="#ff33ccff">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <list id="n1_ee0z" name="List_Main" xy="17,16" size="926,110" layout="row" overflow="scroll" scroll="horizontal" colGap="49" defaultItem="ui://hszc9xee8ptb5t" autoItemSize="false">
+      <relation target="" sidePair="width-width"/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n2_ee0z" name="List_Title" xy="20,177" size="918,672" overflow="scroll" lineGap="60">
+      <relation target="" sidePair="width-width,height-height"/>
+      <item url="ui://hszc9xee8ptb5x"/>
+      <item url="ui://hszc9xee8ptb5y"/>
+    </list>
+  </displayList>
+</component>8ptb5x.xml|1205|<component size="399,130" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <graph id="n1" name="Graph_Background" xy="0,0" size="399,130" touchable="false" type="rect" lineSize="0" fillColor="#fff0f0f0">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n2" name="Graph_Background2" xy="0,0" size="399,130" touchable="false" type="rect" lineSize="0" fillColor="#fffafafa">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n3" name="Graph_Background3" xy="0,0" size="399,130" touchable="false" type="rect" lineSize="0" fillColor="#ffcccccc">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n4" name="title" xy="0,0" size="399,130" fontSize="46" align="center" vAlign="middle" autoSize="shrink" singleLine="true" text="title">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>8ptb5y.xml|662|<component size="839,117">
+  <displayList>
+    <graph id="n0_ee0z" name="Graph_BackgroundLeft" xy="0,0" size="562,116" type="rect" fillColor="#ff666666">
+      <relation target="" sidePair="rightext-right,left-left"/>
+    </graph>
+    <component id="n1_rxvh" name="Button_Order" src="8ptb5x" xy="585,0" size="254,117">
+      <relation target="" sidePair="leftext-left,right-right"/>
+    </component>
+    <text id="n2_mpj5" name="Text_Title" xy="0,-2" size="564,117" input="true" fontSize="46" align="center" vAlign="middle" autoSize="none" text="">
+      <relation target="n0_ee0z" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>c8c13w.xml|742|<component size="130,143" extention="Button">
+  <displayList>
+    <loader id="n113_c8c1" name="icon" xy="20,4" size="88,93" url="ui://hszc9xeekjd652" fill="scale"/>
+    <text id="n112_c8c1" name="title" xy="19,92" size="88,48" font="Noto Sans S Chinese Regular" fontSize="32" color="#f1f1f1" align="center" autoSize="none" bold="true" strokeColor="#000000" text="武将"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+  <transition name="ColorChange_T">
+    <item time="0" type="Color" target="n113_c8c1" tween="true" startValue="#ffffff" endValue="#ffff00" duration="6"/>
+    <item time="6" type="Color" target="n113_c8c1" tween="true" startValue="#ffff00" endValue="#ffffff" duration="6"/>
+  </transition>
+</component>c8c13z.xml|366|<component size="68,90" extention="Button">
+  <displayList>
+    <image id="n117_c8c1" name="Image_Mail" src="c8c13y" xy="0,0" size="68,60"/>
+    <text id="n118_c8c1" name="Text_Title" xy="0,51" size="61,40" font="微软雅黑" fontSize="28" color="#8edeff" strokeColor="#000000" text="邮件"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.90"/>
+</component>c8c143.xml|977|<component size="198,198" extention="Button">
+  <controller name="State_C" pages="0,出城,1,回城" selected="0"/>
+  <displayList>
+    <loader id="n123_c8c1" name="Loader_Back" xy="0,0" size="192,192" url="ui://hszc9xeec8c144">
+      <gearDisplay controller="State_C" pages="1"/>
+    </loader>
+    <loader id="n128_fhoz" name="Loader_GoOut" xy="0,0" size="194,198" url="ui://hszc9xeec8c141" fill="scaleFree">
+      <gearDisplay controller="State_C" pages="0"/>
+    </loader>
+    <movieclip id="n131_ozp2" name="MovieClip_Outside" src="qtk84o" xy="-2,-4" size="200,200" alpha="0.7"/>
+    <loader id="n125_fhoz" name="Loader_BackCharacters" xy="49,130" size="93,47" url="ui://hszc9xeefhoz56">
+      <gearDisplay controller="State_C" pages="1"/>
+    </loader>
+    <loader id="n130_fhoz" name="Loader_OutCharacters" xy="49,130" size="97,50" url="ui://hszc9xeefhoz55">
+      <gearDisplay controller="State_C" pages="0"/>
+    </loader>
+  </displayList>
+  <Button mode="Check"/>
+</component>c8c149.xml|547|<component size="584,20" extention="ProgressBar">
+  <displayList>
+    <graph id="n5_c8c1" name="Graph_Base" xy="0,0" size="584,20" alpha="0.5" type="rect" lineColor="#ff49828e" fillColor="#ff315772">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n4" name="bar" xy="0,0" size="584,20" type="rect" lineColor="#ff49cff2" fillColor="#ff31a0ee" corner="1">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>ct3t2d.xml|816|<component size="106,106" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n6_c8c1" name="Image_Base" src="c8c14b" xy="0,0" size="106,111"/>
+    <loader id="n3" name="icon" xy="15,0" pivot="0.5,0.5" size="75,75" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n5" name="Image_Square" src="ur0iozi0" pkg="s5cy5qnp" xy="-1,73" size="106,37" color="#4f3f22"/>
+    <text id="n2" name="title" xy="8,75" size="86,43" font="微软雅黑" fontSize="30" color="#efe6dc" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>d3yl69.xml|939|<component size="111,128" extention="Button">
+  <displayList>
+    <loader id="n209_d3yl" name="Loader_Icon" xy="11,0" size="86,86" url="ui://hszc9xeed3yl68" fill="scaleFree"/>
+    <text id="n204_d3yl" name="Text_Team" xy="21,82" size="67,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" bold="true" shadowColor="#000000" shadowOffset="1,1" text="组队"/>
+    <image id="n206_d3yl" name="Image_Background" src="d3yl6a" xy="66,0" size="31,30" color="#ff6952">
+      <relation target="n207_d3yl" sidePair="width-width,height-height"/>
+      <relation target="n209_d3yl" sidePair="center-center"/>
+    </image>
+    <text id="n207_d3yl" name="Text_Number" xy="73,-4" size="21,43" font="Noto Sans S Chinese Regular" fontSize="28" color="#ffffff" align="center" text="9">
+      <relation target="n209_d3yl" sidePair="center-center"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>defv6h.xml|429|<component size="1334,750">
+  <displayList>
+    <component id="n6_defv" name="Component_GraphBG" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0" size="1334,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n4_defv" name="Component_Exchange" src="defv6i" xy="263,126">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>defv6i.xml|2039|<component size="800,514">
+  <displayList>
+    <component id="n0_defv" name="Label_PopupWindow" src="l2ckozou" pkg="s5cy5qnp" xy="-3,-2" size="793,515" controller="Type_C,0,State_C,0,BG_C,0">
+      <Label title="兑换物品"/>
+    </component>
+    <text id="n1_defv" name="Text_Description" xy="48,73" size="205,61" fontSize="20" color="#6d3521" text="文字描述最多两行字吧&#xA;最多两行字吧"/>
+    <image id="n2_defv" name="n2" src="l3hloznx" pkg="s5cy5qnp" xy="48,329" size="683,17"/>
+    <image id="n3_defv" name="n3" src="l3hloznx" pkg="s5cy5qnp" xy="52,144" size="683,17" flip="vt"/>
+    <component id="n6_defv" name="Button_Prop" src="hqutz3m" pkg="s5cy5qnp" xy="152,170" size="120,121"/>
+    <component id="n7_defv" name="Button_Prop" src="hqutz3m" pkg="s5cy5qnp" xy="512,170" size="120,121"/>
+    <text id="n8_defv" name="Text_Spend" xy="157,294" size="107,34" fontSize="22" color="#624024" ubb="true" text="消耗：999"/>
+    <text id="n9_defv" name="Text_Get" xy="517,294" size="107,34" fontSize="22" color="#624024" ubb="true" text="获得：399"/>
+    <component id="n14_defv" name="Button_Consider" src="gr0bozdm" pkg="s5cy5qnp" xy="284,355" size="211,73" controller="State_C,0">
+      <Button title="再想想"/>
+    </component>
+    <component id="n15_defv" name="Button_Accept" src="gr0bozdm" pkg="s5cy5qnp" xy="512,354" size="211,73" controller="State_C,0">
+      <Button title="成交" titleFontSize="32"/>
+    </component>
+    <image id="n30_defv" name="n30" src="no0zozht" pkg="s5cy5qnp" xy="55,446" size="666,33" color="#ddc6b9"/>
+    <text id="n26_defv" name="Text_Times" xy="194,447" size="193,34" fontSize="22" color="#726359" ubb="true" text="剩余兑换次数：3次"/>
+    <text id="n27_defv" name="Text_Time" xy="417,448" size="169,34" fontSize="22" color="#726359" ubb="true" text="下次出现：30:00"/>
+    <image id="n28_defv" name="n28" src="g4naozec" pkg="s5cy5qnp" xy="348,206" size="87,47"/>
+    <component id="n32_defv" name="Button_Refuse" src="gr0bozdo" pkg="s5cy5qnp" xy="60,364" size="204,60">
+      <Button title="没兴趣"/>
+    </component>
+  </displayList>
+</component>defv6k.xml|583|<component size="1334,750">
+  <displayList>
+    <component id="n5_defv" name="Label_Exchange" src="defv6t" xy="1133,177">
+      <relation target="" sidePair="top-top,right-right"/>
+    </component>
+    <component id="n3_defv" name="Component_GraphBG" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0" size="1334,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n2_defv" name="Component_Merchant" src="defv6m" xy="242,124">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>defv6m.xml|1359|<component size="850,500">
+  <displayList>
+    <component id="n1_defv" name="Label_PopupWindow02" src="gk5gozpp" pkg="s5cy5qnp" xy="12,-73" size="832,569" controller="Type_C,1,State_C,1"/>
+    <image id="n10_defv" name="n10" src="effmozp9" pkg="s5cy5qnp" xy="299,29" size="521,443"/>
+    <image id="n14_defv" name="n14" src="effmozpa" pkg="s5cy5qnp" xy="198,359" size="613,2"/>
+    <image id="n2_defv" name="n2" src="defv6r" xy="20,17" size="308,463"/>
+    <image id="n5_defv" name="n5" src="defv6q" xy="34,34"/>
+    <image id="n6_defv" name="n6" src="defv6s" xy="28,423"/>
+    <image id="n7_defv" name="n7" src="defv6n" xy="35,446"/>
+    <image id="n8_defv" name="n8" src="defv6n" xy="263,446" flip="hz"/>
+    <text id="n9_defv" name="Text_Name" xy="88,435" size="173,37" fontSize="24" color="#fedeaa" text="富商名字七个字"/>
+    <text id="n11_defv" name="Text_Talk" xy="338,43" size="468,90" fontSize="20" color="#726055" autoSize="height" text="商人喜欢说什么话呢&#xA;什么话呢&#xA;好傻呀"/>
+    <text id="n12_defv" name="Text_ExchangeTimes" xy="338,381" size="193,34" fontSize="22" color="#6e6156" ubb="true" text="剩余兑换次数：3次"/>
+    <text id="n13_defv" name="Text_Time" xy="337,418" size="169,34" fontSize="22" color="#6e6156" ubb="true" text="下次出现：30:00"/>
+    <image id="n15_defv" name="n15" src="effmozpc" pkg="s5cy5qnp" xy="26,16" size="798,12"/>
+  </displayList>
+</component>defv6t.xml|297|<component size="115,130" extention="Label">
+  <displayList>
+    <image id="n1_defv" name="n1" src="defv6u" xy="5,6"/>
+    <image id="n0_defv" name="n0" src="defv6o" xy="26,92"/>
+    <loader id="n2_defv" name="icon" xy="15,15" size="84,78" url="ui://hszc9xeedefv6p"/>
+  </displayList>
+</component>fgrh5q.xml|502|<component size="184,43" extention="Label">
+  <displayList>
+    <image id="n2_fgrh" name="icon" src="vj561c" xy="0,1"/>
+    <text id="n3_fgrh" name="title" xy="45,4" size="139,39" font="微软雅黑" fontSize="26" color="#b6e1ef" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="2,2" text="123456">
+      <relation target="n2_fgrh" sidePair="left-right,top-top"/>
+    </text>
+    <component id="n4_fgrh" name="Button_Plus" src="ozp257" xy="26,22" size="18,18"/>
+  </displayList>
+</component>fgrh5r.xml|438|<component size="244,43" extention="Label">
+  <displayList>
+    <text id="n2_fgrh" name="title" xy="32,4" size="212,39" font="微软雅黑" fontSize="26" color="#9bd2ff" vAlign="middle" autoSize="shrink" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="联盟名字七个字">
+      <relation target="n3_fgrh" sidePair="right-right,top-top"/>
+    </text>
+    <image id="n3_fgrh" name="icon" src="h9ak4q" xy="2,3"/>
+  </displayList>
+</component>fgrh5s.xml|710|<component size="219,49" extention="Label">
+  <displayList>
+    <image id="n4_fgrh" name="icon" src="cwf2j" pkg="s5cy5qnp" xy="0,1" size="219,46" color="#e6b905"/>
+    <image id="n5_fgrh" name="Image_Guard" src="h9ak4r" xy="5,2">
+      <relation target="n4_fgrh" sidePair="left-left,top-top"/>
+    </image>
+    <text id="n3_fgrh" name="Text_Guard" xy="13,6" size="31,39" font="微软雅黑" fontSize="26" text="防"/>
+    <text id="n2_fgrh" name="title" xy="50,4" size="160,40" font="微软雅黑" fontSize="28" color="#fff9d6" vAlign="middle" autoSize="shrink" shadowColor="#000000" shadowOffset="2,2" text="123456789">
+      <relation target="n3_fgrh" sidePair="right-right,top-top"/>
+    </text>
+  </displayList>
+</component>gmsl27.xml|399|<component size="93,86" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n2_ozp2" name="Loader_Icon" xy="0,0" size="93,86" url="ui://hszc9xeevj561f"/>
+    <movieclip id="n3_urr5" name="MovieClip_Shine" src="vj1659" xy="-6,-8"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>hwcp5p.xml|493|<component size="399,66" extention="Button">
+  <displayList>
+    <image id="n83" name="Image_Background" src="vj5625" xy="0,0" size="399,66"/>
+    <text id="n84" name="title" xy="21,14" size="336,43" font="微软雅黑" fontSize="30" color="#2af038" vAlign="middle" ubb="true" autoSize="none" shadowColor="#000000" shadowOffset="2,2" text="任务名">
+      <relation target="n83" sidePair="left-left,top-top"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>ntr064.xml|379|<component size="161,37" extention="Label">
+  <displayList>
+    <image id="n45_c8c1" name="icon" src="no0zozht" pkg="s5cy5qnp" xy="0,0" size="161,33" color="#09263d"/>
+    <text id="n33" name="title" xy="0,0" size="160,38" font="微软雅黑" fontSize="25" color="#d6d6d6" align="center" ubb="true" autoSize="height" singleLine="true" text="00:00:00&#xA;"/>
+  </displayList>
+</component>ntr066.xml|3086|<component size="1268,348" opaque="false">
+  <displayList>
+    <image id="n149_kjd6" name="Image_Background" src="c8c13r" xy="0,238" size="1268,109">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </image>
+    <graph id="n150_kjd6" name="Graph_Line1" xy="178,240" size="2,108" type="rect" lineSize="0" fillColor="#ff315673">
+      <relation target="n149_kjd6" sidePair="left-left,bottom-bottom"/>
+    </graph>
+    <graph id="n147_kjd6" name="Graph_Side" xy="1159,8" size="109,232" alpha="0.3" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="n149_kjd6" sidePair="left-left,bottom-bottom"/>
+    </graph>
+    <graph id="n148_kjd6" name="Graph_SideLine" xy="1159,0" size="109,4" alpha="0.3" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="n149_kjd6" sidePair="center-center,middle-middle"/>
+    </graph>
+    <graph id="n151_kjd6" name="Graph_Line2" xy="177,239" size="1,108" type="rect" lineSize="0" fillColor="#ff1e3036">
+      <relation target="n149_kjd6" sidePair="left-left,bottom-bottom"/>
+    </graph>
+    <graph id="n152_kjd6" name="Graph_Line3" xy="329,238" size="2,108" type="rect" lineSize="0" fillColor="#ff315673">
+      <relation target="n149_kjd6" sidePair="left-left,top-top"/>
+    </graph>
+    <graph id="n153_kjd6" name="Graph_Line4" xy="328,238" size="1,108" type="rect" lineSize="0" fillColor="#ff1e3036">
+      <relation target="n149_kjd6" sidePair="left-left,top-top"/>
+    </graph>
+    <graph id="n154_kjd6" name="Graph_Line5" xy="482,239" size="2,108" type="rect" lineSize="0" fillColor="#ff315673">
+      <relation target="n149_kjd6" sidePair="left-left,top-top"/>
+    </graph>
+    <graph id="n155_kjd6" name="Graph_Line6" xy="481,239" size="1,108" type="rect" lineSize="0" fillColor="#ff1e3036">
+      <relation target="n149_kjd6" sidePair="left-left,top-top"/>
+    </graph>
+    <graph id="n156_kjd6" name="Graph_Line7" xy="634,239" size="2,108" type="rect" lineSize="0" fillColor="#ff315673">
+      <relation target="n149_kjd6" sidePair="left-left,top-top"/>
+    </graph>
+    <graph id="n157_kjd6" name="Graph_Line8" xy="633,239" size="1,108" type="rect" lineSize="0" fillColor="#ff1e3036">
+      <relation target="n149_kjd6" sidePair="left-left,top-top"/>
+    </graph>
+    <graph id="n158_kjd6" name="Graph_Line9" xy="785,238" size="2,108" type="rect" lineSize="0" fillColor="#ff315673">
+      <relation target="n149_kjd6" sidePair="left-left,top-top"/>
+    </graph>
+    <graph id="n159_kjd6" name="Graph_Line10" xy="784,238" size="1,108" type="rect" lineSize="0" fillColor="#ff1e3036">
+      <relation target="n149_kjd6" sidePair="left-left,top-top"/>
+    </graph>
+    <graph id="n160_kjd6" name="Graph_Line11" xy="939,238" size="2,108" type="rect" lineSize="0" fillColor="#ff315673">
+      <relation target="n149_kjd6" sidePair="left-left,top-top"/>
+    </graph>
+    <graph id="n161_kjd6" name="Graph_Line12" xy="938,238" size="1,108" type="rect" lineSize="0" fillColor="#ff1e3036">
+      <relation target="n149_kjd6" sidePair="left-left,top-top"/>
+    </graph>
+  </displayList>
+</component>ousr6w.xml|147|<component size="400,400">
+  <displayList>
+    <image id="n0_ousr" name="n0" src="oz2of" pkg="43m475k2" xy="52,156"/>
+  </displayList>
+</component>ozp257.xml|566|<component size="19,19" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <graph id="n2" name="Image_Across" xy="0,7" size="18,3" touchable="false" type="rect" lineSize="0" fillColor="#ffffff99">
+      <gearDisplay controller="button" pages="2"/>
+    </graph>
+    <graph id="n6_ozp2" name="Image_Verticle" xy="10,0" size="17,3" rotation="90" touchable="false" type="rect" lineSize="0" fillColor="#ffffff99">
+      <gearDisplay controller="button" pages="2"/>
+    </graph>
+  </displayList>
+  <Button/>
+</component>package.xml|6287|<packageDescription id="hszc9xee" name="MainCity">
+  <resources>
+    <component id="8ptb5t" name="Button_Tab" path="/Button/" size="280,120"/>
+    <component id="8ptb5v" name="Button_GMToggle" path="/Button/" size="100,100"/>
+    <component id="8ptb5w" name="Component_GMMenu" path="/Component/" size="950,875"/>
+    <component id="8ptb5x" name="Button_GMOrder" path="/Button/" size="399,130"/>
+    <component id="8ptb5y" name="Component_GMOrder" path="/Component/" size="839,117"/>
+    <component id="c8c13w" name="Button_General" path="/Button/" size="130,143"/>
+    <component id="c8c13z" name="Button_Mail" path="/Button/" size="68,90"/>
+    <component id="c8c143" name="Button_Outside" path="/Button/" size="198,198"/>
+    <component id="c8c149" name="ProgressBar_Blue" path="/ProgressBar/" size="584,20"/>
+    <component id="ct3t2d" name="Button_WordMap" path="/Button/" size="106,106"/>
+    <component id="d3yl69" name="Button_Urgency" path="/Button/" size="111,128"/>
+    <component id="defv6i" name="Component_Exchange" path="/Component/" size="800,514"/>
+    <component id="defv6m" name="Component_Merchant" path="/Component/" size="850,500"/>
+    <component id="defv6t" name="Label_Exchange" path="/Label/" size="115,130"/>
+    <component id="fgrh5q" name="Label_YuanBao" path="/Label/" size="184,43"/>
+    <component id="fgrh5r" name="Label_Union" path="/Label/" size="244,43"/>
+    <component id="fgrh5s" name="Label_Power" path="/Label/" size="219,49"/>
+    <component id="gmsl27" name="Button_Finish" path="/Button/" size="93,86"/>
+    <component id="hwcp5p" name="Button_TaskTips" path="/Button/" size="399,66"/>
+    <component id="ntr064" name="Label_Time" path="/Label/" size="161,37"/>
+    <component id="ntr066" name="Component_ButtonsBG" path="/Component/" size="1268,348"/>
+    <component id="ozp257" name="Button_Add" path="/Button/" size="19,19"/>
+    <component id="pivk6c" name="Component_ParameterSetting" path="/Component/" size="500,150"/>
+    <component id="tezw10" name="Component_WarSituation" path="/Component/" size="161,79"/>
+    <component id="tezwy" name="Component_Worker" path="/Component/" size="146,102"/>
+    <component id="vj561r" name="Button_SpeedUp" path="/Button/" size="34,36"/>
+    <component id="vj5624" name="Button_Task" path="/Button/" size="190,72"/>
+    <image id="7gvh5m" name="Image_RedBar" path="/Image/" size="43,44"/>
+    <image id="7gvh5n" name="quan_hui" path="/Image/" size="43,44"/>
+    <image id="7gvh5o" name="Image_BlueBar" path="/Image/" size="43,44"/>
+    <image id="c8c13r" name="tou_di" path="/Image/" size="66,106" scale="9grid" scale9grid="47,0,4,106"/>
+    <image id="c8c13u" name="wijiang" path="/Image/" size="80,89"/>
+    <image id="c8c13v" name="beibao" path="/Image/" size="80,90"/>
+    <image id="c8c13y" name="xinfeng" path="/Image/" size="68,60"/>
+    <image id="c8c140" name="annv" path="/Image/" size="141,68" scale="9grid" scale9grid="19,27,14,11"/>
+    <image id="c8c141" name="chuz" path="/Image/" size="194,192"/>
+    <image id="c8c144" name="chuz3" path="/Image/" size="192,191"/>
+    <image id="c8c14a" name="gongli" path="/Image/" size="37,51"/>
+    <image id="c8c14b" name="gongli_di" path="/Image/" size="72,75"/>
+    <image id="c8c14c" name="gongli2" path="/Image/" size="45,51"/>
+    <image id="d3yl68" name="icons_team" path="/Image/" size="102,102"/>
+    <image id="d3yl6a" name="img_tips_bg" path="/Image/" size="40,30" scale="9grid" scale9grid="15,8,8,16"/>
+    <image id="defv6n" name="商人名字花纹" path="/Image/" size="48,13"/>
+    <image id="defv6o" name="img_di" path="/Image/" size="62,35"/>
+    <image id="defv6p" name="img_jiaoyi" path="/Image/" size="80,83"/>
+    <image id="defv6q" name="商人pic" path="/Image/" size="280,385"/>
+    <image id="defv6r" name="商人pic--底图-1" path="/Image/" size="44,457" scale="9grid" scale9grid="11,115,22,230"/>
+    <image id="defv6s" name="商人pic--底图-2" path="/Image/" size="292,6"/>
+    <image id="defv6u" name="img_icondi" path="/Image/" size="103,103"/>
+    <image id="fhoz55" name="ccc" path="/Image/" size="93,50"/>
+    <image id="fhoz56" name="hc" path="/Image/" size="93,50"/>
+    <image id="h9ak4q" name="lme" path="/Image/" size="32,40"/>
+    <image id="h9ak4r" name="f" path="/Image/" size="46,47"/>
+    <image id="j1584k" name="rw" path="/Image/" size="77,69"/>
+    <image id="kjd650" name="zb" path="/Image/" size="69,85"/>
+    <image id="kjd651" name="lm" path="/Image/" size="97,91"/>
+    <image id="kjd652" name="jq" path="/Image/" size="85,91"/>
+    <image id="kjd654" name="jz" path="/Image/" size="87,90"/>
+    <image id="sh1m4e" name="jiasu" path="/Image/" size="33,34"/>
+    <image id="tf4a6v" name="Image_FarmIcon" path="/Image/" size="51,44"/>
+    <image id="vj561c" name="yuanbao" path="/Image/" size="42,38"/>
+    <image id="vj561f" name="wanchengbtn" path="/Image/" size="88,84"/>
+    <image id="vj5625" name="renwubg" path="/Image/" size="257,49" scale="9grid" scale9grid="127,22,6,3"/>
+    <movieclip id="qtk84o" name="MovieClip_Outside" path="/MovieClip/" size="100,100"/>
+    <movieclip id="vj1659" name="MovieClip_TaskComplete" path="/MovieClip/" size="100,100"/>
+    <component id="8ptb5u" name="GMMain" path="/" size="1920,1080" exported="true"/>
+    <component id="defv6h" name="ExchangeMain" path="/" size="1334,750" exported="true"/>
+    <component id="defv6k" name="MerchantMain" path="/" size="1334,750" exported="true"/>
+    <component id="ousr6w" name="Reference" path="/" size="400,400" exported="true"/>
+    <component id="pivk6b" name="DebugToolMain" path="/" size="1920,1080" exported="true"/>
+    <component id="tezwk" name="MainCityMain" path="/" size="1920,1080" exported="true"/>
+    <image id="j1584l" name="y" path="/Image/" size="43,45" exported="true"/>
+    <image id="j1584m" name="z" path="/Image/" size="43,45" exported="true"/>
+    <image id="ntr060" name="zz" path="/Image/" size="43,45" exported="true"/>
+    <image id="ntr061" name="c" path="/Image/" size="43,45" exported="true"/>
+    <image id="ntr062" name="ff" path="/Image/" size="61,65" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <atlas id="atlas_qtk84o" size="512,512" file="atlas_qtk84o.png"/>
+    <atlas id="atlas_vj1659" size="512,512" file="atlas_vj1659.png"/>
+  </resources>
+</packageDescription>pivk6b.xml|2380|<component size="1920,1080" opaque="false">
+  <controller name="State_C" pages="3,None,0,Select,1,Camera,2,DebugLog" selected="0"/>
+  <displayList>
+    <component id="n13_rmn2" name="Image_Bg" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <gearDisplay controller="State_C" pages="0,1,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n4_pivk" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <gearDisplay controller="State_C" pages="0,1,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n0_pivk" name="Button_DebugTool" src="g52xozih" pkg="s5cy5qnp" xy="1820,430">
+      <gearDisplay controller="State_C" pages="3"/>
+      <relation target="" sidePair="middle-middle,right-right"/>
+    </component>
+    <list id="n2_pivk" name="List_DebugSelection" xy="460,200" size="1000,600" overflow="scroll" defaultItem="ui://s5cy5qnpgr0bozdm">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+    </list>
+    <list id="n3_pivk" name="List_CameraParameters" xy="210,200" size="1500,700" group="n7_pivk" layout="flow_hz" overflow="scroll" defaultItem="ui://hszc9xeepivk6c">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n8_pivk" name="List_SaveFile" xy="466,907" size="1235,98" group="n7_pivk" layout="flow_hz" overflow="scroll" scroll="horizontal" defaultItem="ui://s5cy5qnpgr0bozdm">
+      <item/>
+      <item/>
+    </list>
+    <component id="n10_pivk" name="Button_DefaultSaveFile" src="gr0bozdm" pkg="s5cy5qnp" xy="210,908" pivot="0.5,0.5" group="n7_pivk" controller="State_C,0"/>
+    <text id="n11_pivk" name="Label_Title" xy="210,150" size="169,59" group="n7_pivk" fontSize="40" color="#ffff00" align="center" vAlign="middle" bold="true" text="当前存档"/>
+    <text id="n14_c8t7" name="Label_CurrentFile" xy="384,150" size="169,59" group="n7_pivk" fontSize="40" color="#66ff00" align="center" vAlign="middle" bold="true" text="默认存档"/>
+    <group id="n7_pivk" name="Group_CameraDebug" xy="210,150" size="1500,855" advanced="true">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>pivk6c.xml|344|<component size="500,150">
+  <displayList>
+    <text id="n1_pivk" name="Label_Description" xy="9,11" size="215,88" fontSize="30" color="#ffffff" text="参数名字&#xA;第二行细节补充"/>
+    <component id="n4_pivk" name="Slider_Value" src="iqo8ozig" pkg="s5cy5qnp" xy="24,76">
+      <Slider value="50" max="100"/>
+    </component>
+  </displayList>
+</component>qtk84o.xml|528|<movieclip interval="125" frameCount="15">
+  <frames>
+    <frame rect="7,3,85,57"/>
+    <frame rect="7,3,85,57"/>
+    <frame rect="7,2,85,58"/>
+    <frame rect="7,2,85,58"/>
+    <frame rect="7,2,85,58"/>
+    <frame rect="7,2,85,58"/>
+    <frame rect="7,2,85,58"/>
+    <frame rect="7,2,85,58"/>
+    <frame rect="7,2,85,58"/>
+    <frame rect="7,2,85,58"/>
+    <frame rect="7,2,85,58"/>
+    <frame rect="7,2,85,58"/>
+    <frame rect="7,2,85,58"/>
+    <frame rect="7,3,85,57"/>
+    <frame rect="7,3,85,57"/>
+  </frames>
+</movieclip>tezw10.xml|240|<component size="161,79">
+  <displayList>
+    <component id="n48_ntr0" name="Label_Time" src="ntr064" xy="0,42"/>
+    <loader id="n46_j158" name="Loader_Icon" xy="23,-1" size="43,46" url="ui://hszc9xeej1584m"/>
+  </displayList>
+</component>tezwk.xml|7769|<component size="1920,1080" opaque="false">
+  <controller name="State_C" pages="0,城内,1,世界" selected="0"/>
+  <controller name="buzuo" pages="0,v0.1,1,v0.2" selected="0"/>
+  <controller name="OutsideMenu_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n190_l2lk" name="Image_Background" src="l2lkozez" pkg="s5cy5qnp" xy="0,0" size="1920,1080" alpha="0.25">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n90" name="Button_Navigation" src="ct3t2d" xy="31,216">
+      <gearDisplay controller="State_C" pages="1"/>
+      <Button title="100公里" icon="ui://hszc9xeec8c14a"/>
+    </component>
+    <component id="n91" name="Button_Influence" src="ct3t2d" xy="31,358">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n90" sidePair="top-bottom,middle-middle"/>
+      <Button title="势力" icon="ui://hszc9xeec8c14c"/>
+    </component>
+    <component id="n210_rjc5" name="Component_CityInfo" src="rjc5ozmm" pkg="s5cy5qnp" xy="1379,0">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n202_ntr0" name="Image_ButtonBackground" src="ntr066" xy="652,733" group="n200_ntr0"/>
+    <component id="n162_kjd6" name="Button_General" src="c8c13w" xy="837,939" group="n200_ntr0">
+      <relation target="n167_kjd6" sidePair="right-right,bottom-bottom"/>
+      <Button title="武将" icon="ui://hszc9xeec8c13u"/>
+    </component>
+    <component id="n114_c8c1" name="Button_Bag" src="c8c13w" xy="1601,939" group="n200_ntr0">
+      <relation target="n166_kjd6" sidePair="right-right,bottom-bottom"/>
+      <Button title="背包" icon="ui://hszc9xeec8c13v"/>
+    </component>
+    <component id="n119_c8c1" name="Button_Mail" src="c8c13z" xy="1839,766" group="n200_ntr0"/>
+    <component id="n123_c8c1" name="Button_Outside" src="c8c143" xy="1728,884" size="194,197" group="n200_ntr0">
+      <relation target="n114_c8c1" sidePair="left-right,bottom-bottom"/>
+      <Button icon="ui://hszc9xeec8c141"/>
+    </component>
+    <component id="n163_kjd6" name="Button_Equipment" src="c8c13w" xy="990,939" group="n200_ntr0">
+      <relation target="n162_kjd6" sidePair="right-right,bottom-bottom"/>
+      <Button title="装备" icon="ui://hszc9xeekjd650"/>
+    </component>
+    <component id="n164_kjd6" name="Button_Alliance" src="c8c13w" xy="1143,939" group="n200_ntr0">
+      <relation target="n163_kjd6" sidePair="right-right,bottom-bottom"/>
+      <Button title="联盟" icon="ui://hszc9xeekjd651"/>
+    </component>
+    <component id="n165_kjd6" name="Button_WarSituation" src="c8c13w" xy="1295,939" group="n200_ntr0">
+      <relation target="n164_kjd6" sidePair="right-right,bottom-bottom"/>
+      <Button title="军情" icon="ui://hszc9xeekjd652"/>
+    </component>
+    <component id="n166_kjd6" name="Button_Battle" src="c8c13w" xy="1448,939" group="n200_ntr0">
+      <relation target="n165_kjd6" sidePair="right-right,bottom-bottom"/>
+      <Button title="农场" icon="ui://hszc9xeetf4a6v"/>
+    </component>
+    <component id="n167_kjd6" name="Button_Lord" src="c8c13w" xy="684,939" group="n200_ntr0">
+      <Button title="君主" icon="ui://hszc9xeekjd654"/>
+    </component>
+    <component id="n212_s2jg" name="Button_Ranking" src="c8c13w" xy="990,787" size="128,143" group="n200_ntr0">
+      <relation target="n164_kjd6" sidePair="right-right,bottom-bottom"/>
+      <Button title="排行榜" icon="ui://hszc9xeekjd652"/>
+    </component>
+    <group id="n200_ntr0" name="Group_Area" xy="652,733" size="1270,349" advanced="true">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </group>
+    <list id="n36" name="List_War" xy="0,700" size="177,245" group="n199_ntr0" selectionMode="none" lineGap="-4" defaultItem="ui://hszc9xeetezw10" vAlign="bottom">
+      <relation target="n82" sidePair="left-left,bottom-bottom"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n82" name="Button_Task" src="vj5624" xy="19,972" size="142,67" group="n199_ntr0">
+      <Button title="任务" icon="ui://hszc9xeej1584k"/>
+    </component>
+    <component id="n192_hwcp" name="Button_CurrentTask" src="hwcp5p" xy="140,973" group="n199_ntr0"/>
+    <component id="n85" name="Button_TaskCompletedEffect" src="gmsl27" xy="455,955" group="n199_ntr0"/>
+    <group id="n199_ntr0" name="Group_WarDetails" xy="0,700" size="548,341" advanced="true">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </group>
+    <list id="n68" name="List_Workers" xy="0,159" size="143,303" group="n198_ntr0" defaultItem="ui://hszc9xeetezwy">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="" sidePair="left-left,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n109_c8c1" name="Image_Base" src="c8c13r" xy="0,0" size="600,106" group="n198_ntr0" flip="both">
+      <relation target="n55" sidePair="left-left,top-top"/>
+    </image>
+    <component id="n55" name="Label_LordIcon" src="g52xozii" pkg="s5cy5qnp" xy="2,2" size="105,105" group="n198_ntr0">
+      <Label title="24"/>
+    </component>
+    <text id="n52" name="Text_Name" xy="108,6" size="271,42" group="n198_ntr0" font="微软雅黑" fontSize="29" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="玩家名字六个字字">
+      <relation target="n55" sidePair="left-left,top-top"/>
+    </text>
+    <component id="n127_c8c1" name="ProgressBar_Experience" src="c8c149" xy="1,108" size="113,8" group="n198_ntr0">
+      <relation target="n55" sidePair="left-left,top-top"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <component id="n193_fgrh" name="Label_Money" src="fgrh5q" xy="379,4" group="n198_ntr0">
+      <relation target="n109_c8c1" sidePair="right-right,top-top"/>
+      <Label title="123456"/>
+    </component>
+    <component id="n194_fgrh" name="Label_Alliance" src="fgrh5r" xy="334,55" group="n198_ntr0">
+      <relation target="n109_c8c1" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n195_fgrh" name="Label_Power" src="fgrh5s" xy="116,51" group="n198_ntr0">
+      <relation target="n55" sidePair="right-right,top-top"/>
+      <Label title="123456789"/>
+    </component>
+    <group id="n198_ntr0" name="Group_LordInfo" xy="0,0" size="600,462" advanced="true">
+      <relation target="" sidePair="left-left,top-top"/>
+    </group>
+    <component id="n196_8ptb" name="Component_GMMain" src="8ptb5u" xy="0,0" size="1920,1080" controller="toggle,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <list id="n206_d3yl" name="list_emergency_tips" xy="1093,789" size="630,123" layout="row" colGap="17" defaultItem="ui://hszc9xeed3yl69" align="right">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n208_hlux" name="Component_Conquer" src="fl2r1q" pkg="5m2ue2jo" xy="1134,72" size="814,1013">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n207_pivk" name="Component_DebugToolMain" src="pivk6b" xy="0,0" size="1920,1080">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n209_t9x4" name="Component_AreaSwitch" src="cdwm1z" pkg="5m2ue2jo" xy="0,0" size="1920,1080">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n190_l2lk" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n211_q3zv" name="Component_OutsideMenu" src="ct3ta" pkg="5m2ue2jo" xy="0,0">
+      <gearDisplay controller="OutsideMenu_C" pages="1"/>
+    </component>
+  </displayList>
+</component>tezwy.xml|1616|<component size="146,102">
+  <controller name="State_C" pages="1,空闲状态,0,疲劳时间未达上限,2,疲劳时间已达上限" selected="1"/>
+  <controller name="Type_C" pages="0,建筑队,1,科技队" selected="0"/>
+  <displayList>
+    <graph id="n35_h9ak" name="Graph_BG" xy="32,5" size="57,57" alpha="0.7" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <loader id="n47_w29v" name="Loader_Type" xy="33,6" size="52,52" url="ui://s5cy5qnpdp6h18" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="Type_C" pages="0,1" values="ui://s5cy5qnpdp6h18|ui://s5cy5qnpw29vozjv"/>
+    </loader>
+    <image id="n43_7gvh" name="Image_TimeBarBG" src="7gvh5n" xy="29,0" size="63,64"/>
+    <loader id="n49_w29v" name="Loader_TimeBar" xy="29,0" size="64,64" url="ui://hszc9xee7gvh5o" fill="scaleFree" fillMethod="radial360" fillAmount="66">
+      <gearIcon controller="State_C" pages="1,2" values="|ui://hszc9xee7gvh5m" default="ui://hszc9xee7gvh5o"/>
+    </loader>
+    <component id="n28" name="Button_Speedup" src="vj561r" xy="80,0">
+      <gearDisplay controller="State_C" pages="2"/>
+    </component>
+    <image id="n37_h9ak" name="Image_TimeBG" src="no0zozht" pkg="s5cy5qnp" xy="0,67" size="140,29" color="#0c1c2e"/>
+    <text id="n24" name="Text_Time" xy="0,62" size="145,39" font="微软雅黑" fontSize="27" color="#ffffff" align="center" ubb="true" autoSize="shrink" strokeColor="#000000" singleLine="true" text="00:00:00">
+      <gearColor controller="State_C" pages="2" values="#ff0000,#000000" default="#ffffff,#000000"/>
+      <gearText controller="State_C" pages="1" values="空闲中" default="00:00:00"/>
+    </text>
+  </displayList>
+</component>vj1659.xml|542|<movieclip interval="83" frameCount="15">
+  <frames>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+    <frame rect="6,10,86,82"/>
+  </frames>
+</movieclip>vj561r.xml|296|<component size="34,36" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="icon" src="sh1m4e" xy="0,0" size="33,34"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>vj5624.xml|697|<component size="190,72" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n3_c8c1" name="Image_Background" src="c8c140" xy="0,0" size="190,72">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n4_c8c1" name="title" xy="43,-6" size="41,92" font="微软雅黑" fontSize="26" color="#b6cae5" vAlign="middle" leading="-2" autoSize="none" strokeColor="#0d2c41" text="任&#xA;务">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <loader id="n5_j158" name="icon" xy="48,-4" size="88,66"/>
+  </displayList>
+  <Button downEffect="dark" downEffectValue="50.00"/>
+</component>

@@ -1,0 +1,516 @@
+990410.xml|85|<component size="68,65" extention="Button">
+  <displayList/>
+  <Button/>
+</component>bdlrc.xml|2456|<component size="1920,1080">
+  <controller name="Tab_C" pages="0,最近,1,联盟,2,好友,3,对立" selected="0"/>
+  <controller name="buzuo" pages="0,v0.1,1,v0.2" selected="0"/>
+  <displayList>
+    <graph id="n3" name="gra_bg1" xy="0,0" size="1920,1080" type="rect" lineSize="0" fillColor="#ff406b9c">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n4" name="gra_bg2" xy="0,0" size="616,1080" type="rect" lineSize="0" fillColor="#ff214b6b">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <list id="n23" name="list_fenzu" xy="27,151" size="561,830" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="8" defaultItem="ui://lyv9eezhnhrfj">
+      <relation target="n4" sidePair="center-center,middle-middle"/>
+      <item/>
+    </list>
+    <component id="n1" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,0">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="社交"/>
+    </component>
+    <component id="n6" name="btn_zuijin" src="bdlrf" xy="76,134">
+      <gearDisplay controller="buzuo" pages="1"/>
+      <relation target="n4" sidePair="left-left,top-top"/>
+      <Button checked="true" title="最近" controller="Tab_C" page="0"/>
+    </component>
+    <component id="n7" name="btn_lianmeng" src="bdlrf" xy="176,134">
+      <gearDisplay controller="buzuo" pages="1"/>
+      <relation target="n4" sidePair="left-left,top-top"/>
+      <Button title="联盟" controller="Tab_C" page="1"/>
+    </component>
+    <component id="n8" name="btn_haoyou" src="bdlrf" xy="275,134">
+      <gearDisplay controller="buzuo" pages="1"/>
+      <relation target="n4" sidePair="left-left,top-top"/>
+      <Button title="好友" controller="Tab_C" page="2"/>
+    </component>
+    <component id="n9" name="btn_duili" src="bdlrf" xy="374,134">
+      <gearDisplay controller="buzuo" pages="1"/>
+      <relation target="n4" sidePair="left-left,top-top"/>
+      <Button title="对立" controller="Tab_C" page="3"/>
+    </component>
+    <component id="n29" name="com_fenzuhuatiao" src="m6dfu" xy="117,169">
+      <gearDisplay controller="buzuo" pages="1"/>
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </component>
+    <component id="n30" name="com_liaotianneirong" src="nhrfq" xy="617,82" size="1302,997">
+      <relation target="" sidePair="right-right,height-height"/>
+    </component>
+  </displayList>
+</component>bdlrf.xml|570|<component size="100,35" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n6" name="icon" src="bdlrg" xy="13,4">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n4" name="title" xy="0,0" size="100,35" font="微软雅黑" fontSize="24" color="#acbdce" align="center" vAlign="middle" autoSize="none" singleLine="true" text="">
+      <gearColor controller="button" pages="0,1" values="#acbdce,#000000|#ffffff,#000000"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>hiry12.xml|2617|<component size="1920,1080">
+  <controller name="Tab_C" pages="0,最近,1,联盟,2,好友,3,对立" selected="0"/>
+  <displayList>
+    <image id="n0" name="Image_Background" src="rmqpozfn" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <graph id="n3" name="Graph_Background" xy="20,20" size="1900,1039" type="rect" lineSize="0" fillColor="#ff406b9c">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n4" name="Graph_Background2" xy="3,20" size="596,1039" type="rect" lineSize="0" fillColor="#ff214b6b">
+      <relation target="n3" sidePair="width-width,height-height"/>
+    </graph>
+    <list id="n23" name="List_Group" xy="20,226" size="561,764" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="8" defaultItem="ui://lyv9eezhnhrfj">
+      <relation target="n4" sidePair="center-center,middle-middle"/>
+      <item/>
+    </list>
+    <component id="n1" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" controller="Type_C,0">
+      <relation target="n3" sidePair="left-left,top-top"/>
+      <Label title="社交"/>
+    </component>
+    <component id="n6" name="Button_Recent" src="bdlrf" xy="79,154">
+      <relation target="n4" sidePair="left-left,top-top"/>
+      <Button checked="true" title="最近" controller="Tab_C" page="0"/>
+    </component>
+    <component id="n7" name="Button_Guild" src="bdlrf" xy="179,154">
+      <relation target="n4" sidePair="left-left,top-top"/>
+      <Button title="联盟" controller="Tab_C" page="1"/>
+    </component>
+    <component id="n8" name="Button_Friend" src="bdlrf" xy="278,154">
+      <relation target="n4" sidePair="left-left,top-top"/>
+      <Button title="好友" controller="Tab_C" page="2"/>
+    </component>
+    <component id="n9" name="Button_Enemy" src="bdlrf" xy="377,154">
+      <relation target="n4" sidePair="left-left,top-top"/>
+      <Button title="对立" controller="Tab_C" page="3"/>
+    </component>
+    <component id="n29" name="Component_Page" src="m6dfu" xy="120,189">
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </component>
+    <component id="n30" name="Component_ChatContent" src="nhrfq" xy="618,39" size="1302,1024">
+      <relation target="n3" sidePair="right-right,middle-middle"/>
+    </component>
+    <component id="n31_hiry" name="Button_VoiceSettings" src="pnexozh7" pkg="s5cy5qnp" xy="457,36" size="137,67">
+      <relation target="n1" sidePair="left-right,top-top"/>
+      <Button title="语音" titleColor="#ffffff" titleFontSize="35" icon="ui://hdkfki4kjhye6"/>
+    </component>
+  </displayList>
+</component>hiry13.xml|2194|<component size="745,100">
+  <controller name="State_C" pages="0,未转换,1,转化中,2,转化后" selected="0"/>
+  <displayList>
+    <image id="n32_tit8" name="Image_Background1" src="bdlra" xy="102,30" size="576,68" color="#00ff00">
+      <relation target="n27" sidePair="height-height,width-width"/>
+    </image>
+    <loader id="n28" name="Loader_GeneralIcon" xy="0,2" size="97,97" url="ui://lyv9eezhbdlr2" fill="scaleFree">
+      <relation target="" sidePair="left-left,top-top"/>
+    </loader>
+    <component id="n31_9904" name="Button_Pop" src="f1djozo7" pkg="s5cy5qnp" xy="122,34" size="560,61">
+      <relation target="" sidePair=""/>
+    </component>
+    <text id="n25" name="TextField_FlagName" xy="118,0" size="336,35" alpha="0.5" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="[旗号]玩家名字七个字">
+      <relation target="n28" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n27" name="TextField_Content" xy="161,39" size="543,52" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" text="聊天内容">
+      <gearDisplay controller="State_C" pages="1,2"/>
+    </text>
+    <component id="n37_hiry" name="Buttton_SwitchToText" src="g52xozih" pkg="s5cy5qnp" xy="617,28" size="53,50">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n32_tit8" sidePair="left-right,middle-middle"/>
+    </component>
+    <text id="n38_hiry" name="TextField_Time" xy="175,49" size="67,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" text="60s">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n32_tit8" sidePair="left-left,middle-middle"/>
+    </text>
+    <component id="n39_hiry" name="Component_Loading" src="10bsoz3p" pkg="s5cy5qnp" xy="626,-14" size="102,109">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n32_tit8" sidePair="left-right,top-top"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <image id="n41_ucez" name="Image_Voice" src="ucez1c" xy="122,40" size="41,42">
+      <relation target="n32_tit8" sidePair="left-left,top-top"/>
+    </image>
+  </displayList>
+</component>hiry17.xml|2330|<component size="1249,102">
+  <controller name="State_C" pages="0,未转换,1,转换中,2,转换后" selected="0"/>
+  <displayList>
+    <image id="n41_tit8" name="Image_ContentBackground" src="bdlr4" xy="537,30" size="612,68">
+      <relation target="" sidePair="right-right,top-top"/>
+      <relation target="n31" sidePair="height-height,width-width"/>
+    </image>
+    <loader id="n29" name="Loader_LordIcon" xy="1151,2" size="97,97" url="ui://lyv9eezhbdlr1" fill="scaleFree">
+      <relation target="" sidePair="right-right,top-top"/>
+    </loader>
+    <component id="n40_9904" name="Button_Pop" src="990410" xy="545,31" size="568,66">
+      <relation target="" sidePair="right-right"/>
+      <relation target="n31" sidePair="height-height,width-width"/>
+    </component>
+    <text id="n32" name="TextField_Name" xy="772,1" size="349,35" alpha="0.5" font="微软雅黑" fontSize="24" color="#ffffff" align="right" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="[旗号]玩家名字七个字">
+      <relation target="n29" sidePair="right-left,top-top"/>
+    </text>
+    <text id="n31" name="TextField_Content" xy="554,46" size="530,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="height" text="聊天内容&#xA;">
+      <gearDisplay controller="State_C" pages="1,2"/>
+      <relation target="n41_tit8" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n42_hiry" name="Button_SwitchToText" src="g52xozih" pkg="s5cy5qnp" xy="541,28" size="53,50">
+      <gearDisplay controller="State_C" pages="0"/>
+    </component>
+    <text id="n43_hiry" name="TextField_Time" xy="1014,50" size="67,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" text="60s">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <component id="n44_hiry" name="Component_loading" src="10bsoz3p" pkg="s5cy5qnp" xy="490,-17" size="102,109">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n41_tit8" sidePair="left-left,top-top"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <image id="n45_ucez" name="Image_Voice" src="ucez1c" xy="1123,42" size="41,42" skew="0,-180">
+      <relation target="n41_tit8" sidePair="right-right,top-top"/>
+    </image>
+  </displayList>
+  <relation target="n41_tit8" sidePair="height-height"/>
+</component>hiry18.xml|1835|<component size="1920,1080">
+  <controller name="Tab_C" pages="0,输入语音,1,最后10秒,2,上滑取消发送,3,播放时调大音量" selected="0"/>
+  <displayList>
+    <graph id="n32_hiry" name="Graph_Background1" xy="778,296" size="365,357" type="rect" lineSize="0" fillColor="#ff333333" corner="50">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <text id="n33_hiry" name="TextField_Description1" xy="786,585" size="344,54" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="手指上滑，取消发送">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <relation target="n32_hiry" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <text id="n34_hiry" name="TextField_Description3" xy="786,585" size="344,54" fontSize="30" color="#ff0000" align="center" vAlign="middle" autoSize="none" text="松开手指，取消发送">
+      <gearDisplay controller="Tab_C" pages="2"/>
+      <relation target="n32_hiry" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <text id="n35_hiry" name="TextField_Description2" xy="782,405" size="344,165" fontSize="116" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="10">
+      <gearDisplay controller="Tab_C" pages="1"/>
+      <relation target="n32_hiry" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n36_hiry" name="TextField_Description4" xy="785,584" size="344,54" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="请调大音量播放">
+      <gearDisplay controller="Tab_C" pages="3"/>
+      <relation target="n32_hiry" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <image id="n37_ucez" name="Image_Mircophone" src="ucez1d" xy="858,346">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <relation target="n32_hiry" sidePair="center-center,middle-middle"/>
+    </image>
+  </displayList>
+</component>hiry19.xml|3088|<component size="1920,1080">
+  <displayList>
+    <graph id="n32_hiry" name="Graph_Background" xy="524,188" size="816,605" type="rect" lineSize="0" fillColor="#ff333333" corner="50">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <text id="n37_hiry" name="TextField_AutoPlay" xy="741,205" size="374,73" fontSize="50" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="自动播放语音">
+      <relation target="n32_hiry" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n38_hiry" name="TextField_AutoPlayChannel1" xy="575,278" size="374,53" fontSize="35" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="世界聊天">
+      <relation target="n32_hiry" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n39_hiry" name="TextField_AutoPlayChannel2" xy="575,363" size="374,53" fontSize="35" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="联盟聊天">
+      <relation target="n32_hiry" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n40_hiry" name="TextField_AutoPlayChannel3" xy="575,452" size="374,53" fontSize="35" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="区域聊天">
+      <relation target="n32_hiry" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n41_hiry" name="TextField_3G" xy="741,532" size="374,73" fontSize="50" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="省流量助手">
+      <relation target="n32_hiry" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n42_hiry" name="TextField_WifiAutoPlay" xy="575,629" size="374,53" fontSize="35" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="仅在WIFI下自动播放">
+      <relation target="n32_hiry" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n43_hiry" name="TextField_WifiAutoSwitch" xy="575,708" size="374,53" fontSize="35" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="仅在WIFI下语音转文字">
+      <relation target="n32_hiry" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n47_hiry" name="Button_OnOff1" src="hiry1b" xy="1109,272">
+      <relation target="n38_hiry" sidePair="left-right,middle-middle"/>
+    </component>
+    <component id="n48_hiry" name="Button_OnOff2" src="hiry1b" xy="1109,356">
+      <relation target="n39_hiry" sidePair="left-right,middle-middle"/>
+      <Button checked="true"/>
+    </component>
+    <component id="n49_hiry" name="Button_OnOff3" src="hiry1b" xy="1109,451">
+      <relation target="n40_hiry" sidePair="left-right,middle-middle"/>
+      <Button checked="true"/>
+    </component>
+    <component id="n50_hiry" name="Button_OnOff4" src="hiry1b" xy="1109,621">
+      <relation target="n42_hiry" sidePair="left-right,middle-middle"/>
+      <Button checked="true"/>
+    </component>
+    <component id="n51_hiry" name="Button_OnOff5" src="hiry1b" xy="1109,717">
+      <relation target="n43_hiry" sidePair="left-right,middle-middle"/>
+      <Button checked="true"/>
+    </component>
+  </displayList>
+</component>hiry1b.xml|940|<component size="114,54" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <graph id="n1" name="Graph_Base1" xy="0,0" size="113,52" touchable="false" type="rect" lineSize="0" fillColor="#fff0f0f0" corner="20">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n3" name="Graph_Base2" xy="0,0" size="114,54" touchable="false" type="rect" lineSize="0" fillColor="#ff00ff00" corner="20">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n4_hiry" name="Graph_Base3" xy="0,-2" size="57,58" type="rect" corner="20">
+      <gearDisplay controller="button" pages="0,1"/>
+      <gearXY controller="button" pages="0,1" values="0,-2|58,0"/>
+    </graph>
+  </displayList>
+  <Button mode="Check"/>
+</component>m6dft.xml|321|<component size="19,19" extention="Button">
+  <controller name="button" pages="0,up" selected="0"/>
+  <displayList>
+    <graph id="n1" name="icon" xy="0,0" size="19,19" touchable="false" type="eclipse" lineSize="0">
+      <gearDisplay controller="button" pages="0"/>
+    </graph>
+  </displayList>
+  <Button/>
+</component>m6dfu.xml|1005|<component size="313,19" extention="ScrollBar">
+  <displayList>
+    <graph id="n4" name="n4" xy="21,8" size="75,2" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n5" name="n5" xy="119,8" size="75,2" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n6" name="n6" xy="217,8" size="75,2" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n7" name="n7" xy="98,0" size="19,19" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n8" name="n8" xy="0,0" size="19,19" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n9" name="n9" xy="196,0" size="19,19" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n10" name="n10" xy="294,0" size="19,19" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n2" name="bar" xy="0,0" size="313,19">
+      <relation target="" sidePair="width-width"/>
+    </graph>
+    <component id="n3" name="grip" src="m6dft" xy="0,0"/>
+  </displayList>
+  <ScrollBar/>
+</component>nhrfi.xml|1313|<component size="557,131" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <controller name="State_C" pages="0,未屏蔽,1,已屏蔽" selected="0"/>
+  <controller name="Type_C" pages="0,有消息,1,无消息" selected="0"/>
+  <displayList>
+    <graph id="n11" name="Graph_Background" xy="0,0" size="557,131" type="rect" lineSize="0" fillColor="#ff4e83ac">
+      <gearDisplay controller="button" pages="1"/>
+    </graph>
+    <component id="n9" name="Label_MessageCount" src="fmw6ozim" pkg="s5cy5qnp" xy="495,26" size="38,38">
+      <gearDisplay controller="Type_C" pages="0"/>
+    </component>
+    <loader id="n5" name="loader_touxiang" xy="15,18" size="97,97" url="ui://43m475k2yqyk6" fill="scaleFree"/>
+    <image id="n10" name="Image_Ban" src="bdlr7" xy="80,83" size="32,32" color="#ff3300">
+      <gearDisplay controller="State_C" pages="1"/>
+    </image>
+    <text id="n6" name="TextField_Title" xy="132,23" size="232,43" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" singleLine="true" text="世界聊天频道"/>
+    <text id="n7" name="TextField_Details" xy="130,79" size="396,35" alpha="0.5" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="[旗号]玩家名字：聊天内容大大阿达阿达奥所多"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>nhrfj.xml|1143|<component size="561,776">
+  <controller name="Page_C" pages="0,正常,1,联盟为空,2,好友为空,3,对立为空" selected="0"/>
+  <displayList>
+    <list id="n21" name="List_GroupList" xy="0,0" size="561,776" overflow="scroll" scrollBarFlags="2" defaultItem="ui://lyv9eezhnhrfi">
+      <gearDisplay controller="Page_C" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n25" name="Label_Join" src="nhrfn" xy="81,444">
+      <gearDisplay controller="Page_C" pages="1"/>
+    </component>
+    <text id="n22" name="TextField_Tips" xy="33,363" size="495,50" font="微软雅黑" fontSize="36" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="您当前没有加入联盟">
+      <gearDisplay controller="Page_C" pages="1,2,3"/>
+      <gearText controller="Page_C" pages="2,3" values="您当前没有好友|您当前没有对立势力" default="您当前没有加入联盟"/>
+    </text>
+    <text id="n26" name="TextField_World" xy="33,444" size="498,96" font="微软雅黑" fontSize="36" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="世界频道联盟频道点击玩家头像可加好友">
+      <gearDisplay controller="Page_C" pages="2"/>
+    </text>
+  </displayList>
+</component>nhrfk.xml|275|<component size="1249,43">
+  <displayList>
+    <text id="n33" name="TextField_Time" xy="451,4" size="333,35" font="微软雅黑" fontSize="24" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="下午 5:35"/>
+  </displayList>
+</component>nhrfl.xml|1955|<component size="1249,100">
+  <controller name="State_C" pages="0,显示复制本条,1,不显示" selected="0"/>
+  <controller name="Relation_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n32_tit8" name="Image_DetailsBackground" src="bdlra" xy="102,30" size="924,65">
+      <gearDisplay controller="Relation_C" pages="1"/>
+      <relation target="n27" sidePair="height-height,width-width"/>
+    </image>
+    <image id="n33_tit8" name="Image_DetailsBase" src="bdlrb" xy="102,30" size="924,65">
+      <gearDisplay controller="Relation_C" pages="0"/>
+      <relation target="n27" sidePair="height-height,width-width"/>
+    </image>
+    <loader id="n28" name="Loader_LordIcon" xy="0,2" size="97,97" url="ui://lyv9eezhbdlr2" fill="scaleFree">
+      <relation target="" sidePair="left-left,top-top"/>
+    </loader>
+    <component id="n30" name="Button_Copy" src="pnexozh7" pkg="s5cy5qnp" xy="1028,18" size="215,79">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n31_9904" sidePair="right-right"/>
+      <Button title="复制本条" titleColor="#ffffff" titleFontSize="27" icon="ui://s5cy5qnpuezoozi5"/>
+    </component>
+    <component id="n31_9904" name="Button_Pop" src="f1djozo7" pkg="s5cy5qnp" xy="102,30" size="927,65">
+      <relation target="" sidePair=""/>
+      <relation target="n27" sidePair="height-height,width-width"/>
+    </component>
+    <text id="n25" name="TextField_Name" xy="118,0" size="365,35" alpha="0.5" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="[旗号]玩家名字七个字">
+      <relation target="n28" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n27" name="TextField_Content" xy="131,40" size="875,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="height" text="聊天内容">
+      <relation target="" sidePair="top-top"/>
+    </text>
+  </displayList>
+  <relation target="n33_tit8" sidePair="height-height"/>
+</component>nhrfm.xml|1877|<component size="1249,100">
+  <controller name="State_C" pages="0,未发送,2,重新发送,1,已发送" selected="0"/>
+  <displayList>
+    <component id="n34" name="Label_Round" src="fmw6ozin" pkg="s5cy5qnp" xy="151,39" size="48,50">
+      <gearDisplay controller="State_C" pages="0"/>
+    </component>
+    <image id="n41_tit8" name="Image_ContentBackground" src="bdlr4" xy="207,33" size="932,66">
+      <relation target="" sidePair="right-right,top-top"/>
+      <relation target="n31" sidePair="height-height,width-width"/>
+    </image>
+    <loader id="n29" name="Loader_LordIcon" xy="1151,2" size="97,97" url="ui://lyv9eezhbdlr1" fill="scaleFree">
+      <relation target="" sidePair="right-right,top-top"/>
+    </loader>
+    <component id="n35" name="Button_Send" src="knyu29" pkg="s5cy5qnp" xy="9,32" size="191,71" scale="0.6,0.6" controller="Type_C,0">
+      <gearDisplay controller="State_C" pages="2"/>
+      <relation target="n40_9904" sidePair="left-left"/>
+      <Button title="重新发送" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <component id="n40_9904" name="Button_Pop" src="990410" xy="207,33" size="932,66">
+      <relation target="" sidePair="right-right"/>
+      <relation target="n31" sidePair="height-height,width-width"/>
+    </component>
+    <text id="n32" name="TextField_Name" xy="772,1" size="349,35" alpha="0.5" font="微软雅黑" fontSize="24" color="#ffffff" align="right" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="[旗号]玩家名字七个字">
+      <relation target="n29" sidePair="right-left,top-top"/>
+    </text>
+    <text id="n31" name="TextField_Content" xy="227,42" size="888,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="height" text="聊天内容&#xA;">
+      <relation target="" sidePair="right-right,top-top"/>
+    </text>
+  </displayList>
+  <relation target="n41_tit8" sidePair="height-height"/>
+</component>nhrfn.xml|545|<component size="400,292" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n3_fmw6" name="icon" xy="0,0" size="400,292" url="ui://lyv9eezhbdlr5" fill="scale"/>
+    <text id="n2" name="title" xy="114,15" size="181,54" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="加入联盟"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.90"/>
+</component>nhrfq.xml|4516|<component size="1302,1020" opaque="false">
+  <controller name="Type_C" pages="0,群聊,1,好友私聊,2,对立私聊" selected="0"/>
+  <controller name="Tab_C" pages="0,文字输入,1,语音输入" selected="0"/>
+  <displayList>
+    <component id="n5" name="Button_Block" src="pnexozh7" pkg="s5cy5qnp" xy="927,51" size="170,90">
+      <gearDisplay controller="Type_C" pages="1,2"/>
+      <Button title="屏蔽" icon="ui://lyv9eezhbdlr7" selectedTitle="已屏蔽" selectedIcon="ui://lyv9eezhbdlr6"/>
+    </component>
+    <component id="n12" name="Button_AddFriends" src="pnexozh7" pkg="s5cy5qnp" xy="1122,51" size="170,90">
+      <gearDisplay controller="Type_C" pages="2"/>
+      <relation target="n5" sidePair="left-right,top-top"/>
+      <Button title="加好友" icon="ui://lyv9eezhbdlr9" selectedTitle="已为好友" selectedIcon="ui://lyv9eezhnhrfr"/>
+    </component>
+    <component id="n6" name="Button_Delete" src="pnexozh7" pkg="s5cy5qnp" xy="1121,51" size="170,90">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <relation target="n5" sidePair="left-right,top-top"/>
+      <Button title="删除" icon="ui://zat5frjddaq31j"/>
+    </component>
+    <loader id="n10" name="Loader_LordIcon" xy="29,42" size="98,98" url="ui://lyv9eezhbdlr2">
+      <gearDisplay controller="Type_C" pages="1,2"/>
+    </loader>
+    <text id="n9" name="TextField_Flagname" xy="151,65" size="455,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="[旗号]玩家名字七个字">
+      <gearDisplay controller="Type_C" pages="1,2"/>
+      <gearColor controller="Type_C" pages="2" values="#8c5451,#000000" default="#ffffff,#000000"/>
+      <relation target="n10" sidePair="left-right,top-top"/>
+    </text>
+    <list id="n2" name="List_GroupChat" xy="18,1" size="1265,892" overflow="scroll" lineGap="10" autoItemSize="false">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="" sidePair="top-top"/>
+      <item url="ui://lyv9eezhnhrfl"/>
+      <item url="ui://lyv9eezhnhrfk"/>
+      <item url="ui://lyv9eezhnhrfm"/>
+      <item url="ui://lyv9eezhnhrfl"/>
+      <item url="ui://lyv9eezhnhrfl"/>
+      <item url="ui://lyv9eezhhiry13"/>
+      <item url="ui://lyv9eezhhiry17"/>
+    </list>
+    <list id="n11" name="List_PrivateChat" xy="27,166" size="1265,762" overflow="scroll" lineGap="10" autoItemSize="false">
+      <gearDisplay controller="Type_C" pages="1,2"/>
+      <item url="ui://lyv9eezhnhrfl"/>
+      <item url="ui://lyv9eezhnhrfl"/>
+      <item url="ui://lyv9eezhnhrfk"/>
+      <item url="ui://lyv9eezhnhrfm"/>
+      <item url="ui://lyv9eezhnhrfm"/>
+      <item url="ui://lyv9eezhnhrfl"/>
+      <item url="ui://lyv9eezhnhrfl"/>
+      <item url="ui://lyv9eezhnhrfl"/>
+      <item url="ui://lyv9eezhnhrfl"/>
+    </list>
+    <graph id="n0" name="Graph_Background1" xy="0,895" size="1302,125" group="n19_dqfw" type="rect" lineSize="0" fillColor="#ff24435c"/>
+    <graph id="n1" name="Graph_Background2" xy="144,917" size="906,82" group="n19_dqfw" alpha="0.5" type="rect" lineSize="0" fillColor="#ff000000">
+      <gearDisplay controller="Tab_C" pages="0"/>
+    </graph>
+    <text id="n3" name="TextField_Imput" xy="159,936" size="1005,50" group="n19_dqfw" input="true" prompt="点击输入聊天内容" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" autoSize="none" text="">
+      <gearDisplay controller="Tab_C" pages="0"/>
+    </text>
+    <component id="n4" name="Button_Send" src="gr0bozdm" pkg="s5cy5qnp" xy="1072,913" size="219,92" group="n19_dqfw" controller="State_C,0">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <Button title="发送"/>
+    </component>
+    <component id="n15_hiry" name="Button_SwitchMode" src="rmqpozfv" pkg="s5cy5qnp" xy="34,929" group="n19_dqfw" visible="false">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <Button title="话筒" icon="ui://lyv9eezhucez1d"/>
+    </component>
+    <component id="n16_hiry" name="Button_SwitchMode1" src="rmqpozfv" pkg="s5cy5qnp" xy="30,923" group="n19_dqfw" visible="false">
+      <gearDisplay controller="Tab_C" pages="1"/>
+      <Button title="文字" icon="ui://lyv9eezhucez1e"/>
+    </component>
+    <component id="n18_hiry" name="Button_PressOnInputVoice" src="gr0bozdo" pkg="s5cy5qnp" xy="154,909" size="1128,97" group="n19_dqfw" visible="false">
+      <gearDisplay controller="Tab_C" pages="1"/>
+      <Button title="按住说话" titleFontSize="52"/>
+    </component>
+    <group id="n19_dqfw" name="n19" xy="0,895" size="1302,125" advanced="true">
+      <relation target="" sidePair="bottom-bottom"/>
+    </group>
+  </displayList>
+</component>package.xml|2818|<packageDescription id="lyv9eezh" name="Chat">
+  <resources>
+    <component id="990410" name="Button_SelfBubble" path="/Button/" size="68,65"/>
+    <component id="bdlrf" name="Button_Tag" path="/Button/" size="100,35"/>
+    <component id="hiry13" name="Component_OthersVoice" path="/Component/" size="745,100"/>
+    <component id="hiry17" name="Component_SelfVoice" path="/Component/" size="1249,102"/>
+    <component id="hiry1b" name="Button_OnOff" path="/Button/" size="114,54"/>
+    <component id="m6dft" name="Button_Grip" path="/Button/" size="19,19"/>
+    <component id="nhrfi" name="Button_LordInfo" path="/Button/" size="557,131"/>
+    <component id="nhrfj" name="Component_Grouping" path="/Component/" size="561,776"/>
+    <component id="nhrfk" name="Component_Time" path="/Component/" size="1249,43"/>
+    <component id="nhrfl" name="Component_OthersItem" path="/Component/" size="1249,100"/>
+    <component id="nhrfm" name="Component_SelfItem" path="/Component/" size="1249,100"/>
+    <component id="nhrfn" name="Button_AddUnion" path="/Button/" size="400,292"/>
+    <component id="nhrfq" name="Component_Content" path="/Component/" size="1302,1020"/>
+    <image id="bdlr4" name="Image_GreenBubble" path="/Image/" size="68,74" scale="9grid" scale9grid="7,33,36,23"/>
+    <image id="bdlr5" name="Image_Union" path="/Image/" size="200,146"/>
+    <image id="bdlr7" name="Image_Ban" path="/Image/" size="46,46"/>
+    <image id="bdlr9" name="Image_Add" path="/Image/" size="56,50"/>
+    <image id="bdlra" name="Image_RedBubble" path="/Image/" size="68,74" scale="9grid" scale9grid="24,36,37,31"/>
+    <image id="bdlrb" name="Image_BlueBubble" path="/Image/" size="68,74" scale="9grid" scale9grid="27,34,29,24"/>
+    <image id="bdlrg" name="Image_Toggle" path="/Image/" size="76,29"/>
+    <image id="nhrfr" name="Image_Friend" path="/Image/" size="56,50"/>
+    <image id="ucez1c" name="语音" path="/Image/" size="200,200"/>
+    <image id="ucez1d" name="语音 (1)" path="/Image/" size="200,200"/>
+    <image id="ucez1e" name="键盘" path="/Image/" size="200,200"/>
+    <component id="bdlrc" name="ChatMain" path="/" size="1920,1080" exported="true"/>
+    <component id="hiry12" name="ChatMainv0.3" path="/" size="1920,1080" exported="true"/>
+    <component id="hiry18" name="PopUp_VoiceStatev0.3" path="/" size="1920,1080" exported="true"/>
+    <component id="hiry19" name="VoiceSettingv0.3" path="/" size="1920,1080" exported="true"/>
+    <component id="m6dfu" name="ScrollBar_Menu" path="/ScrollBar/" size="313,19" exported="true"/>
+    <image id="aopc1g" name="Image_ChannelWorld" path="/Image/" size="97,97" exported="true"/>
+    <image id="aopc1h" name="Image_ChannelAlliance" path="/Image/" size="97,97" exported="true"/>
+    <atlas id="atlas0" size="512,512" file="atlas0.png"/>
+  </resources>
+</packageDescription>

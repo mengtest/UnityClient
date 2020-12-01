@@ -1,0 +1,184 @@
+blgrq.xml|3479|<component size="490,950">
+  <controller name="State_C" pages="0,背包,1,临时背包,2,有滑条按钮,3,无滑条有按钮,4,无滑条无按钮,5,宝石经验" selected="1"/>
+  <displayList>
+    <image id="n46_rmqp" name="Image_Base1" src="rmqpozg4" pkg="s5cy5qnp" xy="24,919" size="441,31">
+      <relation target="n34_rmqp" sidePair="left-left,top-top"/>
+    </image>
+    <image id="n34_rmqp" name="Image_Base2" src="rmqpozfr" pkg="s5cy5qnp" xy="7,8" size="474,914"/>
+    <image id="n43_rmqp" name="Image_ItemSquare" src="owfyozfg" pkg="s5cy5qnp" xy="36,304" size="423,260"/>
+    <image id="n36_rmqp" name="Image_Base" src="no0zozht" pkg="s5cy5qnp" xy="109,48" size="272,51" color="#48ade8"/>
+    <image id="n35_rmqp" name="Image_Left" src="rmqpozfp" pkg="s5cy5qnp" xy="14,60" size="97,24"/>
+    <image id="n38_rmqp" name="Image_Right" src="rmqpozfp" pkg="s5cy5qnp" xy="376,61" size="97,24" flip="hz"/>
+    <component id="n44_rmqp" name="Component_ItemIcon" src="hqutz3m" pkg="s5cy5qnp" xy="170,355" group="n37_rmqp" touchable="false"/>
+    <text id="n45_rmqp" name="TextField_ItemName" xy="123,48" size="243,49" group="n37_rmqp" font="微软雅黑" fontSize="34" align="center" vAlign="middle" autoSize="shrink" singleLine="true" text="物品名字七个字"/>
+    <text id="n27" name="TextField_Description" xy="16,110" size="454,187" group="n37_rmqp" font="微软雅黑" fontSize="30" color="#1d4674" ubb="true" autoSize="none" text="道具描述50字内">
+      <gearDisplay controller="State_C" pages="0,2,3,4,5"/>
+      <relation target="n34_rmqp" sidePair="center-center,top-top"/>
+    </text>
+    <group id="n37_rmqp" name="Group_Item" xy="16,48" size="454,467" advanced="true">
+      <gearDisplay controller="State_C" pages="0,1,2,3,4,5"/>
+      <relation target="n34_rmqp" sidePair="center-center,top-top"/>
+    </group>
+    <text id="n25" name="TextField_Amount" xy="26,671" size="72,43" group="n42_rmqp" font="微软雅黑" fontSize="30" color="#1d4674" text="数量:">
+      <gearDisplay controller="State_C" pages="0,2"/>
+    </text>
+    <component id="n39_rmqp" name="Button_Minus" src="rmqpozfv" pkg="s5cy5qnp" xy="20,577" group="n42_rmqp"/>
+    <component id="n40_rmqp" name="Button_Plus" src="rmqpozfv" pkg="s5cy5qnp" xy="405,577" group="n42_rmqp">
+      <Button icon="ui://s5cy5qnprmqpozft"/>
+    </component>
+    <component id="n41_rmqp" name="Component_ProgressBar1" src="rmqpozfz" pkg="s5cy5qnp" xy="100,578" size="302,129" group="n42_rmqp">
+      <Slider max="100"/>
+    </component>
+    <group id="n42_rmqp" name="Group_Progress" xy="20,577" size="453,137" advanced="true">
+      <gearDisplay controller="State_C" pages="0,2"/>
+      <relation target="n37_rmqp" sidePair="left-left,top-top"/>
+    </group>
+    <text id="n47_hl3f" name="TextField_ItemDieTime" xy="179,149" size="125,38" fontSize="30" align="center" vAlign="middle" text="10：00：00">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <text id="n31" name="TextField_Tips" xy="22,575" size="444,91" font="微软雅黑" fontSize="34" color="#ff6600" ubb="true" text="背包装备已满，熔炼装备腾出&#xA;空间后物品将自动进入背包！">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n34_rmqp" sidePair="center-center,top-top"/>
+    </text>
+    <component id="n33_rmqp" name="Button_Use" src="gr0bozdm" pkg="s5cy5qnp" xy="106,787" size="270,97" controller="State_C,0">
+      <gearDisplay controller="State_C" pages="0,1,2,3"/>
+      <relation target="n34_rmqp" sidePair="center-center,bottom-bottom"/>
+      <Button title="使用" titleFontSize="34"/>
+    </component>
+  </displayList>
+</component>ejtoa.xml|1765|<component size="1920,1080" overflow="hidden" adaptationTest="FitSize">
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n45_6rw4" name="Component_BG" src="no0zozhl" pkg="s5cy5qnp" xy="0,0" size="1920,1080" alpha="0.9">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n35_p2pn" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0">
+      <relation target="" sidePair="left-left,top-top"/>
+      <Label title="背包"/>
+    </component>
+    <image id="n38_p2pn" name="Image_Bag" src="p2pn15" xy="278,3" size="133,64"/>
+    <component id="n54_jpkq" name="Componment_BagHandle" src="jpkq1f" xy="240,126">
+      <gearXY controller="State_C" pages="0,1" values="240,126|213,126"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n46_vwvk" name="Component_ControllPad" src="blgrq" xy="-3,130" pivot="0.5,0.5" size="515,942" scale="0,0" alpha="0">
+      <gearSize controller="State_C" pages="0,1" values="515,942,0,0|515,942,1,1"/>
+      <gearLook controller="State_C" pages="0,1" values="0,0,0|0,0,0"/>
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </component>
+  </displayList>
+  <transition name="selected_T">
+    <item time="0" type="Alpha" target="n46_vwvk" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Scale" target="n46_vwvk" tween="true" startValue="0,0" endValue="1.05,1.05" duration="6"/>
+    <item time="0" type="XY" target="n54_jpkq" tween="true" startValue="213,126" endValue="435,126" duration="9"/>
+    <item time="6" type="Scale" target="n46_vwvk" tween="true" startValue="1.05,1.05" endValue="1,1" duration="3"/>
+  </transition>
+</component>ejtoe.xml|314|<component size="1384,810">
+  <displayList>
+    <list id="n5" name="List_Item" xy="0,0" size="1384,810" layout="flow_hz" overflow="scroll" scrollBarFlags="6" margin="8,8,16,16" lineGap="10" colGap="10" defaultItem="ui://s5cy5qnphqutz3m" autoItemSize="false">
+      <item/>
+    </list>
+  </displayList>
+</component>ejtoh.xml|498|<component size="128,105" extention="Button">
+  <controller name="button" pages="1,up,0,down" selected="1"/>
+  <displayList>
+    <text id="n4" name="title" xy="0,0" size="46,105" font="微软雅黑" fontSize="34" color="#f5cf4d" align="center" vAlign="middle" leading="1" autoSize="none" shadowColor="#000066" shadowOffset="1,1" text="用品">
+      <gearColor controller="button" pages="0" values="#f5cf4d,#000066" default="#ffffff,#000066"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>jpkq1f.xml|4952|<component size="1531,958">
+  <controller name="Tab_C" pages="0,用品,3,装备,4,宝石,2,临时背包" selected="3"/>
+  <controller name="Type_C" pages="0,有临时,1,无临时,2,无宝石无临时" selected="0"/>
+  <displayList>
+    <graph id="n41_rmqp" name="Graph_Bg1" xy="51,1" size="1426,950" alpha="0.6" type="rect" lineSize="0" fillColor="#ff163252">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <image id="n40_rmqp" name="Graph_Bg2" src="rmqp19" xy="51,2" size="1427,936">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <list id="n7" name="List_Bag" xy="-3,12" size="1534,946" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="8" margin="0,0,75,75" defaultItem="ui://y9722uceejtoe" align="center" pageController="Tab_C">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item name="1"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n65_jpkq" name="Label_LeftTime" src="pui2oz41" pkg="s5cy5qnp" xy="43,-32">
+      <gearDisplay controller="Tab_C" pages="2"/>
+      <Label title="无装备"/>
+    </component>
+    <image id="n39_p2pn" name="Image_BottonBg" src="p2pn17" xy="38,789" size="1453,165"/>
+    <graph id="n56_jpkq" name="n56" xy="439,890" size="160,3" group="n63_jpkq" type="rect" lineSize="0" fillColor="#ffa9defe">
+      <gearXY controller="Type_C" pages="1,2" values="528,890|674,890" default="439,890"/>
+    </graph>
+    <graph id="n57_jpkq" name="n57" xy="673,882" size="24,24" group="n63_jpkq" type="eclipse" lineSize="0" fillColor="#ffabddfb">
+      <gearXY controller="Type_C" pages="1,2" values="762,882|908,882" default="673,882"/>
+    </graph>
+    <graph id="n58_jpkq" name="n58" xy="418,882" size="24,24" group="n63_jpkq" type="eclipse" lineSize="0" fillColor="#ffa9defe">
+      <gearXY controller="Type_C" pages="1,2" values="507,882|653,882" default="418,882"/>
+    </graph>
+    <graph id="n59_jpkq" name="n59" xy="933,882" size="24,24" group="n63_jpkq" type="eclipse" lineSize="0" fillColor="#ffabddfb">
+      <gearDisplay controller="Type_C" pages="0,1"/>
+      <gearXY controller="Type_C" pages="1" values="1022,882" default="933,882"/>
+    </graph>
+    <graph id="n60_jpkq" name="n60" xy="703,890" size="160,3" group="n63_jpkq" type="rect" lineSize="0" fillColor="#ffa9defe">
+      <gearDisplay controller="Type_C" pages="0,1"/>
+      <gearXY controller="Type_C" pages="1" values="792,890" default="703,890"/>
+    </graph>
+    <graph id="n61_jpkq" name="n61" xy="1200,882" size="24,24" group="n63_jpkq" type="eclipse" lineSize="0" fillColor="#ffabddfb">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <gearXY controller="Type_C" pages="1" values="1289,882" default="1200,882"/>
+    </graph>
+    <graph id="n62_jpkq" name="n62" xy="971,890" size="160,3" group="n63_jpkq" type="rect" lineSize="0" fillColor="#ffa9defe">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <gearXY controller="Type_C" pages="1" values="1060,890" default="971,890"/>
+    </graph>
+    <image id="n53_jpkq" name="Image_Point_1" src="rmqp18" xy="1182,854" size="62,79" group="n63_jpkq">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <gearXY controller="Tab_C" pages="0,3,4,2" values="400,854|656,854|915,854|1182,854" tween="true"/>
+    </image>
+    <image id="n64_jpkq" name="Image_Point_2" src="rmqp18" xy="478,854" size="62,79" group="n63_jpkq">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <gearXY controller="Tab_C" pages="0,3,4,2" values="490,854|744,854|1004,854|478,854" tween="true"/>
+    </image>
+    <image id="n66_mcxn" name="Image_Point_3" src="rmqp18" xy="478,854" size="62,79" group="n63_jpkq">
+      <gearDisplay controller="Type_C" pages="2"/>
+      <gearXY controller="Tab_C" pages="0,3,4,2" values="635,854|890,854|1004,854|478,854" tween="true"/>
+    </image>
+    <group id="n63_jpkq" name="Group_Slider" xy="418,854" size="826,79" advanced="true"/>
+    <component id="n12" name="Button_Default" src="ejtoh" xy="364,842" size="130,107">
+      <gearXY controller="Type_C" pages="0,1,2" values="364,842|439,842|596,842"/>
+      <Button title="用品" controller="Tab_C" page="0"/>
+    </component>
+    <component id="n34" name="Button_Equip" src="ejtoh" xy="614,842" size="130,107">
+      <gearXY controller="Type_C" pages="0,1,2" values="614,842|704,842|861,842"/>
+      <Button title="装备" controller="Tab_C" page="3"/>
+    </component>
+    <component id="n14" name="Button_Gen" src="ejtoh" xy="878,841" size="130,107">
+      <gearDisplay controller="Type_C" pages="0,1"/>
+      <gearXY controller="Type_C" pages="0,1" values="878,841|964,842" default="964,842"/>
+      <Button title="宝石" controller="Tab_C" page="4"/>
+    </component>
+    <component id="n51_prrt" name="Button_Temp" src="ejtoh" xy="1142,842" size="130,107">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <Button checked="true" title="临时" controller="Tab_C" page="2"/>
+    </component>
+  </displayList>
+</component>package.xml|1189|<packageDescription id="y9722uce" name="Bag">
+  <resources>
+    <component id="blgrq" name="Component_Use" path="/Component/" size="490,950"/>
+    <component id="ejtoe" name="Component_Bag" path="/Component/" size="1384,810"/>
+    <component id="ejtoh" name="Button_Category" path="/Button/" size="128,105"/>
+    <component id="jpkq1f" name="Component_BagHandle" path="/Button/" size="1531,958"/>
+    <image id="p2pn15" name="Image_Bag" path="/Image/" size="97,47"/>
+    <image id="p2pn17" name="Image_BG" path="/Image/" size="400,113" scale="9grid" scale9grid="198,0,4,113"/>
+    <image id="rmqp18" name="Image_Button" path="/Image/" size="62,79"/>
+    <image id="rmqp19" name="Image_Side" path="/Image/" size="66,48" scale="9grid" scale9grid="29,32,2,4"/>
+    <component id="ejtoa" name="BagMain" path="/" size="1920,1080" exported="true"/>
+    <image id="blgrs" name="Image_03" path="/Image/" size="37,45" exported="true"/>
+    <image id="blgrt" name="Image_02" path="/Image/" size="37,45" exported="true"/>
+    <image id="blgru" name="Image_01" path="/Image/" size="37,45" exported="true"/>
+    <atlas id="atlas0" size="512,512" file="atlas0.png"/>
+  </resources>
+</packageDescription>

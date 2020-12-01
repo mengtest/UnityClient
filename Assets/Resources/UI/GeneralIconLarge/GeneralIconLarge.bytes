@@ -1,0 +1,24 @@
+package.xml|1716|<packageDescription id="4auusrtu" name="GeneralIconLarge">
+  <resources>
+    <image id="oz2of" name="wujiang16_da" path="/" size="644,830" exported="true"/>
+    <image id="oz2og" name="wujiang17_da" path="/" size="644,830" exported="true"/>
+    <image id="yqyk0" name="wujiang10_da" path="/" size="200,296" exported="true"/>
+    <image id="yqyk1" name="wujiang11_da" path="/" size="200,296" exported="true"/>
+    <image id="yqyk2" name="wujiang12_da" path="/" size="200,296" exported="true"/>
+    <image id="yqyk3" name="wujiang13_da" path="/" size="200,296" exported="true"/>
+    <image id="yqyk4" name="wujiang14_da" path="/" size="200,296" exported="true"/>
+    <image id="yqyk5" name="wujiang15_da" path="/" size="200,296" exported="true"/>
+    <image id="yqyk6" name="wujiang1_da" path="/" size="200,296" exported="true"/>
+    <image id="yqyk7" name="wujiang2_da" path="/" size="200,296" exported="true"/>
+    <image id="yqyk8" name="wujiang3_da" path="/" size="373,513" exported="true"/>
+    <image id="yqyk9" name="wujiang4_da" path="/" size="200,296" exported="true"/>
+    <image id="yqyka" name="wujiang5_da" path="/" size="200,296" exported="true"/>
+    <image id="yqykb" name="wujiang6_da" path="/" size="200,296" exported="true"/>
+    <image id="yqykc" name="wujiang7_da" path="/" size="200,296" exported="true"/>
+    <image id="yqykd" name="wujiang8_da" path="/" size="200,296" exported="true"/>
+    <image id="yqyke" name="wujiang9_da" path="/" size="200,296" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <atlas id="atlas100" size="1024,1024" file="atlas0_1.png"/>
+    <atlas id="atlas101" size="1024,1024" file="atlas0_2.png"/>
+  </resources>
+</packageDescription>

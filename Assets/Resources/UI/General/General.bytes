@@ -1,0 +1,834 @@
+c8c117.xml|6458|<component size="971,651">
+  <controller name="State_C" pages="1,未满,0,已满" selected="0"/>
+  <displayList>
+    <text id="n22" name="TextField_Development" xy="0,17" size="158,50" font="微软雅黑" fontSize="34" color="#b69689" leading="0" ubb="true" autoSize="shrink" singleLine="true" text="成长经验:"/>
+    <image id="n104_h6za" name="Image_Trans" src="h6za18" xy="600,168" pivot="0.5,0.5" size="256,57" scale="1.3,1" alpha="0.01"/>
+    <movieclip id="n105_h6za" name="MovieClip_Lvup" src="h6za19" xy="578,170" pivot="0.5,0.5" alpha="0" rotation="180"/>
+    <image id="n106_h6za" name="Image_Trans3" src="h6za1a" xy="705,136" pivot="0.5,0.5" scale="5,3" alpha="0" rotation="90"/>
+    <component id="n114_ujpi" name="Button_Strengthen" src="gr0bozdl" pkg="s5cy5qnp" xy="339,553">
+      <Button title="强化"/>
+    </component>
+    <component id="n119_m89f" name="ProgressBar_ProgressBar1" src="ntr0ozj8" pkg="s5cy5qnp" xy="162,22" size="622,42">
+      <ProgressBar value="58" max="100"/>
+    </component>
+    <component id="n118_m89f" name="ProgressBar_ProgressBar2" src="ntr0ozj9" pkg="s5cy5qnp" xy="165,19" size="616,44">
+      <ProgressBar value="27" max="100"/>
+    </component>
+    <graph id="n102_h6za" name="Graph_Progress" xy="291,-8" pivot="0.5,0.5" size="364,100" scale="1.7,0.5" alpha="0" type="rect" lineColor="#ffffffff"/>
+    <image id="n125_l2ck" name="Image_Base" src="l3hlozo5" pkg="s5cy5qnp" xy="1,263" size="970,226" group="n121_ntr0"/>
+    <image id="n111_j66h" name="Image_Yellow" src="blgr28" pkg="s5cy5qnp" xy="522,274" size="160,160" group="n121_ntr0"/>
+    <image id="n110_j66h" name="Image_Purple" src="blgr25" pkg="s5cy5qnp" xy="354,274" size="160,160" group="n121_ntr0"/>
+    <image id="n109_j66h" name="Image_Blue" src="blgr24" pkg="s5cy5qnp" xy="184,274" size="160,160" group="n121_ntr0"/>
+    <image id="n108_j66h" name="Image_Level" src="blgr23" pkg="s5cy5qnp" xy="13,274" size="160,160" group="n121_ntr0"/>
+    <text id="n46" name="TextField_Experience" xy="14,437" size="161,40" group="n121_ntr0" font="微软雅黑" fontSize="28" color="#ebcdb0" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="经验+5"/>
+    <text id="n47" name="TextField_Experience2" xy="184,437" size="159,40" group="n121_ntr0" font="微软雅黑" fontSize="28" color="#ebcdb0" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="经验+15"/>
+    <text id="n48" name="TextField_Experience3" xy="352,437" size="161,40" group="n121_ntr0" font="微软雅黑" fontSize="28" color="#ebcdb0" align="center" autoSize="height" text="经验+50"/>
+    <text id="n50" name="TextField_Experience4" xy="525,438" size="155,40" group="n121_ntr0" font="微软雅黑" fontSize="28" color="#ebcdb0" align="center" autoSize="height" text="经验+100"/>
+    <text id="n54" name="TextField_Experience5" xy="738,441" size="217,40" group="n121_ntr0" font="微软雅黑" fontSize="28" color="#ebcdb0" text="自动添加1级经验"/>
+    <component id="n37" name="Button_Strenghthen1" src="ucskr" xy="13,274" group="n121_ntr0">
+      <Button icon="ui://4trbzbckyqyk7"/>
+    </component>
+    <component id="n38" name="Button_Strenghthen2" src="ucskr" xy="183,274" group="n121_ntr0">
+      <Button icon="ui://4trbzbckyqyk8"/>
+    </component>
+    <component id="n112_j66h" name="Button_Strenghthen3" src="ucskr" xy="355,274" group="n121_ntr0">
+      <Button icon="ui://4trbzbckyqyka"/>
+    </component>
+    <component id="n113_j66h" name="Button_Strenghthen4" src="ucskr" xy="523,274" group="n121_ntr0">
+      <Button icon="ui://4trbzbckyqyk9"/>
+    </component>
+    <component id="n120_od42" name="Button_Quick" src="gr0bozdm" pkg="s5cy5qnp" xy="745,326" size="210,83" group="n121_ntr0" controller="State_C,0">
+      <relation target="n113_j66h" sidePair="right-right,top-top"/>
+      <Button title="一键放入"/>
+    </component>
+    <group id="n121_ntr0" name="Group_Icon" xy="1,263" size="970,226" advanced="true"/>
+    <component id="n124_ntr0" name="Label_GrowAfter" src="ntr01m" xy="547,120" size="297,57" group="n122_ntr0">
+      <gearDisplay controller="State_C" pages="1"/>
+    </component>
+    <component id="n123_ntr0" name="Label_GrowNow" src="ntr01m" xy="18,120" size="297,57" group="n122_ntr0"/>
+    <component id="n31" name="Label_Tips" src="pui2oz41" pkg="s5cy5qnp" xy="591,80" group="n122_ntr0">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n124_ntr0" sidePair="bottom-bottom,left-left"/>
+    </component>
+    <text id="n32" name="TextField_InstructionNow" xy="28,177" size="248,43" group="n122_ntr0" font="微软雅黑" fontSize="30" color="#a0968b" ubb="true" autoSize="shrink" singleLine="true" text="武将总属性+"/>
+    <text id="n34" name="TextField_InstructionAfter" xy="553,177" size="265,43" group="n122_ntr0" font="微软雅黑" fontSize="30" color="#a0968b" ubb="true" autoSize="height" singleLine="true" text="武将总属性+">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <image id="n36" name="Image_Next" src="g4naozec" pkg="s5cy5qnp" xy="377,116" size="118,71" group="n122_ntr0">
+      <gearDisplay controller="State_C" pages="1"/>
+    </image>
+    <group id="n122_ntr0" name="Group_Growth" xy="18,80" size="826,140" advanced="true"/>
+  </displayList>
+  <transition name="ProgressBar_T">
+    <item time="0" type="Alpha" target="n102_h6za" tween="true" startValue="0" endValue="0.8" duration="6"/>
+    <item time="6" type="Alpha" target="n102_h6za" tween="true" startValue="0.8" endValue="0" duration="12"/>
+  </transition>
+  <transition name="Status_T">
+    <item time="0" type="Alpha" target="n106_h6za" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Alpha" target="n105_h6za" tween="true" startValue="0" endValue="1" duration="2"/>
+    <item time="0" type="Alpha" target="n104_h6za" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Scale" target="n104_h6za" tween="true" startValue="0,0" endValue="1.3,1.2" duration="6"/>
+    <item time="0" type="Scale" target="n106_h6za" tween="true" startValue="3,1" endValue="5,4" duration="6"/>
+    <item time="6" type="Alpha" target="n106_h6za" tween="true" startValue="1"/>
+    <item time="6" type="Scale" target="n104_h6za" tween="true" startValue="1.3,1.2" endValue="1.3,0" duration="8"/>
+    <item time="6" type="Scale" target="n106_h6za" tween="true" startValue="5,4" endValue="0,4" duration="8"/>
+    <item time="10" type="Alpha" target="n105_h6za" tween="true" startValue="1" endValue="0" duration="2"/>
+  </transition>
+</component>e6ukh.xml|2494|<component size="1920,1080">
+  <displayList>
+    <component id="n41_ujpi" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="武将"/>
+    </component>
+    <image id="n49_ujpi" name="Image_Chain" src="ujpiozgl" pkg="s5cy5qnp" xy="0,865" size="252,214">
+      <relation target="n41_ujpi" sidePair="left-left,bottom-bottom"/>
+    </image>
+    <list id="n31" name="List_General" xy="11,148" size="1897,929" layout="flow_hz" overflow="scroll" scrollBarFlags="2" clipSoftness="0,50" lineGap="20" colGap="20" lineItemCount="3" defaultItem="ui://rqtv1qewnxx2d">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n47_ujpi" name="Image_Base" src="ujpiozg8" pkg="s5cy5qnp" xy="1160,976" size="760,70" group="n36_ujpi"/>
+    <text id="n3" name="TextField_GeneralAmount" xy="1233,987" size="158,50" group="n36_ujpi" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" autoSize="shrink" shadowColor="#000000" shadowOffset="1,1" singleLine="true" text="武将数量:"/>
+    <text id="n4" name="TextField_Amount" xy="1390,987" size="104,50" group="n36_ujpi" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" autoSize="shrink" shadowColor="#000000" shadowOffset="1,1" singleLine="true" text="8/10"/>
+    <text id="n7" name="TextField_Design" xy="1495,988" size="428,46" group="n36_ujpi" font="微软雅黑" fontSize="26" color="#ffffff" vAlign="middle" leading="0" ubb="true" autoSize="shrink" shadowColor="#000000" shadowOffset="1,1" singleLine="true" text="(策划配置文字）"/>
+    <group id="n36_ujpi" name="Group_GeneralAmount" xy="1160,976" size="763,70" advanced="true">
+      <relation target="n41_ujpi" sidePair="right-right,bottom-bottom"/>
+    </group>
+    <component id="n53_ntr0" name="Component_Shine" src="no0zozhi" pkg="s5cy5qnp" xy="0,1" size="1920,1080" touchable="false">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <image id="n54_b4o6" name="n54" src="yqyk0" pkg="48zstrjk" xy="-121,5" group="n56_b4o6"/>
+    <image id="n55_b4o6" name="n55" src="yqyk0" pkg="43m475k2" xy="-159,74" group="n56_b4o6"/>
+    <group id="n56_b4o6" name="Reference" xy="-159,5" size="150,218" visible="false" advanced="true"/>
+  </displayList>
+</component>fvh750.xml|1150|<component size="1920,1080">
+  <displayList>
+    <graph id="n0_fvh7" name="Graph_Base" xy="0,0" size="1920,1080" alpha="0.7" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <component id="n1_fvh7" name="Component_Main" src="l2ckozou" pkg="s5cy5qnp" xy="389,273" controller="Type_C,0,State_C,0,BG_C,0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Label title="羁绊礼包"/>
+    </component>
+    <component id="n6_fvh7" name="Button_Acquire" src="knyu29" pkg="s5cy5qnp" xy="823,612" pivot="0.5,0.5" size="273,125" controller="Time_C,0,Type_C,0">
+      <relation target="n1_fvh7" sidePair="center-center,bottom-bottom"/>
+      <Button title="领取" titleFontSize="36"/>
+    </component>
+    <list id="n8_fvh7" name="List_ConnectionReward" xy="490,367" size="932,178" layout="row" overflow="scroll" margin="20,0,0,0" colGap="30" defaultItem="ui://s5cy5qnphqutz3m" align="center">
+      <relation target="n1_fvh7" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>h6za19.xml|266|<movieclip interval="83" frameCount="6">
+  <frames>
+    <frame rect="148,0,99,50"/>
+    <frame rect="101,0,142,50"/>
+    <frame rect="80,0,159,50"/>
+    <frame rect="37,0,135,50"/>
+    <frame rect="8,0,150,50"/>
+    <frame rect="0,3,98,46"/>
+  </frames>
+</movieclip>hh5k1y.xml|5088|<component size="1920,1080">
+  <displayList>
+    <graph id="n0_hh5k" name="Graph_Base" xy="0,0" size="1920,1080" alpha="0.8" type="rect" lineSize="0" fillColor="#ff031526">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n29_hh5k" name="Image_Next" src="g4naozec" pkg="s5cy5qnp" xy="1008,818" size="160,115">
+      <relation target="n33_hh5k" sidePair="top-bottom,center-center"/>
+    </image>
+    <component id="n33_hh5k" name="Component_Icon" src="o03oozis" pkg="s5cy5qnp" xy="811,34" scale="1.5,1.4">
+      <relation target="" sidePair="center-center,top-top"/>
+    </component>
+    <component id="n32_hh5k" name="Label_State" src="no0zozhv" pkg="s5cy5qnp" xy="1239,38">
+      <relation target="n33_hh5k" sidePair="left-right,top-top"/>
+      <Label title="一转" titleFontSize="36"/>
+    </component>
+    <text id="n44_hh5k" name="TextField_Status1" xy="1339,784" size="125,66" group="n54_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#66a7e8" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="属性："/>
+    <text id="n45_hh5k" name="TextField_Number4" xy="1464,784" size="339,66" group="n54_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffff00" vAlign="middle" ubb="true" autoSize="none" strokeColor="#a68042" singleLine="true" text="+4000"/>
+    <text id="n46_hh5k" name="TextField_Number5" xy="1463,854" size="338,66" group="n54_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffff00" vAlign="middle" ubb="true" autoSize="none" strokeColor="#a68042" singleLine="true" text="+4000"/>
+    <text id="n48_hh5k" name="TextField_Status4" xy="1339,854" size="125,66" group="n54_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#66a7e8" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="统率："/>
+    <text id="n50_hh5k" name="TextField_Number6" xy="1463,920" size="334,66" group="n54_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#66ff78" vAlign="middle" ubb="true" autoSize="none" strokeColor="#32631f" singleLine="true" text="+4000"/>
+    <text id="n51_hh5k" name="TextField_Develop2" xy="1339,921" size="125,66" group="n54_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#66a7e8" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="成长："/>
+    <text id="n52_hh5k" name="TextField_Number8" xy="1220,917" size="105,66" group="n54_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#b3d9fc" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="23"/>
+    <text id="n53_hh5k" name="TextField_Limit1" xy="1070,916" size="151,66" group="n54_hh5k" font="Noto Sans S Chinese Regular" fontSize="30" color="#b3d9fc" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="成长上限："/>
+    <group id="n54_hh5k" name="Group_Next" xy="1070,784" size="733,203" advanced="true">
+      <relation target="n29_hh5k" sidePair="left-right,middle-middle"/>
+    </group>
+    <text id="n34_hh5k" name="TextField_Status" xy="514,775" size="125,66" group="n55_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#66a7e8" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="属性："/>
+    <text id="n35_hh5k" name="TextField_Number" xy="638,775" size="339,66" group="n55_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffff00" vAlign="middle" ubb="true" autoSize="none" strokeColor="#a68042" singleLine="true" text="+4000"/>
+    <text id="n36_hh5k" name="TextField_Number2" xy="637,845" size="338,66" group="n55_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffff00" vAlign="middle" ubb="true" autoSize="none" strokeColor="#a68042" singleLine="true" text="+4000"/>
+    <text id="n38_hh5k" name="TextField_Status2" xy="514,845" size="125,66" group="n55_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#66a7e8" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="统率："/>
+    <text id="n40_hh5k" name="TextField_Number3" xy="637,912" size="334,66" group="n55_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#66ff78" vAlign="middle" ubb="true" autoSize="none" strokeColor="#32631f" singleLine="true" text="+4000"/>
+    <text id="n41_hh5k" name="TextField_Develop" xy="514,913" size="125,66" group="n55_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#66a7e8" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="成长："/>
+    <text id="n42_hh5k" name="TextField_Number7" xy="394,909" size="120,66" group="n55_hh5k" font="Noto Sans S Chinese Regular" fontSize="36" color="#b3d9fc" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="23"/>
+    <text id="n43_hh5k" name="TextField_Limit" xy="233,908" size="162,66" group="n55_hh5k" font="Noto Sans S Chinese Regular" fontSize="30" color="#b3d9fc" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="成长上限："/>
+    <group id="n55_hh5k" name="Group_Current" xy="233,775" size="744,204" advanced="true">
+      <relation target="n54_hh5k" sidePair="left-right,middle-middle"/>
+    </group>
+  </displayList>
+</component>m90528.xml|673|<component size="1920,1080">
+  <displayList>
+    <component id="n0_buai" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="羁绊"/>
+    </component>
+    <list id="n1_buai" name="List_ConnectionSet" xy="42,145" size="1846,934" layout="flow_vt" selectionMode="none" overflow="scroll" lineGap="-49" colGap="3" lineItemCount="10" defaultItem="ui://rlrxcvgim9052c">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>m9052a.xml|840|<component size="1920,1080">
+  <displayList>
+    <component id="n0_buai" name="Component_Main" src="l2ckozou" pkg="s5cy5qnp" xy="482,252" size="972,496" controller="Type_C,0,State_C,0,BG_C,1">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Label title="获取途径"/>
+    </component>
+    <component id="n2_buai" name="Button_Fishing" src="knyu29" pkg="s5cy5qnp" xy="861,390" size="392,130" controller="Time_C,0,Type_C,0">
+      <relation target="n0_buai" sidePair="center-center,top-bottom"/>
+      <Button title="钓鱼"/>
+    </component>
+    <component id="n3_buai" name="Button_Store" src="knyu29" pkg="s5cy5qnp" xy="861,559" size="392,130" controller="Time_C,0,Type_C,0">
+      <relation target="n2_buai" sidePair="top-bottom,center-center"/>
+      <Button title="军功商店"/>
+    </component>
+  </displayList>
+</component>m9052b.xml|4557|<component size="1920,1080">
+  <controller name="Status_C" pages="0,未获得,1,已获得" selected="0"/>
+  <controller name="Type_C" pages="0,1个,1,2个" selected="0"/>
+  <controller name="Mode_C" pages="0,1个时候的位置,1,2个时候的位置" selected="0"/>
+  <displayList>
+    <component id="n0_l47k" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="详情"/>
+    </component>
+    <image id="n27_w7t3" name="Image_Base1" src="w7t34o" xy="1735,169" group="n30_w7t3"/>
+    <image id="n28_w7t3" name="Image_Base2" src="w7t34n" xy="1254,124" group="n30_w7t3"/>
+    <image id="n29_w7t3" name="Image_Base3" src="w7t34n" xy="775,130" group="n30_w7t3"/>
+    <image id="n17_w7t3" name="Image_Base4" src="w7t34l" xy="662,182" size="1082,854" group="n30_w7t3"/>
+    <group id="n30_w7t3" name="Group_Base" xy="662,124" size="1272,936" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n2_l47k" name="Component_SoulIcon" src="w7t34f" xy="28,143" size="685,941">
+      <relation target="n30_w7t3" sidePair="right-left,middle-middle"/>
+    </component>
+    <text id="n9_tezg" name="TextField_Background" xy="769,277" size="930,223" fontSize="30" color="#8e4d32" vAlign="middle" letterSpacing="2" autoSize="none" text="浦阳鱼沉底，浣弄青丝绾。朝为越溪女，暮为越王征。皓齿信难开，扬蛾入吴关。一破夫差国，千秋竟不还。越王勾践为复国，从范蠡手中收购美女，将美女西施献给吴王。吴王沉迷于西施美色，荒废朝政，勾践趁虚而入，一举消灭吴国，西施则和范蠡扁舟太湖之上，逍遥余生。">
+      <relation target="n27_w7t3" sidePair="top-top,right-right"/>
+    </text>
+    <component id="n10_tezg" name="Button_Connection" src="iqo8ozif" pkg="s5cy5qnp" xy="1748,4" size="190,227" scale="0.8,0.8">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button title="羁绊"/>
+    </component>
+    <component id="n11_tezg" name="Button_Acquire" src="gr0bozdm" pkg="s5cy5qnp" xy="1323,733">
+      <gearDisplay controller="Status_C" pages="0"/>
+      <relation target="n27_w7t3" sidePair="right-right,middle-middle"/>
+      <Button title="获得"/>
+    </component>
+    <component id="n12_tezg" name="Component_Effect1" src="m9052e" xy="809,584" size="353,396">
+      <gearDisplay controller="Type_C" pages="0,1"/>
+      <gearXY controller="Mode_C" pages="0,1" values="809,584|807,587"/>
+      <relation target="n27_w7t3" sidePair="bottom-bottom,center-center"/>
+    </component>
+    <component id="n13_tezg" name="Component_Effect2" src="m9052e" xy="1264,585" size="353,397">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <relation target="n12_tezg" sidePair="left-right,middle-middle"/>
+    </component>
+    <image id="n18_w7t3" name="Image_Decoration" src="w7t34j" xy="696,106" size="176,60">
+      <relation target="n2_l47k" sidePair="left-right,bottom-top"/>
+    </image>
+    <image id="n19_w7t3" name="Image_Decoration1" src="w7t34j" xy="859,106" size="213,60" flip="hz">
+      <relation target="n18_w7t3" sidePair="left-right,middle-middle"/>
+    </image>
+    <component id="n22_w7t3" name="Component_Soulname" src="w7t34m" xy="775,112">
+      <relation target="n18_w7t3" sidePair="center-center,middle-middle"/>
+    </component>
+    <text id="n21_w7t3" name="TextField_SoulName" xy="881,112" size="144,54" fontSize="30" color="#ffece3" vAlign="middle" letterSpacing="2" autoSize="shrink" strokeColor="#663300" shadowColor="#663300" shadowOffset="1,1" singleLine="true" text="将魂名字">
+      <relation target="n19_w7t3" sidePair="middle-middle,center-center"/>
+    </text>
+    <image id="n23_w7t3" name="Image_Accessory1" src="w7t34j" xy="696,504" size="176,60" group="n25_w7t3">
+      <relation target="n2_l47k" sidePair="left-right,middle-middle"/>
+    </image>
+    <image id="n24_w7t3" name="img_zhuangsii2" src="w7t34j" xy="859,504" size="213,60" group="n25_w7t3" flip="hz">
+      <relation target="n23_w7t3" sidePair="left-right,middle-middle"/>
+    </image>
+    <text id="n8_tezg" name="Txt_Abilities" xy="766,511" size="227,46" group="n25_w7t3" fontSize="30" color="#63474e" align="center" vAlign="middle" letterSpacing="2" autoSize="shrink" bold="true" text="特长">
+      <relation target="n23_w7t3" sidePair="left-right,middle-middle"/>
+    </text>
+    <group id="n25_w7t3" name="Group_Abilities" xy="696,504" size="376,60" advanced="true"/>
+    <graph id="n31_w7t3" name="Graph_Line" xy="1212,593" size="3,370" type="rect" lineSize="0" fillColor="#ffdb8e4f">
+      <gearDisplay controller="Status_C" pages="0"/>
+      <relation target="n12_tezg" sidePair="left-right,middle-middle"/>
+    </graph>
+  </displayList>
+</component>m9052c.xml|2324|<component size="1905,485">
+  <displayList>
+    <image id="n19_w7t3" name="Image_Table1" src="l2ck41" xy="1,1" size="971,449" group="n21_w7t3"/>
+    <image id="n20_w7t3" name="Image_Table2" src="l2ck41" xy="970,2" size="934,449" group="n21_w7t3" flip="hz">
+      <relation target="n19_w7t3" sidePair="left-right,middle-middle"/>
+    </image>
+    <group id="n21_w7t3" name="Group_Table" xy="1,1" size="1903,450" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n18_w7t3" name="Image_Line" src="w7t34t" xy="382,48" size="1468,28">
+      <relation target="n21_w7t3" sidePair="top-top,center-center"/>
+    </image>
+    <component id="n5_buai" name="Button_Details" src="w7t34x" xy="374,26" size="124,62">
+      <relation target="n18_w7t3" sidePair="right-left,middle-middle"/>
+      <Button title="详"/>
+    </component>
+    <component id="n16_buai" name="Component_RewardsIcon" src="m9052d" xy="1436,79" size="457,406">
+      <relation target="n21_w7t3" sidePair="bottom-bottom,right-right"/>
+    </component>
+    <image id="n17_w7t3" name="Image_Title" src="w7t34v" xy="68,24" size="337,61">
+      <relation target="n5_buai" sidePair="right-left,middle-middle"/>
+    </image>
+    <text id="n2_buai" name="TextField_Title" xy="139,31" size="248,53" fontSize="30" color="#c49e65" align="center" vAlign="middle" autoSize="shrink" text="北风其凉">
+      <relation target="n17_w7t3" sidePair="middle-middle,center-center"/>
+    </text>
+    <component id="n22_w7t3" name="Component_SoulIcon1" src="oz2o26" pkg="rqtv1qew" xy="135,120" size="264,263">
+      <relation target="n21_w7t3" sidePair="left-left,middle-middle"/>
+    </component>
+    <component id="n23_w7t3" name="Component_SoulIcon2" src="oz2o26" pkg="rqtv1qew" xy="453,121" size="264,263">
+      <relation target="n22_w7t3" sidePair="left-right,middle-middle"/>
+    </component>
+    <component id="n24_w7t3" name="Component_SoulIcon3" src="oz2o26" pkg="rqtv1qew" xy="771,120" size="264,263">
+      <relation target="n23_w7t3" sidePair="left-right,middle-middle"/>
+    </component>
+    <component id="n25_w7t3" name="Component_SoulIcon4" src="oz2o26" pkg="rqtv1qew" xy="1088,119" size="264,263">
+      <relation target="n24_w7t3" sidePair="left-right,middle-middle"/>
+    </component>
+  </displayList>
+</component>m9052d.xml|2521|<component size="467,402">
+  <controller name="State_C" pages="0,未领取,1,已领取,2,未激活,3,已激活" selected="0"/>
+  <displayList>
+    <image id="n8_w7t3" name="Image_Light2" src="w7t34q" xy="0,229" size="466,173">
+      <gearDisplay controller="State_C" pages="0,2"/>
+    </image>
+    <image id="n6_w7t3" name="Image_Base" src="w7t34s" xy="102,0"/>
+    <image id="n7_w7t3" name="Image_Light" src="w7t34r" xy="86,38" size="280,334">
+      <gearDisplay controller="State_C" pages="0,2"/>
+    </image>
+    <loader id="n0_buai" name="Loader_BoxIcon" xy="134,64" pivot="0.5,0.5" size="180,150" url="ui://rlrxcvgiw7t34p" fill="scale">
+      <gearDisplay controller="State_C" pages="0,1"/>
+    </loader>
+    <text id="n2_buai" name="TextField_Status" xy="185,256" size="95,46" fontSize="30" color="#ffb05e" align="center" vAlign="middle" autoSize="shrink" text="已领取">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <loader id="n3_buai" name="Loader_EffectIcon" xy="148,47" size="165,172" url="ui://4trbzbckyqyk5" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="State_C" pages="2,3"/>
+    </loader>
+    <text id="n4_buai" name="TextField_Activate" xy="153,258" size="148,46" fontSize="30" color="#6ac92a" align="center" vAlign="middle" autoSize="none" text="点击激活">
+      <gearDisplay controller="State_C" pages="2"/>
+    </text>
+    <text id="n5_buai" name="TextField_Effect" xy="81,302" size="297,46" fontSize="26" color="#ffca9c" letterSpacing="2" autoSize="none" text="君主政令恢复速度+10%">
+      <gearDisplay controller="State_C" pages="2,3"/>
+      <gearXY controller="State_C" pages="2,3" values="81,307|81,271" default="81,302"/>
+    </text>
+  </displayList>
+  <transition name="SoulConnnection_Move">
+    <item time="0" type="Alpha" target="n7_w7t3" tween="true" startValue="1" endValue="0.79" duration="12"/>
+    <item time="0" type="Size" target="n0_buai" tween="true" startValue="180,150" endValue="170,135" duration="12"/>
+    <item time="0" type="XY" target="n6_w7t3" tween="true" startValue="102,0" endValue="102,4" duration="12"/>
+    <item time="12" type="Alpha" target="n7_w7t3" tween="true" startValue="0.79" endValue="0.9" duration="18"/>
+    <item time="12" type="Size" target="n0_buai" tween="true" startValue="170,135" endValue="180,150" duration="18"/>
+    <item time="12" type="XY" target="n6_w7t3" tween="true" startValue="102,4" endValue="102,0" duration="18"/>
+    <item time="30" type="Alpha" target="n7_w7t3" tween="true" startValue="0.9"/>
+  </transition>
+</component>m9052e.xml|2428|<component size="350,394">
+  <controller name="State_C" pages="0,佩戴,1,被动" selected="1"/>
+  <displayList>
+    <image id="n9_w7t3" name="Image_Base" src="w7t34i" xy="0,1" size="350,393"/>
+    <text id="n1_tezg" name="TextField_Effect1" xy="112,13" size="151,46" fontSize="30" color="#61484f" align="center" vAlign="middle" autoSize="shrink" text="佩戴加成">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <text id="n2_tezg" name="TextField_Effect" xy="8,317" size="174,55" fontSize="30" color="#6e504e" align="center" vAlign="middle" autoSize="shrink" singleLine="true" text="武将士气">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <text id="n3_tezg" name="TextField_EffectNumber1" xy="182,319" size="104,46" fontSize="30" color="#7ea611" vAlign="middle" autoSize="none" text="+15">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <image id="n11_w7t3" name="Image_Base2" src="w7t34h" xy="25,43">
+      <gearDisplay controller="State_C" pages="0"/>
+    </image>
+    <loader id="n10_w7t3" name="Loader_Icon" xy="113,73" size="182,182" url="ui://rlrxcvgiw7t34g" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="State_C" pages="0"/>
+    </loader>
+    <text id="n13_w7t3" name="TextField_Effect2" xy="111,14" size="152,46" fontSize="30" color="#61484f" align="center" vAlign="middle" autoSize="none" text="被动效果">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <text id="n14_w7t3" name="TextField_EffectNumber2" xy="203,319" size="104,46" fontSize="30" color="#ff9933" vAlign="middle" autoSize="none" text="+15%">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <text id="n15_w7t3" name="TextField_Tips" xy="7,319" size="197,46" fontSize="30" color="#6e504e" align="center" vAlign="middle" autoSize="height" text="永久生效中">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <loader id="n16_w7t3" name="Loader_SpecialEffect" xy="56,63" size="238,237">
+      <gearDisplay controller="State_C" pages="1"/>
+    </loader>
+    <image id="n17_w7t3" name="Image_Base3" src="w7t34k" xy="25,44">
+      <gearDisplay controller="State_C" pages="1"/>
+    </image>
+    <text id="n18_w7t3" name="TextField_Inspire" xy="100,146" size="142,48" fontSize="32" color="#d3fa5b" align="center" autoSize="height" text="点击激活">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+  </displayList>
+</component>mcdw52.xml|1055|<component size="1920,1080">
+  <displayList>
+    <component id="n1_mcdw" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="武将"/>
+    </component>
+    <component id="n2_mcdw" name="Component_Shine" src="no0zozhi" pkg="s5cy5qnp" xy="1,0" size="1920,1080" touchable="false">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n6_aio1" name="Component_General" src="mcdw53" xy="0,0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <image id="n7_jbt1" name="n7" src="yqyk0" pkg="4auusrtu" xy="-268,0" group="n9_jbt1"/>
+    <image id="n10_jbt1" name="n10" src="yqyk0" pkg="4trbzbck" xy="-244,369" group="n9_jbt1"/>
+    <image id="n8_jbt1" name="n8" src="yqyk0" pkg="48zstrjk" xy="-189,304" group="n9_jbt1"/>
+    <group id="n9_jbt1" name="Reference" xy="-268,0" size="200,529" visible="false" advanced="true"/>
+  </displayList>
+</component>mcdw53.xml|9773|<component size="1920,1080" opaque="false">
+  <controller name="Tab_C" pages="0,详情,1,成长,2,技能" selected="0"/>
+  <controller name="Type_C" pages="1,没有将魂时,0,有将魂时" selected="0"/>
+  <controller name="State_C" pages="0,有提示,1,没提示" selected="0"/>
+  <displayList>
+    <component id="n39_mcdw" name="Component_Base" src="ntr01h" xy="0,120">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n71_mcdw" name="Button_Rename" src="pnexozh7" pkg="s5cy5qnp" xy="1446,931" size="202,85">
+      <relation target="n72_mcdw" sidePair="right-left,top-top"/>
+      <Button title="改名" icon="ui://s5cy5qnpphdsozja"/>
+    </component>
+    <component id="n72_mcdw" name="Button_Fire" src="oz2ow" pkg="rqtv1qew" xy="1662,929" size="197,86">
+      <relation target="n39_mcdw" sidePair="bottom-bottom,right-right"/>
+      <Button titleFontSize="28"/>
+    </component>
+    <component id="n40_mcdw" name="Component_Growth" src="c8c117" xy="654,188">
+      <gearDisplay controller="Tab_C" pages="1"/>
+      <relation target="n39_mcdw" sidePair="top-top,center-center"/>
+    </component>
+    <image id="n41_mcdw" name="Image_Back" src="l3hlozo5" pkg="s5cy5qnp" xy="695,344" size="932,181" group="n62_mcdw"/>
+    <text id="n42_mcdw" name="TextField_LevelDesc" xy="680,196" size="97,51" group="n62_mcdw" font="Noto Sans S Chinese Regular" fontSize="34" color="#b69689" autoSize="height" bold="true" singleLine="true" text="等级：">
+      <relation target="" sidePair="left-left,top-top"/>
+    </text>
+    <component id="n43_mcdw" name="Label_GeneralBase" src="ntr01j" xy="702,276" size="297,54" group="n62_mcdw"/>
+    <component id="n44_mcdw" name="Label_GeneralType" src="g3jhozvv" pkg="s5cy5qnp" xy="769,272" group="n62_mcdw" scale="1.3,1.3"/>
+    <text id="n45_mcdw" name="Text_Level" xy="782,198" size="79,51" group="n62_mcdw" font="Noto Sans S Chinese Regular" fontSize="34" color="#b69689" ubb="true" autoSize="height" singleLine="true" text="600"/>
+    <component id="n46_mcdw" name="Label_Decoration" src="ntr01l" xy="724,403" size="174,52" group="n62_mcdw">
+      <Label title="统率：" titleFontSize="34" icon="ui://s5cy5qnpowfyozfh"/>
+    </component>
+    <text id="n47_mcdw" name="TextField_DOM" xy="864,407" size="143,54" group="n62_mcdw" font="Noto Sans S Chinese Regular" fontSize="36" color="#a0968b" ubb="true" autoSize="shrink" singleLine="true" text="800"/>
+    <component id="n48_mcdw" name="Label_DEF" src="ntr01l" xy="1324,375" size="132,43" group="n62_mcdw">
+      <Label title="防御"/>
+    </component>
+    <component id="n49_mcdw" name="Label_CON" src="ntr01l" xy="1026,446" size="138,43" group="n62_mcdw">
+      <Label title="体力"/>
+    </component>
+    <component id="n50_mcdw" name="Label_DEX" src="ntr01l" xy="1324,445" size="131,43" group="n62_mcdw">
+      <Label title="敏捷"/>
+    </component>
+    <text id="n51_mcdw" name="TextField_ATT" xy="1152,374" size="125,46" group="n62_mcdw" font="Noto Sans S Chinese Regular" fontSize="30" color="#a0968b" ubb="true" autoSize="shrink" singleLine="true" text="450"/>
+    <text id="n52_mcdw" name="TextField_DEF" xy="1454,376" size="119,46" group="n62_mcdw" font="Noto Sans S Chinese Regular" fontSize="30" color="#a0968b" ubb="true" autoSize="shrink" singleLine="true" text="450"/>
+    <text id="n53_mcdw" name="TextField_CON" xy="1152,446" size="120,46" group="n62_mcdw" font="Noto Sans S Chinese Regular" fontSize="30" color="#a0968b" ubb="true" autoSize="shrink" singleLine="true" text="450"/>
+    <text id="n54_mcdw" name="TextField_DEX" xy="1454,447" size="115,46" group="n62_mcdw" font="Noto Sans S Chinese Regular" fontSize="30" color="#a0968b" ubb="true" autoSize="shrink" singleLine="true" text="450"/>
+    <text id="n55_mcdw" name="TextField_Equipment" xy="669,750" size="85,51" group="n62_mcdw" font="Noto Sans S Chinese Regular" fontSize="34" color="#a7887c" bold="true" singleLine="true" text="装备:"/>
+    <component id="n56_mcdw" name="Label_Judgement" src="ntr01i" xy="1045,277" size="296,57" group="n62_mcdw"/>
+    <component id="n57_mcdw" name="Button_Transmigration" src="iqo8ozif" pkg="s5cy5qnp" xy="1498,145" size="161,193" group="n62_mcdw">
+      <Button title="转生" icon="ui://s5cy5qnpp3ykozom"/>
+    </component>
+    <component id="n58_mcdw" name="Label_ATT" src="ntr01l" xy="1026,374" size="135,42" group="n62_mcdw"/>
+    <component id="n59_mcdw" name="ProgressBar_EXP" src="7sz4ozib" pkg="s5cy5qnp" xy="860,199" size="622,43" group="n62_mcdw">
+      <ProgressBar value="33" max="100"/>
+    </component>
+    <list id="n60_mcdw" name="List_Equipment" xy="768,674" size="883,179" group="n62_mcdw" layout="row" colGap="-3" defaultItem="ui://rqtv1qewnbqfv">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n61_mcdw" name="Label_Tips" src="fmw6ozim" pkg="s5cy5qnp" xy="1611,202" group="n62_mcdw" controller="Type_C,0">
+      <gearDisplay controller="State_C" pages="0"/>
+      <Label title="!"/>
+    </component>
+    <group id="n62_mcdw" name="Group_GeneralDetails" xy="669,145" size="990,708" advanced="true">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <relation target="n39_mcdw" sidePair="center-center,middle-middle"/>
+    </group>
+    <text id="n66_mcdw" name="TextField_SkillEffect" xy="921,336" size="431,46" group="n80_aio1" font="Noto Sans S Chinese Regular" fontSize="30" color="#a0968b" ubb="true" autoSize="shrink" singleLine="true" text="克制兵种：对骑兵，弓兵生效">
+      <relation target="n64_mcdw" sidePair="left-right,middle-middle"/>
+    </text>
+    <component id="n64_mcdw" name="Label_SkillInfo" src="ucskx" xy="675,265" group="n80_aio1">
+      <gearDisplay controller="Tab_C" pages="2"/>
+      <relation target="n63_mcdw" sidePair="center-center,top-bottom"/>
+      <Label title="技能名称"/>
+    </component>
+    <image id="n65_mcdw" name="Image_SkillDescBg" src="l3hlozo5" pkg="s5cy5qnp" xy="654,559" size="934,302" group="n80_aio1">
+      <gearDisplay controller="Tab_C" pages="2"/>
+      <relation target="n77_mcdw" sidePair="bottom-bottom,left-left"/>
+    </image>
+    <component id="n63_mcdw" name="Label_SkillTitle1" src="wcnl1v" xy="644,199" size="255,65" group="n80_aio1">
+      <gearDisplay controller="Tab_C" pages="2"/>
+      <relation target="n39_mcdw" sidePair="top-top,center-center"/>
+      <Label title="职业技能" titleColor="#b69689" titleFontSize="34"/>
+    </component>
+    <component id="n77_mcdw" name="Label_SkillTitle2" src="wcnl1v" xy="644,492" size="255,65" group="n80_aio1">
+      <gearDisplay controller="Tab_C" pages="2"/>
+      <relation target="n64_mcdw" sidePair="top-bottom,center-center"/>
+      <Label title="职业技能" titleColor="#b69689" titleFontSize="34"/>
+    </component>
+    <text id="n67_mcdw" name="TextField_Instruction" xy="669,573" size="902,273" group="n80_aio1" font="Noto Sans S Chinese Regular" fontSize="30" color="#a0968b" ubb="true" autoSize="shrink" text="当攻击目标是【骑、弓】时，造成与我方部队【防御】相关的伤害&#xA;">
+      <relation target="n77_mcdw" sidePair="top-bottom,left-left"/>
+    </text>
+    <group id="n80_aio1" name="Group_GeneralSkill" xy="644,199" size="944,662" advanced="true">
+      <gearDisplay controller="Tab_C" pages="2"/>
+    </group>
+    <component id="n73_mcdw" name="Button_GeneralDetails" src="ujpiozgq" pkg="s5cy5qnp" xy="1686,209" size="210,164">
+      <relation target="n39_mcdw" sidePair="right-right,top-top"/>
+      <Button checked="true" titleColor="#ffe6c2" icon="ui://s5cy5qnpkc74ozog" selectedIcon="ui://s5cy5qnpkc74ozof" controller="Tab_C" page="0"/>
+    </component>
+    <component id="n74_mcdw" name="Button_GeneralDevelop" src="ujpiozgq" pkg="s5cy5qnp" xy="1680,386" size="210,164">
+      <relation target="n73_mcdw" sidePair="top-bottom,left-left"/>
+      <Button title="成长" icon="ui://s5cy5qnpkc74ozoi" selectedIcon="ui://s5cy5qnpkc74ozoh" controller="Tab_C" page="1"/>
+    </component>
+    <component id="n75_mcdw" name="Button_Skill" src="ujpiozgq" pkg="s5cy5qnp" xy="1680,555" size="210,164">
+      <relation target="n74_mcdw" sidePair="top-bottom,left-left"/>
+      <Button title="技能" icon="ui://s5cy5qnpkc74ozoe" selectedIcon="ui://s5cy5qnpkc74ozod" controller="Tab_C" page="2"/>
+    </component>
+    <component id="n69_mcdw" name="Component_GeneralNormal" src="oz2o1e" pkg="rqtv1qew" xy="114,179" size="475,776" controller="Team_C,0,Expedition_C,0,Quality_C,0,ReLife_C,0,BG_C,0,Soul_C,0,Develop_C,2,Level_C,1,SoldierType_C,1">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <relation target="n39_mcdw" sidePair="left-left,middle-middle"/>
+    </component>
+    <component id="n78_mcdw" name="Button_Left" src="jtoyozw2" pkg="s5cy5qnp" xy="57,540" size="73,40" rotation="180">
+      <relation target="n69_mcdw" sidePair="right-left,middle-middle"/>
+      <Button icon="ui://s5cy5qnpujpiozgo"/>
+    </component>
+    <component id="n79_mcdw" name="Button_Right" src="jtoyozw2" pkg="s5cy5qnp" xy="567,540" size="73,40">
+      <relation target="n69_mcdw" sidePair="left-right,middle-middle"/>
+      <Button icon="ui://s5cy5qnpujpiozgo"/>
+    </component>
+    <component id="n76_mcdw" name="Component_GeneralSoul" src="oz2o21" pkg="rqtv1qew" xy="69,209" size="580,782" group="n84_aio1" scale="0.9,0.9" controller="Quality_C,0,GeneralSoul,0,OnlyCard_C,0,Substitued_C,0">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="n39_mcdw" sidePair="left-left,middle-middle"/>
+    </component>
+    <component id="n68_mcdw" name="Component_SoulDesc" src="wcnl1w" xy="635,515" group="n84_aio1">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <relation target="n62_mcdw" sidePair="middle-middle,center-center"/>
+    </component>
+    <group id="n84_aio1" name="Group_HasSoul" xy="69,209" size="1623,782" advanced="true">
+      <gearDisplay controller="Type_C" pages="0"/>
+    </group>
+  </displayList>
+</component>mcdw54.xml|1496|<component size="1920,1080">
+  <displayList>
+    <component id="n3_mcdw" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="图鉴"/>
+    </component>
+    <list id="n1_mcdw" name="List_HandBook" xy="28,142" size="1811,934" layout="flow_hz" overflow="scroll" scroll="horizontal" margin="2,14,40,40" clipSoftness="0,20" lineGap="5" colGap="16" defaultItem="ui://rqtv1qewoz2o21" vAlign="middle">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n2_mcdw" name="Button_Handbook" src="g52xozih" pkg="s5cy5qnp" xy="335,978" size="100,100" alpha="0.27">
+      <relation target="n5_mcdw" sidePair="left-right,top-top"/>
+      <Button title="图鉴"/>
+    </component>
+    <component id="n4_mcdw" name="Button_Connection" src="iqo8ozif" pkg="s5cy5qnp" xy="1728,12" size="191,214" scale="0.8,0.8">
+      <relation target="n3_mcdw" sidePair="right-right,top-top"/>
+      <Button title="羁绊"/>
+    </component>
+    <component id="n5_mcdw" name="Button_Lord" src="g52xozih" pkg="s5cy5qnp" xy="27,978">
+      <relation target="" sidePair="bottom-bottom,left-left"/>
+      <Button title="君主"/>
+    </component>
+  </displayList>
+</component>ntr01h.xml|383|<component size="1862,890">
+  <displayList>
+    <image id="n123_kc74" name="Image_Right" src="kc74ozoj" pkg="s5cy5qnp" xy="1682,24" size="180,740"/>
+    <image id="n124_kc74" name="Image_Base" src="l3hlozo0" pkg="s5cy5qnp" xy="484,20" size="1204,750"/>
+    <image id="n125_kc74" name="Image_Main" src="kc74ozok" pkg="s5cy5qnp" xy="-4,2" size="710,882"/>
+  </displayList>
+</component>ntr01i.xml|657|<component size="268,47" extention="Label">
+  <displayList>
+    <image id="n111_hdxm" name="icon" src="nfhooznt" pkg="s5cy5qnp" xy="0,0" size="268,44">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n16" name="title" xy="138,5" size="151,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#b69689" leading="0" ubb="true" autoSize="height" singleLine="true" text="12345"/>
+    <text id="n112_ntr0" name="txt_pinfen" xy="58,5" size="80,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#b69689" leading="0" ubb="true" autoSize="height" singleLine="true" text="评分"/>
+  </displayList>
+</component>ntr01j.xml|520|<component size="243,55" extention="Label">
+  <displayList>
+    <image id="n12" name="img_di" src="nfhooznt" pkg="s5cy5qnp" xy="0,0" size="243,55">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n14" name="title" xy="43,0" size="167,54" font="Noto Sans S Chinese Regular" fontSize="30" color="#b69689" align="center" vAlign="middle" leading="0" autoSize="none" text="车将">
+      <relation target="n12" sidePair="right-right,top-top"/>
+    </text>
+  </displayList>
+</component>ntr01l.xml|503|<component size="128,43" extention="Label">
+  <displayList>
+    <loader id="n116_ntr0" name="icon" xy="0,8" size="25,25" url="ui://s5cy5qnpujpiozgk" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n78" name="title" xy="36,0" size="160,43" font="微软雅黑" fontSize="30" color="#a0968b" ubb="true" autoSize="height" singleLine="true" text="攻击：">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </text>
+  </displayList>
+</component>ntr01m.xml|427|<component size="268,50" extention="Label">
+  <displayList>
+    <image id="n115_bove" name="img_pinfendi" src="nfhooznt" pkg="s5cy5qnp" xy="0,1" size="268,44">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n27" name="title" xy="46,4" size="135,50" font="微软雅黑" fontSize="32" color="#b69689" ubb="true" autoSize="shrink" singleLine="true" text="成长:22"/>
+  </displayList>
+</component>package.xml|4766|<packageDescription id="rlrxcvgi" name="General">
+  <resources>
+    <component id="c8c117" name="Component_Intensify" path="/Component/" size="971,651"/>
+    <component id="m9052c" name="Component_ConnectionSet" path="/Component/" size="1905,485"/>
+    <component id="m9052d" name="Component_Rewards" path="/Component/" size="467,402"/>
+    <component id="m9052e" name="Component_SoulEffect" path="/Component/" size="350,394"/>
+    <component id="mcdw53" name="Component_GeneralDetails" path="/Component/" size="1920,1080"/>
+    <component id="ntr01h" name="Component_BG" path="/Component/" size="1862,890"/>
+    <component id="ntr01i" name="Label_Grade" path="/Label/" size="268,47"/>
+    <component id="ntr01j" name="Label_SoldierType" path="/Label/" size="243,55"/>
+    <component id="ntr01l" name="Label_Ability" path="/Label/" size="128,43"/>
+    <component id="ntr01m" name="Label_GrowUp" path="/Label/" size="268,50"/>
+    <component id="phds1p" name="Label_YuanBao" path="/Label/" size="317,101"/>
+    <component id="ucskr" name="Button_Intensify" path="/Button/" size="160,160"/>
+    <component id="ucskt" name="Button_SUB" path="/Button/" size="52,52"/>
+    <component id="ucskx" name="Label_Skill" path="/Label/" size="203,218"/>
+    <component id="w7t34f" name="Component_jianghun" path="/Component/" size="685,943"/>
+    <component id="w7t34m" name="Component_Qualityjianghuan" path="/Component/" size="106,54"/>
+    <component id="w7t34x" name="Button_xiangqin" path="/Button/" size="86,43"/>
+    <component id="wcnl1v" name="Label_GodWill" path="/Label/" size="244,79"/>
+    <component id="wcnl1w" name="Component_GodWill" path="/Component/" size="1057,217"/>
+    <image id="e6ukc" name="Image_SUB" path="/Image/" size="52,52"/>
+    <image id="h6za18" name="guangxian004" path="/Transition/" size="256,128"/>
+    <image id="h6za1a" name="guangxian" path="/Transition/guangdian/" size="30,120"/>
+    <image id="w7t34c" name="img_jianghuan" path="/Image/" size="338,291" scale="9grid" scale9grid="162,58,2,178"/>
+    <image id="w7t34d" name="img_jianghuan2" path="/Image/" size="338,291" scale="9grid" scale9grid="159,58,2,176"/>
+    <image id="w7t34g" name="img_icon" path="/Image/" size="109,180"/>
+    <image id="w7t34h" name="img_icnk" path="/Image/" size="301,274"/>
+    <image id="w7t34i" name="img_bian5" path="/Image/" size="73,130" scale="9grid" scale9grid="34,19,4,93"/>
+    <image id="w7t34j" name="img_zhuangsii" path="/Image/" size="85,60" scale="9grid" scale9grid="81,4,2,52"/>
+    <image id="w7t34k" name="img_icnkk" path="/Image/" size="301,267"/>
+    <image id="w7t34l" name="img_fang" path="/Image/" size="420,411" scale="9grid" scale9grid="208,202,3,3"/>
+    <image id="w7t34n" name="img_zhuangsiiii" path="/Image/" size="414,56"/>
+    <image id="w7t34o" name="img_zhuangsiii" path="/Image/" size="199,891"/>
+    <image id="w7t34p" name="img_baoxiang" path="/Image/" size="173,137"/>
+    <image id="w7t34q" name="img_guang2" path="/Image/" size="106,37"/>
+    <image id="w7t34r" name="img_guang3" path="/Image/" size="126,150"/>
+    <image id="w7t34s" name="img_icnk2" path="/Image/" size="251,294"/>
+    <image id="w7t34t" name="xian2" path="/Image/" size="173,15" scale="9grid" scale9grid="35,0,59,12"/>
+    <image id="w7t34u" name="ann5" path="/Image/" size="86,43"/>
+    <image id="w7t34v" name="zhuangs2" path="/Image/" size="237,43"/>
+    <movieclip id="h6za19" name="guangdian" path="/Transition/guangdian/" size="250,50"/>
+    <component id="e6ukh" name="GeneralMain" path="/" size="1920,1080" exported="true"/>
+    <component id="fvh750" name="ConnectionRewards" path="/" size="1920,1080" exported="true"/>
+    <component id="hh5k1y" name="ReincarnationUpgradeMain" path="/" size="1920,1080" exported="true"/>
+    <component id="m90528" name="SoulConnnection" path="/" size="1920,1080" exported="true"/>
+    <component id="m9052a" name="SoulAquire" path="/" size="1920,1080" exported="true"/>
+    <component id="m9052b" name="SoulDetails" path="/" size="1920,1080" exported="true"/>
+    <component id="mcdw52" name="GeneralDetailsMain" path="/" size="1920,1080" exported="true"/>
+    <component id="mcdw54" name="IllustratedHandbookMain" path="/" size="1920,1080" exported="true"/>
+    <component id="phds1o" name="RenameMain" path="/" size="1920,1080" exported="true"/>
+    <component id="wcnl1x" name="SoulOfHeroMain" path="/" size="1920,1080" exported="true"/>
+    <image id="l2ck41" name="img_zuozhi" path="/Image/" size="670,238" exported="true" scale="9grid" scale9grid="241,11,428,138"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <atlas id="atlas100" size="1024,1024" file="atlas0_1.png"/>
+    <atlas id="atlas_h6za19" size="256,256" file="atlas_h6za19.png"/>
+  </resources>
+</packageDescription>phds1o.xml|1538|<component size="1920,1080">
+  <displayList>
+    <component id="n0_phds" name="Graph_Background" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n12_phds" name="Component_Base" src="l2ckozou" pkg="s5cy5qnp" xy="376,246" size="1167,588" group="n19_tf4a" controller="Type_C,0,State_C,0,BG_C,0">
+      <Label title="武将改名"/>
+    </component>
+    <component id="n4_phds" name="Button_Change" src="knyu29" pkg="s5cy5qnp" xy="870,620" group="n19_tf4a" controller="Time_C,0,Type_C,0">
+      <Button title="更改" titleFontSize="36"/>
+    </component>
+    <image id="n15_phds" name="Graph_Imput" src="no0zozhq" pkg="s5cy5qnp" xy="688,459" size="544,66" group="n19_tf4a" alpha="0.75" color="#5c4746"/>
+    <text id="n16_phds" name="Input_Name" xy="763,467" size="393,54" group="n19_tf4a" input="true" prompt="[color=#FAE77D]点此输入新名字[/color]" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="">
+      <relation target="n15_phds" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n18_phds" name="Component_Price" src="phds1p" xy="846,526" size="304,90" group="n19_tf4a">
+      <Label titleColor="#6b4136"/>
+    </component>
+    <group id="n19_tf4a" name="Group_Window" xy="376,246" size="1167,588" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>phds1p.xml|551|<component size="317,101" extention="Label">
+  <displayList>
+    <text id="n1" name="title" xy="102,3" size="215,96" font="Noto Sans S Chinese Regular" fontSize="34" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="123456">
+      <relation target="n3_phds" sidePair="right-right,top-top"/>
+    </text>
+    <loader id="n3_phds" name="icon" xy="0,0" size="101,101" url="ui://s5cy5qnpphdsozjb" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+</component>ucskr.xml|1854|<component size="160,160" extention="Button">
+  <controller name="State_C" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <image id="n10" name="Image_Light" src="nfhoozng" pkg="s5cy5qnp" xy="-10,-10" size="181,181">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <graph id="n6" name="Graph_Number" xy="0,125" size="160,35" alpha="0.6" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <text id="n7" name="TextField_LeftNumber" xy="39,125" size="33,35" font="微软雅黑" fontSize="24" color="#ffffff" align="right" vAlign="middle" text="99">
+      <relation target="n8" sidePair="right-left,middle-middle"/>
+    </text>
+    <text id="n8" name="TextField_Or" xy="71,125" size="15,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="/"/>
+    <text id="n9" name="TextField_MaxAmount" xy="85,125" size="47,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="230">
+      <relation target="n8" sidePair="left-right,middle-middle"/>
+    </text>
+    <component id="n11" name="Button_Delete" src="ucskt" xy="133,-18">
+      <gearDisplay controller="State_C" pages="1"/>
+    </component>
+    <loader id="n16_j66h" name="Loader_Icon" xy="25,10" size="115,115" url="ui://4trbzbckyqyka" fill="scale"/>
+    <graph id="n13_jn3h" name="Graph_Background" xy="0,-1" size="160,161" alpha="0" type="rect" lineColor="#ffffffff"/>
+    <component id="n17_q2ci" name="Button_Plus" src="f1djozo7" pkg="s5cy5qnp" xy="0,-1" size="170,170"/>
+  </displayList>
+  <Button mode="Check"/>
+  <transition name="Putin_T">
+    <item time="0" type="Alpha" target="n13_jn3h" tween="true" startValue="0" endValue="0.6" duration="6"/>
+    <item time="6" type="Alpha" target="n13_jn3h" tween="true" startValue="0.6" endValue="0" duration="12"/>
+  </transition>
+</component>ucskt.xml|343|<component size="52,52" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n1" name="Image_Icon" src="e6ukc" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>ucskx.xml|486|<component size="203,218" extention="Label">
+  <displayList>
+    <loader id="n66" name="icon" xy="13,0" size="172,172" url="ui://jegxu58nwg4m0" autoSize="true">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n67_wcnl" name="title" xy="0,172" size="204,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#a0968b" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="猛击"/>
+  </displayList>
+</component>w7t34f.xml|949|<component size="685,943">
+  <controller name="Quality_C" pages="0,,1,,2,,3," selected="3"/>
+  <displayList>
+    <loader id="n16_w7t3" name="Loader_Icon" xy="19,13" size="624,910" url="ui://4auusrtuyqyk6" fill="scaleFree"/>
+    <image id="n15_w7t3" name="Image_Soul1" src="w7t34d" xy="0,1" size="686,931">
+      <gearDisplay controller="Quality_C" pages="0,1,2"/>
+      <gearColor controller="Quality_C" pages="0,1,2" values="#b6fc6a|#66e6ff|#f461ff" default="#ffffff"/>
+    </image>
+    <image id="n17_w7t3" name="Image_Soul2" src="w7t34c" xy="1,2" size="687,932">
+      <gearDisplay controller="Quality_C" pages="3"/>
+    </image>
+    <component id="n18_w7t3" name="Label_Level" src="oz2o22" pkg="rqtv1qew" xy="-4,1">
+      <gearIcon controller="Quality_C" pages="0,1,2,3" values="ui://rqtv1qewnxx29|ui://rqtv1qewnxx28|ui://rqtv1qewnxx27|ui://rqtv1qewnxx2a"/>
+      <Label icon="ui://rqtv1qewnxx2a"/>
+    </component>
+  </displayList>
+</component>w7t34m.xml|1468|<component size="106,54">
+  <controller name="Quality_C" pages="0,,1,,2,,3," selected="1"/>
+  <displayList>
+    <text id="n4_tezg" name="TextField_Quality1" xy="0,0" size="106,54" fontSize="34" color="#bffb6e" vAlign="middle" letterSpacing="2" autoSize="shrink" shadowColor="#000000" shadowOffset="1,1" text="良将">
+      <gearDisplay controller="Quality_C" pages="0"/>
+    </text>
+    <text id="n5_w7t3" name="TextField_Quality2" xy="0,0" size="106,54" fontSize="34" color="#a8f8ff" vAlign="middle" letterSpacing="2" autoSize="shrink" shadowColor="#000000" shadowOffset="1,1" text="骁将&#xA;">
+      <gearDisplay controller="Quality_C" pages="1"/>
+    </text>
+    <text id="n7_w7t3" name="TextField_Quality3" xy="0,0" size="106,54" fontSize="34" color="#ff9bd8" vAlign="middle" letterSpacing="2" autoSize="shrink" shadowColor="#000000" shadowOffset="1,1" text="名将">
+      <gearDisplay controller="Quality_C" pages="2"/>
+    </text>
+    <graph id="n6_w7t3" name="Graph_Round" xy="85,15" size="13,13" type="eclipse" lineSize="0" fillColor="#ffa8f8ff">
+      <gearColor controller="Quality_C" pages="1,2,3" values="#a8f8ff|#ff9bd8|#ffd385" default="#bffb6e"/>
+    </graph>
+    <text id="n8_w7t3" name="TextField_Quality4" xy="0,0" size="106,54" fontSize="34" color="#ffd385" vAlign="middle" letterSpacing="2" autoSize="shrink" shadowColor="#000000" shadowOffset="1,1" text="神将">
+      <gearDisplay controller="Quality_C" pages="3"/>
+    </text>
+  </displayList>
+</component>w7t34x.xml|558|<component size="86,43" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="Image_Base" src="w7t34u" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2" name="title" xy="0,0" size="86,46" fontSize="30" color="#ffca9c" align="center" vAlign="middle" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>wcnl1v.xml|540|<component size="244,79" extention="Label">
+  <displayList>
+    <image id="n153_wcnl" name="icon" src="no0zozhq" pkg="s5cy5qnp" xy="1,1" size="243,70" color="#826862">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n154_wcnl" name="title" xy="0,-1" size="244,80" font="Noto Sans S Chinese Regular" fontSize="31" color="#fae77d" align="center" vAlign="middle" autoSize="none" text="S神将">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>wcnl1w.xml|1535|<component size="1057,217">
+  <controller name="Quality_C" pages="0,良将,1,骁将,2,名将,3,神将" selected="0"/>
+  <displayList>
+    <image id="n150_wcnl" name="Image_Background" src="no0zozhr" pkg="s5cy5qnp" xy="0,25" size="1057,137" color="#ab8574"/>
+    <component id="n156_wcnl" name="Label_Judgement" src="wcnl1v" xy="68,53">
+      <gearText controller="Quality_C" pages="0,1,2,3" values="C良将|B骁将|A名将|S神将"/>
+      <Label title="C良将"/>
+    </component>
+    <text id="n155_wcnl" name="TextField_SoulName" xy="362,58" size="80,71" font="Noto Sans S Chinese Regular" fontSize="34" color="#ebcdb0" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="西施"/>
+    <text id="n157_wcnl" name="TextField_Assess" xy="444,58" size="90,71" font="Noto Sans S Chinese Regular" fontSize="34" color="#ebcdb0" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="附身"/>
+    <text id="n158_wcnl" name="TextField_Number" xy="533,58" size="103,71" font="Noto Sans S Chinese Regular" fontSize="34" color="#ebcdb0" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="+25"/>
+    <text id="n159_wcnl" name="TextField_Status" xy="639,58" size="90,71" font="Noto Sans S Chinese Regular" fontSize="34" color="#ebcdb0" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="士气"/>
+    <component id="n160_wcnl" name="Button_Remove" src="pnexozh7" pkg="s5cy5qnp" xy="833,51" size="209,89">
+      <Button title="卸下" titleFontSize="34" icon="ui://s5cy5qnpuezoozi6"/>
+    </component>
+  </displayList>
+</component>wcnl1x.xml|664|<component size="1920,1080">
+  <displayList>
+    <component id="n0_wcnl" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="将魂"/>
+    </component>
+    <list id="n2_wcnl" name="List_Soul" xy="5,141" size="2385,1171" scale="0.8,0.8" layout="flow_hz" overflow="scroll" lineGap="125" colGap="9" defaultItem="ui://rqtv1qewoz2o21">
+      <relation target="" sidePair="bottom-bottom,left-left"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

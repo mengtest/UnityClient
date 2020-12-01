@@ -1,0 +1,587 @@
+biyl25.xml|435|<component size="96,96" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n4_jtoy" name="icon" xy="0,0" size="96,96" align="center" vAlign="middle">
+      <relation target="" sidePair=""/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+  <relation target="n4_jtoy" sidePair="width-width,height-height"/>
+</component>biyl28.xml|3174|<component size="882,140">
+  <controller name="State_C" pages="0,进攻,1,防守" selected="0"/>
+  <controller name="Type_C" pages="0,胜利,1,失败" selected="1"/>
+  <displayList>
+    <image id="n0_biyl" name="Image_Background" src="biyl20" xy="0,0" size="882,140" color="#cc9966">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n1_biyl" name="Loader_PlayerIcon" xy="5,12" size="105,105" url="ui://43m475k2yqyk6" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="n0_biyl" sidePair="left-left,middle-middle"/>
+    </loader>
+    <text id="n2_biyl" name="Text_PlayerName" xy="117,22" size="208,33" fontSize="21" color="#ffffff" text="[旗号]武将名字七个字">
+      <relation target="n1_biyl" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n3_biyl" name="Text_PlayerPower" xy="117,80" size="176,33" fontSize="21" color="#ffffff" text="战力：123456789">
+      <relation target="n2_biyl" sidePair="top-bottom,left-left"/>
+    </text>
+    <image id="n5_biyl" name="Image_StateBasement" src="gm5w1h" xy="324,6">
+      <relation target="n0_biyl" sidePair="middle-middle,center-center"/>
+    </image>
+    <image id="n4_biyl" name="Image_Attack" src="gm5w1e" xy="357,35">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n5_biyl" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n7_biyl" name="Text_EnemyName" xy="466,25" size="208,33" fontSize="21" color="#ffffff" text="[旗号]武将名字七个字">
+      <relation target="n5_biyl" sidePair="left-right,middle-middle"/>
+    </text>
+    <image id="n6_biyl" name="Image_Win" src="gm5w1u" xy="348,77">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="n4_biyl" sidePair="top-bottom,center-center"/>
+    </image>
+    <text id="n8_biyl" name="Text_EnemyPower" xy="467,69" size="176,33" fontSize="21" color="#ffffff" text="战力：123456789">
+      <relation target="n7_biyl" sidePair="top-bottom,left-left"/>
+    </text>
+    <loader id="n9_biyl" name="Loader_EnemyIcon" xy="678,16" size="105,105" url="ui://43m475k2yqyk6" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="n7_biyl" sidePair="middle-middle,left-right"/>
+    </loader>
+    <image id="n10_biyl" name="Image_Defend" src="gm5w1f" xy="357,28">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n5_biyl" sidePair="middle-middle,center-center"/>
+    </image>
+    <image id="n11_biyl" name="Image_Lose" src="gm5w1g" xy="348,77">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <relation target="n10_biyl" sidePair="top-bottom,center-center"/>
+    </image>
+    <component id="n13_cbpg" name="Button_Replay" src="pnexozh7" pkg="s5cy5qnp" xy="776,20" size="102,39" scale="0.49,0.49">
+      <relation target="n9_biyl" sidePair="left-right,middle-middle"/>
+      <Button title="录像" icon="ui://ls3uuggdgm5w1p"/>
+    </component>
+    <component id="n14_cbpg" name="Button_Share" src="pnexozh7" pkg="s5cy5qnp" xy="776,72" size="102,40" scale="0.49,0.49">
+      <relation target="n13_cbpg" sidePair="top-bottom,center-center"/>
+      <Button title="分享" icon="ui://ls3uuggdgm5w1s"/>
+    </component>
+  </displayList>
+</component>cbpg29.xml|3002|<component size="483,670">
+  <displayList>
+    <image id="n12_cbpg" name="Image_Main" src="kc74ozok" pkg="s5cy5qnp" xy="-5,0" size="493,670">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n0_cbpg" name="Image_WinBackground" src="rmqpozfx" pkg="s5cy5qnp" xy="80,419" size="149,40" color="#cccccc">
+      <relation target="n11_cbpg" sidePair="left-left,top-bottom"/>
+    </image>
+    <image id="n3_cbpg" name="Image_LoseBackground" src="rmqpozfx" pkg="s5cy5qnp" xy="262,419" size="149,40">
+      <relation target="n0_cbpg" sidePair="left-right,middle-middle"/>
+    </image>
+    <text id="n1_cbpg" name="Text_Win" xy="106,426" size="55,33" fontSize="25" color="#ffff00" text="胜：">
+      <relation target="n0_cbpg" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n2_cbpg" name="Text_WinPoint" xy="159,426" size="42,33" fontSize="25" color="#ffff00" text="3分">
+      <relation target="n1_cbpg" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n4_cbpg" name="Text_Lose" xy="290,425" size="55,33" fontSize="25" color="#ff3366" text="负：">
+      <relation target="n3_cbpg" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n5_cbpg" name="Text_LosePoint" xy="341,425" size="42,33" fontSize="25" color="#ff3366" text="1分">
+      <relation target="n4_cbpg" sidePair="left-right,middle-middle"/>
+    </text>
+    <component id="n16_x3np" name="Component_MiltaryRanking" src="gm5w1v" xy="108,56">
+      <relation target="n12_cbpg" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n6_cbpg" name="Button_Challenge" src="gr0bozdl" pkg="s5cy5qnp" xy="176,482" scale="0.7,0.7">
+      <relation target="n7_cbpg" sidePair="bottom-top,center-center"/>
+      <Button title="立刻挑战"/>
+    </component>
+    <text id="n7_cbpg" name="Text_Remain" xy="178,572" size="47,27" fontSize="21" color="#ffffff" text="剩余">
+      <relation target="n12_cbpg" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <text id="n8_cbpg" name="Text_RemainNumber" xy="243,572" size="27,27" fontSize="21" color="#ffffff" text="10">
+      <relation target="n7_cbpg" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n9_cbpg" name="Text_RemainTimes" xy="283,572" size="26,27" fontSize="21" color="#ffffff" text="次">
+      <relation target="n8_cbpg" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n11_cbpg" name="Text_TodayPoints" xy="117,376" size="100,25" fontSize="19" color="#cc6633" text="今日积分："/>
+    <text id="n13_cbpg" name="Text_Points" xy="223,374" size="27,29" fontSize="22" color="#ffff00" align="center" vAlign="middle" text="18">
+      <relation target="n11_cbpg" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n15_hcop" name="Text_Times" xy="103,535" size="280,28" fontSize="21" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="22:22:00后增加N次">
+      <relation target="n6_cbpg" sidePair="left-right,bottom-bottom"/>
+    </text>
+  </displayList>
+</component>cbpg2a.xml|1481|<component size="1334,750">
+  <displayList>
+    <component id="n6_rmqt" name="Button_Back" src="f1djozo7" pkg="s5cy5qnp" xy="0,0" size="1344,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n1_cbpg" name="Component_Main" src="l2ckozou" pkg="s5cy5qnp" xy="0,156" size="1334,445" controller="Type_C,0,State_C,0,BG_C,0">
+      <relation target="" sidePair="width-width,middle-middle"/>
+      <Label title="新纪录奖励"/>
+    </component>
+    <component id="n2_cbpg" name="Button_Acquire" src="knyu29" pkg="s5cy5qnp" xy="532,486" pivot="0.5,0.5" controller="Time_C,0,Type_C,0">
+      <relation target="n1_cbpg" sidePair="center-center,middle-middle"/>
+      <Button title="领取" titleFontSize="36"/>
+    </component>
+    <list id="n3_cbpg" name="List_Rewards" xy="399,241" size="608,217" scale="0.8,0.8" layout="row" margin="20,0,0,0" colGap="30" defaultItem="ui://s5cy5qnphqutz3m" autoItemSize="false" align="center">
+      <relation target="n5_cbpg" sidePair="bottom-top,center-center"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n4_cbpg" name="Image_AccessoryBottom" src="biyl24" xy="47,214" size="1241,17" flip="vt">
+      <relation target="n1_cbpg" sidePair="width-width,middle-middle"/>
+    </image>
+    <image id="n5_cbpg" name="Image_AccessoryTop" src="biyl24" xy="45,444" size="1241,17">
+      <relation target="n4_cbpg" sidePair="width-width,top-bottom"/>
+    </image>
+  </displayList>
+</component>cbpg2c.xml|1787|<component size="1334,750">
+  <displayList>
+    <component id="n3_cbpg" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1334,750" controller="Type_C,0">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="百战千军"/>
+    </component>
+    <graph id="n4_cbpg" name="Graph_TemporaryBackground1" xy="36,152" size="460,100" type="rect" fillColor="#ff000099">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </graph>
+    <graph id="n5_cbpg" name="Graph_TemporaryBackground2" xy="842,152" size="492,100" type="rect" fillColor="#ffff0000">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </graph>
+    <image id="n0_cbpg" name="Image_Versus" src="gm5w1t" xy="494,256">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n7_cbpg" name="Text_AttackerName" xy="120,170" size="285,50" fontSize="40" color="#33ccff" align="center" vAlign="middle" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" text="玩家名字七个字">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </text>
+    <text id="n8_cbpg" name="Text_DefenderName" xy="964,170" size="285,50" fontSize="40" color="#ff33cc" align="center" vAlign="middle" strokeColor="#ffffff" shadowColor="#ffffff" shadowOffset="1,1" text="玩家名字七个字">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </text>
+    <loader id="n9_wp5e" name="Loader_AttackIcon" xy="16,271" size="380,478">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </loader>
+    <loader id="n10_wp5e" name="Loader_DefenderIcon" xy="921,272" size="380,478" align="center" vAlign="middle">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </loader>
+  </displayList>
+</component>gm5w1v.xml|386|<component size="300,300">
+  <displayList>
+    <image id="n0_gm5w" name="Image_StateLeft" src="gm5w1d" xy="-91,-40"/>
+    <image id="n1_gm5w" name="Image_StateRight" src="gm5w1d" xy="125,-40" flip="hz"/>
+    <loader id="n4_gm5w" name="Loader_MiltaryRank" xy="61,75" size="218,131" url="ui://ls3uuggdgm5w1i" align="center" vAlign="middle" fill="scaleFree"/>
+  </displayList>
+</component>hzgg19.xml|692|<component size="1344,750">
+  <displayList>
+    <component id="n10_rmqt" name="Button_Back" src="f1djozo7" pkg="s5cy5qnp" xy="0,2" size="1344,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <loader id="n9_hzgg" name="Loader_Rank_Icon" xy="598,306" size="144,180" url="ui://ls3uuggdgm5w1x" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n5_o0ue" name="Text_RankLevelChange" xy="588,240" size="165,50" fontSize="40" color="#ffffff" text="军衔变化">
+      <relation target="n9_hzgg" sidePair="center-center,bottom-top"/>
+    </text>
+  </displayList>
+</component>iau21b.xml|1762|<component size="1334,750">
+  <displayList>
+    <component id="n30_rmqt" name="Button_Back" src="f1djozo7" pkg="s5cy5qnp" xy="0,0" size="1344,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n22_biyl" name="Image_Background" src="biyl21" xy="206,130" size="936,483">
+      <relation target="n23_biyl" sidePair="height-height,width-width"/>
+    </image>
+    <image id="n21_biyl" name="Image_Bottom" src="biyl22" xy="194,600" size="957,31">
+      <relation target="n22_biyl" sidePair="top-bottom,width-width"/>
+    </image>
+    <image id="n23_biyl" name="Image_Top" src="biyl23" xy="182,91" size="956,49" flip="hz">
+      <relation target="" sidePair="height-height,width-width"/>
+    </image>
+    <image id="n25_biyl" name="Image_TitleBackground" src="kc74ozoa" pkg="s5cy5qnp" xy="525,87" size="302,50">
+      <relation target="n23_biyl" sidePair="middle-middle,center-center"/>
+    </image>
+    <text id="n26_biyl" name="Text_RecordTitle" xy="604,89" size="149,44" font="Noto Sans S Chinese Regular" fontSize="35" color="#ecb8a6" align="center" vAlign="middle" ubb="true" bold="true" singleLine="true" text="百战记录">
+      <relation target="n25_biyl" sidePair="center-center,middle-middle"/>
+    </text>
+    <list id="n29_cbpg" name="List_Record" xy="221,147" size="903,452" overflow="scroll" defaultItem="ui://ls3uuggdbiyl28" autoItemSize="false" vAlign="middle">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n24_biyl" name="Button_Close" src="biyl25" xy="1019,97" size="189,182" scale="0.7,0.7">
+      <relation target="n23_biyl" sidePair="right-right,top-top"/>
+      <Button icon="ui://ls3uuggdbiyl26"/>
+    </component>
+  </displayList>
+</component>nd4s10.xml|56|<component size="566,792">
+  <displayList/>
+</component>nd4s12.xml|1999|<component size="400,60" extention="Button">
+  <controller name="State_C" pages="0,领先,1,居中,2,落后,3,未上榜" selected="1"/>
+  <controller name="Type_C" pages="0,我的排名,1,其他人排名" selected="1"/>
+  <displayList>
+    <graph id="n109_biyl" name="Graph_Base" xy="0,10" size="400,50" alpha="0.8" type="rect" fillColor="#ff856f70">
+      <gearColor controller="Type_C" pages="0" values="#ffcccc" default="#856f70"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n104_nd4s" name="Image_PopTop" src="cwf2f" pkg="s5cy5qnp" xy="4,-1" size="59,41">
+      <gearDisplay controller="State_C" pages="0"/>
+    </image>
+    <image id="n106_nd4s" name="Image_PopFall" src="cwf2e" pkg="s5cy5qnp" xy="9,-1" size="59,41">
+      <gearDisplay controller="State_C" pages="2"/>
+    </image>
+    <text id="n101_nd4s" name="Text_Top" xy="13,-1" size="45,29" fontSize="18" color="#ffffff" autoSize="none" text="领先">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <text id="n105_nd4s" name="Text_Fall" xy="18,-2" size="41,24" fontSize="18" color="#ffffff" text="落后">
+      <gearDisplay controller="State_C" pages="2"/>
+    </text>
+    <text id="n91_nd4s" name="Text_Ranking" xy="17,25" size="39,29" fontSize="22" color="#e5b889" vAlign="middle" text="123">
+      <gearColor controller="Type_C" pages="0" values="#ffffff,#000000" default="#e5b889,#000000"/>
+      <gearText controller="State_C" pages="3" values="未上榜" default="123"/>
+    </text>
+    <text id="n92_nd4s" name="Text_PlayerName" xy="117,25" size="222,34" fontSize="22" color="#e5b889" autoSize="none" text="[旗号]玩家名字七个字">
+      <gearColor controller="Type_C" pages="0" values="#ffffff,#000000" default="#e5b889,#000000"/>
+    </text>
+    <text id="n93_nd4s" name="Text_Points" xy="357,25" size="28,29" fontSize="22" color="#e5b889" text="30">
+      <gearColor controller="Type_C" pages="0" values="#ffffff,#000000" default="#e5b889,#000000"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>nd4s14.xml|3644|<component size="1334,750" adaptationTest="FitSize">
+  <controller name="version" pages="0,0.2,1,0.3" selected="0"/>
+  <displayList>
+    <component id="n22_rmqt" name="Button_Back" src="f1djozo7" pkg="s5cy5qnp" xy="0,0" size="1344,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n9_biyl" name="Image_Background" src="biyl21" xy="303,141" size="694,484" group="n20_rmqt">
+      <relation target="n11_biyl" sidePair="height-height,width-width"/>
+    </image>
+    <image id="n11_biyl" name="Image_Top" src="biyl23" xy="273,93" size="744,57" group="n20_rmqt" flip="hz">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n10_biyl" name="Image_Bottom" src="biyl22" xy="292,614" size="715,31" group="n20_rmqt">
+      <relation target="n9_biyl" sidePair="top-bottom,width-width"/>
+    </image>
+    <image id="n12_biyl" name="Image_AccessoryTop" src="biyl24" xy="322,605" size="643,12" group="n20_rmqt">
+      <relation target="n9_biyl" sidePair="width-width,bottom-bottom"/>
+    </image>
+    <image id="n13_biyl" name="Image_AccessoryBottom" src="biyl24" xy="322,153" size="643,12" group="n20_rmqt" flip="vt">
+      <relation target="n9_biyl" sidePair="top-top,width-width"/>
+    </image>
+    <image id="n15_biyl" name="Image_TitleBackground" src="kc74ozoa" pkg="s5cy5qnp" xy="510,95" size="302,50" group="n20_rmqt">
+      <relation target="n11_biyl" sidePair="middle-middle,center-center"/>
+    </image>
+    <text id="n16_biyl" name="Text_MiltaryTitle" xy="588,96" size="149,54" group="n20_rmqt" font="Noto Sans S Chinese Regular" fontSize="35" color="#ecb8a6" align="center" vAlign="middle" ubb="true" autoSize="shrink" bold="true" singleLine="true" text="军衔俸禄">
+      <relation target="n15_biyl" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n14_biyl" name="Button_Close" src="biyl25" xy="910,113" size="189,182" group="n20_rmqt" scale="0.8,0.8">
+      <relation target="n11_biyl" sidePair="right-right,top-top"/>
+      <Button icon="ui://ls3uuggdbiyl26"/>
+    </component>
+    <list id="n6_nd4s" name="List_RankLevelReward" xy="367,168" size="571,433" group="n20_rmqt" overflow="scroll" margin="5,5,0,0" lineGap="10" defaultItem="ui://ls3uuggdnd4s18">
+      <relation target="n9_biyl" sidePair="width-width,height-height"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n20_rmqt" name="Group_Salary" xy="273,93" size="826,552" advanced="true">
+      <gearXY controller="version" pages="0,1" values="273,93|419,92"/>
+    </group>
+    <image id="n18_biyl" name="Image_TitleAccessory" src="biyl24" xy="114,255" size="185,17" group="n21_rmqt" color="#683e2a">
+      <relation target="n8_nd4s" sidePair="top-bottom,width-width"/>
+    </image>
+    <loader id="n8_nd4s" name="Icon_RankEffect" xy="166,149" size="106,106" group="n21_rmqt" url="ui://ls3uuggdgm5w1h" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="left-left,top-top"/>
+    </loader>
+    <text id="n19_biyl" name="Text_Instructions" xy="53,295" size="348,278" group="n21_rmqt" fontSize="21" color="#ffffff" autoSize="none" text="小卒的军衔使君主一见面，掀起裙子就吓倒了对面，裙摆飘飘美少年，战力+1的效果就是爽。的胸大啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊答案奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥奥多多多多多多多多多多多多多多多多多多多多多多多多多多多多多哒哒哒哒哒挨">
+      <relation target="n18_biyl" sidePair="width-width,top-bottom"/>
+    </text>
+    <group id="n21_rmqt" name="Group_Cities" xy="53,149" size="348,424" advanced="true">
+      <gearDisplay controller="version" pages="1"/>
+    </group>
+  </displayList>
+</component>nd4s18.xml|1351|<component size="560,70">
+  <displayList>
+    <image id="n20_biyl" name="Image_Background" src="biyl20" xy="0,0" size="560,70" color="#cc9966">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n9_nd4s" name="Text_RankLevel" xy="72,18" size="103,27" fontSize="21" color="#ffffff" text="[军衔名字]">
+      <relation target="n18_biyl" sidePair="left-right,middle-middle"/>
+    </text>
+    <image id="n17_biyl" name="Image_Base" src="gm5w1h" xy="6,8" size="59,50">
+      <relation target="n20_biyl" sidePair="left-left,middle-middle"/>
+    </image>
+    <image id="n18_biyl" name="Image_MiltaryRank" src="gm5w1i" xy="18,16" size="47,28">
+      <relation target="n17_biyl" sidePair="center-center,middle-middle"/>
+    </image>
+    <list id="n19_biyl" name="List_Rewards" xy="182,11" size="708,160" scale="0.3,0.3" layout="row" colGap="20" defaultItem="ui://s5cy5qnphqutz3m" autoItemSize="false" align="center">
+      <relation target="n9_nd4s" sidePair="left-right,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n21_x3np" name="Button_Get" src="gr0bozdo" pkg="s5cy5qnp" xy="415,8" size="136,54" controller="Time_C,0,State_C,0">
+      <relation target="n19_biyl" sidePair="left-right,middle-middle"/>
+      <Button title="领取奖励"/>
+    </component>
+  </displayList>
+</component>nd4su.xml|1339|<component size="200,181" pivot="0.5,0.5" extention="Button">
+  <controller name="State_C" pages="3,非当前,4,当前" selected="0"/>
+  <displayList>
+    <loader id="n9" name="icon" xy="36,50" size="122,104" url="ui://ls3uuggdd5hdi" fill="scale"/>
+    <image id="n3" name="Bg_Title" src="no0zozht" pkg="s5cy5qnp" xy="6,128" size="198,45" color="#183047">
+      <gearDisplay controller="State_C" pages="0,1"/>
+    </image>
+    <text id="n5" name="Txt_Rank_Building" xy="40,131" size="115,43" font="微软雅黑" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="军衔名">
+      <gearColor controller="State_C" default="#ffffff,#000000"/>
+      <relation target="n3" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n11_nd4s" name="Bg_Mine" src="cwf2f" pkg="s5cy5qnp" xy="74,3" size="59,60">
+      <gearDisplay controller="State_C" pages="4"/>
+    </image>
+    <text id="n12_nd4s" name="Txt_Tip" xy="82,7" size="42,31" font="微软雅黑" fontSize="20" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="我">
+      <gearDisplay controller="State_C" pages="4"/>
+      <gearColor controller="State_C" default="#ffffff,#000000"/>
+      <relation target="n11_nd4s" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.20"/>
+</component>nd4sw.xml|1294|<component size="600,90">
+  <displayList>
+    <component id="n43_cbpg" name="Button_RankPrize" src="rmqt2u" xy="470,1"/>
+    <component id="n40_q88l" name="ProgressBar_Experience" src="ntr0ozj9" pkg="s5cy5qnp" xy="0,6" size="522,39">
+      <relation target="" sidePair="top-top,left-left"/>
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n41_q88l" name="Text_Experience" xy="1,46" size="345,38" fontSize="30" color="#805441" align="center" vAlign="middle" text="首次达到小卒100军衔积分">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </text>
+    <text id="n44_cbpg" name="Text_CurrentPoints" xy="368,46" size="35,38" fontSize="30" color="#ff9966" align="center" vAlign="middle" text="80">
+      <relation target="n41_q88l" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n45_cbpg" name="Text_Separtor" xy="410,47" size="13,38" fontSize="30" color="#ff9966" align="center" vAlign="middle" text="/">
+      <relation target="n44_cbpg" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n46_cbpg" name="Text_NextPoints" xy="423,46" size="50,38" fontSize="30" color="#ff9966" align="center" vAlign="middle" text="100">
+      <relation target="n45_cbpg" sidePair="left-right,middle-middle"/>
+    </text>
+  </displayList>
+</component>nd4sy.xml|1606|<component size="885,668" overflow="hidden">
+  <displayList>
+    <image id="n45_q88l" name="BG_Rank" src="k0n7oz3u" pkg="s5cy5qnp" xy="0,0" size="885,668">
+      <relation target="" sidePair="height-height,bottom-bottom"/>
+    </image>
+    <component id="n54_nd4s" name="Btn_Buiding01" src="nd4su" xy="135,428">
+      <relation target="n45_q88l" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n60_nd4s" name="Btn_Buiding02" src="nd4su" xy="443,394">
+      <relation target="n45_q88l" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n61_nd4s" name="Btn_Buiding03" src="nd4su" xy="250,313">
+      <relation target="n45_q88l" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n62_nd4s" name="Btn_Buiding04" src="nd4su" xy="556,247">
+      <relation target="n45_q88l" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n63_nd4s" name="Btn_Buiding05" src="nd4su" xy="77,198">
+      <relation target="n45_q88l" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n64_nd4s" name="Btn_Buiding06" src="nd4su" xy="348,166">
+      <relation target="n45_q88l" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n65_nd4s" name="Btn_Buiding07" src="nd4su" xy="183,66">
+      <relation target="n45_q88l" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n66_nd4s" name="Btn_Buiding08" src="nd4su" xy="484,52">
+      <relation target="n45_q88l" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>nd4sz.xml|6881|<component size="1344,750">
+  <controller name="State_C" pages="0,默认,1,暂无玩家上榜" selected="0"/>
+  <displayList>
+    <component id="n0_f9ls" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1344,750" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="匹配对手"/>
+    </component>
+    <image id="n111_gm5w" name="Image_Base" src="l3hlozo0" pkg="s5cy5qnp" xy="859,59" size="473,563" group="n117_rmqt">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n112_gm5w" name="Image_TitleBase" src="no0zozhq" pkg="s5cy5qnp" xy="1012,78" size="203,38" group="n117_rmqt" color="#594355">
+      <relation target="n111_gm5w" sidePair="top-top,center-center"/>
+    </image>
+    <image id="n113_gm5w" name="Image_SubTitle" src="l3hlozo6" pkg="s5cy5qnp" xy="886,122" size="427,49" group="n117_rmqt">
+      <relation target="n112_gm5w" sidePair="top-bottom,center-center"/>
+    </image>
+    <text id="n86_nd4s" name="Text_RankLevel" xy="1087,80" size="61,37" group="n117_rmqt" alpha="0.8" fontSize="28" color="#e5b889" align="center" vAlign="middle" text="步兵">
+      <relation target="n112_gm5w" sidePair="middle-middle,center-center"/>
+    </text>
+    <text id="n87_nd4s" name="Text_Description1" xy="900,126" size="105,33" group="n117_rmqt" fontSize="25" color="#ddb19d" align="center" vAlign="middle" shadowColor="#000000" shadowOffset="1,1" text="今日排名">
+      <relation target="n113_gm5w" sidePair="left-left,middle-middle"/>
+    </text>
+    <text id="n89_nd4s" name="Text_Description3" xy="1187,127" size="105,33" group="n117_rmqt" fontSize="25" color="#ddb19d" align="center" vAlign="middle" shadowColor="#000000" shadowOffset="1,1" text="实时积分">
+      <relation target="n88_nd4s" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n88_nd4s" name="Text_Descrittion2" xy="1065,127" size="80,33" group="n117_rmqt" fontSize="25" color="#ddb19d" align="center" vAlign="middle" shadowColor="#000000" shadowOffset="1,1" text="玩家名">
+      <relation target="n87_nd4s" sidePair="middle-middle,left-right"/>
+    </text>
+    <text id="n100_hzgg" name="Text_Default" xy="949,289" size="325,50" group="n117_rmqt" fontSize="40" color="#ffffff" text="今日暂无玩家上榜">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n111_gm5w" sidePair="middle-middle,center-center"/>
+    </text>
+    <list id="n95_nd4s" name="List_Ranking" xy="899,179" size="400,335" group="n117_rmqt" overflow="scroll" scrollBarFlags="2" ptrRes="ui://ls3uuggdrmqt2u,ui://ls3uuggdrmqt2u" defaultItem="ui://ls3uuggdnd4s12">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n111_gm5w" sidePair="center-center,bottom-bottom"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n115_rmqt" name="Componment_SelfRanking" src="nd4s12" xy="899,520" group="n117_rmqt" controller="Type_C,0">
+      <relation target="n111_gm5w" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n74_nd4s" name="Buttonn_Start" src="knyu29" pkg="s5cy5qnp" xy="1019,676" group="n117_rmqt" controller="Time_C,0,Type_C,0">
+      <relation target="n111_gm5w" sidePair="center-center,middle-middle"/>
+      <Button title="开始"/>
+    </component>
+    <image id="n104_gm5w" name="Image_WinBackground" src="rmqpozfx" pkg="s5cy5qnp" xy="886,631" size="213,40" group="n117_rmqt">
+      <relation target="n74_nd4s" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n105_gm5w" name="Image_LoseBackground" src="rmqpozfx" pkg="s5cy5qnp" xy="1120,631" size="213,40" group="n117_rmqt">
+      <relation target="n74_nd4s" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n70_nd4s" name="Text_Win" xy="958,634" size="30,33" group="n117_rmqt" fontSize="25" color="#ffffff" text="胜">
+      <relation target="n74_nd4s" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n72_nd4s" name="Text_WinPoint" xy="1008,634" size="17,33" group="n117_rmqt" fontSize="25" color="#ffffff" text="3">
+      <relation target="n70_nd4s" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n71_nd4s" name="Text_Lose" xy="1197,632" size="30,33" group="n117_rmqt" fontSize="25" color="#ffffff" text="负">
+      <relation target="n74_nd4s" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n73_nd4s" name="Text_LosePoint" xy="1246,632" size="17,33" group="n117_rmqt" fontSize="25" color="#ffffff" text="1">
+      <relation target="n71_nd4s" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n116_rmqt" name="Text_RankDesc" xy="992,589" size="230,33" group="n117_rmqt" fontSize="25" color="#ffffff" align="center" vAlign="middle" text="升级军衔需保持领先">
+      <gearText controller=""/>
+      <relation target="n111_gm5w" sidePair="center-center,middle-middle"/>
+    </text>
+    <group id="n117_rmqt" name="Group_Right" xy="859,59" size="474,685" advanced="true"/>
+    <component id="n84_nd4s" name="Component_MyTeam" src="nd4s10" xy="59,148" size="437,478" group="n118_rmqt">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n120_rmqt" name="Button_Embattle" src="gr0bozdl" pkg="s5cy5qnp" xy="186,639" group="n118_rmqt">
+      <relation target="n84_nd4s" sidePair="center-center,middle-middle"/>
+      <Button title="换将"/>
+    </component>
+    <group id="n118_rmqt" name="Group_Left" xy="59,148" size="437,559" advanced="true"/>
+    <component id="n102_gm5w" name="Component_MiltaryRanking" src="gm5w1v" xy="564,208" size="300,300" group="n119_rmqt">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <image id="n106_gm5w" name="Image_AccessoryUp" src="cwf2j" pkg="s5cy5qnp" xy="691,71" size="165,5" group="n119_rmqt" color="#ff9966">
+      <relation target="n102_gm5w" sidePair="left-left,middle-middle"/>
+    </image>
+    <image id="n107_gm5w" name="Image_AccessoryDown" src="cwf2j" pkg="s5cy5qnp" xy="691,585" size="165,5" group="n119_rmqt" color="#ff9966">
+      <relation target="n102_gm5w" sidePair="left-left,middle-middle"/>
+    </image>
+    <image id="n109_gm5w" name="Image_GradientSide1" src="cwf2j" pkg="s5cy5qnp" xy="694,71" size="150,5" group="n119_rmqt" rotation="90" color="#ff9966">
+      <relation target="n102_gm5w" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n110_gm5w" name="Image_GradientSide2" src="cwf2j" pkg="s5cy5qnp" xy="689,588" size="150,5" group="n119_rmqt" rotation="-90" color="#ff9966">
+      <relation target="n102_gm5w" sidePair="center-center,middle-middle"/>
+    </image>
+    <group id="n119_rmqt" name="Group_Middle" xy="564,71" size="300,522" advanced="true"/>
+  </displayList>
+</component>package.xml|3578|<packageDescription id="ls3uuggd" name="Pvp100Battle">
+  <resources>
+    <component id="biyl25" name="Button_Normal" path="/Button/" size="96,96"/>
+    <component id="biyl28" name="Component_RecordFragment" path="/Component/" size="882,140"/>
+    <component id="cbpg29" name="Component_RankingDetals" path="/Component/" size="483,670"/>
+    <component id="gm5w1v" name="Component_MiltaryRankingState" path="/Component/" size="300,300"/>
+    <component id="nd4s10" name="Component_Empty" path="/Component/" size="566,792"/>
+    <component id="nd4s12" name="Component_MineRanking" path="/Component/" size="400,60"/>
+    <component id="nd4s18" name="Component_RankLevelReward" path="/Component/" size="560,70"/>
+    <component id="nd4su" name="Button_Buiding" path="/Button/" size="200,181"/>
+    <component id="nd4sw" name="Component_Bar_Experience" path="/Component/" size="600,90"/>
+    <component id="nd4sy" name="Component_Buiding" path="/Component/" size="885,668"/>
+    <component id="rmqt2u" name="Button_RankPrize" path="/Button/" size="115,93"/>
+    <image id="biyl20" name="Image_Square" path="/Image/" size="31,42" scale="9grid" scale9grid="8,11,16,22"/>
+    <image id="biyl21" name="Image_MainBackground" path="/Image/" size="70,74" scale="9grid" scale9grid="34,21,6,52"/>
+    <image id="biyl22" name="Image_Top" path="/Image/" size="848,31" scale="9grid" scale9grid="212,14,424,10"/>
+    <image id="biyl23" name="Image_Bottom" path="/Image/" size="904,70" scale="9grid" scale9grid="255,11,389,37"/>
+    <image id="biyl24" name="Image_Accessory" path="/Image/" size="86,17" scale="9grid" scale9grid="42,0,1,17"/>
+    <image id="biyl26" name="Image_Close" path="/Image/" size="189,182"/>
+    <image id="d5hdi" name="Rank_Building01" path="/Image/" size="65,65"/>
+    <image id="gm5w1d" name="Image_AchievementStage" path="/Image/" size="216,402"/>
+    <image id="gm5w1e" name="Image_Attack" path="/Image/" size="52,44"/>
+    <image id="gm5w1f" name="Image_Defend" path="/Image/" size="54,54"/>
+    <image id="gm5w1g" name="Image_Lose" path="/Image/" size="77,60"/>
+    <image id="gm5w1h" name="Image_MiltaryRankFrame" path="/Image/" size="138,106"/>
+    <image id="gm5w1i" name="Image_MiltaryRankIcon" path="/Image/" size="218,131"/>
+    <image id="gm5w1n" name="Image_Ranking" path="/Image/" size="23,24"/>
+    <image id="gm5w1p" name="Image_Replay" path="/Image/" size="38,34"/>
+    <image id="gm5w1q" name="Image_Reward" path="/Image/" size="78,61"/>
+    <image id="gm5w1r" name="Image_SalaryButton" path="/Image/" size="29,33"/>
+    <image id="gm5w1s" name="Image_Share" path="/Image/" size="26,37"/>
+    <image id="gm5w1t" name="Image_Versus" path="/Image/" size="270,344"/>
+    <image id="gm5w1u" name="Image_Win" path="/Image/" size="64,65"/>
+    <image id="gm5w1x" name="Image_MiltaryRankIcon2" path="/Image/" size="144,180"/>
+    <component id="cbpg2a" name="Pvp100NewRecord" path="/" size="1334,750" exported="true"/>
+    <component id="cbpg2c" name="Pvp100VsShow" path="/" size="1334,750" exported="true"/>
+    <component id="hzgg19" name="Pvp100RankLevel" path="/" size="1344,750" exported="true"/>
+    <component id="iau21b" name="Pvp100Record" path="/" size="1334,750" exported="true"/>
+    <component id="nd4s14" name="Pvp100RankSalary" path="/" size="1334,750" exported="true"/>
+    <component id="nd4sz" name="Pvp100Matching" path="/" size="1344,750" exported="true"/>
+    <component id="q88l0" name="Pvp100Main" path="/" size="1334,750" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>q88l0.xml|1739|<component size="1334,750">
+  <controller name="Stage_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n90_cbpg" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1334,750" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="百战千军"/>
+    </component>
+    <component id="n83_nd4s" name="Component_Buildings" src="nd4sy" xy="29,105" size="881,536">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n84_cbpg" name="Button_Ranking" src="pnexozh7" pkg="s5cy5qnp" xy="15,667" scale="0.7,0.7">
+      <relation target="n83_nd4s" sidePair="center-center,middle-middle"/>
+      <Button title="排行" icon="ui://ls3uuggdgm5w1n"/>
+    </component>
+    <component id="n85_cbpg" name="Button_Record" src="pnexozh7" pkg="s5cy5qnp" xy="160,667" scale="0.7,0.7">
+      <relation target="n83_nd4s" sidePair="center-center,middle-middle"/>
+      <Button title="记录" icon="ui://s5cy5qnpphdsozja"/>
+    </component>
+    <component id="n86_cbpg" name="Button_Salary" src="pnexozh7" pkg="s5cy5qnp" xy="305,667" scale="0.7,0.7">
+      <relation target="n83_nd4s" sidePair="center-center,middle-middle"/>
+      <Button title="俸禄" icon="ui://ls3uuggdgm5w1r"/>
+    </component>
+    <component id="n87_cbpg" name="Component_ExpperienceBar" src="nd4sw" xy="462,667" scale="0.7,0.7">
+      <gearDisplay controller="Stage_C" pages="0"/>
+      <relation target="n83_nd4s" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n89_cbpg" name="Component_RankingDetails" src="cbpg29" xy="847,75">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>rmqt2u.xml|263|<component size="115,93" extention="Button">
+  <displayList>
+    <image id="n43_cbpg" name="Image_Rewards" src="gm5w1q" xy="0,0" size="115,93">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

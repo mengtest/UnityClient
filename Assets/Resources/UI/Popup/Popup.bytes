@@ -1,0 +1,70 @@
+kylu0.xml|2942|<component size="1920,418">
+  <controller name="Type_C" pages="1,,0,,2,,3,,4,标题+数字输入框" selected="3"/>
+  <controller name="ButtonCount_C" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <image id="n7_owfy" name="Image_BG" src="owfyozfi" pkg="s5cy5qnp" xy="0,0" size="1922,418"/>
+    <text id="n5" name="Text_SubContent" xy="470,169" size="372,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#000033" text="提示内容xxx今日强征次数N">
+      <gearDisplay controller="Type_C" pages="0"/>
+    </text>
+    <component id="n8_owfy" name="Button_Confirm" src="gr0bozdm" pkg="s5cy5qnp" xy="1113,290">
+      <gearDisplay controller="ButtonCount_C" pages="0,1"/>
+      <gearXY controller="ButtonCount_C" pages="0,1" values="1113,290|858,290" default="829,290"/>
+      <relation target="n9_owfy" sidePair="right-right,top-top"/>
+      <Button title="确认" titleFontSize="34"/>
+    </component>
+    <component id="n9_owfy" name="Button_Cancel" src="gr0bozdm" pkg="s5cy5qnp" xy="622,290">
+      <gearDisplay controller="ButtonCount_C" pages="0"/>
+      <Button title="取消" titleFontSize="34"/>
+    </component>
+    <image id="n13_qk7o" name="img_di" src="owfyozfg" pkg="s5cy5qnp" xy="428,62" size="1063,204">
+      <gearDisplay controller="Type_C" pages="3"/>
+    </image>
+    <list id="n16_qk7o" name="List_Prop" xy="509,82" size="894,157" layout="row" selectionMode="none" overflow="scroll" scroll="horizontal" colGap="20" defaultItem="ui://s5cy5qnphqutz3m">
+      <gearDisplay controller="Type_C" pages="3"/>
+      <relation target="n13_qk7o" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n19_nj1g" name="Input_Amount" xy="728,167" size="463,120" input="true" prompt="请输入" keyboardType="4" fontSize="50" align="center" vAlign="middle" autoSize="none" text="">
+      <gearDisplay controller="Type_C" pages="4"/>
+    </text>
+    <image id="n22_urdr" name="Text_BG" src="owfyozfg" pkg="s5cy5qnp" xy="483,18" size="1026,150">
+      <gearDisplay controller="Type_C" pages="1,0,2,4"/>
+    </image>
+    <text id="n23_urdr" name="Text_Describe" xy="510,17" size="971,155" font="Noto Sans S Chinese Regular" fontSize="48" align="center" vAlign="middle" ubb="true" autoSize="none" text="配置文字">
+      <gearDisplay controller="Type_C" pages="1,0,2,4"/>
+    </text>
+    <text id="n24_g75h" name="Text_Title" xy="80,62" size="336,264" group="n26_ce3p" font="Noto Sans S Chinese Regular" fontSize="35" ubb="true" autoSize="none" text="策划配置文字熔炼后获得以下道具：">
+      <gearDisplay controller="Type_C" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <image id="n25_g75h" name="Image_01" src="owfyozfh" pkg="s5cy5qnp" xy="35,65" group="n26_ce3p">
+      <gearDisplay controller="Type_C" pages="3"/>
+    </image>
+    <group id="n26_ce3p" name="Group_Text" xy="35,62" size="382,264" advanced="true"/>
+  </displayList>
+</component>kylue.xml|397|<component size="1920,1080">
+  <displayList>
+    <component id="n8_nj1g" name="Component_BG" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n7" name="Component_Main" src="kylu0" xy="0,353">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>kylug.xml|221|<component size="129,158">
+  <displayList>
+    <image id="n1_kylu" name="n1" src="yqyk0" pkg="4trbzbck" xy="-30,-1"/>
+    <image id="n2_kylu" name="n2" src="yqykz" pkg="48zstrjk" xy="62,96"/>
+  </displayList>
+</component>package.xml|358|<packageDescription id="i400yiz3" name="Popup">
+  <resources>
+    <component id="kylu0" name="Component_Popup" path="/" size="1920,418"/>
+    <component id="kylue" name="Component_PopupWindow" path="/" size="1920,1080" exported="true"/>
+    <component id="kylug" name="Reference" path="/" size="129,158" exported="true"/>
+  </resources>
+</packageDescription>

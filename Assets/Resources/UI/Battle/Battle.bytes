@@ -1,0 +1,261 @@
+g3jh23.xml|485|<component size="137,157" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n12_l6qi" name="Componment_general" src="l6qi30" xy="-1,17"/>
+    <image id="n6" name="img_bai" src="g3jh26" xy="3,18" size="128,138">
+      <gearDisplay controller="State_C" pages="1"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.90"/>
+</component>g52x1x.xml|724|<component size="400,61" extention="Label">
+  <displayList>
+    <image id="n3_g52x" name="img_di" src="cwf2j" pkg="s5cy5qnp" xy="0,8" size="302,42" color="#0b131f">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1" name="title" xy="71,0" size="315,60" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="xxxxx">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n2_g52x" name="icon" xy="10,1" size="60,59" url="ui://whmx5nbdmk1c7" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+</component>jm0z1z.xml|751|<component size="400,61" extention="Label">
+  <displayList>
+    <image id="n3_g52x" name="img_di" src="cwf2j" pkg="s5cy5qnp" xy="99,10" size="302,37" color="#0b131f" flip="hz">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1" name="title" xy="53,0" size="294,61" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" align="right" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="xxxxx">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n2_g52x" name="icon" xy="353,4" size="49,48" url="ui://whmx5nbdmk1c7" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+</component>kqdz2y.fnt|659|info creator=UIBuilder
+char id=48 img=on4g2b xoffset=0 yoffset=0 xadvance=0
+char id=49 img=on4g2c xoffset=0 yoffset=0 xadvance=0
+char id=50 img=on4g2d xoffset=0 yoffset=0 xadvance=0
+char id=51 img=on4g2e xoffset=0 yoffset=0 xadvance=0
+char id=52 img=on4g2f xoffset=0 yoffset=0 xadvance=0
+char id=53 img=on4g2g xoffset=0 yoffset=0 xadvance=0
+char id=54 img=on4g2h xoffset=0 yoffset=0 xadvance=0
+char id=55 img=on4g2i xoffset=0 yoffset=0 xadvance=0
+char id=56 img=on4g2j xoffset=0 yoffset=0 xadvance=0
+char id=57 img=on4g2k xoffset=0 yoffset=0 xadvance=0
+char id=45 img=on4g2l xoffset=0 yoffset=0 xadvance=0
+char id=98 img=on4g2a xoffset=0 yoffset=0 xadvance=0
+kqdz2z.fnt|660|info creator=UIBuilder
+char id=48 img=kqdz2m xoffset=0 yoffset=0 xadvance=0
+char id=49 img=kqdz2n xoffset=0 yoffset=0 xadvance=0
+char id=50 img=kqdz2o xoffset=0 yoffset=0 xadvance=0
+char id=51 img=kqdz2p xoffset=0 yoffset=0 xadvance=0
+char id=52 img=kqdz2q xoffset=0 yoffset=0 xadvance=0
+char id=53 img=kqdz2r xoffset=0 yoffset=0 xadvance=0
+char id=54 img=kqdz2s xoffset=0 yoffset=0 xadvance=0
+char id=55 img=kqdz2t xoffset=0 yoffset=0 xadvance=0
+char id=56 img=kqdz2u xoffset=0 yoffset=0 xadvance=0
+char id=57 img=kqdz2v xoffset=0 yoffset=0 xadvance=0
+char id=43 img=kqdz2w xoffset=0 yoffset=0 xadvance=0
+char id=115 img=kqdz2x xoffset=0 yoffset=0 xadvance=0
+l6jw27.xml|489|<component size="1400,800">
+  <displayList>
+    <component id="n0_l6jw" name="Component_Details" src="l2ckozou" pkg="s5cy5qnp" xy="1,0" size="1415,799" controller="Type_C,0,State_C,0,BG_C,0">
+      <Label title="战斗信息"/>
+    </component>
+    <list id="n1_l6jw" name="List_BattleDetails" xy="52,78" size="1296,680" overflow="scroll" lineGap="7" defaultItem="ui://whmx5nbdl6jw28">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>l6jw28.xml|448|<component size="1200,50">
+  <displayList>
+    <image id="n1_l6jw" name="Image_Background" src="owfyozfg" pkg="s5cy5qnp" xy="0,0" size="982,54">
+      <relation target="n2_l6jw" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2_l6jw" name="Text_Details" xy="37,6" size="913,31" fontSize="24" ubb="true" autoSize="height" text="0003_攻方: 【易冰】"/>
+  </displayList>
+  <relation target="n1_l6jw" sidePair="height-height"/>
+</component>l6qi30.xml|437|<component size="147,146">
+  <displayList>
+    <loader id="n7" name="quality_bian" xy="0,0" size="138,138" url="ui://s5cy5qnpigjb1p" fill="scaleFree"/>
+    <loader id="n5" name="quality_touxiang" xy="4,3" size="129,129" url="ui://s5cy5qnpc68roza8" fill="scaleFree"/>
+    <component id="n11" name="lab_zhiye" src="g3jhozvv" pkg="s5cy5qnp" xy="97,96">
+      <Label icon="ui://s5cy5qnpqkljb"/>
+    </component>
+  </displayList>
+</component>mk1ch.xml|3234|<component size="1920,1080" opaque="false">
+  <displayList>
+    <text id="n20" name="TextField_Tab" xy="760,991" size="397,50" alpha="0.5" font="微软雅黑" fontSize="36" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="轻触屏幕显示兵力值">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <component id="n35_l6jw" name="Button_battleProgress" src="g52xozih" pkg="s5cy5qnp" xy="18,775" size="157,69">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <Button title="战斗信息"/>
+    </component>
+    <component id="n31_g52x" name="Label_AttackerName" src="g52x1x" xy="116,4" size="400,54">
+      <Label title="城主得名字"/>
+    </component>
+    <component id="n32_jm0z" name="Label_AttackerFight" src="g52x1x" xy="116,60" size="400,54">
+      <Label title="9999999" icon="ui://whmx5nbdg52x1y"/>
+    </component>
+    <component id="n6" name="Label_AttackerHead" src="g52xozii" pkg="s5cy5qnp" xy="14,3" size="105,105"/>
+    <component id="n22" name="ProgressBar_Attacker" src="mk1cq" xy="11,1051">
+      <relation target="n21" sidePair="left-left,top-bottom"/>
+      <ProgressBar value="80" max="100"/>
+    </component>
+    <loader id="n4" name="Loader_AttackerCountry" xy="3,5" size="43,59" url="ui://s5cy5qnpqklj5"/>
+    <list id="n25" name="List_AttackerBuff" xy="15,112" size="293,46" layout="row" colGap="5"/>
+    <list id="n21" name="List_AttackerCaptain" xy="10,868" size="752,170" layout="row" colGap="14" defaultItem="ui://whmx5nbdg3jh23">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <item/>
+    </list>
+    <component id="n3" name="Label_DefenderName" src="jm0z1z" xy="1390,7">
+      <Label title="城主得名字"/>
+    </component>
+    <component id="n34_jm0z" name="Label_DefenderFight" src="jm0z1z" xy="1390,57">
+      <Label title="999999" icon="ui://whmx5nbdg52x1y"/>
+    </component>
+    <component id="n7" name="Label_DefenderHead" src="g52xozii" pkg="s5cy5qnp" xy="1791,3" size="105,105">
+      <Label icon="ui://s5cy5qnpov5eoz48"/>
+    </component>
+    <component id="n24" name="ProgressBar_Defender" src="mk1cr" xy="1205,1050">
+      <relation target="n15" sidePair="right-right,top-bottom"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <loader id="n5" name="Loader_DefenderCountry" xy="1872,5" size="43,59" url="ui://s5cy5qnpqklj6"/>
+    <list id="n27" name="List_DefenderBuff" xy="1600,112" size="293,47" layout="row" colGap="5" defaultItem="ui://whmx5nbdmk1cs" align="right"/>
+    <list id="n15" name="List_DefenderCaptain" xy="1157,868" size="751,170" layout="row" colGap="14" defaultItem="ui://whmx5nbdg3jh23" align="right">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <item/>
+    </list>
+    <component id="n18" name="Button_SpeedUp" src="g52xozih" pkg="s5cy5qnp" xy="816,885">
+      <relation target="n21" sidePair="right-right,top-top"/>
+      <Button title="1倍" icon="ui://whmx5nbdct3tx"/>
+    </component>
+    <component id="n29_no0z" name="Button_Skip" src="rmqpozfv" pkg="s5cy5qnp" xy="1003,885" size="100,100">
+      <relation target="n15" sidePair="left-left,top-top"/>
+      <Button icon="ui://s5cy5qnpa1bwozi1"/>
+    </component>
+  </displayList>
+</component>mk1cq.xml|589|<component size="698,12" extention="ProgressBar">
+  <displayList>
+    <image id="n1" name="img_di" src="mk1cg" xy="0,0" size="698,12">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="bar" src="mk1cf" xy="0,0" size="698,12"/>
+    <text id="n3" name="title" xy="329,-9" size="40,35" font="微软雅黑" fontSize="24" color="#ffffff" align="center" vAlign="middle" strokeColor="#000000" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>mk1cr.xml|605|<component size="698,12" extention="ProgressBar">
+  <displayList>
+    <image id="n1" name="img_di" src="mk1cg" xy="0,0" size="698,12">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="bar" src="mk1ce" xy="0,0" size="698,12"/>
+    <text id="n3" name="title" xy="329,-10" size="40,35" font="微软雅黑" fontSize="24" color="#ffffff" align="center" vAlign="middle" strokeColor="#000000" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax" reverse="true"/>
+</component>package.xml|3802|<packageDescription id="whmx5nbd" name="Battle">
+  <resources>
+    <component id="g3jh23" name="Button_General" path="/Button/" size="137,157"/>
+    <component id="g52x1x" name="Label_LeftLord" path="/Label/" size="400,61"/>
+    <component id="jm0z1z" name="Label_RightLord" path="/Label/" size="400,61"/>
+    <component id="l6jw27" name="Component_Information" path="/Component/" size="1400,800"/>
+    <component id="l6jw28" name="Component_InfoList" path="/Component/" size="1200,50"/>
+    <component id="l6qi30" name="Component_General" path="/Component/" size="147,146"/>
+    <component id="mk1cq" name="ProgressBar_Blue" path="/ProgressBar/" size="698,12"/>
+    <component id="mk1cr" name="ProgressBar_Red" path="/ProgressBar/" size="698,12"/>
+    <image id="g3jh26" name="Image_Lose" path="/Image/" size="138,154"/>
+    <image id="g52x1y" name="Image_02" path="/Image/" size="53,53"/>
+    <image id="kqdz2m" name="lv_0" path="/HUD/lv_zi/" size="31,44"/>
+    <image id="kqdz2n" name="lv_1" path="/HUD/lv_zi/" size="20,44"/>
+    <image id="kqdz2o" name="lv_2" path="/HUD/lv_zi/" size="32,44"/>
+    <image id="kqdz2p" name="lv_3" path="/HUD/lv_zi/" size="32,44"/>
+    <image id="kqdz2q" name="lv_4" path="/HUD/lv_zi/" size="31,44"/>
+    <image id="kqdz2r" name="lv_5" path="/HUD/lv_zi/" size="31,44"/>
+    <image id="kqdz2s" name="lv_6" path="/HUD/lv_zi/" size="31,44"/>
+    <image id="kqdz2t" name="lv_7" path="/HUD/lv_zi/" size="31,44"/>
+    <image id="kqdz2u" name="lv_8" path="/HUD/lv_zi/" size="31,44"/>
+    <image id="kqdz2v" name="lv_9" path="/HUD/lv_zi/" size="32,44"/>
+    <image id="kqdz2w" name="lv_jiahao" path="/HUD/lv_zi/" size="36,38"/>
+    <image id="kqdz2x" name="wenzi_shanbi" path="/HUD/lv_zi/" size="103,64"/>
+    <image id="mk1c7" name="Image_01" path="/Image/" size="53,53"/>
+    <image id="mk1ce" name="Image_OrangeBar" path="/Image/" size="698,12"/>
+    <image id="mk1cf" name="Image_BlueBar" path="/Image/" size="698,12"/>
+    <image id="mk1cg" name="Image_BarBG" path="/Image/" size="698,12"/>
+    <image id="on4g2a" name="wenzi_baoji" path="/HUD/hong_zi/" size="103,64"/>
+    <image id="on4g2b" name="hong_0" path="/HUD/hong_zi/" size="31,44"/>
+    <image id="on4g2c" name="hong_1" path="/HUD/hong_zi/" size="20,44"/>
+    <image id="on4g2d" name="hong_2" path="/HUD/hong_zi/" size="32,44"/>
+    <image id="on4g2e" name="hong_3" path="/HUD/hong_zi/" size="32,44"/>
+    <image id="on4g2f" name="hong_4" path="/HUD/hong_zi/" size="31,44"/>
+    <image id="on4g2g" name="hong_5" path="/HUD/hong_zi/" size="31,44"/>
+    <image id="on4g2h" name="hong_6" path="/HUD/hong_zi/" size="31,44"/>
+    <image id="on4g2i" name="hong_7" path="/HUD/hong_zi/" size="31,44"/>
+    <image id="on4g2j" name="hong_8" path="/HUD/hong_zi/" size="31,44"/>
+    <image id="on4g2k" name="hong_9" path="/HUD/hong_zi/" size="32,44"/>
+    <image id="on4g2l" name="hong_jianhao" path="/HUD/hong_zi/" size="36,39"/>
+    <image id="w72b20" name="Image_lifeBg_2" path="/Image/" size="89,30"/>
+    <image id="w72b21" name="Image_lifeBg_1" path="/Image/" size="89,30"/>
+    <component id="mk1ch" name="BattleMain" path="/" size="1920,1080" exported="true"/>
+    <component id="qvxy29" name="InformationMain" path="/" size="1920,1080" exported="true"/>
+    <component id="w72b22" name="LifeBar" path="/HUD/" size="129,50" exported="true"/>
+    <component id="wdpb1t" name="Hud_Harm" path="/HUD/" size="155,155" exported="true"/>
+    <component id="wdpb1u" name="Hud_Good" path="/HUD/" size="200,200" exported="true"/>
+    <font id="kqdz2y" name="Font_Red" path="/HUD/" size="0,0" exported="true" file="kqdz2y.fnt"/>
+    <font id="kqdz2z" name="Font_Green" path="/HUD/" size="0,0" exported="true" file="kqdz2z.fnt"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>qvxy29.xml|508|<component size="1920,1080">
+  <displayList>
+    <component id="n0_qvxy" name="Component_BG" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n2_jqyk" name="Button_Back" src="f1djozo7" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n1_qvxy" name="Component_Info" src="l6jw27" xy="260,140"/>
+  </displayList>
+</component>w72b22.xml|589|<component size="129,50">
+  <controller name="camp_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n0_w72b" name="img_bg1" src="w72b21" xy="40,13">
+      <gearDisplay controller="camp_C" pages="1"/>
+    </image>
+    <image id="n1_w72b" name="img_bg2" src="w72b20" xy="40,13">
+      <gearDisplay controller="camp_C" pages="0"/>
+    </image>
+    <component id="n4_w72b" name="com_race" src="g3jhozvv" pkg="s5cy5qnp" xy="0,0"/>
+    <text id="n5_w72b" name="txt_solider" xy="57,11" size="34,35" font="微软雅黑" fontSize="24" color="#ffffff" text="15"/>
+  </displayList>
+</component>wdpb1t.xml|773|<component size="155,155">
+  <displayList>
+    <text id="n0" name="txt_desc" xy="17,107" size="123,64" font="ui://whmx5nbdkqdz2y" fontSize="12" text="-125"/>
+  </displayList>
+  <transition name="HUD_T" options="2">
+    <item time="0" type="Alpha" target="n0" tween="true" startValue="0" endValue="1" duration="3" ease="Linear"/>
+    <item time="0" type="XY" target="n0" tween="true" startValue="17,107" endValue="17,57" duration="5"/>
+    <item time="3" type="Alpha" target="n0" tween="true" startValue="1" endValue="1" duration="9"/>
+    <item time="5" type="XY" target="n0" tween="true" startValue="17,57" endValue="17,37" duration="13"/>
+    <item time="12" type="Alpha" target="n0" tween="true" startValue="1" endValue="0.01" duration="6"/>
+  </transition>
+</component>wdpb1u.xml|846|<component size="200,200">
+  <displayList>
+    <text id="n6" name="txt_desc" xy="0,135" pivot="0.5,0.5" size="107,68" font="ui://whmx5nbdkqdz2z" fontSize="12" align="center" vAlign="middle" autoSize="shrink" text="s"/>
+  </displayList>
+  <transition name="HUD_T">
+    <item time="0" type="Alpha" target="n6" tween="true" startValue="0" endValue="1" duration="3" ease="Linear"/>
+    <item time="0" type="XY" target="n6" tween="true" startValue="0,135" endValue="53.11,60.11" duration="4"/>
+    <item time="3" type="Alpha" target="n6" tween="true" startValue="1" endValue="1" duration="7"/>
+    <item time="4" type="XY" target="n6" tween="true" startValue="53.11,60.11" endValue="68,34" duration="14" ease="Circ.Out"/>
+    <item time="10" type="Alpha" target="n6" tween="true" startValue="1" endValue="0" duration="8"/>
+  </transition>
+</component>

@@ -1,0 +1,367 @@
+ajfz13.xml|860|<component size="50,65" extention="ProgressBar">
+  <controller name="State_C" pages="0,我方,1,敌方" selected="0"/>
+  <displayList>
+    <graph id="n4" name="Graph_Base" xy="0,0" size="50,65" type="rect" lineSize="0" fillColor="#ff173e5d">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n5" name="bar" xy="0,0" size="50,65" type="rect" lineSize="0" fillColor="#ff248cdc">
+      <gearColor controller="State_C" pages="1" values="#cd411b" default="#248cdc"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n3" name="title" xy="5,11" size="40,50" font="微软雅黑" fontSize="36" color="#ffffff" align="center" vAlign="middle" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>c8c11x.xml|724|<component size="1408,925">
+  <displayList>
+    <list id="n5" name="List_Main" xy="0,85" size="1408,840" overflow="scroll" scrollBarFlags="2" lineGap="20" defaultItem="ui://zat5frjdjwqee">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n23" name="Button_UnreadToggle" src="ud82ozme" xy="1045,0" size="156,72" pkg="s5cy5qnp">
+      <relation target="n24" sidePair="right-left,top-top"/>
+      <Button title="未读"/>
+    </component>
+    <component id="n24" name="Button_HasPrizeToggle" src="ud82ozme" xy="1231,1" size="177,72" pkg="s5cy5qnp">
+      <Button title="含附件"/>
+    </component>
+  </displayList>
+</component>dp8u1y.xml|291|<component size="10,43" extention="Label">
+  <displayList>
+    <text id="n19" name="title" xy="0,0" size="10,43" font="微软雅黑" fontSize="30" color="#ff6600" vAlign="middle" underline="true" text=""/>
+  </displayList>
+  <relation target="n19" sidePair="width-width,height-height"/>
+</component>hqut1p.xml|3744|<component size="1920,1080">
+  <controller name="State_C" pages="0,已收取,1,未收取,2,无附件" selected="0"/>
+  <displayList>
+    <component id="n17_j158" name="Grap_Background" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <graph id="n0" name="Graph_Base" xy="432,240" size="1407,834" type="rect" lineSize="0" fillColor="#ff4f92c6">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <graph id="n1" name="Graph_Attachment" xy="469,425" size="1333,163" type="rect" lineSize="0" fillColor="#ff2f6894">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <relation target="n0" sidePair="left-left,top-top"/>
+    </graph>
+    <graph id="n2" name="Graph_DetailsBackground" xy="469,600" size="1333,311" type="rect" lineSize="0" fillColor="#ff2f6894">
+      <gearXY controller="State_C" pages="0,1,2" values="469,600|469,600|469,425"/>
+      <relation target="n0" sidePair="left-left,top-top"/>
+    </graph>
+    <text id="n15" name="Text_Acquire" xy="1568,485" size="95,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" text="已领取">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n11" sidePair="left-right,middle-middle"/>
+    </text>
+    <component id="n3" name="Button_Close" src="jtoyozw2" pkg="s5cy5qnp" xy="1777,221">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+      <Button icon="ui://s5cy5qnpi4s8ozmj"/>
+    </component>
+    <text id="n4" name="Text_Title" xy="475,305" size="197,66" font="微软雅黑" fontSize="48" color="#ffffff" text="邮件标题">
+      <relation target="n0" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n5" name="Text_Date" xy="475,364" size="163,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" text="2017.03.28">
+      <relation target="n0" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n6" name="Text_Time" xy="648,364" size="127,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" text="02:55:42">
+      <relation target="n5" sidePair="left-right,top-top"/>
+    </text>
+    <component id="n7" name="Button_Get" src="knyu29" pkg="s5cy5qnp" xy="1461,450" size="317,115" controller="Time_C,0,Type_C,0">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n1" sidePair="right-right,top-top"/>
+      <Button title="收取" titleFontSize="36"/>
+    </component>
+    <text id="n9" name="Text_Attachment" xy="494,486" size="72,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" text="附件:">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <relation target="n1" sidePair="left-left,top-top"/>
+    </text>
+    <list id="n11" name="List_Awards" xy="612,443" size="823,130" layout="row" colGap="20" defaultItem="ui://s5cy5qnphqutz3m">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <relation target="n1" sidePair="left-left,top-top"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n12" name="Text_Content" xy="492,622" size="1280,263" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="none" text="">
+      <gearXY controller="State_C" pages="0,1,2" values="492,622|492,622|492,622"/>
+      <relation target="n2" sidePair="left-left,top-top"/>
+    </text>
+    <component id="n13" name="Button_Collect" src="hqut1r" xy="1696,937">
+      <relation target="n0" sidePair="left-left,bottom-bottom"/>
+      <Button title="收藏" icon="ui://zat5frjddaq31i"/>
+    </component>
+    <component id="n14" name="Button_Delete" src="hqut1r" xy="1546,938">
+      <relation target="n0" sidePair="right-right,top-top"/>
+      <Button title="删除" icon="ui://zat5frjddaq31j"/>
+    </component>
+  </displayList>
+</component>hqut1r.xml|870|<component size="107,107" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <graph id="n4" name="Image_Background" xy="0,0" size="107,107" type="rect" lineSize="0" fillColor="#ff368ccf"/>
+    <image id="n1" name="Image_Base" src="daq31e" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2" name="title" xy="0,65" size="107,35" font="微软雅黑" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n3" name="icon" xy="22,20" size="64,45" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button mode="Check"/>
+</component>hqut1s.xml|6851|<component size="1920,1080" opaque="false">
+  <controller name="State_C" pages="0,双方,1,三方" selected="0"/>
+  <displayList>
+    <component id="n53_j158" name="Graph_Background" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <graph id="n0" name="Graph_Base" xy="432,240" size="1407,834" type="rect" lineSize="0" fillColor="#ff4f92c6">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <graph id="n41" name="Graph_SmallBackground" xy="1144,420" size="661,494" type="rect" lineSize="0" fillColor="#ff2f6894">
+      <relation target="n0" sidePair="right-right,top-top"/>
+    </graph>
+    <graph id="n2" name="Group_LeftBackground" xy="469,419" size="661,494" type="rect" lineSize="0" fillColor="#ff2f6894">
+      <relation target="n0" sidePair="left-left,top-top"/>
+    </graph>
+    <graph id="n43" name="Graph_Right" xy="1154,700" size="639,4" alpha="0.1" type="rect" lineSize="0">
+      <relation target="n41" sidePair="center-center,middle-middle"/>
+    </graph>
+    <component id="n3" name="Button_Close" src="jtoyozw2" pkg="s5cy5qnp" xy="1777,222">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+      <Button icon="ui://s5cy5qnpi4s8ozmj"/>
+    </component>
+    <text id="n4" name="Text_Title" xy="475,306" size="197,66" font="微软雅黑" fontSize="48" color="#ffffff" text="邮件标题">
+      <relation target="n0" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n5" name="Text_Date" xy="474,372" size="156,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" text="2017.09.25">
+      <relation target="n0" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n6" name="Text_Time" xy="640,372" size="122,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" text="02:12:12">
+      <relation target="n5" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n9" name="Text_Reward" xy="495,726" size="125,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" text="战胜获得">
+      <gearText controller="State_C" pages="1" values="帮助夺回" default="战胜获得"/>
+      <relation target="n2" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n13" name="Button_Collect" src="hqut1r" xy="1551,939">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+      <Button title="收藏" icon="ui://zat5frjddaq31i" selectedTitle="已收藏" selectedIcon="ui://zat5frjddaq31b"/>
+    </component>
+    <component id="n14" name="Button_Replay" src="hqut1r" xy="1697,938">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+      <Button title="回放" icon="ui://zat5frjddaq31h"/>
+    </component>
+    <text id="n15" name="Text_Content" xy="677,325" size="1006,43" font="微软雅黑" fontSize="30" color="#ffffff" autoSize="none" text="邮件内容">
+      <relation target="n4" sidePair="left-right,top-top"/>
+    </text>
+    <loader id="n16" name="Loader_Icon1" xy="494,441" size="100,100" fill="scaleFree">
+      <relation target="n2" sidePair="center-center,middle-middle"/>
+    </loader>
+    <loader id="n17" name="Loader_Icon2" xy="1170,441" size="100,100" fill="scaleFree">
+      <relation target="n41" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n18" name="Text_NameLeft" xy="607,444" size="10,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" text="">
+      <relation target="n2" sidePair="left-left,top-top"/>
+    </text>
+    <image id="n20" name="Image_Situation" src="hqut1t" xy="616,493">
+      <relation target="n2" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n21" name="Text_NameRight" xy="1288,444" size="10,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" text="">
+      <relation target="n41" sidePair="left-left,top-top"/>
+    </text>
+    <image id="n23" name="Image_Situation2" src="hqut1t" xy="1288,495">
+      <relation target="n41" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n24" name="ProgressBar_Soldier1" src="ajfz13" xy="497,628" size="607,54">
+      <relation target="n2" sidePair="center-center,middle-middle"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <component id="n25" name="ProgressBar_Soldier2" src="ajfz13" xy="1170,628" size="606,54">
+      <relation target="n41" sidePair="center-center,middle-middle"/>
+      <ProgressBar max="100"/>
+    </component>
+    <text id="n26" name="Text_Troops1" xy="497,582" size="170,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" autoSize="height" text="存活/总兵力">
+      <relation target="n2" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n27" name="Text_Troops2" xy="1170,582" size="170,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" autoSize="height" text="存活/总兵力">
+      <relation target="n41" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n28" name="Button_Delete" src="hqut1r" xy="1403,939">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+      <Button title="删除" icon="ui://zat5frjddaq31j"/>
+    </component>
+    <list id="n40" name="List_Reward" xy="494,772" size="606,120" layout="flow_hz" selectionMode="none" lineGap="20" colGap="100" defaultItem="ui://zat5frjdhqut1w">
+      <relation target="n2" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n42" name="Text_PlayerName" xy="623,727" size="10,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" text="">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n2" sidePair="left-left,top-top"/>
+    </text>
+    <graph id="n44" name="Graph_LineLeft" xy="478,699" size="639,4" alpha="0.1" type="rect" lineSize="0">
+      <relation target="n2" sidePair="center-center,middle-middle"/>
+    </graph>
+    <text id="n45" name="Text_Lost" xy="1176,727" size="125,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" text="战败损失">
+      <gearText controller="State_C" pages="0,1" values="战败损失|帮助夺回"/>
+      <relation target="n41" sidePair="center-center,middle-middle"/>
+    </text>
+    <list id="n46" name="List_Lost" xy="1176,772" size="599,120" layout="flow_hz" selectionMode="none" lineGap="20" colGap="100" defaultItem="ui://zat5frjdhqut1w">
+      <relation target="n41" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n51_dp8u" name="Label_Coords1" src="dp8u1y" xy="669,497" size="131,43">
+      <relation target="n2" sidePair="left-left,top-top"/>
+      <Label title="1234567"/>
+    </component>
+    <component id="n52_dp8u" name="Label_Coords2" src="dp8u1y" xy="1342,499" size="131,43">
+      <relation target="n41" sidePair="left-left,top-top"/>
+      <Label title="1234567"/>
+    </component>
+  </displayList>
+</component>hqut1u.xml|1819|<component size="1407,144">
+  <controller name="State_C" pages="0,未读,1,已读" selected="0"/>
+  <controller name="Type_C" pages="0,有奖励,1,没奖励" selected="0"/>
+  <displayList>
+    <graph id="n10" name="Graph_Background" xy="0,0" size="1407,144" type="rect" lineSize="0" fillColor="#ff4f92c6"/>
+    <text id="n5" name="Text_Title" xy="160,20" size="399,51" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" autoSize="height" bold="true" singleLine="true" text="">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </text>
+    <text id="n6" name="Text_Content" xy="160,83" size="479,43" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" leading="0" ubb="true" autoSize="none" singleLine="true" text="">
+      <relation target="n5" sidePair="left-right,bottom-bottom"/>
+    </text>
+    <loader id="n11" name="Loader_Icon" xy="0,0" size="144,144"/>
+    <text id="n13" name="Text_Time" xy="1317,18" size="77,35" font="微软雅黑" fontSize="24" color="#ffffff" align="right" vAlign="middle" ubb="true" singleLine="true" text="小时前"/>
+    <component id="n17" name="Component_Star" src="hqut1v" xy="1314,72"/>
+    <list id="n16" name="List_Rewards" xy="658,8" size="585,130" layout="row" overflow="hidden" colGap="20" defaultItem="ui://s5cy5qnphqutz3m">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <graph id="n14" name="Graph_Base" xy="0,0" size="1407,144" alpha="0.2" type="rect" lineSize="0" fillColor="#ff000000">
+      <gearDisplay controller="State_C" pages="1"/>
+    </graph>
+    <component id="n19_behm" name="Button_Details" src="f1djozo7" pkg="s5cy5qnp" xy="1,4" size="1243,140"/>
+    <component id="n20_behm" name="Button_Collect" src="f1djozo7" pkg="s5cy5qnp" xy="1247,2" size="159,138"/>
+  </displayList>
+</component>hqut1v.xml|516|<component size="59,47">
+  <controller name="State_C" pages="0,黄,1,白" selected="0"/>
+  <displayList>
+    <image id="n1" name="Image_Background" src="daq31c" xy="0,0">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="Image_Star" src="daq31b" xy="0,0">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+</component>hqut1w.xml|509|<component size="165,49" extention="Label">
+  <controller name="State_C" pages="0,红,1,蓝" selected="1"/>
+  <displayList>
+    <text id="n33" name="title" xy="76,4" size="86,43" font="微软雅黑" fontSize="30" color="#33ccff" vAlign="middle" autoSize="height" strokeColor="#4e201a" text="123">
+      <gearColor controller="State_C" pages="1" values="#33ccff,#4e201a" default="#ff3300,#4e201a"/>
+    </text>
+    <loader id="n34" name="icon" xy="0,0" size="50,50" url="ui://s5cy5qnpcwf2p"/>
+  </displayList>
+</component>jwqec.xml|2326|<component size="1920,1080">
+  <controller name="Tab_C" pages="0,全部,1,战报,2,系统,3,收藏" selected="0"/>
+  <controller name="State_C" pages="0,无邮件,1,有邮件" selected="0"/>
+  <displayList>
+    <component id="n13" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="邮件"/>
+    </component>
+    <graph id="n14" name="Graph_Base" xy="320,137" size="1558,943" alpha="0.6" type="rect" lineSize="0" fillColor="#ff3d5269">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <text id="n26_c8c1" name="Text_Empty" xy="988,567" size="293,66" font="微软雅黑" fontSize="48" color="#999999" text="暂无任何邮件">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n25_c8c1" name="Component_MailList" src="c8c11x" xy="368,155" size="1501,925">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n14" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n15" name="Button_All" src="ntr0ozj4" pkg="s5cy5qnp" xy="86,159" size="208,194" controller="button,1">
+      <relation target="" sidePair="left-left,middle-middle"/>
+      <Button checked="true" title="全部" icon="ui://zat5frjddaq31l" controller="Tab_C" page="0"/>
+    </component>
+    <component id="n32_ntr0" name="Button_BattleDetails" src="ntr0ozj4" pkg="s5cy5qnp" xy="86,383" size="208,194" controller="button,0">
+      <relation target="" sidePair="left-left,middle-middle"/>
+      <Button title="战报" icon="ui://zat5frjddaq31l" controller="Tab_C" page="1"/>
+    </component>
+    <component id="n33_ntr0" name="Button_System" src="ntr0ozj4" pkg="s5cy5qnp" xy="86,607" size="208,194" controller="button,0">
+      <relation target="" sidePair="left-left,middle-middle"/>
+      <Button title="系统" icon="ui://zat5frjddaq31l" controller="Tab_C" page="2"/>
+    </component>
+    <component id="n34_ntr0" name="Button_Collect" src="ntr0ozj4" pkg="s5cy5qnp" xy="86,831" size="208,194" controller="button,0">
+      <relation target="" sidePair="left-left,middle-middle"/>
+      <Button title="收藏" icon="ui://zat5frjddaq31l" controller="Tab_C" page="3"/>
+    </component>
+  </displayList>
+</component>jwqee.xml|1628|<component size="1407,144">
+  <controller name="State_C" pages="0,未读,1,已读" selected="0"/>
+  <displayList>
+    <graph id="n10" name="Graph_Background" xy="0,0" size="1407,144" type="rect" lineSize="0" fillColor="#ff4f92c6"/>
+    <text id="n5" name="Text_Title" xy="160,20" size="399,51" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" autoSize="height" bold="true" singleLine="true" text="">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </text>
+    <text id="n6" name="Text_Content" xy="160,83" size="941,43" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" leading="0" ubb="true" autoSize="none" singleLine="true" text="">
+      <relation target="n5" sidePair="left-right,bottom-bottom"/>
+    </text>
+    <loader id="n11" name="Loader_Icon" xy="0,0" size="144,144" url="ui://zat5frjdhqut1x" fill="scaleFree"/>
+    <component id="n15" name="Component_Star" src="hqut1v" xy="1316,73"/>
+    <text id="n13" name="Text_Time" xy="1257,18" size="137,35" font="微软雅黑" fontSize="24" color="#ffffff" align="right" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="小时前">
+      <relation target="" sidePair="right-right"/>
+    </text>
+    <graph id="n14" name="Graph_BlueBackground" xy="0,0" size="1407,144" alpha="0.2" type="rect" lineSize="0" fillColor="#ff000000">
+      <gearDisplay controller="State_C" pages="1"/>
+    </graph>
+    <component id="n16_behm" name="Button_Details" src="f1djozo7" pkg="s5cy5qnp" xy="-1,4" size="1243,140"/>
+    <component id="n17_behm" name="Button_Collect" src="f1djozo7" pkg="s5cy5qnp" xy="1245,2" size="159,138"/>
+  </displayList>
+</component>package.xml|1966|<packageDescription id="zat5frjd" name="Mail">
+  <resources>
+    <component id="ajfz13" name="ProgressBar_SoldierInfo" path="/ProgressBar/" size="50,65"/>
+    <component id="c8c11x" name="Component_MailList" path="/Component/" size="1408,925"/>
+    <component id="dp8u1y" name="Label_Coords" path="/Label/" size="10,43"/>
+    <component id="hqut1r" name="Button_Content" path="/Button/" size="107,107"/>
+    <component id="hqut1v" name="Component_Star" path="/Component/" size="59,47"/>
+    <component id="hqut1w" name="Label_Res" path="/Label/" size="165,49"/>
+    <component id="jwqee" name="Component_BattlelogMailItem" path="/Component/" size="1407,144"/>
+    <image id="daq31b" name="Image_Collect" path="/Image/" size="59,47"/>
+    <image id="daq31c" name="yj_22" path="/Image/" size="59,47"/>
+    <image id="daq31e" name="yj_17" path="/Image/" size="107,107"/>
+    <image id="daq31h" name="yj_10" path="/Image/" size="52,47"/>
+    <image id="daq31i" name="Image_NotCollect" path="/Image/" size="47,47"/>
+    <image id="daq31j" name="yj_05" path="/Image/" size="47,47"/>
+    <image id="daq31l" name="yj_03" path="/Image/" size="59,47"/>
+    <image id="hqut1t" name="jzxx_10" path="/Image/" size="40,45"/>
+    <component id="hqut1p" name="SystemMailMain" path="/" size="1920,1080" exported="true"/>
+    <component id="hqut1s" name="BattlelogMailMain" path="/" size="1920,1080" exported="true"/>
+    <component id="hqut1u" name="Component_SystemMailItem" path="/Component/" size="1407,144" exported="true"/>
+    <component id="jwqec" name="MailMain" path="/" size="1920,1080" exported="true"/>
+    <image id="daq318" name="Image_Defense" path="/Image/" size="145,145" exported="true"/>
+    <image id="daq319" name="Image_Attack" path="/Image/" size="145,145" exported="true"/>
+    <image id="daq31a" name="Image_System" path="/Image/" size="145,145" exported="true"/>
+    <atlas id="atlas0" size="512,512" file="atlas0.png"/>
+  </resources>
+</packageDescription>

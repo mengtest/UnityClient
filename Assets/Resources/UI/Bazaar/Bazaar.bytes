@@ -1,0 +1,379 @@
+haic0.xml|7536|<component size="1334,750">
+  <controller name="Tab_C" pages="1,元宝商店,2,贡献商店,0,珍宝阁,3,银两商店" selected="0"/>
+  <controller name="Type_C" pages="0,v0.2,1,v0.3" selected="0"/>
+  <displayList>
+    <component id="n4_haic" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="-1,-1" size="1334,750" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="市集"/>
+    </component>
+    <component id="n1_haic" name="Button_TreasureCarbinet" src="hcop11" xy="42,151" size="93,131">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <relation target="n40_sy32" sidePair="top-bottom,center-center"/>
+      <Button title="珍宝阁" controller="Tab_C" page="0"/>
+    </component>
+    <component id="n2_haic" name="Button_Ingot" src="hcop11" xy="41,156" size="93,131">
+      <relation target="n41_sy32" sidePair="top-bottom,center-center"/>
+      <Button checked="true" title="元宝" controller="Tab_C" page="1"/>
+    </component>
+    <component id="n3_haic" name="Button_Contribution" src="hcop11" xy="42,280">
+      <relation target="n42_sy32" sidePair="top-bottom,center-center"/>
+      <Button title="贡献" controller="Tab_C" page="2"/>
+    </component>
+    <component id="n75_ewmt" name="Button_HaveNoAlliance" src="f1djozo7" pkg="s5cy5qnp" xy="38,275" size="100,140">
+      <relation target="n3_haic" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n26_i02l" name="Button_Tael" src="hcop11" xy="42,404">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <relation target="n43_sy32" sidePair="top-bottom,center-center"/>
+      <Button title="银两" controller="Tab_C" page="3"/>
+    </component>
+    <image id="n44_sy32" name="Image_Accessory" src="sy3213" xy="69,405" size="36,93">
+      <relation target="n26_i02l" sidePair="center-center,top-bottom"/>
+    </image>
+    <image id="n43_sy32" name="Image_String4" src="sy321g" xy="85,395" size="6,22">
+      <relation target="n3_haic" sidePair="center-center,top-bottom"/>
+    </image>
+    <image id="n42_sy32" name="Image_String3" src="sy321g" xy="84,270" size="6,22">
+      <relation target="n2_haic" sidePair="top-bottom,center-center"/>
+    </image>
+    <image id="n41_sy32" name="Image_String2" src="sy321g" xy="84,268" size="6,22">
+      <relation target="n1_haic" sidePair="top-bottom,center-center"/>
+    </image>
+    <image id="n40_sy32" name="Image_String1" src="sy321g" xy="85,128" size="6,35">
+      <relation target="n39_sy32" sidePair="top-bottom,center-center"/>
+    </image>
+    <image id="n31_sy32" name="Image_BackgroundRight" src="effmozp4" pkg="s5cy5qnp" xy="139,108" size="1182,606" group="n70_xmcp"/>
+    <image id="n32_sy32" name="Image_BottomBar" src="effmozpc" pkg="s5cy5qnp" xy="147,685" size="1165,22" group="n70_xmcp" alpha="0.5" flip="vt">
+      <relation target="n31_sy32" sidePair="width-width,bottom-bottom"/>
+    </image>
+    <image id="n33_sy32" name="Image_AccessroyBottom1" src="effmozp8" pkg="s5cy5qnp" xy="142,693" size="142,16" group="n70_xmcp" flip="hz">
+      <relation target="n32_sy32" sidePair="left-left,middle-middle"/>
+    </image>
+    <image id="n34_sy32" name="Image_AccessroyBottom2" src="effmozp8" pkg="s5cy5qnp" xy="1180,691" size="142,19" group="n70_xmcp">
+      <relation target="n32_sy32" sidePair="right-right,middle-middle"/>
+    </image>
+    <image id="n35_sy32" name="Image_Bar" src="effmozpc" pkg="s5cy5qnp" xy="147,118" size="1173,74" group="n70_xmcp">
+      <relation target="n31_sy32" sidePair="height-height,width-width"/>
+    </image>
+    <image id="n37_sy32" name="Image_AccessroyRight" src="effmozp5" pkg="s5cy5qnp" xy="1229,112" group="n70_xmcp">
+      <relation target="n31_sy32" sidePair="right-right,top-top"/>
+    </image>
+    <image id="n39_sy32" name="Image_Cross" src="sy3217" xy="38,115" size="108,18" group="n70_xmcp">
+      <relation target="n35_sy32" sidePair="right-left,middle-middle"/>
+    </image>
+    <image id="n36_sy32" name="Image_AccessroyLeft" src="effmozp5" pkg="s5cy5qnp" xy="133,112" group="n70_xmcp" flip="hz">
+      <relation target="n31_sy32" sidePair="left-left,top-top"/>
+    </image>
+    <image id="n45_sy32" name="Image_ListBackground" src="effmozpd" pkg="s5cy5qnp" xy="147,180" size="1173,518" group="n70_xmcp">
+      <relation target="n31_sy32" sidePair="width-width,height-height"/>
+    </image>
+    <group id="n70_xmcp" name="Group_BG" xy="38,108" size="1284,606" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n69_xmcp" name="Component_Shop" src="xmcp1w" xy="145,107">
+      <gearDisplay controller="Tab_C" pages="1,2,3"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <list id="n46_sy32" name="List_TreasureCarbinet" xy="175,194" size="1105,505" group="n64_h3gy" layout="row" overflow="scroll" scroll="horizontal" colGap="20" defaultItem="ui://n1dmz8p2sy321h" align="center" vAlign="middle">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <relation target="n45_sy32" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n52_h3gy" name="Text_RemainFreeTimes" xy="488,127" size="232,46" group="n64_h3gy" fontSize="30" color="#ce9f7a" align="center" vAlign="middle" text="今日免费剩余3次">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <relation target="n35_sy32" sidePair="left-left,middle-middle"/>
+    </text>
+    <text id="n53_h3gy" name="Text_Seperator" xy="720,126" size="17,46" group="n64_h3gy" fontSize="30" color="#ce9f7a" align="center" vAlign="middle" text="/">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <relation target="n52_h3gy" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n54_h3gy" name="Text_RemainBuyTimes" xy="741,127" size="232,46" group="n64_h3gy" fontSize="30" color="#ce9f7a" align="center" vAlign="middle" text="元宝购买剩余9次">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <relation target="n53_h3gy" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n55_h3gy" name="Text_ResetTime" xy="1045,128" size="229,46" group="n64_h3gy" fontSize="30" color="#ce9f7a" align="center" vAlign="middle" text="*18:00重置次数*">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <relation target="n35_sy32" sidePair="right-right,middle-middle"/>
+    </text>
+    <group id="n64_h3gy" name="Group_TreasureCarbinet" xy="175,126" size="1105,573" advanced="true">
+      <gearDisplay controller="Type_C" pages="1"/>
+    </group>
+    <text id="n71_ousr" name="Text_TotalMoney" xy="255,124" size="96,37" group="n74_ousr" fontSize="24" color="#f6d7a5" text="1000000">
+      <relation target="n73_ousr" sidePair="left-right,top-top"/>
+    </text>
+    <loader id="n72_ousr" name="Loader_CostIconNow" xy="359,127" size="29,29" group="n74_ousr" url="ui://s5cy5qnpokfwoz6r" align="center" vAlign="middle">
+      <gearIcon controller="Tab_C" pages="1" values="ui://s5cy5qnpokfwoz6r" default="ui://n1dmz8p2h3gy1o"/>
+      <relation target="n71_ousr" sidePair="left-right,top-top"/>
+    </loader>
+    <text id="n73_ousr" name="Text_CostTitle" xy="175,124" size="77,37" group="n74_ousr" fontSize="24" color="#f6d7a5" vAlign="middle" text="元宝：">
+      <gearText controller="Tab_C" pages="1" values="元宝：" default="贡献值："/>
+    </text>
+    <group id="n74_ousr" name="Group_Currency" xy="175,124" size="213,37" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>haic8.xml|1642|<component size="1334,750">
+  <displayList>
+    <component id="n5_h3gy" name="Label_Rewards" src="l2ckozou" pkg="s5cy5qnp" xy="339,99" size="800,500" controller="Type_C,0,State_C,1,BG_C,0">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="奖励"/>
+    </component>
+    <component id="n7_h3gy" name="Button_Item" src="hqutz3m" pkg="s5cy5qnp" xy="662,194" controller="button,0,Count_C,0,State_C,0,CornerMark_C,0">
+      <relation target="n5_h3gy" sidePair="middle-middle,center-center"/>
+    </component>
+    <text id="n8_h3gy" name="Text_Plus" xy="701,356" size="19,39" font="Noto Sans S Chinese Regular" fontSize="25" color="#663333" align="center" vAlign="middle" text="X">
+      <relation target="n7_h3gy" sidePair="left-left,top-bottom"/>
+    </text>
+    <text id="n9_h3gy" name="Text_Amount" xy="732,355" size="47,39" font="Noto Sans S Chinese Regular" fontSize="25" color="#006633" align="center" vAlign="middle" text="999">
+      <relation target="n8_h3gy" sidePair="left-right,middle-middle"/>
+    </text>
+    <image id="n10_h3gy" name="Image_Cristal" src="sy3216" xy="860,216"/>
+    <text id="n11_h3gy" name="Text_Number" xy="887,226" size="41,48" font="Noto Sans S Chinese Regular" fontSize="32" color="#e4b595" align="center" vAlign="middle" text="99">
+      <relation target="n10_h3gy" sidePair="left-left,top-top"/>
+    </text>
+    <component id="n13_h3gy" name="Button_Agree" src="knyu29" pkg="s5cy5qnp" xy="637,498" controller="Time_C,0,Type_C,0">
+      <relation target="n5_h3gy" sidePair="center-center,bottom-bottom"/>
+      <Button title="确定"/>
+    </component>
+  </displayList>
+</component>hcop11.xml|898|<component size="93,131" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n0_sy32" name="icon" src="sy3218" xy="0,0" size="93,131">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_sy32" name="icon1" src="sy3219" xy="0,0" size="93,131">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n1_sy32" name="title" xy="34,27" size="23,81" fontSize="18" color="#ffcc99" align="center" vAlign="middle" autoSize="height" shadowColor="#000000" shadowOffset="1,1" text="标&#xA;题&#xA;栏">
+      <gearColor controller="button" pages="0,1" values="#ffcc99,#000000|#cc6666,#000000"/>
+      <relation target="n0_sy32" sidePair="middle-middle,center-center"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>ousr2c.xml|148|<component size="100,100">
+  <displayList>
+    <image id="n0_ousr" name="n0" src="yqyk1" pkg="4trbzbck" xy="-23,-20"/>
+  </displayList>
+</component>package.xml|2927|<packageDescription id="n1dmz8p2" name="Bazaar">
+  <resources>
+    <component id="hcop11" name="Button_Lantern" path="/Button/" size="93,131"/>
+    <component id="sy321h" name="Component_TreasureFragment" path="/Component/" size="243,502"/>
+    <component id="xmcp1w" name="Component_Shop" path="/Component/" size="1165,596"/>
+    <component id="xmcp20" name="Component_List_ShopProItem" path="/Component/" size="750,250"/>
+    <component id="xmcp23" name="Button_ShopPropItem" path="/Button/" size="200,240"/>
+    <image id="h3gy1i" name="Image_ItemTitle" path="/Image/" size="76,36" scale="9grid" scale9grid="29,17,16,2" gridTile="16"/>
+    <image id="h3gy1k" name="Image_Diamond" path="/Image/" size="139,139"/>
+    <image id="h3gy1l" name="Image_Light" path="/Image/" size="192,133"/>
+    <image id="h3gy1m" name="Image_Shelf" path="/Image/" size="377,238"/>
+    <image id="h3gy1o" name="Image_Contribution" path="/Image/" size="25,25"/>
+    <image id="h3gy1p" name="Image_Mask" path="/Image/" size="10,70"/>
+    <image id="h3gy1q" name="Image_Table" path="/Image/" size="158,64" scale="9grid" scale9grid="40,6,80,16"/>
+    <image id="h3gy1r" name="Image_FlagBackground" path="/Image/" size="420,586"/>
+    <image id="haic10" name="Image_ScrollIcon" path="/Image/" size="320,278"/>
+    <image id="sy3212" name="Image_Unlock" path="/Image/" size="181,42"/>
+    <image id="sy3213" name="Image_Accessory" path="/Image/" size="36,110" scale="9grid" scale9grid="16,4,3,18"/>
+    <image id="sy3214" name="Image_Book" path="/Image/" size="238,285"/>
+    <image id="sy3215" name="Image_CarbinetIcon" path="/Image/" size="170,281"/>
+    <image id="sy3216" name="Image_Cristal" path="/Image/" size="126,122"/>
+    <image id="sy3217" name="Image_Cross_" path="/Image/" size="90,18"/>
+    <image id="sy3218" name="Image_Lantern" path="/Image/" size="114,157"/>
+    <image id="sy3219" name="Image_Lantern1" path="/Image/" size="124,175"/>
+    <image id="sy321a" name="Image_Lattice" path="/Image/" size="68,68"/>
+    <image id="sy321d" name="Image_Selected" path="/Image/" size="84,442" scale="9grid" scale9grid="37,277,11,68"/>
+    <image id="sy321e" name="Image_Slipcase" path="/Image/" size="244,249"/>
+    <image id="sy321f" name="Image_SmallTitleBackground" path="/Image/" size="222,57"/>
+    <image id="sy321g" name="Image_String" path="/Image/" size="6,46" scale="9grid" scale9grid="1,9,3,19"/>
+    <image id="xmcp22" name="Image_BG" path="/Image/" size="283,400"/>
+    <image id="xmcp2b" name="Image_TG" path="/Image/" size="31,42" scale="9grid" scale9grid="8,11,16,22"/>
+    <component id="haic0" name="BazaarMain" path="/" size="1334,750" exported="true"/>
+    <component id="haic8" name="Pop_Reward" path="/" size="1334,750" exported="true"/>
+    <component id="ousr2c" name="Reference" path="/" size="100,100" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>sy321h.xml|4065|<component size="243,502">
+  <controller name="State_C" pages="0,选中,1,未选中" selected="0"/>
+  <controller name="Type_C" pages="0,未开放,1,已开放" selected="0"/>
+  <displayList>
+    <image id="n2_sy32" name="Image_Right" src="sy321d" xy="195,-23" size="69,442">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="" sidePair="right-right,top-top"/>
+    </image>
+    <image id="n1_sy32" name="Image_Left" src="sy321d" xy="-25,-23" size="69,442">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="" sidePair="left-left,top-top"/>
+    </image>
+    <image id="n0_sy32" name="Image_Book" src="sy3214" xy="0,-3" grayed="true">
+      <gearLook controller="Type_C" pages="0" values="1,0,1" default="1,0,0"/>
+      <relation target="" sidePair="left-left,top-top"/>
+    </image>
+    <image id="n3_sy32" name="Image_SmllTitle" src="sy321f" xy="3,2" grayed="true">
+      <gearLook controller="Type_C" pages="0" values="1,0,1" default="1,0,0"/>
+      <relation target="n0_sy32" sidePair="top-top,left-left"/>
+    </image>
+    <text id="n5_sy32" name="Text_SmallTitle" xy="83,10" size="65,32" grayed="true" fontSize="20" color="#ffcc99" align="center" vAlign="middle" text="强化符">
+      <gearLook controller="Type_C" pages="0" values="1,0,1" default="1,0,0"/>
+      <relation target="n3_sy32" sidePair="middle-middle,center-center"/>
+    </text>
+    <image id="n6_sy32" name="Image_Slipcase" src="sy321e" xy="-1,172" grayed="true">
+      <gearLook controller="Type_C" pages="0" values="1,0,1" default="1,0,0"/>
+      <relation target="n0_sy32" sidePair="top-bottom,center-center"/>
+    </image>
+    <image id="n7_sy32" name="Image_Base" src="nfhooznt" pkg="s5cy5qnp" xy="40,285" size="172,40" color="#666666">
+      <gearColor controller="Type_C" pages="0,1" values="#666666|#993333"/>
+      <relation target="n6_sy32" sidePair="center-center,top-top"/>
+    </image>
+    <text id="n8_sy32" name="Text_Acquire" xy="83,290" size="85,32" fontSize="20" color="#999999" align="center" vAlign="middle" text="至少获得">
+      <gearColor controller="Type_C" pages="0" values="#999999,#ffffff" default="#ffcc99,#ffffff"/>
+      <relation target="n7_sy32" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n10_sy32" name="Text_ItemAmount" xy="90,351" size="131,32" grayed="true" fontSize="20" color="#ffcc99" align="center" vAlign="middle" text="初级强化符X 1">
+      <gearLook controller="Type_C" pages="0" values="1,0,1" default="1,0,0"/>
+      <relation target="n9_sy32" sidePair="left-right,middle-middle"/>
+    </text>
+    <image id="n11_sy32" name="Image_Lattice" src="sy321a" xy="17,332" grayed="true">
+      <gearLook controller="Type_C" pages="0" values="1,0,1" default="1,0,0"/>
+      <relation target="n9_sy32" sidePair="middle-middle,center-center"/>
+    </image>
+    <component id="n9_sy32" name="Button_Prop" src="hqutz3m" pkg="s5cy5qnp" xy="23,338" size="56,56" grayed="true" controller="button,0,Count_C,0,State_C,0,CornerMark_C,0">
+      <relation target="n6_sy32" sidePair="bottom-bottom,left-left"/>
+    </component>
+    <loader id="n15_ukfs" name="Loader_Icon" xy="63,3" size="170,281" grayed="true" url="ui://n1dmz8p2sy3215" align="center" vAlign="middle">
+      <gearLook controller="Type_C" pages="0" values="1,0,1" default="1,0,0"/>
+      <relation target="n0_sy32" sidePair="right-right,middle-middle"/>
+    </loader>
+    <image id="n12_h3gy" name="Image_Unlock" src="sy3212" xy="64,130">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="n15_ukfs" sidePair="middle-middle,center-center"/>
+    </image>
+    <text id="n13_h3gy" name="Text_Unlock" xy="99,135" size="119,32" fontSize="20" color="#ffcc66" align="center" vAlign="middle" text="君主N级开放">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="n12_h3gy" sidePair="middle-middle,right-left"/>
+    </text>
+    <component id="n16_xmcp" name="Button_Free" src="knyu29" pkg="s5cy5qnp" xy="32,430" size="212,66" controller="Time_C,0,Type_C,0">
+      <Button title="免费"/>
+    </component>
+  </displayList>
+</component>xmcp1w.xml|3802|<component size="1165,596">
+  <controller name="Prop_C" pages="0,,1,显示详细信息" selected="1"/>
+  <controller name="State_C" pages="0,可购买,1,不可购买" selected="0"/>
+  <controller name="Cost_C" pages="0,买得起,1,买不起" selected="0"/>
+  <controller name="Type_C" pages="0,元宝商店,1,贡献商店" selected="1"/>
+  <displayList>
+    <list id="n22_nj1g" name="List_Prop" xy="0,63" size="743,532" group="n250_r42d" layout="flow_hz" overflow="scroll" lineGap="-7" colGap="15" lineItemCount="1" defaultItem="ui://n1dmz8p2xmcp20">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n48_wdnp" name="Image_Flag" src="h3gy1r" xy="744,3" group="n250_r42d"/>
+    <text id="n24_nj1g" name="Text_PropDesc" xy="770,44" size="368,116" group="n34_nj1g" fontSize="20" color="#cacbcb" autoSize="none" text="道具描述文字道具描述文字道具描述文字道具描述文字道具描述文字道具描述文字道具描述文字道具描述文字道具描述文字道具描述文字"/>
+    <image id="n249_qub7" name="Image_BG1" src="xmcp2b" xy="953,214" size="65,42" group="n36_i4s8">
+      <relation target="n31_nj1g" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n25_nj1g" name="n25" xy="778,225" size="93,34" group="n36_i4s8" fontSize="22" color="#e29d78" text="购买数量">
+      <relation target="n48_wdnp" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n31_nj1g" name="Button_Sub" src="qub7ozpj" pkg="s5cy5qnp" xy="879,202" group="n36_i4s8" controller="Type_C,1">
+      <relation target="n25_nj1g" sidePair="left-right,middle-middle"/>
+    </component>
+    <component id="n33_nj1g" name="Button_Add" src="qub7ozpj" pkg="s5cy5qnp" xy="1024,202" group="n36_i4s8" controller="Type_C,0">
+      <relation target="n249_qub7" sidePair="left-right,middle-middle"/>
+    </component>
+    <text id="n32_nj1g" name="Text_PropAmount" xy="959,213" size="48,46" group="n36_i4s8" input="true" restrict="^[0-9]*$" keyboardType="4" fontSize="22" color="#e29d78" align="center" vAlign="middle" autoSize="shrink" text="99">
+      <relation target="n249_qub7" sidePair="center-center,middle-middle"/>
+    </text>
+    <group id="n36_i4s8" name="Group_AmountController" xy="778,202" size="314,72" group="n34_nj1g" advanced="true">
+      <gearDisplay controller="State_C" pages="0"/>
+    </group>
+    <image id="n248_qub7" name="Image_BG2" src="xmcp2b" xy="879,328" size="168,42" group="n37_i4s8">
+      <relation target="n26_nj1g" sidePair="left-right,middle-middle"/>
+    </image>
+    <text id="n26_nj1g" name="n26" xy="819,333" size="49,34" group="n37_i4s8" fontSize="22" color="#e29d78" text="花费"/>
+    <text id="n29_nj1g" name="Text_Cost" xy="902,333" size="89,34" group="n37_i4s8" fontSize="22" color="#e29d78" text="9999999">
+      <gearColor controller="Cost_C" pages="0,1" values="#e29d78,#000000|#ff0000,#000000"/>
+      <relation target="n26_nj1g" sidePair="left-right,top-top"/>
+    </text>
+    <component id="n28_nj1g" name="Button_Buy" src="gr0bozdm" pkg="s5cy5qnp" xy="857,414" group="n37_i4s8">
+      <Button title="购买"/>
+    </component>
+    <loader id="n244_qub7" name="Loader_CostIcon2" xy="998,335" size="29,29" group="n37_i4s8" url="ui://n1dmz8p2h3gy1o" align="center" vAlign="middle">
+      <gearIcon controller="Type_C" pages="0" values="ui://s5cy5qnpokfwoz6r" default="ui://n1dmz8p2h3gy1o"/>
+      <relation target="n29_nj1g" sidePair="left-right,top-top"/>
+    </loader>
+    <group id="n37_i4s8" name="Group_None" xy="819,328" size="242,170" group="n34_nj1g" advanced="true">
+      <gearDisplay controller="State_C" pages="0"/>
+    </group>
+    <group id="n34_nj1g" name="Group_PropDetails" xy="770,44" size="368,454" group="n250_r42d" advanced="true">
+      <gearDisplay controller="Prop_C" pages="1"/>
+    </group>
+    <group id="n250_r42d" name="Group_Page01" xy="0,3" size="1164,592" advanced="true">
+      <gearDisplay controller=""/>
+    </group>
+  </displayList>
+</component>xmcp20.xml|612|<component size="750,250" extention="Button">
+  <displayList>
+    <image id="n2_wdnp" name="n2" src="h3gy1m" xy="3,1"/>
+    <image id="n3_wdnp" name="n3" src="h3gy1m" xy="740,1" skew="0,-180"/>
+    <image id="n8_xajr" name="n8" src="xmcp22" xy="379,0" size="371,251" flip="hz"/>
+    <image id="n7_xajr" name="n7" src="xmcp22" xy="0,0" size="380,251"/>
+    <list id="n0_wdnp" name="List_ShopProItem" xy="38,9" size="659,240" layout="row" scroll="horizontal" colGap="31" defaultItem="ui://n1dmz8p2xmcp23">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <Button mode="Radio"/>
+</component>xmcp23.xml|2778|<component size="200,240" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <controller name="State_C" pages="0,正常,1,限购,2,售罄,3,未解锁" selected="0"/>
+  <displayList>
+    <image id="n2" name="Image_BG" src="h3gy1q" xy="24,171">
+      <relation target="n9_nj1g" sidePair="center-center,top-bottom"/>
+    </image>
+    <image id="n20_wdnp" name="BG_Title" src="h3gy1i" xy="10,5" size="182,36"/>
+    <text id="n10_nj1g" name="Text_Name" xy="39,11" size="131,29" fontSize="18" color="#d5684a" align="center" vAlign="middle" text="道具名字七个字">
+      <relation target="n20_wdnp" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n9_nj1g" name="Image_ItemBase" src="h3gy1k" xy="32,43">
+      <relation target="n20_wdnp" sidePair="center-center,top-bottom"/>
+    </image>
+    <image id="n28_wdnp" name="Image_mask" src="h3gy1p" xy="24,6" size="158,230" color="#4b362c">
+      <gearDisplay controller="button" pages="0"/>
+      <gearColor controller="State_C" pages="0,2" values="#4b362c|#cc4d4a" default="#4a352b"/>
+      <relation target="n20_wdnp" sidePair="center-center,top-bottom"/>
+    </image>
+    <text id="n13_nj1g" name="Text_Cost" xy="90,205" size="54,34" fontSize="22" color="#d0cfcf" vAlign="middle" autoSize="none" text="2000">
+      <gearDisplay controller="State_C" pages="0,1,2"/>
+      <relation target="n31_wdnp" sidePair="left-right,top-top"/>
+    </text>
+    <loader id="n7_nj1g" name="Loader_Icon" xy="49,62" size="100,100" url="ui://n1dmz8p2haic10" align="center" vAlign="middle" fill="scaleMatchWidth">
+      <relation target="n9_nj1g" sidePair="center-center,middle-middle"/>
+    </loader>
+    <image id="n17_wdnp" name="Image_Light" src="h3gy1l" xy="4,69">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n11_nj1g" name="Text_State" xy="64,173" size="66,34" fontSize="22" color="#df5152" vAlign="middle" text="限购 1">
+      <gearDisplay controller="State_C" pages="2"/>
+      <gearText controller="State_C" pages="1,2" values="已售完|已售完" default="限购 1"/>
+    </text>
+    <text id="n15_yv5f" name="Text_UnlockCondition" xy="39,205" size="132,34" fontSize="20" color="#cccecc" vAlign="middle" autoSize="none" text="联盟99级解锁">
+      <gearDisplay controller="State_C" pages="3"/>
+    </text>
+    <loader id="n31_wdnp" name="Loader_CostIcon" xy="62,207" size="28,27" url="ui://n1dmz8p2xmcp1z">
+      <gearDisplay controller="State_C" pages="0,1,2"/>
+      <relation target="n2" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n14_nj1g" name="Text_LimitAmount" xy="60,172" size="83,34" fontSize="22" color="#d3d0d1" vAlign="middle" ubb="true" text="限购1件">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

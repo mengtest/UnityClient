@@ -1,0 +1,503 @@
+12hhu2b.xml|2295|<component size="350,300" extention="Button">
+  <displayList>
+    <image id="n0_12hhu" name="n0" src="lm5su" xy="-39,48"/>
+    <movieclip id="n1_12hhu" name="n1" src="bt41ozfd" pkg="s5cy5qnp" xy="35,10" pivot="0.5,0.5" size="280,280" alpha="0"/>
+    <image id="n2_12hhu" name="n2" src="bt41ozfc" pkg="s5cy5qnp" xy="-82,-107" pivot="0.5,0.5" alpha="0.01"/>
+    <image id="n3_12hhu" name="n3" src="ntr0ozj2" pkg="s5cy5qnp" xy="37,11" pivot="0.5,0.5" alpha="0"/>
+    <image id="n5_12hhu" name="n5" src="bt41ozfc" pkg="s5cy5qnp" xy="-81,-106" pivot="0.5,0.5" alpha="0"/>
+    <image id="n6_12hhu" name="n6" src="bt41ozfc" pkg="s5cy5qnp" xy="-81,-106" pivot="0.5,0.5" alpha="0"/>
+  </displayList>
+  <Button/>
+  <transition name="chuzheng">
+    <item time="0" type="Alpha" target="n3_12hhu" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="0" type="Alpha" target="n1_12hhu" value="1"/>
+    <item time="0" type="Alpha" target="n2_12hhu" tween="true" startValue="0" endValue="1" duration="9"/>
+    <item time="0" type="Scale" target="n2_12hhu" tween="true" startValue="0.3,0.3" endValue="0.7,0.7" duration="18"/>
+    <item time="0" type="Scale" target="n3_12hhu" tween="true" startValue="0.6,0.6" endValue="1,1" duration="6"/>
+    <item time="4" type="Alpha" target="n3_12hhu" tween="true" startValue="1" endValue="0" duration="8"/>
+    <item time="9" type="Alpha" target="n2_12hhu" tween="true" startValue="1" endValue="0" duration="9"/>
+    <item time="24" type="Alpha" target="n1_12hhu" value="0"/>
+  </transition>
+  <transition name="daiji" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Alpha" target="n5_12hhu" tween="true" startValue="0" endValue="1" duration="12"/>
+    <item time="0" type="Alpha" target="n6_12hhu" tween="true" startValue="0" endValue="0.5" duration="6"/>
+    <item time="0" type="Scale" target="n6_12hhu" tween="true" startValue="0,0" endValue="0.7,0.7" duration="24"/>
+    <item time="0" type="Scale" target="n5_12hhu" tween="true" startValue="0.2,0.2" endValue="0.65,0.65" duration="24"/>
+    <item time="6" type="Alpha" target="n6_12hhu" tween="true" startValue="0.5" endValue="0.01" duration="18"/>
+    <item time="12" type="Alpha" target="n5_12hhu" tween="true" startValue="1" endValue="0" duration="12"/>
+  </transition>
+</component>cs6vu2k.xml|5734|<component size="1920,1080">
+  <controller name="troop1Stat_C" pages="0,,1," selected="0"/>
+  <controller name="troop2Stat_C" pages="0,,1," selected="0"/>
+  <controller name="troop3Stat_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n2_cs6v" name="Component_BG" src="no0zozhl" pkg="s5cy5qnp" xy="1,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n0_cs6v" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="队伍"/>
+    </component>
+    <component id="n18_r1z6" name="btn_addSoliders" src="cs6vu2l" xy="1777,1005" visible="false">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Button title="自动补兵" titleColor="#ffffff" icon="ui://s5cy5qnphn8aoz9k"/>
+    </component>
+    <image id="n19_r2hp" name="img_wofangdiban" src="lm5sa" xy="91,221" size="563,50" group="n29_r2hp"/>
+    <component id="n20_r2hp" name="com_captainSlot1" src="ra8tozlw" pkg="s5cy5qnp" xy="90,280" size="561,138" group="n29_r2hp"/>
+    <component id="n21_r2hp" name="com_captainSlot2" src="ra8tozlw" pkg="s5cy5qnp" xy="90,424" group="n29_r2hp"/>
+    <component id="n22_r2hp" name="com_captainSlot3" src="ra8tozlw" pkg="s5cy5qnp" xy="90,568" group="n29_r2hp"/>
+    <component id="n23_r2hp" name="com_captainSlot4" src="ra8tozlw" pkg="s5cy5qnp" xy="90,712" group="n29_r2hp"/>
+    <component id="n24_r2hp" name="com_captainSlot5" src="ra8tozlw" pkg="s5cy5qnp" xy="90,856" group="n29_r2hp"/>
+    <component id="n25_r2hp" name="btn_addSolider_troop1" src="g52xozih" pkg="s5cy5qnp" xy="554,219" size="94,54" group="n29_r2hp">
+      <Button title="补兵" titleColor="#f0fafc" titleFontSize="28"/>
+    </component>
+    <text id="n26_r2hp" name="txt_fight_troop1" xy="91,232" size="199,35" group="n29_r2hp" font="微软雅黑" fontSize="24" color="#ffffff" text="战斗力：5680000"/>
+    <text id="n27_r2hp" name="txt_troopId_troop1" xy="88,158" size="125,59" group="n29_r2hp" fontSize="40" color="#ffffff" text="队伍一"/>
+    <text id="n28_r2hp" name="txt_expeditionStat_troop1" xy="323,158" size="125,59" group="n29_r2hp" fontSize="40" color="#ffffff" text="空闲中">
+      <gearText controller="troop1Stat_C" pages="0" values="空闲中" default="出征中"/>
+    </text>
+    <group id="n29_r2hp" name="group_troop1" xy="88,158" size="566,836" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n30_r2hp" name="img_wofangdiban" src="lm5sa" xy="683,221" size="563,50" group="n40_r2hp"/>
+    <component id="n31_r2hp" name="com_captainSlot6" src="ra8tozlw" pkg="s5cy5qnp" xy="682,280" group="n40_r2hp"/>
+    <component id="n32_r2hp" name="com_captainSlot7" src="ra8tozlw" pkg="s5cy5qnp" xy="682,424" group="n40_r2hp"/>
+    <component id="n33_r2hp" name="com_captainSlot8" src="ra8tozlw" pkg="s5cy5qnp" xy="682,568" group="n40_r2hp"/>
+    <component id="n34_r2hp" name="com_captainSlot9" src="ra8tozlw" pkg="s5cy5qnp" xy="682,712" group="n40_r2hp"/>
+    <component id="n35_r2hp" name="com_captainSlot10" src="ra8tozlw" pkg="s5cy5qnp" xy="682,856" group="n40_r2hp"/>
+    <component id="n36_r2hp" name="btn_addSolider_troop2" src="g52xozih" pkg="s5cy5qnp" xy="1146,219" size="94,54" group="n40_r2hp">
+      <Button title="补兵" titleColor="#f0fafc" titleFontSize="28"/>
+    </component>
+    <text id="n37_r2hp" name="txt_fight_troop2" xy="683,231" size="199,35" group="n40_r2hp" font="微软雅黑" fontSize="24" color="#ffffff" text="战斗力：5680000"/>
+    <text id="n38_r2hp" name="txt_troopId_troop2" xy="680,158" size="125,59" group="n40_r2hp" fontSize="40" color="#ffffff" text="队伍二"/>
+    <text id="n39_r2hp" name="txt_expeditionStat_troop2" xy="915,158" size="125,59" group="n40_r2hp" fontSize="40" color="#ffffff" text="空闲中">
+      <gearText controller="troop2Stat_C" pages="1" values="出征中" default="空闲中"/>
+    </text>
+    <group id="n40_r2hp" name="group_troop2" xy="680,158" size="566,836" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n41_r2hp" name="img_wofangdiban" src="lm5sa" xy="1282,221" size="563,50" group="n51_r2hp"/>
+    <component id="n42_r2hp" name="com_captainSlot11" src="ra8tozlw" pkg="s5cy5qnp" xy="1280,280" group="n51_r2hp"/>
+    <component id="n43_r2hp" name="com_captainSlot12" src="ra8tozlw" pkg="s5cy5qnp" xy="1280,424" group="n51_r2hp"/>
+    <component id="n44_r2hp" name="com_captainSlot13" src="ra8tozlw" pkg="s5cy5qnp" xy="1280,568" group="n51_r2hp"/>
+    <component id="n45_r2hp" name="com_captainSlot14" src="ra8tozlw" pkg="s5cy5qnp" xy="1280,712" group="n51_r2hp"/>
+    <component id="n46_r2hp" name="com_captainSlot15" src="ra8tozlw" pkg="s5cy5qnp" xy="1280,856" group="n51_r2hp"/>
+    <component id="n47_r2hp" name="btn_addSolider_troop3" src="g52xozih" pkg="s5cy5qnp" xy="1745,219" size="94,54" group="n51_r2hp">
+      <Button title="补兵" titleColor="#f0fafc" titleFontSize="28"/>
+    </component>
+    <text id="n48_r2hp" name="txt_fight_troop3" xy="1282,231" size="199,35" group="n51_r2hp" font="微软雅黑" fontSize="24" color="#ffffff" text="战斗力：5680000"/>
+    <text id="n49_r2hp" name="txt_troopId_troop3" xy="1279,158" size="125,59" group="n51_r2hp" fontSize="40" color="#ffffff" text="队伍三"/>
+    <text id="n50_r2hp" name="txt_expeditionStat_troop3" xy="1514,158" size="125,59" group="n51_r2hp" fontSize="40" color="#ffffff" text="空闲中">
+      <gearText controller="troop3Stat_C" pages="1" values="出征中" default="空闲中"/>
+    </text>
+    <group id="n51_r2hp" name="group_troop3" xy="1279,158" size="566,836" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>cs6vu2l.xml|650|<component size="59,59" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <loader id="n3" name="icon" xy="0,0" size="59,59" url="ui://s5cy5qnpigjb1o" align="center" vAlign="middle"/>
+    <image id="n4_hn8a" name="img_gou" src="tzezu2j" xy="8,-5">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n5_hn8a" name="title" xy="-172,2" size="171,53" font="微软雅黑" fontSize="34" align="center" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" text="一键补兵"/>
+  </displayList>
+  <Button mode="Check" downEffect="scale" downEffectValue="0.90"/>
+</component>isxf26.xml|56|<component size="566,792">
+  <displayList/>
+</component>lm5s1a.xml|546|<component size="62,62" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <graph id="n3" name="n3" xy="0,0" size="62,62" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <text id="n2" name="title" xy="0,1" size="59,59" font="微软雅黑" fontSize="36" color="#ffffff" align="center" vAlign="middle" autoSize="none" singleLine="true" text="2">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>lm5s1c.xml|1467|<component size="564,138">
+  <controller name="stat_C" pages="0,有信息,1,无信息" selected="0"/>
+  <displayList>
+    <graph id="n14_ntr0" name="gra_hong" xy="0,2" size="564,131" alpha="0.7" type="rect" lineSize="0" fillColor="#ffa65033" corner="8"/>
+    <component id="n5" name="progressBar_SoliderNum" src="lm5s1d" xy="17,83" size="311,20">
+      <gearDisplay controller="stat_C" pages="0"/>
+      <ProgressBar value="8500" max="20000"/>
+    </component>
+    <text id="n6" name="txt_name" xy="17,11" size="348,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="武将名字发vsfd">
+      <gearDisplay controller="stat_C" pages="0"/>
+    </text>
+    <component id="n9" name="lab_zhiYe" src="g3jhozvv" pkg="s5cy5qnp" xy="337,67">
+      <gearDisplay controller="stat_C" pages="0"/>
+    </component>
+    <loader id="n10" name="loader_head" xy="441,8" size="120,120" url="ui://s5cy5qnpdp8uoz5c" fill="scaleFree">
+      <gearDisplay controller="stat_C" pages="0"/>
+    </loader>
+    <text id="n11" name="txt_level" xy="17,47" size="283,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="80级">
+      <gearDisplay controller="stat_C" pages="0"/>
+    </text>
+    <text id="n13" name="n13" xy="218,56" size="125,35" font="微软雅黑" fontSize="24" color="#ffffff" text="无敌方信息">
+      <gearDisplay controller="stat_C" pages="1"/>
+    </text>
+  </displayList>
+</component>lm5s1d.xml|543|<component size="213,20" extention="ProgressBar">
+  <displayList>
+    <image id="n1" name="n1" src="lm5se" xy="0,0" size="213,20">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="bar" src="lm5sb" xy="0,0" size="213,20"/>
+    <text id="n3" name="title" xy="86,23" size="40,25" font="微软雅黑" fontSize="18" color="#ffffff" text="">
+      <relation target="" sidePair="center-center,bottom-top"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax" reverse="true"/>
+</component>lm5s1k.xml|707|<component size="379,315">
+  <controller name="State_C" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n25" name="img_jianglibiaoti" src="lm5sh" xy="82,0"/>
+    <text id="n30" name="txt_jiangli" xy="135,6" size="101,35" font="微软雅黑" fontSize="24" color="#ffffff" text="胜利奖励"/>
+    <list id="n33" name="list_award" xy="16,60" size="343,252" layout="flow_hz" overflow="scroll" lineGap="15" colGap="13" defaultItem="ui://s5cy5qnphqutz3m" autoItemSize="true" align="center">
+      <gearXY controller="State_C" pages="0,1" values="104,60|16,60"/>
+      <gearSize controller="State_C" pages="0,1" values="171,252,1,1|343,252,1,1"/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>lm5s1m.xml|1243|<component size="1090,73">
+  <displayList>
+    <graph id="n25" name="n25" xy="0,5" size="1084,64" alpha="0.6" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <component id="n19" name="btn_chose" src="gr0bozdm" pkg="s5cy5qnp" xy="842,-16" visible="false" controller="State_C,0">
+      <Button title="选择目标"/>
+    </component>
+    <text id="n20" name="n20" xy="17,22" size="125,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="出征目标："/>
+    <text id="n21" name="txt_mengyoumingzi" xy="138,16" size="287,43" font="微软雅黑" fontSize="30" color="#0066ff" vAlign="middle" text="[盟友]玩家名字7个字"/>
+    <text id="n22" name="n22" xy="463,23" size="77,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="坐标：">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </text>
+    <text id="n23" name="txt_time" xy="700,24" size="101,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="00:12:56"/>
+    <image id="n24" name="n24" src="lm5s1i" xy="669,26"/>
+    <text id="n26" name="txt_pos" xy="539,23" size="116,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="333，333">
+      <relation target="n22" sidePair="left-right,middle-middle"/>
+    </text>
+  </displayList>
+</component>lm5s1s.xml|2123|<component size="566,785" adaptationTest="FitSize">
+  <controller name="troopId_C" pages="0,,1,,2," selected="0"/>
+  <controller name="troopStat_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n3" name="img_wofangdiban" src="lm5sa" xy="3,14" size="563,50"/>
+    <component id="n17_nnqv" name="com_wujiangwei0" src="ra8tozlw" pkg="s5cy5qnp" xy="0,75"/>
+    <component id="n18_nnqv" name="com_wujiangwei1" src="ra8tozlw" pkg="s5cy5qnp" xy="0,218"/>
+    <component id="n19_nnqv" name="com_wujiangwei2" src="ra8tozlw" pkg="s5cy5qnp" xy="0,361"/>
+    <component id="n20_nnqv" name="com_wujiangwei3" src="ra8tozlw" pkg="s5cy5qnp" xy="1,504"/>
+    <component id="n21_nnqv" name="com_wujiangwei4" src="ra8tozlw" pkg="s5cy5qnp" xy="2,647"/>
+    <text id="n4" name="txt_zhanli" xy="365,28" size="199,35" font="微软雅黑" fontSize="24" color="#ffffff" text="战斗力：5680000">
+      <gearXY controller="troopId_C" pages="0,1,2" values="365,28|365,28|365,28"/>
+    </text>
+    <component id="n7" name="btn_zhenxing2" src="lm5s1a" xy="83,8">
+      <gearDisplay controller="troopId_C" pages="0,1,2"/>
+      <Button controller="troopId_C" page="1"/>
+    </component>
+    <component id="n10" name="btn_zhenxing3" src="lm5s1a" xy="156,8">
+      <gearDisplay controller="troopId_C" pages="0,1,2"/>
+      <Button title="3" controller="troopId_C" page="2"/>
+    </component>
+    <component id="n11" name="btn_zhenxing1" src="lm5s1a" xy="11,8">
+      <gearDisplay controller="troopId_C" pages="0,1,2"/>
+      <Button checked="true" title="1" controller="troopId_C" page="0"/>
+    </component>
+    <image id="n9" name="img_xuankuang" src="lm5sm" xy="-1,-2">
+      <gearDisplay controller="troopId_C" pages="0,1,2"/>
+      <gearXY controller="troopId_C" pages="0,1,2" values="-1,-2|71,-2|144,-2" tween="true"/>
+    </image>
+    <text id="n24_r1z6" name="txt_zhuangtai" xy="231,17" size="125,50" fontSize="40" color="#ffffff" text="空闲中">
+      <gearXY controller="troopId_C" pages="0,1,2" values="231,17|231,17|231,17"/>
+      <gearText controller="troopStat_C" pages="0" values="空闲中" default="出征中"/>
+    </text>
+  </displayList>
+</component>lm5s1t.xml|1112|<component size="371,328">
+  <controller name="bianji" pages="0,正常状态,1,删除" selected="0"/>
+  <displayList>
+    <image id="n55" name="img_chengchi" src="lm5sg" xy="14,52"/>
+    <graph id="n63" name="gra_mingzi" xy="71,240" size="231,38" alpha="0.8" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="n55" sidePair="center-center,middle-middle"/>
+    </graph>
+    <text id="n59" name="txt_zhuangtai" xy="12,10" size="53,35" font="微软雅黑" fontSize="24" color="#ffffff" text="正常"/>
+    <text id="n60" name="txt_chengzhuming" xy="70,243" size="230,35" font="微软雅黑" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" text="城主名字7个字"/>
+    <text id="n61" name="txt_n61" xy="84,288" size="108,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="单程时间 "/>
+    <component id="n62" name="btn_shanchu" src="lm5s1x" xy="322,3">
+      <gearDisplay controller="bianji" pages="1"/>
+    </component>
+    <text id="n64" name="txt_shijian" xy="192,288" size="101,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="00:02:56"/>
+  </displayList>
+</component>lm5s1x.xml|357|<component size="44,44" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="lm5sc" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>lm5sz.xml|8324|<component size="1920,1080">
+  <controller name="Type_C" pages="2,none,0,pvp只显示君主,9,pvp只显示军队,1,pvp显示君主和和切换按钮,3,pvp显示军队和切换按钮,5,pve只显示军队,7,pve只显示君主,8,pve显示君主和和切换按钮,10,pve显示军队和切换按钮,6,pve重楼密室" selected="4"/>
+  <displayList>
+    <component id="n1" name="com_bg" src="no0zozhl" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n67" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="战前部署"/>
+    </component>
+    <image id="n72_h6za" name="img_guangquan" src="bt41ozfc" pkg="s5cy5qnp" xy="700,530" pivot="0.5,0.5" alpha="0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n73_h6za" name="img_guangquan1" src="bt41ozfc" pkg="s5cy5qnp" xy="700,530" pivot="0.5,0.5" alpha="0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <movieclip id="n74_h6za" name="anim_lizi" src="bt41ozfd" pkg="s5cy5qnp" xy="817,644" pivot="0.5,0.5" size="280,280" alpha="0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </movieclip>
+    <image id="n75_h6za" name="img_guangquan" src="bt41ozfc" pkg="s5cy5qnp" xy="700,530" pivot="0.5,0.5" alpha="0.01">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n76_h6za" name="img_guangyun" src="ntr0ozj2" pkg="s5cy5qnp" xy="824,647" pivot="0.5,0.5" alpha="0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n70" name="com_wofangcaowei" src="isxf26" xy="133,169">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n33" name="com_targetInfo" src="lm5s1m" xy="713,957">
+      <gearDisplay controller="Type_C" pages="0,9,1,3"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n31" name="com_award" src="lm5s1k" xy="760,174">
+      <gearDisplay controller="Type_C" pages="5,7,8,10,6"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n16" name="btn_addSolider" src="gr0bozdm" pkg="s5cy5qnp" xy="419,960" size="274,96" controller="State_C,0">
+      <gearDisplay controller="Type_C" pages="2,0,9,1,3"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="一键补兵" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <component id="n17" name="btn_embattle" src="gr0bozdm" pkg="s5cy5qnp" xy="100,960" size="275,96" controller="State_C,0">
+      <gearXY controller="Type_C" pages="2,0,9,1,3" values="100,960|100,960|100,960|100,960|100,960" default="256,960"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="更换武将"/>
+    </component>
+    <component id="n71_eqcm" name="btn_battle" src="12hhu2b" xy="784,637">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <text id="n77_9y69" name="txt_pvpDesc" xy="777,895" size="401,43" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" text="每名出征武将增加10点疲劳度">
+      <gearDisplay controller="Type_C" pages="0,9,1,3"/>
+      <relation target="n71_eqcm" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n78_tzez" name="btn_guild" src="tzezu2i" xy="1057,884">
+      <gearDisplay controller="Type_C" pages="6"/>
+      <relation target="n71_eqcm" sidePair="center-center,middle-middle"/>
+      <Button title="仅限盟友加入" titleColor="#ffffff" icon="ui://s5cy5qnphn8aoz9k"/>
+    </component>
+    <graph id="n84_t65c" name="gra_hong" xy="1235,175" size="568,50" group="n90_t65c" alpha="0.7" type="rect" lineSize="0" fillColor="#ffa65033" corner="8"/>
+    <text id="n85_t65c" name="txt_defenderFight" xy="1245,184" size="289,35" group="n90_t65c" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="战斗力:5680000">
+      <gearDisplay controller="Type_C" pages="2,0,9,1,3,5,7,8,10"/>
+    </text>
+    <text id="n86_t65c" name="txt_defenderName_1" xy="1539,185" size="262,35" group="n90_t65c" font="微软雅黑" fontSize="24" color="#ffffff" align="right" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="[敌方]主城名字7个字">
+      <gearDisplay controller="Type_C" pages="2,0,9,1,3,5,7,8,10"/>
+    </text>
+    <component id="n89_t65c" name="btn_defenderPanel" src="ntr0ozj1" pkg="s5cy5qnp" xy="1806,240" group="n90_t65c">
+      <gearDisplay controller="Type_C" pages="1,3,8,10"/>
+      <gearText controller="Type_C" pages="1,3,8,10" values="查看军队|查看君主|查看军队|查看君主" default=""/>
+      <Button title="查看君主" page="1"/>
+    </component>
+    <image id="n91_t65c" name="n91" src="lm5s9" xy="1236,237" size="562,565" group="n101_t65c"/>
+    <graph id="n93_t65c" name="n93" xy="1249,475" size="535,5" group="n101_t65c" alpha="0.2" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <loader id="n92_t65c" name="loader_defenderHead" xy="1436,284" size="150,150" group="n101_t65c" url="ui://s5cy5qnpov5eoz49" fill="scaleFree"/>
+    <text id="n104_t65c" name="txt_backroomId" xy="1601,186" size="200,38" group="n108_t65c" fontSize="30" color="#ffffff" text="重楼密室200层"/>
+    <text id="n105_t65c" name="txt_backroomPlayerNum" xy="1265,521" size="203,38" group="n108_t65c" fontSize="30" color="#ffffff" text="参与人数:3-6人"/>
+    <text id="n106_t65c" name="txt_backroomTroopsNum" xy="1266,598" size="163,38" group="n108_t65c" fontSize="30" color="#ffffff" text="敌军数量:20"/>
+    <text id="n107_t65c" name="txt_backroomContinueWinNum" xy="1267,677" size="208,38" group="n108_t65c" fontSize="30" color="#ffffff" text="最大连胜:3连胜"/>
+    <group id="n108_t65c" name="group_playerBackroom" xy="1265,186" size="542,537" group="n101_t65c" advanced="true">
+      <gearDisplay controller="Type_C" pages="6"/>
+    </group>
+    <text id="n94_t65c" name="txt_defenderName" xy="1265,491" size="471,43" group="n109_t65c" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" singleLine="true" text="君主名字7个字"/>
+    <text id="n95_t65c" name="txt_defenderGuild" xy="1265,541" size="470,43" group="n109_t65c" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" singleLine="true" text="联盟:联盟名字七个字"/>
+    <text id="n96_t65c" name="txt_defenderLevel" xy="1265,635" size="256,43" group="n109_t65c" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="等级:80"/>
+    <text id="n97_t65c" name="txt_defenderMainCityLv" xy="1265,683" size="263,43" group="n109_t65c" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="height" text="城池等级:80"/>
+    <text id="n98_t65c" name="txt_defenderTower" xy="1552,635" size="227,43" group="n109_t65c" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="千重楼:200层"/>
+    <text id="n99_t65c" name="txt_defenderRank" xy="1552,683" size="194,43" group="n109_t65c" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="军衔:元帅"/>
+    <group id="n109_t65c" name="group_playerCommon" xy="1265,491" size="514,235" group="n101_t65c" advanced="true">
+      <gearDisplay controller="Type_C" pages="2,0,1,3,7,8"/>
+    </group>
+    <group id="n101_t65c" name="group_defenderPlayer" xy="1236,186" size="571,616" group="n90_t65c" advanced="true">
+      <gearDisplay controller="Type_C" pages="2,0,1,7,8,6"/>
+    </group>
+    <list id="n87_t65c" name="list_defenderTroop" xy="1234,238" size="568,715" group="n102_t65c" overflow="scroll" lineGap="4" defaultItem="ui://bxphwl9ilm5s1c">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n102_t65c" name="group_defenderTroops" xy="1234,238" size="568,715" group="n90_t65c" advanced="true">
+      <gearDisplay controller="Type_C" pages="9,3,5,10"/>
+    </group>
+    <group id="n90_t65c" name="group_defender" xy="1234,175" size="644,778" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <text id="n110_gzfj" name="txt_desc" xy="1194,94" size="683,43" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" text="武将在自己主城和盟友主城时每分钟减少1点疲劳度">
+      <gearDisplay controller="Type_C" pages="0,9,1,3"/>
+    </text>
+  </displayList>
+</component>lsb725.xml|1320|<component size="1650,75" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n6_nnye" name="img_di" src="cwf2j" pkg="s5cy5qnp" xy="1,0" size="1650,75" color="#e37749"/>
+    <image id="n7_nnye" name="img_jiantou" src="n8cbozjl" pkg="s5cy5qnp" xy="18,56" rotation="-90">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n8_nnye" name="img_jiantouxia" src="n8cbozjl" pkg="s5cy5qnp" xy="14,24">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n3" name="title" xy="1566,13" size="81,50" font="微软雅黑" fontSize="36" color="#ffffff" align="right" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="55">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </text>
+    <text id="n4" name="n4" xy="1487,13" size="80,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" autoSize="height" singleLine="true" text="数量">
+      <relation target="n3" sidePair="right-left,middle-middle"/>
+    </text>
+    <text id="n5" name="n5" xy="56,16" size="149,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" singleLine="true" text="冲突势力">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>package.xml|2657|<packageDescription id="bxphwl9i" name="PreBattle">
+  <resources>
+    <component id="12hhu2b" name="Button_Battle" path="/Button/" size="350,300"/>
+    <component id="cs6vu2l" name="Button_Test" path="/Button/" size="59,59"/>
+    <component id="isxf26" name="Component_Empty" path="/Component/" size="566,792"/>
+    <component id="lm5s1a" name="Button_Tab" path="/Button/" size="62,62"/>
+    <component id="lm5s1c" name="Component_EnemyGeneral" path="/Component/" size="564,138"/>
+    <component id="lm5s1d" name="ProgressBar_RightToLeft" path="/ProgressBar/" size="213,20"/>
+    <component id="lm5s1k" name="Component_Rewards" path="/Component/" size="379,315"/>
+    <component id="lm5s1m" name="Component_SelectTarget" path="/Component/" size="1090,73"/>
+    <component id="lm5s1t" name="Component_TargetCity" path="/Component/" size="371,328"/>
+    <component id="lm5s1x" name="Button_SUB" path="/Button/" size="44,44"/>
+    <component id="lsb725" name="Button_ConflictItem" path="/Button/" size="1650,75"/>
+    <component id="phdg22" name="Button_AllyItem" path="/Button/" size="1650,75"/>
+    <component id="phdg23" name="Button_EnemyItem" path="/Button/" size="1650,75"/>
+    <component id="tzezu2i" name="Button_jinxianmengyou" path="/Button/" size="59,59"/>
+    <image id="lm5s1i" name="shijianbiaoji" path="/Image/" size="27,27"/>
+    <image id="lm5s9" name="difangdiban" path="/Image/" size="115,71" scale="9grid" scale9grid="29,18,58,36"/>
+    <image id="lm5sa" name="wofangdiban2" path="/Image/" size="115,71" scale="9grid" scale9grid="29,18,58,36"/>
+    <image id="lm5sb" name="wofangjingdutiao" path="/Image/" size="213,20" scale="9grid" scale9grid="54,5,108,10"/>
+    <image id="lm5sc" name="shanchubtn" path="/Image/" size="44,44"/>
+    <image id="lm5se" name="difangjingdutiaobg" path="/Image/" size="213,20"/>
+    <image id="lm5sg" name="chengchi" path="/Image/" size="344,226"/>
+    <image id="lm5sh" name="jianglibiaotibg" path="/Image/" size="209,48"/>
+    <image id="lm5sm" name="xuankuang" path="/Image/" size="85,85"/>
+    <image id="lm5su" name="btnchuzhen" path="/Image/" size="428,197"/>
+    <image id="tzezu2j" name="gou" path="/Image/" size="55,55"/>
+    <component id="cs6vu2k" name="TroopsEmbattleMain" path="/" size="1920,1080" exported="true"/>
+    <component id="lm5s1s" name="TroopsSelectMain" path="/" size="566,785" exported="true"/>
+    <component id="lm5sz" name="PreBattleMain" path="/" size="1920,1080" exported="true"/>
+    <component id="phdg24" name="ExpeditionTargetMain" path="/" size="1920,1080" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>phdg22.xml|1009|<component size="1650,75" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n6_nnye" name="img_di" src="cwf2j" pkg="s5cy5qnp" xy="-4,-1" size="1650,75" color="#4b83e3"/>
+    <image id="n7_nnye" name="img_jiantou" src="n8cbozjl" pkg="s5cy5qnp" xy="14,55" rotation="-90">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n8_nnye" name="img_jiantouxia" src="n8cbozjl" pkg="s5cy5qnp" xy="10,23">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n4" name="n4" xy="1298,13" size="346,50" font="微软雅黑" fontSize="36" color="#ffffff" align="right" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="数量55"/>
+    <text id="n5" name="n5" xy="56,16" size="149,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" singleLine="true" text="我的盟友">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>phdg23.xml|1027|<component size="1650,75" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <image id="n7_nnye" name="img_di" src="cwf2j" pkg="s5cy5qnp" xy="0,0" size="1650,75" color="#e37749"/>
+    <image id="n8_nnye" name="img_jiantou" src="n8cbozjl" pkg="s5cy5qnp" xy="18,56" rotation="-90">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n6_nnye" name="img_jiantouxia" src="n8cbozjl" pkg="s5cy5qnp" xy="14,24">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n4" name="txt_shuliang" xy="1368,13" size="282,50" font="微软雅黑" fontSize="36" color="#ffffff" align="right" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="数量"/>
+    <text id="n5" name="txt_diduishili" xy="56,16" size="149,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" singleLine="true" text="敌对势力">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>phdg24.xml|2612|<component size="1920,1080">
+  <controller name="State_C" pages="1,敌对势力,2,冲突势力,0,我的盟友" selected="0"/>
+  <displayList>
+    <component id="n0" name="com_panel_beijin" src="no0zozhl" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n1" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="选择目标"/>
+    </component>
+    <component id="n13_ntr0" name="trans_guang" src="no0zozhi" pkg="s5cy5qnp" xy="0,0" size="1920,1080" touchable="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3" name="btn_difang" src="phdg23" xy="145,219">
+      <gearXY controller="State_C" pages="1,2,0" values="145,219|145,165|145,165"/>
+      <Button checked="true" controller="State_C" page="1"/>
+    </component>
+    <component id="n12" name="btn_chongtu" src="lsb725" xy="146,647">
+      <gearXY controller="State_C" pages="1,2,0" values="146,647|145,256|145,256"/>
+      <Button controller="State_C" page="2"/>
+    </component>
+    <component id="n4" name="btn_wofang" src="phdg22" xy="145,739">
+      <gearXY controller="State_C" pages="1,0" values="145,739|145,346" default="145,685"/>
+      <Button title="55" controller="State_C" page="0"/>
+    </component>
+    <list id="n6" name="list_diduishili" xy="145,300" size="1622,336" layout="row" overflow="scroll" scroll="horizontal" colGap="20" defaultItem="ui://bxphwl9ilm5s1t">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n3" sidePair="left-left,top-bottom"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n7" name="list_wofangshili" xy="145,822" size="1626,336" layout="row" overflow="scroll" scroll="horizontal" colGap="20" defaultItem="ui://bxphwl9ilm5s1t">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n4" sidePair="left-left,top-bottom"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n9" name="list_chongtushili" xy="147,731" size="1622,336" layout="row" overflow="scroll" scroll="horizontal" colGap="20" defaultItem="ui://bxphwl9ilm5s1t">
+      <gearDisplay controller="State_C" pages="2"/>
+      <relation target="n12" sidePair="left-left,top-bottom"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>tzezu2i.xml|652|<component size="59,59" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n3" name="icon" xy="0,0" size="59,59" url="ui://s5cy5qnpigjb1o" align="center" vAlign="middle"/>
+    <image id="n4_hn8a" name="img_gou" src="tzezu2j" xy="8,-5">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n5_hn8a" name="title" xy="-242,2" size="241,53" font="微软雅黑" fontSize="34" align="center" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" text="仅限盟友加入"/>
+  </displayList>
+  <Button mode="Check" downEffect="scale" downEffectValue="0.90"/>
+</component>

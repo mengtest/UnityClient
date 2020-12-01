@@ -1,0 +1,276 @@
+fl2ri.xml|4557|<component size="1920,1080">
+  <controller name="Tab_C" pages="0,,1," selected="0"/>
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <graph id="n1_fl2r" name="Graph_Background" xy="0,0" size="1920,1080" alpha="0.7" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n0_fl2r" name="Image_Background" src="owfyozfi" pkg="s5cy5qnp" xy="395,216" size="1129,628">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <graph id="n18_fl2r" name="Graph_Base" xy="416,403" size="1087,190" group="n24_fl2r" alpha="0.4" type="rect" lineSize="0" fillColor="#ff8493a1"/>
+    <image id="n15_fl2r" name="Image_Accessory" src="fl2rozhc" pkg="s5cy5qnp" xy="413,599" size="1094,23" group="n24_fl2r"/>
+    <image id="n16_fl2r" name="Image_Accessory2" src="fl2rozhc" pkg="s5cy5qnp" xy="413,370" size="1094,23" group="n24_fl2r" flip="vt"/>
+    <component id="n9_fl2r" name="ProgressBar_Progress" src="rmqpozfz" pkg="s5cy5qnp" xy="693,451" size="718,132" group="n24_fl2r">
+      <Slider value="50" max="100"/>
+    </component>
+    <component id="n10_fl2r" name="Button_Minus" src="rmqpozfv" pkg="s5cy5qnp" xy="609,449" group="n24_fl2r"/>
+    <component id="n12_fl2r" name="Button_Plus" src="rmqpozfv" pkg="s5cy5qnp" xy="1424,449" group="n24_fl2r">
+      <Button icon="ui://s5cy5qnprmqpozft"/>
+    </component>
+    <component id="n23_fl2r" name="Image_SoldierIcon" src="fl2rj" xy="434,420" group="n24_fl2r"/>
+    <group id="n24_fl2r" name="Gruop_Main" xy="413,370" size="1094,252" advanced="true">
+      <relation target="n0_fl2r" sidePair="center-center,middle-middle"/>
+    </group>
+    <text id="n2_fl2r" name="TextField_Soldier" xy="420,241" size="339,54" group="n25_fl2r" font="Noto Sans S Chinese Regular" fontSize="36" color="#144259" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="军营士兵">
+      <gearXY controller="State_C" pages="1" values="950,241" default="420,241"/>
+    </text>
+    <text id="n3_fl2r" name="TextField_Barrack" xy="950,241" size="339,54" group="n25_fl2r" font="Noto Sans S Chinese Regular" fontSize="36" color="#144259" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="行营士兵">
+      <gearXY controller="State_C" pages="1" values="420,241" default="950,241"/>
+    </text>
+    <component id="n6_fl2r" name="ProgressBar_Left" src="szirozh9" pkg="s5cy5qnp" xy="420,286" size="345,27" group="n25_fl2r">
+      <gearXY controller="State_C" pages="0,1" values="420,286|950,286"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <component id="n7_fl2r" name="ProgressBar_Right" src="szirozh9" pkg="s5cy5qnp" xy="950,286" size="345,27" group="n25_fl2r">
+      <gearXY controller="State_C" pages="0" values="950,286" default="420,286"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <image id="n13_fl2r" name="Image_Arrow" src="g4naozec" pkg="s5cy5qnp" xy="926,245" size="99,128" group="n25_fl2r" rotation="90" flip="vt"/>
+    <component id="n11_fl2r" name="Button_Switch" src="pnexozh7" pkg="s5cy5qnp" xy="1310,250" size="188,90" group="n25_fl2r">
+      <Button title="切换" icon="ui://s5cy5qnpfl2rozhd"/>
+    </component>
+    <group id="n25_fl2r" name="Group_Top" xy="420,241" size="1078,132" advanced="true">
+      <relation target="n0_fl2r" sidePair="left-left,top-top"/>
+    </group>
+    <text id="n14_fl2r" name="TextField_Time" xy="843,760" size="233,51" font="Noto Sans S Chinese Regular" fontSize="33" color="#144259" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="23:23:23">
+      <gearXY controller="Tab_C" pages="1" values="843,644" default="843,760"/>
+      <relation target="n8_fl2r" sidePair="center-center,top-top"/>
+    </text>
+    <component id="n8_fl2r" name="Button_Transport" src="gr0bozdm" pkg="s5cy5qnp" xy="809,643" size="301,116" controller="State_C,0">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <relation target="n0_fl2r" sidePair="center-center,bottom-bottom"/>
+      <Button title="运送"/>
+    </component>
+    <component id="n27_hlux" name="Button_Cancel" src="gr0bozdm" pkg="s5cy5qnp" xy="691,696" controller="State_C,0">
+      <gearDisplay controller="Tab_C" pages="1"/>
+      <Button title="取消"/>
+    </component>
+    <component id="n28_hlux" name="Button_SpeedUp" src="gr0bozdm" pkg="s5cy5qnp" xy="960,698" controller="State_C,0">
+      <gearDisplay controller="Tab_C" pages="1"/>
+      <Button title="加速(xx元宝)"/>
+    </component>
+  </displayList>
+</component>fl2rj.xml|285|<component size="160,160">
+  <displayList>
+    <loader id="n21_fl2r" name="Loader_Quality" xy="0,0" size="160,160" url="ui://s5cy5qnpigjb1p" fill="scaleFree"/>
+    <loader id="n22_fl2r" name="Loader_Icon" xy="4,6" size="150,150" url="ui://43m475k2yqyk6"/>
+  </displayList>
+</component>oc6vv.xml|449|<component size="245,99" extention="Button">
+  <displayList>
+    <image id="n3_oc6v" name="Image_Background" src="oc6vt" xy="0,2" size="245,94"/>
+    <loader id="n0_oc6v" name="icon" xy="18,15" size="58,65" url="ui://nyxj4xnhoc6vl" align="center" vAlign="middle" fill="scale"/>
+    <text id="n1_oc6v" name="title" xy="91,29" size="85,48" fontSize="32" color="#ffffff" autoSize="height" bold="true" text=""/>
+  </displayList>
+  <Button/>
+</component>oc6vw.xml|251|<component size="1833,888">
+  <displayList>
+    <image id="n1_oc6v" name="Image_Background" src="oc6vk" xy="0,0" size="870,887"/>
+    <image id="n2_oc6v" name="Image_Base" src="oc6vk" xy="869,0" size="964,887" flip="hz"/>
+  </displayList>
+</component>oc6vy.xml|286|<component size="282,62" extention="Label">
+  <displayList>
+    <image id="n1_oc6v" name="icon" src="oc6vr" xy="0,0" size="282,62"/>
+    <text id="n2_oc6v" name="title" xy="16,5" size="271,48" fontSize="32" color="#ffffff" bold="true" text="00:23:24后回复满"/>
+  </displayList>
+</component>package.xml|2122|<packageDescription id="nyxj4xnh" name="FieldHeadquarters">
+  <resources>
+    <component id="fl2rj" name="Component_Portrait" path="/Component/" size="160,160"/>
+    <component id="oc6vv" name="Button_BuBing" path="/Button/" size="245,99"/>
+    <component id="oc6vw" name="Component_Background" path="/Component/" size="1833,888"/>
+    <component id="oc6vy" name="Label_Time" path="/Label/" size="282,62"/>
+    <component id="pnex4" name="Component_Prosperity" path="/Component/" size="267,53"/>
+    <component id="szir6" name="Label_Res" path="/Label/" size="206,55"/>
+    <component id="szir7" name="Component_State" path="/Component/" size="822,333"/>
+    <component id="szirb" name="Component_Army" path="/Component/" size="820,174"/>
+    <component id="szird" name="Component_Ally" path="/Component/" size="864,553"/>
+    <component id="szire" name="Component_Ally02" path="/Component/" size="857,174"/>
+    <component id="szirg" name="Component_Res" path="/Component/" size="1164,63"/>
+    <image id="oc6vk" name="img_zi" path="/Image/" size="143,485" scale="9grid" scale9grid="139,294,4,28"/>
+    <image id="oc6vl" name="img_bubing" path="/Image/" size="40,39"/>
+    <image id="oc6vm" name="img_dibian" path="/Image/" size="45,125" scale="9grid" scale9grid="18,41,6,32"/>
+    <image id="oc6vn" name="img_dibian2" path="/Image/" size="52,136" scale="9grid" scale9grid="24,53,6,35"/>
+    <image id="oc6vr" name="img_tishikuang" path="/Image/" size="77,44" scale="9grid" scale9grid="61,11,14,5"/>
+    <image id="oc6vs" name="img_yeqian" path="/Image/" size="99,41" scale="9grid" scale9grid="65,15,4,12"/>
+    <image id="oc6vt" name="img_yuanannv" path="/Image/" size="164,63"/>
+    <image id="szira" name="Image_02" path="/Image/" size="83,69"/>
+    <component id="fl2ri" name="DispatchMain" path="/" size="1920,1080" exported="true"/>
+    <component id="szirf" name="ResourceInfoMain" path="/" size="1920,1080" exported="true"/>
+    <component id="u63e3" name="HeadquartersMain" path="/" size="1920,1080" exported="true"/>
+    <atlas id="atlas0" size="512,512" file="atlas0.png"/>
+  </resources>
+</packageDescription>pnex4.xml|375|<component size="267,53">
+  <displayList>
+    <image id="n5_u63e" name="icon" src="u63eozh1" pkg="s5cy5qnp" xy="0,0" size="267,53" color="#d3b89e"/>
+    <text id="n6_u63e" name="title" xy="34,2" size="197,51" font="Noto Sans S Chinese Regular" fontSize="34" color="#6a3a13" align="center" vAlign="middle" autoSize="none" bold="true" text="繁荣度"/>
+  </displayList>
+</component>szir6.xml|457|<component size="206,55" extention="Label">
+  <displayList>
+    <image id="n46_szir" name="Image_Line" src="vawtozh0" pkg="s5cy5qnp" xy="20,43" size="186,4" flip="hz"/>
+    <text id="n47_szir" name="title" xy="59,9" size="145,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#004166" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text=""/>
+    <loader id="n48_szir" name="icon" xy="0,0" size="50,50"/>
+  </displayList>
+</component>szir7.xml|1707|<component size="822,333">
+  <controller name="State_C" pages="0,,1,,2," selected="0"/>
+  <controller name="Type_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n77_oc6v" name="Image_Background" src="oc6vn" xy="0,0" size="822,333"/>
+    <component id="n18_pnex" name="Component_Prosperity" src="pnex4" xy="29,25" size="274,53"/>
+    <component id="n15_pnex" name="ProgressBar_Progress" src="pnexozh5" pkg="s5cy5qnp" xy="18,93" size="789,38">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <component id="n13_u63e" name="Label_Instructions" src="oc6vy" xy="502,25" size="297,69">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <Label title="00:23:24后回复满" titleFontSize="22" icon="ui://nyxj4xnhoc6vr"/>
+    </component>
+    <component id="n61_szir" name="Button_Leave" src="gr0bozdl" pkg="s5cy5qnp" xy="91,197" size="258,75" group="n57_szir">
+      <gearText controller="State_C" pages="0,2" values="迁徙中|迁徙完成" default="迁徙"/>
+      <Button title="迁徙中"/>
+    </component>
+    <text id="n63_hlux" name="TextField_Time" xy="128,272" size="189,59" group="n57_szir" fontSize="40" color="#ffffff" autoSize="none" text="00:00:00">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <group id="n57_szir" name="Group_Main" xy="91,197" size="258,125" advanced="true"/>
+    <component id="n74_hlux" name="Button_Recover" src="gr0bozdm" pkg="s5cy5qnp" xy="511,201" size="198,81" controller="State_C,0">
+      <Button title="抢修"/>
+    </component>
+    <text id="n76_hlux" name="TextField_Fragment" xy="470,151" size="308,50" fontSize="25" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" bold="true" text="抢修材料：4500/6000"/>
+  </displayList>
+</component>szirb.xml|1824|<component size="820,174">
+  <controller name="State_C" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <image id="n75_oc6v" name="Image_Background" src="oc6vm" xy="-4,0" size="821,174"/>
+    <image id="n66_szir" name="Image_SoldierIcon" src="szira" xy="14,11" size="123,102"/>
+    <list id="n68_szir" name="List_Race" xy="132,46" size="296,42" layout="row" colGap="18" defaultItem="ui://s5cy5qnpg3jhozvv" autoItemSize="false" align="center">
+      <gearDisplay controller="State_C" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n69_szir" name="TextField_Sword" xy="114,110" size="259,43" font="Noto Sans S Chinese Regular" fontSize="28" color="#ffffff" vAlign="middle" leading="0" ubb="true" autoSize="shrink" singleLine="true" text="战斗力 9999999999">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <text id="n70_szir" name="TextField_Troops" xy="347,110" size="259,43" font="Noto Sans S Chinese Regular" fontSize="28" color="#ffffff" vAlign="middle" leading="0" ubb="true" autoSize="shrink" singleLine="true" text="兵力 9999999999">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <component id="n72_szir" name="Button_Add" src="oc6vv" xy="569,34" size="216,97">
+      <gearDisplay controller="State_C" pages="0"/>
+      <Button title="补兵" icon="ui://nyxj4xnhoc6vl"/>
+    </component>
+    <component id="n83_m6z8" name="Button_Defend" src="gr0bozdo" pkg="s5cy5qnp" xy="284,39">
+      <gearDisplay controller="State_C" pages="1"/>
+      <Button title="设置防守"/>
+    </component>
+    <text id="n84_834d" name="txt_weishefang" xy="259,56" size="290,79" fontSize="40" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="未设置防守">
+      <gearDisplay controller="State_C" pages="2"/>
+    </text>
+  </displayList>
+</component>szird.xml|258|<component size="864,553">
+  <displayList>
+    <list id="n87_hlux" name="List_Alliance" xy="0,0" size="864,553" lineGap="12" defaultItem="ui://nyxj4xnhszire" vAlign="middle">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>szire.xml|1850|<component size="857,174">
+  <controller name="Type_C" pages="0,,1,,2," selected="0"/>
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n84_oc6v" name="Image_Background" src="oc6vm" xy="0,0" size="857,174"/>
+    <text id="n75_szir" name="TextField_LordName" xy="6,26" size="243,50" group="n95_oc6v" font="Noto Sans S Chinese Regular" fontSize="33" color="#ffffff" align="center" vAlign="middle" letterSpacing="-1" ubb="true" autoSize="shrink" bold="true" singleLine="true" text="君主名字七个字"/>
+    <text id="n77_szir" name="TextField_Sword" xy="17,104" size="223,43" group="n95_oc6v" font="Noto Sans S Chinese Regular" fontSize="28" color="#ffffff" vAlign="middle" leading="0" ubb="true" autoSize="shrink" singleLine="true" text="战斗力 999999999"/>
+    <list id="n79_szir" name="List_Race" xy="272,30" size="248,48" group="n95_oc6v" layout="row" colGap="11" defaultItem="ui://s5cy5qnpg3jhozvv"/>
+    <text id="n80_szir" name="TextField_Troops" xy="291,103" size="212,43" group="n95_oc6v" font="Noto Sans S Chinese Regular" fontSize="28" color="#ffffff" vAlign="middle" leading="0" ubb="true" autoSize="shrink" singleLine="true" text="兵力 999999999"/>
+    <group id="n95_oc6v" name="Group_Comtent" xy="6,26" size="514,121" advanced="true">
+      <gearDisplay controller="Type_C" pages="0,2"/>
+    </group>
+    <component id="n81_szir" name="Button_Back" src="oc6vv" xy="606,45" pivot="0.5,0.5" size="206,80">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <gearText controller="State_C" pages="1" values="返回" default="遣返"/>
+      <Button title="遣返"/>
+    </component>
+    <text id="n83_szir" name="TextField_Empty" xy="390,64" size="77,45" font="Noto Sans S Chinese Regular" fontSize="36" color="#88dffc" text="空营">
+      <gearDisplay controller="Type_C" pages="1"/>
+    </text>
+  </displayList>
+</component>szirf.xml|2326|<component size="1920,1080">
+  <displayList>
+    <graph id="n0_szir" name="Graph_Background" xy="0,0" size="1920,1080" alpha="0.7" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n9_szir" name="Image_Base" src="rmqpozg4" pkg="s5cy5qnp" xy="354,974" size="1212,41" group="n19_szir">
+      <relation target="n3_szir" sidePair="width-width,bottom-bottom"/>
+    </image>
+    <image id="n3_szir" name="Image_Side" src="owfyozfi" pkg="s5cy5qnp" xy="346,128" size="1227,857" group="n19_szir"/>
+    <image id="n7_szir" name="Image_SmallBase" src="owfyozfg" pkg="s5cy5qnp" xy="376,224" size="1168,665" group="n19_szir"/>
+    <group id="n19_szir" name="Group_Base" xy="346,128" size="1227,887" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n4_szir" name="Image_Title" src="rmqpozfq" pkg="s5cy5qnp" xy="787,140" size="348,80" group="n8_szir"/>
+    <text id="n2_szir" name="TextField_Title" xy="812,141" size="304,76" group="n8_szir" font="Noto Sans S Chinese Regular" fontSize="36" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="资源详情"/>
+    <image id="n5_szir" name="Image_Left" src="rmqpozfp" pkg="s5cy5qnp" xy="663,158" size="109,25" group="n8_szir"/>
+    <image id="n6_szir" name="Image_Right" src="rmqpozfp" pkg="s5cy5qnp" xy="1147,159" size="109,25" group="n8_szir" flip="hz"/>
+    <group id="n8_szir" name="Group_Details" xy="663,140" size="593,80" advanced="true">
+      <relation target="n19_szir" sidePair="center-center,top-top"/>
+    </group>
+    <text id="n10_szir" name="TextField_Instructions" xy="499,907" size="921,62" font="Noto Sans S Chinese Regular" fontSize="36" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="幸运飞回主城后，资源自动运到主城">
+      <relation target="n18_szir" sidePair="center-center,top-top"/>
+    </text>
+    <list id="n18_szir" name="List_Resources" xy="376,232" size="1166,649" layout="flow_vt" overflow="scroll" margin="0,0,10,0" lineGap="4" defaultItem="ui://nyxj4xnhszirg" align="center">
+      <relation target="n19_szir" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>szirg.xml|1068|<component size="1164,63">
+  <displayList>
+    <image id="n11_szir" name="Image_Background" src="ujpiozg8" pkg="s5cy5qnp" xy="0,0" size="1147,63" alpha="0.56"/>
+    <text id="n12_szir" name="TextField_Name" xy="8,9" size="321,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#000b24" align="center" vAlign="middle" autoSize="shrink" text="君主名字七个字"/>
+    <component id="n13_szir" name="Label_Res1" src="szir6" xy="340,8">
+      <Label title="12345" icon="ui://s5cy5qnpcwf2m"/>
+    </component>
+    <component id="n14_szir" name="Label_Res2" src="szir6" xy="546,8">
+      <Label title="12345" icon="ui://s5cy5qnpcwf2n"/>
+    </component>
+    <component id="n15_szir" name="Label_Res3" src="szir6" xy="752,8">
+      <Label title="12345" icon="ui://s5cy5qnpcwf2o"/>
+    </component>
+    <component id="n16_szir" name="Label_Res4" src="szir6" xy="958,8">
+      <Label title="12345" icon="ui://s5cy5qnpcwf2p"/>
+    </component>
+    <component id="n17_szir" name="Button_Empty" src="f1djozo7" pkg="s5cy5qnp" xy="-6,-2" size="338,67"/>
+  </displayList>
+</component>u63e3.xml|1401|<component size="1920,1080">
+  <displayList>
+    <component id="n0_u63e" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="行营"/>
+    </component>
+    <component id="n82_oc6v" name="Component_Base" src="oc6vw" xy="55,171" group="n93_qd9j"/>
+    <component id="n62_szir" name="Component_Time" src="szir7" xy="101,576" group="n93_qd9j"/>
+    <component id="n75_szir" name="Component_Alliance" src="szird" xy="971,285" size="861,552" group="n93_qd9j"/>
+    <component id="n80_oc6v" name="Component_Soldier" src="szirb" xy="104,292" group="n93_qd9j"/>
+    <image id="n87_oc6v" name="Image_Page" src="oc6vs" xy="85,232" size="314,55" group="n93_qd9j"/>
+    <image id="n88_oc6v" name="Image_Page2" src="oc6vs" xy="1542,231" size="314,55" group="n93_qd9j" flip="hz"/>
+    <text id="n89_oc6v" name="TextField_Defender" xy="190,242" size="137,48" group="n93_qd9j" fontSize="32" color="#c5ecfe" bold="true" text="防守军队"/>
+    <text id="n90_oc6v" name="TextField_Alliance" xy="1620,241" size="137,48" group="n93_qd9j" fontSize="32" color="#99f2ab" bold="true" text="盟友军队"/>
+    <group id="n93_qd9j" name="Group_WindowMain" xy="55,171" size="1833,888" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

@@ -1,0 +1,10 @@
+package.xml|632|<packageDescription id="jegxu58n" name="SkillIcon">
+  <resources>
+    <image id="wg4m0" name="Image_Soldier01SKill01" path="/" size="172,172" exported="true"/>
+    <image id="wg4m1" name="Image_Soldier02SKill01" path="/" size="172,172" exported="true"/>
+    <image id="wg4m2" name="Image_Soldier03SKill01" path="/" size="172,172" exported="true"/>
+    <image id="wg4m3" name="Image_Soldier04SKill01" path="/" size="172,172" exported="true"/>
+    <image id="wg4m4" name="Image_Soldier05SKill01" path="/" size="172,172" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>

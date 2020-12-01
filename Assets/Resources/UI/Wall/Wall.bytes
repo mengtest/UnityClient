@@ -1,0 +1,169 @@
+c8hky.xml|886|<component size="959,115">
+  <displayList>
+    <text id="n44_oi4w" name="txt_homeDefense" xy="0,65" size="201,50" fontSize="40" color="#ffffff" ubb="true" text="主城驻防："/>
+    <text id="n53_c8hk" name="txt_homeDefense_troop" xy="188,65" size="103,50" fontSize="40" color="#ffffff" ubb="true" text="队伍3"/>
+    <component id="n45_oi4w" name="com_homeDefenseTip" src="pui2oz41" pkg="s5cy5qnp" xy="146,0">
+      <Label title="出征中防守不生效"/>
+    </component>
+    <text id="n47_oi4w" name="txt_tentDefense" xy="654,65" size="201,50" fontSize="40" color="#ffffff" ubb="true" text="行营驻防："/>
+    <text id="n54_c8hk" name="txt_tentDefense_troop" xy="842,65" size="103,50" fontSize="40" color="#ffffff" ubb="true" text="队伍3"/>
+    <component id="n48_oi4w" name="com_tentDefenseTip" src="pui2oz41" pkg="s5cy5qnp" xy="799,0">
+      <Label title="出征中防守不生效"/>
+    </component>
+  </displayList>
+</component>oi4wx.xml|5987|<component size="1858,554">
+  <controller name="troopHandle_C" pages="3,,0,,1,,2," selected="0"/>
+  <controller name="btnTroop1Stat_C" pages="0,,1," selected="0"/>
+  <controller name="btnTroop2Stat_C" pages="0,,1," selected="0"/>
+  <controller name="btnTroop3Stat_C" pages="0,,1," selected="0"/>
+  <controller name="garrisonTroop1Stat_C" pages="0,,1,,2," selected="0"/>
+  <controller name="garrisonTroop2Stat_C" pages="0,,1,,2," selected="0"/>
+  <controller name="garrisonTroop3Stat_C" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <image id="n10_oi4w" name="n10" src="effmozp4" pkg="s5cy5qnp" xy="0,0" size="600,400"/>
+    <component id="n11_oi4w" name="progressBar_solider_troop1" src="te7gt" xy="97,190" size="426,50">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <list id="n12_oi4w" name="list_race_troop1" xy="14,105" size="253,50" layout="row" overflow="scroll" defaultItem="ui://s5cy5qnpg3jhozvv">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n13_oi4w" name="n13" xy="13,18" size="125,50" fontSize="40" color="#ffffff" text="队伍一"/>
+    <component id="n14_oi4w" name="btn_addSolider_troop1" src="g52xozih" pkg="s5cy5qnp" xy="493,9" size="100,51">
+      <Button title="补兵"/>
+    </component>
+    <text id="n15_oi4w" name="n15" xy="17,197" size="69,40" fontSize="32" color="#ffffff" text="兵力"/>
+    <text id="n16_oi4w" name="txt_fight_troop1" xy="285,107" size="277,40" fontSize="32" color="#ffffff" text="战斗力：999999999"/>
+    <component id="n17_oi4w" name="btn_revocation_troop1" src="gr0bozdm" pkg="s5cy5qnp" xy="207,303" size="183,74" controller="State_C,0">
+      <gearDisplay controller="btnTroop1Stat_C" pages="1"/>
+      <Button title="撤防"/>
+    </component>
+    <component id="n18_oi4w" name="btn_garrison_troop1" src="gr0bozdm" pkg="s5cy5qnp" xy="207,303" size="183,74" controller="State_C,0">
+      <gearDisplay controller="btnTroop1Stat_C" pages="0"/>
+      <Button title="驻防" controller="troopHandle_C" page="0"/>
+    </component>
+    <text id="n19_oi4w" name="txt_garrisonStat_troop1" xy="233,256" size="10,40" fontSize="32" color="#ffffff" text="">
+      <gearText controller="garrisonTroop1Stat_C" pages="0,1" values="|驻防主城" default="驻防行营"/>
+    </text>
+    <image id="n21_oi4w" name="n21" src="effmozp4" pkg="s5cy5qnp" xy="630,0" size="600,400"/>
+    <component id="n22_oi4w" name="progressBar_solider_troop2" src="te7gt" xy="728,190" size="426,50">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <list id="n23_oi4w" name="list_race_troop2" xy="645,105" size="253,50" layout="row" overflow="scroll" defaultItem="ui://s5cy5qnpg3jhozvv">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n24_oi4w" name="n24" xy="644,18" size="125,50" fontSize="40" color="#ffffff" text="队伍二"/>
+    <component id="n25_oi4w" name="btn_addSolider_troop2" src="g52xozih" pkg="s5cy5qnp" xy="1124,9" size="100,51">
+      <Button title="补兵"/>
+    </component>
+    <text id="n26_oi4w" name="n26" xy="648,197" size="69,40" fontSize="32" color="#ffffff" text="兵力"/>
+    <text id="n27_oi4w" name="txt_fight_troop2" xy="916,107" size="277,40" fontSize="32" color="#ffffff" text="战斗力：999999999"/>
+    <component id="n28_oi4w" name="btn_revocation_troop2" src="gr0bozdm" pkg="s5cy5qnp" xy="838,303" size="183,74" controller="State_C,0">
+      <gearDisplay controller="btnTroop2Stat_C" pages="1"/>
+      <Button title="撤防"/>
+    </component>
+    <component id="n29_oi4w" name="btn_garrison_troop2" src="gr0bozdm" pkg="s5cy5qnp" xy="838,303" size="183,74" controller="State_C,0">
+      <gearDisplay controller="btnTroop2Stat_C" pages="0"/>
+      <Button title="驻防" controller="troopHandle_C" page="1"/>
+    </component>
+    <text id="n30_oi4w" name="txt_garrisonStat_troop2" xy="864,256" size="10,40" fontSize="32" color="#ffffff" text="">
+      <gearText controller="garrisonTroop2Stat_C" pages="0,1" values="|驻防主城&#xA;" default="驻防行营"/>
+    </text>
+    <image id="n32_oi4w" name="n32" src="effmozp4" pkg="s5cy5qnp" xy="1259,0" size="600,400"/>
+    <component id="n33_oi4w" name="progressBar_solider_troop3" src="te7gt" xy="1357,190" size="426,50">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <list id="n34_oi4w" name="list_race_troop3" xy="1274,105" size="253,50" layout="row" overflow="scroll" defaultItem="ui://s5cy5qnpg3jhozvv">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n35_oi4w" name="n35" xy="1273,18" size="125,50" fontSize="40" color="#ffffff" text="队伍三"/>
+    <component id="n36_oi4w" name="btn_addSolider_troop3" src="g52xozih" pkg="s5cy5qnp" xy="1753,9" size="100,51">
+      <Button title="补兵"/>
+    </component>
+    <text id="n37_oi4w" name="n37" xy="1277,197" size="69,40" fontSize="32" color="#ffffff" text="兵力"/>
+    <text id="n38_oi4w" name="txt_fight_troop3" xy="1545,107" size="277,40" fontSize="32" color="#ffffff" text="战斗力：999999999"/>
+    <component id="n39_oi4w" name="btn_revocation_troop3" src="gr0bozdm" pkg="s5cy5qnp" xy="1467,303" size="183,74" controller="State_C,0">
+      <gearDisplay controller="btnTroop3Stat_C" pages="1"/>
+      <Button title="撤防"/>
+    </component>
+    <component id="n40_oi4w" name="btn_garrison_troop3" src="gr0bozdm" pkg="s5cy5qnp" xy="1467,303" size="183,74" controller="State_C,0">
+      <gearDisplay controller="btnTroop3Stat_C" pages="0"/>
+      <Button title="驻防" controller="troopHandle_C" page="2"/>
+    </component>
+    <text id="n41_oi4w" name="txt_garrisonStat_troop3" xy="1493,256" size="10,40" fontSize="32" color="#ffffff" text="">
+      <gearText controller="garrisonTroop3Stat_C" pages="0,1" values="|驻防主城" default="驻防行营"/>
+    </text>
+    <component id="n43_oi4w" name="com_select" src="te7gw" xy="421,270">
+      <gearDisplay controller="troopHandle_C" pages="0,1,2"/>
+      <gearXY controller="troopHandle_C" pages="3,0,1,2" values="421,270|392,270|1016,270|1646,270"/>
+    </component>
+  </displayList>
+</component>package.xml|549|<packageDescription id="b8mzg3kc" name="Wall">
+  <resources>
+    <component id="c8hky" name="Component_buildDefense" path="/Component/" size="959,115"/>
+    <component id="oi4wx" name="Component_troops" path="/Component/" size="1858,554"/>
+    <component id="te7gt" name="ProgressBar_Yellow" path="/ProgressBar/" size="100,50"/>
+    <component id="te7gw" name="Component_XuanZeKuang" path="/Component/" size="160,250"/>
+    <component id="r1z6r" name="WallDefenseMain" path="/" size="1920,1080" exported="true"/>
+  </resources>
+</packageDescription>r1z6r.xml|1042|<component size="1920,1080" adaptationTest="FitSize">
+  <displayList>
+    <component id="n0_r1z6" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="防守设置"/>
+    </component>
+    <text id="n8_te7g" name="txt_desc" xy="707,961" size="517,48" fontSize="32" color="#ffffff" text="提示：驻防队伍出征时，防守不生效">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <component id="n53_c8hk" name="com_defense" src="c8hky" xy="435,200">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n51_oi4w" name="com_troops" src="oi4wx" xy="38,373">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n9_te7g" name="btn_embattle" src="gr0bozdm" pkg="s5cy5qnp" xy="1606,925">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <Button title="编辑队伍"/>
+    </component>
+  </displayList>
+</component>te7gt.xml|743|<component size="100,50" extention="ProgressBar">
+  <displayList>
+    <graph id="n1" name="n1" xy="0,0" size="100,50" alpha="0.5" type="rect" lineSize="0" lineColor="#ffa0a0a0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n2" name="bar" xy="0,0" size="100,50" type="rect" lineSize="0" fillColor="#ffd6a91f">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n3" name="title" xy="45,10" size="10,35" font="微软雅黑" fontSize="24" color="#ffffff" align="center" vAlign="middle" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>te7gw.xml|878|<component size="160,250">
+  <controller name="handleStat_C" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n1_te7g" name="img_bg" src="nfhooznk" pkg="s5cy5qnp" xy="0,0" size="160,250"/>
+    <component id="n2_te7g" name="btn_garrisonHome" src="g52xozih" pkg="s5cy5qnp" xy="29,18" size="100,58">
+      <Button title="主城" titleFontSize="32"/>
+    </component>
+    <component id="n3_te7g" name="btn_garrisonTent" src="g52xozih" pkg="s5cy5qnp" xy="29,96" size="100,58">
+      <gearDisplay controller="handleStat_C" pages="1"/>
+      <Button title="行营" titleFontSize="32"/>
+    </component>
+    <component id="n4_te7g" name="btn_cancel" src="g52xozih" pkg="s5cy5qnp" xy="29,174" size="100,58">
+      <gearXY controller="handleStat_C" pages="0" values="29,96" default="29,174"/>
+      <Button title="取消" titleFontSize="32"/>
+    </component>
+  </displayList>
+</component>

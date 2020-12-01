@@ -1,0 +1,58 @@
+﻿1. 准备工作
+1) xLua官网下载最新Unity扩展包(https://github.com/Tencent/xLua/releases)，我们使用的是xlua_vx.x.x_luajit.zip.
+
+2) Clone或者下载zip包到本地（https://github.com/Tencent/xLua）。
+
+3) 安装VS2015
+
+
+2. 更新Unity扩展包
+1) 解压缩后，将Tools文件夹复制到工程路径\Assets同层级目录下
+
+2）将Asset\Plugins下的内容复制到工程路径\Assets\Plugins\目录下；
+
+3) 将Asset\XLua文件夹复制到工程路径\Assets\3rdLibs\目录下，删除XLua文件夹下的多余内容，只留下Resources和Src文件夹；
+
+4) 修改Assets\3rdLibs\XLua\Src\Editor\Generator.cs：
+    public static string common_path = Application.dataPath + "/XLua/Gen/"; 改为：
+    public static string common_path = Application.dataPath + "/3rdLibs/XLua/Gen/";
+
+    
+5) 修改Assets\3rdLibs\XLua\Src\LuaDLL.cs，在文件最后加上：
+    //thirdpart 
+        [DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]
+        public static extern int luaopen_pb(IntPtr L);//[,,m]
+
+        [MonoPInvokeCallback(typeof(LuaDLL.lua_CSFunction))]
+        public static int Load_pb(System.IntPtr L)
+        {
+            return luaopen_pb(L);
+        }
+
+6) 修改Assets\3rdLibs\XLua\Src\LuaEnv.cs：
+    在AddBuildin("socket", StaticLuaCallbacks.LoadSocketCore); 下一行加上：
+    AddBuildin("pb", LuaDLL.Lua.Load_pb);
+    
+
+3. 编译各平台dll
+1) 解压缩“准备工作(2)”下载到的包，复制其中build到工程路径\Assets同级目录下，并修改名称为BuildXLua；
+
+2) 我们引入了第三方开源的库，lua Protobuf，可在这里找到(https://github.com/sean-lin/protoc-gen-lua)，clone或者下载zip包到本地，拷贝其中的\protobuf\pb.c到目录BuildXLua\lua-pb\source\目录下
+
+3) 修改CMakeList.txt，可参照本文档同级目录下BuildXLua参考文件夹。在 MARK_AS_ADVANCED(XLUA_PROJECT_DIR) 下一行加上：
+#begin lua-pb
+set (PB_SRC lua-pb/source/pb.c)
+set_property(
+	SOURCE ${PB_SRC}
+	APPEND
+	PROPERTY COMPILE_DEFINITIONS
+	LUA_COMPAT_APIINTCASTS LUA_LIB
+)
+set (THIRDPART_SRC ${THIRDPART_SRC} ${PB_SRC})
+#end lua-pb
+
+4) 编译iOS，需要一台Mac，运行make_ios_luajit.sh
+
+5) 编译Android，需要在Linux系统上，运行make_linux64_lua53.sh，编译前请修改make_linux64_lua53.sh，参照本文档同级目录下BuildXLua参考文件夹。
+
+6) 编译Windows，需要在Windows系统上，运行make_win64_luajit.bat

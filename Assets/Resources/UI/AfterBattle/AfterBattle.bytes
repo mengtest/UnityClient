@@ -1,0 +1,424 @@
+km7kf.xml|10404|<component size="1920,1080">
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <graph id="n0" name="Graph_BackGround" xy="0,0" size="1920,1080" alpha="0.6" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <component id="n4" name="Button_Details" src="rmqpozfv" pkg="s5cy5qnp" xy="50,950" size="100,100" alpha="0">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <Button icon="ui://s5cy5qnpuezoozi5"/>
+    </component>
+    <component id="n5" name="Button_Replay" src="rmqpozfv" pkg="s5cy5qnp" xy="171,950" size="100,100" alpha="0">
+      <relation target="n4" sidePair="left-right,top-top"/>
+      <Button icon="ui://s5cy5qnpfl2rozhd"/>
+    </component>
+    <component id="n7" name="Button_Continue" src="rmqpozfv" pkg="s5cy5qnp" xy="1715,902" size="100,100" alpha="0">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Button icon="ui://s5cy5qnpa1bwozi1"/>
+    </component>
+    <component id="n103_qqfu" name="Button_battleProgress" src="g52xozih" pkg="s5cy5qnp" xy="96,783" size="157,69">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <Button title="战斗信息"/>
+    </component>
+    <image id="n65" name="Image_Base" src="no0zozht" pkg="s5cy5qnp" xy="551,616" pivot="0.5,0.5" size="830,65" group="n80" color="#345499"/>
+    <image id="n66" name="Image_Base2" src="no0zozht" pkg="s5cy5qnp" xy="551,696" pivot="0.5,0.5" size="830,65" group="n80" color="#345499"/>
+    <text id="n67" name="TextField_Volume" xy="582,709" size="731,43" group="n80" font="微软雅黑" fontSize="30" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="军队负载：58620/56000"/>
+    <component id="n68" name="Label_Resource1" src="uezoozi3" pkg="s5cy5qnp" xy="515,605" group="n98"/>
+    <component id="n94" name="Label_Resource2" src="uezoozi3" pkg="s5cy5qnp" xy="754,605" size="89,89" group="n98"/>
+    <component id="n95" name="Label_Resource3" src="uezoozi3" pkg="s5cy5qnp" xy="993,605" size="89,89" group="n98"/>
+    <component id="n96" name="Label_Resource4" src="uezoozi3" pkg="s5cy5qnp" xy="1232,605" size="89,89" group="n98"/>
+    <group id="n98" name="Group_Resources" xy="515,605" size="806,89" group="n80" advanced="true"/>
+    <group id="n80" name="Group_PvP" xy="515,605" size="866,156" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n82" name="Image_Bar" src="r2ub15" xy="210,268" pivot="0.5,0.5" size="1512,234" alpha="0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <movieclip id="n89" name="MovieClip_Victory" src="r2ub1r" xy="723,161" alpha="0" frame="7" playing="false">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </movieclip>
+    <image id="n83" name="Image_Flag" src="r2ub14" xy="633,223" group="n90" alpha="0"/>
+    <movieclip id="n87" name="MovieClip_Flag" src="r2ub1q" xy="650,156" group="n90" alpha="0"/>
+    <group id="n90" name="Group_Flag" xy="633,156" size="895,376" alpha="0" advanced="true">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n86" name="Image_RoundBase" src="r2ub17" xy="763,200" group="n91" alpha="0"/>
+    <image id="n85" name="Image_Round" src="r2ub12" xy="785,228" group="n91" alpha="0"/>
+    <image id="n84" name="Image_Win" src="r2ub13" xy="950,288" pivot="0.5,0.5" size="267,264" group="n91" alpha="0"/>
+    <loader id="n92" name="Loader_WinIcon" xy="677,200" pivot="0.5,0.5" size="309,276" group="n91" alpha="0" url="ui://n35pxq1dr2ub16" align="center" vAlign="middle" fill="scaleFree"/>
+    <group id="n91" name="Group_Win" xy="677,200" size="540,386" alpha="0" advanced="true">
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n56" name="Image_PvEBackground" src="no0zozht" pkg="s5cy5qnp" xy="183,613" pivot="0.5,0.5" size="1551,237" group="n64" alpha="0" color="#004a99"/>
+    <list id="n101_ctyb" name="List_General" xy="374,619" size="1175,227" group="n64" alpha="0" layout="row" selectionMode="none" colGap="23" defaultItem="ui://s5cy5qnpbt41ozf9" align="center">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n102_ips0" name="List_Equipment" xy="653,850" pivot="0.5,0.5" size="612,165" group="n64" alpha="0" layout="row" overflow="scroll" scroll="horizontal" colGap="28" defaultItem="ui://s5cy5qnphqutz3m" autoItemSize="false" align="center">
+      <relation target="n101_ctyb" sidePair="center-center"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n64" name="Group_PvE" xy="183,613" size="1551,402" alpha="0" advanced="true">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n0" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+  <transition name="Victory_T" options="2">
+    <item time="0" type="Alpha" target="n5" value="0"/>
+    <item time="0" type="Alpha" target="n85" value="0"/>
+    <item time="0" type="Alpha" target="n86" value="0"/>
+    <item time="0" type="Alpha" target="n84" value="0"/>
+    <item time="0" type="Alpha" target="n7" value="0"/>
+    <item time="0" type="Alpha" target="n82" tween="true" startValue="0" endValue="1" duration="12"/>
+    <item time="0" type="Alpha" target="n90" value="0"/>
+    <item time="0" type="Alpha" target="n4" value="0"/>
+    <item time="0" type="Alpha" target="n89" value="0"/>
+    <item time="0" type="Alpha" target="n92" value="0"/>
+    <item time="0" type="Alpha" target="n80" value="0"/>
+    <item time="0" type="Alpha" target="n64" value="0"/>
+    <item time="0" type="Alpha" target="n103_qqfu" value="0"/>
+    <item time="0" type="Size" target="n82" tween="true" startValue="1512,0" endValue="1512,234" duration="12" ease="Bounce.Out"/>
+    <item time="0" type="XY" target="n80" value="525,624"/>
+    <item time="5" type="Alpha" target="n89" value="0"/>
+    <item time="6" type="Alpha" target="n89" value="1"/>
+    <item time="6" type="Animation" target="n89" value="0,s"/>
+    <item time="7" type="Animation" target="n89" value="1,s"/>
+    <item time="8" type="Alpha" target="n90" tween="true" startValue="0" endValue="1" duration="10"/>
+    <item time="8" type="Animation" target="n89" value="2,s"/>
+    <item time="8" type="XY" target="n90" tween="true" startValue="683,156" endValue="633,156" duration="10" ease="Circ.Out"/>
+    <item time="9" type="Animation" target="n89" value="3,s"/>
+    <item time="10" type="Animation" target="n89" value="4,s"/>
+    <item time="11" type="Animation" target="n89" value="5,s"/>
+    <item time="12" type="Alpha" target="n91" tween="true" startValue="0" endValue="0.99" duration="6" ease="Back.Out"/>
+    <item time="12" type="Animation" target="n89" value="6,s"/>
+    <item time="13" type="Animation" target="n89" value="7,s"/>
+    <item time="14" type="Alpha" target="n92" tween="true" startValue="0" endValue="0.99" duration="2"/>
+    <item time="14" type="Alpha" target="n84" tween="true" startValue="0" endValue="1" duration="2"/>
+    <item time="14" type="Size" target="n92" tween="true" startValue="618,552" endValue="309,276" duration="5" ease="Bounce.Out"/>
+    <item time="14" type="Size" target="n84" tween="true" startValue="534,528" endValue="267,264" duration="5" ease="Bounce.Out"/>
+    <item time="18" type="Alpha" target="n7" tween="true" startValue="0" endValue="1" duration="5"/>
+    <item time="18" type="Alpha" target="n103_qqfu" tween="true" startValue="1" endValue="1" duration="6"/>
+    <item time="18" type="Alpha" target="n80" tween="true" startValue="0" endValue="0" duration="5"/>
+    <item time="18" type="Alpha" target="n4" tween="true" startValue="0" endValue="0.99" duration="5"/>
+    <item time="18" type="Alpha" target="n5" tween="true" startValue="0" endValue="1" duration="5"/>
+    <item time="18" type="XY" target="n80" tween="true" startValue="525,624" endValue="525,602" duration="5" ease="Circ.Out"/>
+    <item time="18" type="XY" target="n4" tween="true" startValue="41,902" endValue="53,902" duration="5"/>
+    <item time="23" type="XY" target="n4" tween="true" startValue="53,902" endValue="51,902" duration="2"/>
+    <item time="23" type="XY" target="n80" tween="true" startValue="525,602" endValue="525,604" duration="2" ease="Circ.Out"/>
+  </transition>
+  <transition name="PVP_T" options="2">
+    <item time="0" type="Alpha" target="n66" value="0"/>
+    <item time="0" type="Alpha" target="n67" value="0"/>
+    <item time="0" type="Alpha" target="n65" value="0"/>
+    <item time="0" type="Alpha" target="n98" value="0"/>
+    <item time="0" type="Alpha" target="n64" value="0"/>
+    <item time="18" type="Alpha" target="n65" tween="true" startValue="0" endValue="0.99" duration="5"/>
+    <item time="18" type="Size" target="n65" tween="true" startValue="830,0" endValue="830,65" duration="7" ease="Bounce.Out"/>
+    <item time="20" type="Alpha" target="n66" tween="true" startValue="0" endValue="1" duration="5"/>
+    <item time="20" type="Size" target="n66" tween="true" startValue="830,0" endValue="830,65" duration="7" ease="Bounce.Out"/>
+    <item time="22" type="Alpha" target="n98" tween="true" startValue="0" endValue="1" duration="4" ease="Circ.Out"/>
+    <item time="23" type="Alpha" target="n67" tween="true" startValue="0.01" endValue="1" duration="7" ease="Circ.Out"/>
+  </transition>
+  <transition name="PVE_T" options="2">
+    <item time="0" type="Alpha" target="n56" value="0"/>
+    <item time="0" type="Alpha" target="n80" value="0"/>
+    <item time="0" type="Alpha" target="n101_ctyb" value="0"/>
+    <item time="0" type="Alpha" target="n102_ips0" value="0"/>
+    <item time="0" type="Scale" target="n102_ips0" value="1,1"/>
+    <item time="21" type="Alpha" target="n56" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="21" type="Size" target="n56" tween="true" startValue="830,0" endValue="1468,229" duration="10" ease="Bounce.Out"/>
+    <item time="25" type="Alpha" target="n101_ctyb" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="25" type="Alpha" target="n102_ips0" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="25" type="Scale" target="n102_ips0" tween="true" startValue="1.5,1.5" endValue="1,1" duration="6" ease="Circ.Out"/>
+  </transition>
+</component>km7kw.xml|1733|<component size="1700,86">
+  <displayList>
+    <text id="n31" name="TextField_Name" xy="99,27" size="257,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="武将名字">
+      <relation target="n38" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n32" name="TextField_Level" xy="361,27" size="123,43" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="90">
+      <relation target="n31" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n34" name="TextField_SoliderDie" xy="1297,25" size="195,43" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" singleLine="true" text="5000">
+      <relation target="n37" sidePair="right-left,middle-middle"/>
+    </text>
+    <text id="n35" name="TextField_SoliderTotal" xy="1052,25" size="221,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="12000">
+      <relation target="n34" sidePair="right-left,middle-middle"/>
+    </text>
+    <text id="n37" name="TextField_SoliderHurt" xy="1517,27" size="171,43" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" singleLine="true" text="75">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </text>
+    <loader id="n38" name="Loader_Icon" xy="0,0" size="86,86" url="ui://s5cy5qnpc68roza8" fill="scaleFree">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </loader>
+    <component id="n40_niku" name="Component_SoldierType" src="g3jhozvv" pkg="s5cy5qnp" xy="607,22">
+      <relation target="n32" sidePair="left-right,middle-middle"/>
+    </component>
+  </displayList>
+</component>km7kx.xml|1175|<component size="1754,1300">
+  <controller name="State_C" pages="0,攻方在上,1,攻方在下" selected="0"/>
+  <displayList>
+    <image id="n19" name="Image_Blue" src="uezoozi4" pkg="s5cy5qnp" xy="54,0" size="1700,552" color="#2b82d9"/>
+    <image id="n27" name="Image_Red" src="uezoozi4" pkg="s5cy5qnp" xy="54,552" size="1700,552" color="#851313"/>
+    <image id="n28" name="Image_Attacker" src="km7ke" xy="0,0">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <gearXY controller="State_C" pages="1" values="0,556" default="0,0"/>
+    </image>
+    <image id="n29" name="Image_Defender" src="km7kd" xy="0,554">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <gearXY controller="State_C" pages="0" values="0,554" default="0,2"/>
+    </image>
+    <list id="n39" name="List_MyTroop" xy="62,36" size="1691,513" lineGap="19" defaultItem="ui://n35pxq1dkm7kw">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n40" name="List_EnemyTroop" xy="62,587" size="1691,513" lineGap="19" defaultItem="ui://n35pxq1dkm7kw">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>mjif37.xml|349|<movieclip interval="83" frameCount="8">
+  <frames>
+    <frame rect="256,256,0,0"/>
+    <frame rect="292,90,183,225"/>
+    <frame rect="277,90,200,353"/>
+    <frame rect="171,90,306,383"/>
+    <frame rect="50,90,427,384"/>
+    <frame rect="32,90,445,384"/>
+    <frame rect="32,45,445,429"/>
+    <frame rect="32,43,445,431"/>
+  </frames>
+</movieclip>nai610.xml|2154|<component size="1920,1080">
+  <displayList>
+    <component id="n11" name="Component_Background" src="no0zozhl" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n9" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="战斗详情"/>
+    </component>
+    <component id="n12_uezo" name="Component_Light" src="no0zozhi" pkg="s5cy5qnp" xy="0,0" size="1920,1080" touchable="false">
+      <relation target="n9" sidePair="width-width,height-height"/>
+    </component>
+    <list id="n0" name="List_Details" xy="72,196" size="1756,884" overflow="scroll" defaultItem="ui://n35pxq1dkm7kx">
+      <relation target="n8" sidePair="center-center,middle-middle"/>
+      <item/>
+    </list>
+    <text id="n1" name="TextField_General" xy="209,140" size="230,50" group="n8" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="武将"/>
+    <text id="n2" name="TextField_Level" xy="482,140" size="201,50" group="n8" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="等级"/>
+    <text id="n3" name="TextField_Type" xy="720,140" size="257,50" group="n8" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="兵种"/>
+    <text id="n4" name="TextField_Command" xy="1194,140" size="193,50" group="n8" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="统兵"/>
+    <text id="n5" name="TextField_Die" xy="1425,140" size="174,50" group="n8" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="死亡"/>
+    <text id="n7" name="TextField_Hurt" xy="1635,140" size="172,50" group="n8" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="受伤"/>
+    <group id="n8" name="Group_Description" xy="209,140" size="1598,50" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>package.xml|2659|<packageDescription id="n35pxq1d" name="AfterBattle">
+  <resources>
+    <component id="km7kw" name="Component_DetailsItem" path="/Component/" size="1700,86"/>
+    <component id="km7kx" name="Component_Details" path="/Component/" size="1754,1300"/>
+    <image id="km7kd" name="Image_shoufang" path="/Image/" size="49,150"/>
+    <image id="km7ke" name="Image_gongfang" path="/Image/" size="49,150"/>
+    <image id="r2ub12" name="yuan" path="/Image/" size="330,324"/>
+    <image id="r2ub13" name="sheng" path="/Image/" size="267,264"/>
+    <image id="r2ub14" name="qizi_gan" path="/Image/" size="217,309"/>
+    <image id="r2ub15" name="heitiao" path="/Image/" size="1000,234"/>
+    <image id="r2ub17" name="yuandi" path="/Image/" size="379,386"/>
+    <image id="vie51v" name="shibai_yuandiwenli" path="/Image/" size="300,294"/>
+    <image id="vie51w" name="shibai_yuandi" path="/Image/" size="383,383"/>
+    <image id="vie51x" name="qigan_youbian" path="/Image/" size="215,157"/>
+    <image id="vie51y" name="xi" path="/Image/" size="257,268"/>
+    <image id="vie51z" name="pian" path="/Image/" size="334,282"/>
+    <image id="vie521" name="bai" path="/Image/" size="233,222"/>
+    <image id="vie522" name="qigan_zuobian" path="/Image/" size="212,156"/>
+    <movieclip id="mjif37" name="MovieClip_Defeat" path="/MovieClip/" size="512,512"/>
+    <movieclip id="r2ub1q" name="MovieClip_Flag" path="/MovieClip/" size="878,330"/>
+    <movieclip id="r2ub1r" name="MovieClip_Victory" path="/MovieClip/" size="462,451"/>
+    <movieclip id="vie52v" name="MovieClip_RightFlag" path="/MovieClip/" size="160,460"/>
+    <movieclip id="vie52w" name="MovieClip_LeftFlag" path="/MovieClip/" size="160,460"/>
+    <component id="km7kf" name="VictoryMain" path="/" size="1920,1080" exported="true"/>
+    <component id="nai610" name="DetailsMain" path="/" size="1920,1080" exported="true"/>
+    <component id="q7cq11" name="FailMain" path="/" size="1920,1080" exported="true"/>
+    <image id="r2ub16" name="da" path="/Image/" size="309,276" exported="true"/>
+    <image id="r2ub1s" name="xiao" path="/Image/" size="290,286" exported="true"/>
+    <image id="r2ub1t" name="xian" path="/Image/" size="296,292" exported="true"/>
+    <atlas id="atlas0" size="2048,2048" file="atlas0.png"/>
+    <atlas id="atlas_r2ub1r" size="2048,2048" file="atlas_r2ub1r.png"/>
+    <atlas id="atlas_r2ub1q" size="2048,2048" file="atlas_r2ub1q.png"/>
+    <atlas id="atlas_mjif37" size="2048,2048" file="atlas_mjif37.png"/>
+    <atlas id="atlas_vie52v" size="1024,1024" file="atlas_vie52v.png"/>
+    <atlas id="atlas_vie52w" size="1024,1024" file="atlas_vie52w.png"/>
+  </resources>
+</packageDescription>q7cq11.xml|9468|<component size="1920,1080">
+  <displayList>
+    <component id="n0" name="Button_Details" src="rmqpozfv" pkg="s5cy5qnp" xy="51,868" size="100,100" group="n70">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <Button icon="ui://s5cy5qnpuezoozi5"/>
+    </component>
+    <component id="n1" name="Buttton_Replay" src="rmqpozfv" pkg="s5cy5qnp" xy="194,868" size="100,100" group="n70">
+      <relation target="n0" sidePair="left-right,top-top"/>
+      <Button icon="ui://s5cy5qnpfl2rozhd"/>
+    </component>
+    <component id="n2" name="Button_Continue" src="rmqpozfv" pkg="s5cy5qnp" xy="1664,868" pivot="0.5,0.5" size="100,100" group="n70">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Button icon="ui://s5cy5qnpa1bwozi1"/>
+    </component>
+    <component id="n82_qqfu" name="Button_battleProgress" src="g52xozih" pkg="s5cy5qnp" xy="96,783" size="157,69" group="n70">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <Button title="战斗信息"/>
+    </component>
+    <image id="n23" name="Image_BlackBase" src="no0zozht" pkg="s5cy5qnp" xy="199,281" pivot="0.5,0.5" size="1512,234" group="n70" color="#1a0c0c"/>
+    <movieclip id="n37" name="MovieClip_Defeat" src="mjif37" xy="682,141" group="n70" frame="7" playing="false"/>
+    <image id="n41" name="Image_Weapon" src="vie51x" xy="1048,176" group="n49"/>
+    <movieclip id="n46" name="MovieClip_Flag" src="vie52v" xy="1048,196" group="n49"/>
+    <group id="n49" name="Group_FlyingFlag" xy="1048,176" size="215,480" group="n70" advanced="true"/>
+    <image id="n42" name="Image_LeftWeapon" src="vie522" xy="594,176" group="n50"/>
+    <movieclip id="n48" name="MovieClip_LeftFlag" src="vie52w" xy="644,194" group="n50"/>
+    <group id="n50" name="Group_LeftFlag" xy="594,176" size="212,478" group="n70" advanced="true"/>
+    <image id="n43" name="Image_MainRound" src="vie51w" xy="744,217" group="n51"/>
+    <image id="n44" name="Image_YellowRound" src="vie51v" xy="787,260" group="n51"/>
+    <group id="n51" name="Group_MainFlag" xy="744,217" size="383,383" group="n70" advanced="true"/>
+    <image id="n40" name="Image_Effect1" src="vie51z" xy="787,259" group="n70"/>
+    <image id="n45" name="Image_Effect2" src="vie51y" xy="704,234" pivot="0.5,0.5" size="257,268" group="n70"/>
+    <image id="n39" name="Image_Effect3" src="vie521" xy="925,319" pivot="0.5,0.5" size="233,222" group="n70"/>
+    <group id="n70" name="Group_Lose" xy="51,141" size="1713,827" advanced="true"/>
+    <image id="n55" name="Image_Red" src="no0zozht" pkg="s5cy5qnp" xy="550,630" pivot="0.5,0.5" size="830,65" group="n73" color="#b84b11"/>
+    <image id="n56" name="Image_Red2" src="no0zozht" pkg="s5cy5qnp" xy="553,709" pivot="0.5,0.5" size="830,65" group="n73" color="#b84b11"/>
+    <text id="n61" name="TextField_Volume" xy="575,722" size="757,43" group="n73" font="微软雅黑" fontSize="30" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="军队负载：58620/56000"/>
+    <component id="n75_uezo" name="Label_Resource1" src="uezoozi7" pkg="s5cy5qnp" xy="464,619" group="n71"/>
+    <component id="n76_uezo" name="Label_Resource2" src="uezoozi7" pkg="s5cy5qnp" xy="709,619" group="n71"/>
+    <component id="n78_uezo" name="Label_Resource3" src="uezoozi7" pkg="s5cy5qnp" xy="954,619" group="n71"/>
+    <component id="n79_uezo" name="Label_Resource4" src="uezoozi7" pkg="s5cy5qnp" xy="1199,619" group="n71"/>
+    <group id="n71" name="Group_Resources" xy="464,619" size="969,89" group="n73" advanced="true"/>
+    <group id="n73" name="Group_PvP" xy="464,619" size="969,155" advanced="true"/>
+    <image id="n20" name="Image_Red1" src="no0zozht" pkg="s5cy5qnp" xy="542,630" pivot="0.5,0.5" size="830,65" group="n22" color="#b84b11"/>
+    <text id="n21" name="TextField_Lose" xy="789,645" size="335,43" group="n22" font="微软雅黑" fontSize="30" color="#ffffff" text="虽败犹荣，稍后再战！！"/>
+    <group id="n22" name="Group_PvE" xy="542,630" size="830,65" advanced="true"/>
+  </displayList>
+  <transition name="Fail_T" options="2">
+    <item time="0" type="Alpha" target="n40" value="0"/>
+    <item time="0" type="Alpha" target="n0" value="0"/>
+    <item time="0" type="Alpha" target="n23" tween="true" startValue="0" endValue="1" duration="12"/>
+    <item time="0" type="Alpha" target="n1" value="0"/>
+    <item time="0" type="Alpha" target="n51" value="0"/>
+    <item time="0" type="Alpha" target="n50" value="0"/>
+    <item time="0" type="Alpha" target="n2" value="0"/>
+    <item time="0" type="Alpha" target="n39" value="0"/>
+    <item time="0" type="Alpha" target="n49" value="0"/>
+    <item time="0" type="Alpha" target="n45" value="0"/>
+    <item time="0" type="Alpha" target="n37" value="0"/>
+    <item time="0" type="Alpha" target="n22" value="0"/>
+    <item time="0" type="Alpha" target="n73" value="0.01"/>
+    <item time="0" type="Alpha" target="n82_qqfu" value="0"/>
+    <item time="0" type="Size" target="n23" tween="true" startValue="1512,0" endValue="1512,234" duration="12" ease="Bounce.Out"/>
+    <item time="6" type="Alpha" target="n37" value="1"/>
+    <item time="6" type="Animation" target="n37" value="1,s"/>
+    <item time="7" type="Animation" target="n37" value="2,s"/>
+    <item time="8" type="Animation" target="n37" value="3,s"/>
+    <item time="9" type="Animation" target="n37" value="4,s"/>
+    <item time="10" type="Alpha" target="n51" tween="true" startValue="0.01" endValue="1" duration="6"/>
+    <item time="10" type="Alpha" target="n49" tween="true" startValue="0" endValue="0.99" duration="6"/>
+    <item time="10" type="Alpha" target="n40" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="10" type="Alpha" target="n50" tween="true" startValue="0" endValue="0.99" duration="6"/>
+    <item time="10" type="Animation" target="n37" value="5,s"/>
+    <item time="10" type="XY" target="n49" tween="true" startValue="998,226" endValue="1048,176" duration="8" ease="Bounce.Out"/>
+    <item time="10" type="XY" target="n40" tween="true" startValue="817,229" endValue="787,259" duration="6" ease="Circ.Out"/>
+    <item time="10" type="XY" target="n50" tween="true" startValue="644,226" endValue="594,176" duration="8" ease="Bounce.Out"/>
+    <item time="11" type="Animation" target="n37" value="6,s"/>
+    <item time="12" type="Animation" target="n37" value="7,s"/>
+    <item time="12" type="Size" target="n45" tween="true" startValue="514,536" endValue="257,268" duration="7" ease="Elastic.Out"/>
+    <item time="12" type="Size" target="n39" tween="true" startValue="466,444" endValue="233,222" duration="7" ease="Elastic.Out"/>
+    <item time="13" type="Alpha" target="n45" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="13" type="Alpha" target="n39" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="18" type="Alpha" target="n0" tween="true" startValue="0.01" endValue="1" duration="5"/>
+    <item time="18" type="Alpha" target="n2" tween="true" startValue="0" endValue="1" duration="7"/>
+    <item time="18" type="Alpha" target="n1" tween="true" startValue="0" endValue="1" duration="5"/>
+    <item time="18" type="Alpha" target="n82_qqfu" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="18" type="XY" target="n0" tween="true" startValue="41,868" endValue="53,868" duration="5"/>
+    <item time="18" type="XY" target="n1" tween="true" startValue="155,868" endValue="189,868" duration="5"/>
+    <item time="23" type="XY" target="n0" tween="true" startValue="53,868" endValue="51,868" duration="2"/>
+    <item time="23" type="XY" target="n1" tween="true" startValue="189,868" endValue="187,868" duration="2"/>
+  </transition>
+  <transition name="PVP_T" options="2">
+    <item time="0" type="Alpha" target="n22" value="0"/>
+    <item time="0" type="Alpha" target="n70" value="0"/>
+    <item time="0" type="Alpha" target="n61" value="0"/>
+    <item time="0" type="Alpha" target="n56" value="0"/>
+    <item time="0" type="Alpha" target="n71" value="0"/>
+    <item time="0" type="Alpha" target="n55" value="0"/>
+    <item time="0" type="Size" target="n56" value="830,65"/>
+    <item time="0" type="Size" target="n55" value="830,65"/>
+    <item time="17" type="Alpha" target="n55" tween="true" startValue="0" endValue="1" duration="5"/>
+    <item time="17" type="Size" target="n55" tween="true" startValue="830,0" endValue="830,65" duration="5" ease="Bounce.Out"/>
+    <item time="19" type="Alpha" target="n56" tween="true" startValue="0" endValue="1" duration="5"/>
+    <item time="19" type="Size" target="n56" tween="true" startValue="830,0" endValue="830,65" duration="5" ease="Bounce.Out"/>
+    <item time="20" type="Alpha" target="n71" tween="true" startValue="0" endValue="1" duration="5"/>
+    <item time="23" type="Alpha" target="n61" tween="true" startValue="0" endValue="1" duration="7"/>
+  </transition>
+  <transition name="PVE_T" options="2">
+    <item time="0" type="Alpha" target="n70" value="0"/>
+    <item time="0" type="Alpha" target="n73" value="0"/>
+    <item time="0" type="Alpha" target="n20" value="0"/>
+    <item time="0" type="Alpha" target="n21" value="0.01"/>
+    <item time="16" type="Alpha" target="n20" tween="true" startValue="0" endValue="1" duration="7"/>
+    <item time="16" type="Size" target="n20" tween="true" startValue="830,0" endValue="830,65" duration="7" ease="Bounce.Out"/>
+    <item time="20" type="Alpha" target="n21" tween="true" startValue="0" endValue="1" duration="7"/>
+  </transition>
+</component>r2ub1q.xml|348|<movieclip interval="83" frameCount="8">
+  <frames>
+    <frame rect="37,50,803,280"/>
+    <frame rect="37,45,803,261"/>
+    <frame rect="37,45,803,261"/>
+    <frame rect="37,46,803,256"/>
+    <frame rect="37,52,803,278"/>
+    <frame rect="37,60,803,265"/>
+    <frame rect="37,65,803,258"/>
+    <frame rect="37,58,803,267"/>
+  </frames>
+</movieclip>r2ub1r.xml|345|<movieclip interval="83" frameCount="8">
+  <frames>
+    <frame rect="231,225,0,0"/>
+    <frame rect="197,27,243,205"/>
+    <frame rect="197,27,253,288"/>
+    <frame rect="197,27,254,407"/>
+    <frame rect="52,27,399,413"/>
+    <frame rect="6,27,445,413"/>
+    <frame rect="6,10,445,430"/>
+    <frame rect="6,9,445,431"/>
+  </frames>
+</movieclip>vie52v.xml|348|<movieclip interval="83" frameCount="8">
+  <frames>
+    <frame rect="17,30,121,396"/>
+    <frame rect="20,30,113,396"/>
+    <frame rect="26,30,111,396"/>
+    <frame rect="31,30,111,397"/>
+    <frame rect="32,30,111,397"/>
+    <frame rect="28,30,115,397"/>
+    <frame rect="23,30,120,397"/>
+    <frame rect="18,30,125,396"/>
+  </frames>
+</movieclip>vie52w.xml|348|<movieclip interval="83" frameCount="8">
+  <frames>
+    <frame rect="17,31,115,395"/>
+    <frame rect="17,31,119,395"/>
+    <frame rect="17,31,124,395"/>
+    <frame rect="17,31,126,396"/>
+    <frame rect="22,31,121,396"/>
+    <frame rect="28,31,113,396"/>
+    <frame rect="27,31,107,396"/>
+    <frame rect="21,31,108,395"/>
+  </frames>
+</movieclip>

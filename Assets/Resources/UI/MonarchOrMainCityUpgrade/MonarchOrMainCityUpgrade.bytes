@@ -1,0 +1,114 @@
+10173c.xml|341|<movieclip interval="83" repeatDelay="41" frameCount="8">
+  <frames>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+  </frames>
+</movieclip>ghn33m.xml|4783|<component size="1920,1080">
+  <controller name="Type_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n4_10173" name="Image_Border" src="no0zozht" pkg="s5cy5qnp" xy="204,487" pivot="0.5,0.5" size="1410,4" group="n15_kg43"/>
+    <image id="n0_10173" name="Image_Background" src="10173a" xy="251,170" pivot="0.5,0.5" group="n15_kg43"/>
+    <loader id="n11_se7w" name="Loader_Type" xy="711,343" pivot="0.5,0.5" size="565,147" group="n15_kg43" url="ui://ouc44va5101736">
+      <gearIcon controller="Type_C" pages="1" values="ui://ouc44va5ghn33o" default="ui://ouc44va5101736"/>
+    </loader>
+    <image id="n3_10173" name="Image_KylinBG" src="101738" xy="307,225" pivot="0.5,0.5" group="n15_kg43"/>
+    <image id="n5_10173" name="Image_Kylin" src="10173f" xy="339,248" pivot="0.5,0.5" size="300,300" group="n15_kg43"/>
+    <image id="n6_10173" name="Image_Light" src="10173b" xy="551,320" pivot="0.5,0.5" size="1100,95" group="n15_kg43"/>
+    <image id="n8_10173" name="Image_KylinEffect" src="ugl93h" xy="279,178" pivot="0.5,0.5" size="420,440" group="n15_kg43" alpha="0"/>
+    <movieclip id="n9_10173" name="MovieClip_MonarchUpgrade" src="10173c" xy="708,336" size="570,150" group="n15_kg43">
+      <gearDisplay controller="Type_C" pages="0"/>
+    </movieclip>
+    <movieclip id="n12_kg43" name="MovieClip_MainCityUpgrade" src="kg433p" xy="707,336" size="570,150" group="n15_kg43">
+      <gearDisplay controller="Type_C" pages="1"/>
+    </movieclip>
+    <movieclip id="n10_uxho" name="MovieClip_Petal" src="uxho3i" xy="252,126" size="1200,501" group="n15_kg43"/>
+    <group id="n15_kg43" name="Group_Main" xy="204,126" size="1447,501" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+  <transition name="Effect_T" options="2">
+    <item time="0" type="Alpha" target="n4_10173" value="0"/>
+    <item time="0" type="Alpha" target="n5_10173" value="0"/>
+    <item time="0" type="Alpha" target="n9_10173" value="0"/>
+    <item time="0" type="Alpha" target="n8_10173" value="0"/>
+    <item time="0" type="Alpha" target="n0_10173" tween="true" startValue="0" endValue="1" duration="13"/>
+    <item time="0" type="Alpha" target="n6_10173" value="0"/>
+    <item time="0" type="Alpha" target="n3_10173" value="0"/>
+    <item time="0" type="Alpha" target="n10_uxho" value="0"/>
+    <item time="0" type="Alpha" target="n11_se7w" value="0"/>
+    <item time="0" type="Scale" target="n6_10173" value="1,1"/>
+    <item time="0" type="Scale" target="n4_10173" value="0,0"/>
+    <item time="0" type="Scale" target="n3_10173" value="1,1"/>
+    <item time="0" type="Scale" target="n11_se7w" value="1,1"/>
+    <item time="0" type="Visible" target="n9_10173" value="false"/>
+    <item time="6" type="Alpha" target="n8_10173" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="6" type="Alpha" target="n3_10173" tween="true" startValue="0" endValue="1" duration="7"/>
+    <item time="6" type="Alpha" target="n10_uxho" tween="true" startValue="0" endValue="1" duration="7" ease="Linear"/>
+    <item time="6" type="Alpha" target="n11_se7w" tween="true" startValue="0" endValue="1" duration="7"/>
+    <item time="6" type="Alpha" target="n5_10173" tween="true" startValue="0" endValue="1" duration="7"/>
+    <item time="6" type="Scale" target="n11_se7w" tween="true" startValue="2,2" endValue="1,1" duration="7" ease="Bounce.Out"/>
+    <item time="6" type="Scale" target="n5_10173" tween="true" startValue="1.5,1.5" endValue="1,1" duration="7"/>
+    <item time="6" type="Scale" target="n3_10173" tween="true" startValue="0,0" endValue="1.03,1.03" duration="5"/>
+    <item time="6" type="Scale" target="n8_10173" tween="true" startValue="1.5,1.5" endValue="1,1" duration="7"/>
+    <item time="8" type="Alpha" target="n4_10173" tween="true" startValue="0" endValue="1" duration="5"/>
+    <item time="8" type="Scale" target="n4_10173" tween="true" startValue="0,0" endValue="1,1" duration="5"/>
+    <item time="9" type="Alpha" target="n6_10173" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="9" type="Scale" target="n6_10173" tween="true" startValue="0,0" endValue="1,1" duration="2"/>
+    <item time="11" type="Scale" target="n3_10173" tween="true" startValue="1.03,1.03" endValue="1,1" duration="2"/>
+    <item time="12" type="Alpha" target="n8_10173" tween="true" startValue="1" endValue="0" duration="5"/>
+    <item time="13" type="Alpha" target="n9_10173" tween="true" startValue="1" endValue="1" duration="6"/>
+    <item time="13" type="Visible" target="n9_10173" value="true"/>
+    <item time="29" type="Alpha" target="n9_10173" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="35" type="Visible" target="n9_10173" value="false"/>
+  </transition>
+</component>kg433p.xml|324|<movieclip interval="83" frameCount="8">
+  <frames>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+    <frame rect="1,2,189,47"/>
+  </frames>
+</movieclip>package.xml|1292|<packageDescription id="ouc44va5" name="MonarchOrMainCityUpgrade">
+  <resources>
+    <image id="101736" name="Image_MonarchUpgrade" path="/Image/" size="565,145"/>
+    <image id="101738" name="Image_05" path="/Image/" size="342,358"/>
+    <image id="10173a" name="Image_01" path="/Image/" size="495,169"/>
+    <image id="10173b" name="Image_02" path="/Image/" size="418,56"/>
+    <image id="10173f" name="Image_04" path="/Image/" size="150,150"/>
+    <image id="ghn33o" name="Image_MainCityUpgrade" path="/Image/" size="565,146"/>
+    <image id="ugl93h" name="Image_06" path="/Image/" size="210,220"/>
+    <movieclip id="10173c" name="MovieClip_MonarchUpgrade" path="/MovieClip/" size="190,50"/>
+    <movieclip id="kg433p" name="MovieClip_MainCityUpgrade" path="/MovieClip/" size="190,50"/>
+    <movieclip id="uxho3i" name="MovieClip_Petal" path="/MovieClip/" size="400,167"/>
+    <component id="ghn33m" name="MonarchOrMainCityUpgradeMain" path="/" size="1920,1080" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <atlas id="atlas_10173c" size="512,512" file="atlas_10173c.png"/>
+    <atlas id="atlas_kg433p" size="512,512" file="atlas_kg433p.png"/>
+    <atlas id="atlas_uxho3i" size="1024,1024" file="atlas_uxho3i.png"/>
+  </resources>
+</packageDescription>uxho3i.xml|475|<movieclip interval="41" frameCount="12">
+  <frames>
+    <frame rect="13,19,348,142"/>
+    <frame rect="13,7,350,156"/>
+    <frame rect="13,5,353,158"/>
+    <frame rect="13,5,356,158"/>
+    <frame rect="13,11,358,152"/>
+    <frame rect="13,9,361,154"/>
+    <frame rect="13,7,364,156"/>
+    <frame rect="13,5,367,157"/>
+    <frame rect="13,4,370,157"/>
+    <frame rect="13,3,372,158"/>
+    <frame rect="13,1,375,160"/>
+    <frame rect="13,7,378,154"/>
+  </frames>
+</movieclip>

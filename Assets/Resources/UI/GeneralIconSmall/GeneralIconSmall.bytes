@@ -1,0 +1,22 @@
+package.xml|1622|<packageDescription id="43m475k2" name="GeneralIconSmall">
+  <resources>
+    <image id="oz2of" name="wujiang16_xiao" path="/" size="162,161" exported="true"/>
+    <image id="oz2og" name="wujiang17_xiao" path="/" size="162,161" exported="true"/>
+    <image id="yqyk0" name="wujiang10_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqyk1" name="wujiang11_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqyk2" name="wujiang12_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqyk3" name="wujiang13_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqyk4" name="wujiang14_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqyk5" name="wujiang15_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqyk6" name="wujiang1_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqyk7" name="wujiang2_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqyk8" name="wujiang3_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqyk9" name="wujiang4_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqyka" name="wujiang5_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqykb" name="wujiang6_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqykc" name="wujiang7_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqykd" name="wujiang8_xiao" path="/" size="150,150" exported="true"/>
+    <image id="yqyke" name="wujiang9_xiao" path="/" size="150,150" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>

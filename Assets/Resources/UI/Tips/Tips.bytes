@@ -1,0 +1,34 @@
+9i553.xml|846|<component size="692,100">
+  <controller name="State_C" pages="0,提示,1,提醒" selected="1"/>
+  <displayList>
+    <graph id="n0" name="Graph_BG" xy="0,0" size="692,100" alpha="0.8" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <loader id="n4_w29v" name="Loader_State" xy="19,12" size="77,77" url="ui://53dvp8rpxydy1" autoSize="true">
+      <gearIcon controller="State_C" pages="1" values="ui://53dvp8rpxydy1" default="ui://53dvp8rpxydy0"/>
+    </loader>
+    <text id="n2" name="Text_Content" xy="124,21" size="543,62" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="反馈文字策划编辑15字反馈文字策划编辑15字反馈文字策划编辑15字">
+      <relation target="n0" sidePair="left-left,top-top"/>
+    </text>
+  </displayList>
+</component>package.xml|470|<packageDescription id="53dvp8rp" name="Tips">
+  <resources>
+    <component id="9i553" name="Component_PopupTips" path="/Component/" size="692,100"/>
+    <image id="xydy0" name="Image_Green" path="/Image/" size="77,77"/>
+    <image id="xydy1" name="Image_Red" path="/Image/" size="77,77"/>
+    <component id="xydy2" name="TipsMain" path="/" size="1920,1080" exported="true"/>
+    <atlas id="atlas0" size="256,256" file="atlas0.png"/>
+  </resources>
+</packageDescription>xydy2.xml|727|<component size="1920,1080" opaque="false">
+  <displayList>
+    <component id="n4_9i55" name="Component_Main" src="9i553" xy="614,304">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+  <transition name="Effect_T">
+    <item time="0" type="Alpha" target="n4_9i55" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="0" type="XY" target="n4_9i55" tween="true" startValue="614,399" endValue="614,332" duration="18"/>
+    <item time="4" type="Alpha" target="n4_9i55" tween="true" startValue="1" endValue="1" duration="8"/>
+    <item time="12" type="Alpha" target="n4_9i55" tween="true" startValue="1" endValue="0" duration="6"/>
+  </transition>
+</component>

@@ -1,0 +1,631 @@
+7vz6u.xml|2636|<component size="1920,1080">
+  <displayList>
+    <component id="n1_eiwn" name="Component_Background" src="no0zozhl" pkg="s5cy5qnp" xy="-2,-1">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <list id="n5_r5hw" name="List_PlayerAward" xy="162,161" size="1593,522" layout="flow_hz" overflow="scroll" lineGap="-5" colGap="134" defaultItem="ui://hh5r35dcmkvg12">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n8_r5hw" name="List_Award" xy="379,704" size="1259,174" layout="row" overflow="scroll" scroll="horizontal" colGap="13" defaultItem="ui://s5cy5qnphqutz3m" autoItemSize="false">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </list>
+    <component id="n9_r5hw" name="Button_Back" src="gr0bozdm" pkg="s5cy5qnp" xy="838,943" controller="State_C,0">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <Button title="确定"/>
+    </component>
+    <component id="n11_r5hw" name="Button_Replay" src="rmqpozfv" pkg="s5cy5qnp" xy="1760,929" size="105,106">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Button icon="ui://s5cy5qnpuezoozi6"/>
+    </component>
+    <text id="n6_r5hw" name="TextField_Reward" xy="235,757" size="125,43" font="微软雅黑" fontSize="30" color="#ffffff" text="获得奖励">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n2_r5hw" name="TextField_Victory" xy="857,8" size="205,135" font="微软雅黑" fontSize="100" color="#ffffff" text="胜利">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <text id="n12_r5hw" name="TextField_Remain" xy="1673,21" size="188,43" font="微软雅黑" fontSize="30" color="#ffffff" autoSize="height" text="剩余密室次数">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <text id="n13_r5hw" name="TextField_LeftChallengeNumber" xy="1863,21" size="59,43" font="微软雅黑" fontSize="30" color="#ffffff" autoSize="height" text="6">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <text id="n14_kkmo" name="TextField_RemainAssist" xy="1673,72" size="188,43" font="微软雅黑" fontSize="30" color="#ffffff" autoSize="height" text="剩余协助次数">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <text id="n15_kkmo" name="TextField_LeftHelpNumber" xy="1863,72" size="59,43" font="微软雅黑" fontSize="30" color="#ffffff" autoSize="height" text="6">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+  </displayList>
+</component>7vz6v.xml|3064|<component size="1920,1080">
+  <displayList>
+    <component id="n0_cqte" name="Component_Background" src="no0zozhl" pkg="s5cy5qnp" xy="0,-1">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <text id="n1_cqte" name="TextField_Lose" xy="857,7" size="205,135" font="微软雅黑" fontSize="100" color="#ffffff" text="失败">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <list id="n2_cqte" name="List_PlayerAward" xy="169,169" size="1593,569" layout="flow_hz" overflow="scroll" lineGap="12" colGap="134" defaultItem="ui://hh5r35dcmkvg12">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n3_cqte" name="Button_Back" src="gr0bozdm" pkg="s5cy5qnp" xy="838,942" controller="State_C,0">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <Button title="确定"/>
+    </component>
+    <component id="n4_cqte" name="Button_Replay" src="rmqpozfv" pkg="s5cy5qnp" xy="1768,928" size="105,106">
+      <relation target="" sidePair="right-right,bottom-top"/>
+      <Button icon="ui://s5cy5qnpuezoozi6"/>
+    </component>
+    <text id="n5_cqte" name="TextField_RemainTimes1" xy="1682,20" size="188,43" font="微软雅黑" fontSize="30" color="#ffffff" autoSize="height" text="剩余密室次数">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <text id="n7_cqte" name="TextField_Eliminate" xy="606,751" size="130,82" font="微软雅黑" fontSize="60" color="#ffffff" autoSize="height" text="消灭">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n8_cqte" name="TextField_DieNumber" xy="742,751" size="130,82" font="微软雅黑" fontSize="60" color="#ffffff" autoSize="height" text="18">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n9_cqte" name="TextField_Remain" xy="1023,751" size="130,82" font="微软雅黑" fontSize="60" color="#ffffff" autoSize="height" text="剩余">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n10_cqte" name="TextField_RemainNumber" xy="1161,751" size="130,82" font="微软雅黑" fontSize="60" color="#ffffff" autoSize="height" text="20">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n6_cqte" name="TextField_LeftChallengeNumber" xy="1871,20" size="32,43" font="微软雅黑" fontSize="30" color="#ffffff" autoSize="height" text="6">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <text id="n11_kkmo" name="TextField_LeftAssist" xy="1685,76" size="188,43" font="微软雅黑" fontSize="30" color="#ffffff" autoSize="height" text="剩余协助次数">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <text id="n12_kkmo" name="TextField_LeftHelpNumber" xy="1874,76" size="32,43" font="微软雅黑" fontSize="30" color="#ffffff" autoSize="height" text="6">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+  </displayList>
+</component>bcgz10.xml|184|<component size="100,20" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList/>
+  <Button mode="Radio"/>
+</component>ds4t0.xml|4000|<component size="1920,1080">
+  <controller name="State_C" pages="0,,2," selected="0"/>
+  <controller name="Create_C" pages="0,可创建,1,不可创建" selected="0"/>
+  <controller name="NumState_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n18_ds4t" name="Image_Background" src="rmqpozfn" pkg="s5cy5qnp" xy="0,0" size="1920,1080" group="n31_ds4t" alpha="0.72">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <graph id="n16_ds4t" name="Graph_Ground" xy="13,130" size="1890,934" group="n31_ds4t" alpha="0.55" type="rect" lineSize="0" fillColor="#ff0a3152">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n17_ds4t" name="Graph_Line" xy="449,134" size="4,920" group="n31_ds4t" alpha="0.69" type="rect" lineSize="0" fillColor="#ff518ec4">
+      <relation target="n16_ds4t" sidePair="left-left,middle-middle"/>
+    </graph>
+    <image id="n20_ds4t" name="Image_Side" src="qbu8ozeq" pkg="s5cy5qnp" xy="7,1000" size="63,63" group="n31_ds4t">
+      <relation target="n16_ds4t" sidePair="left-left,bottom-bottom"/>
+    </image>
+    <image id="n21_ds4t" name="Image_Side2" src="qbu8ozeq" pkg="s5cy5qnp" xy="1846,124" size="63,63" group="n31_ds4t" flip="both">
+      <relation target="n16_ds4t" sidePair="right-right,top-top"/>
+    </image>
+    <group id="n31_ds4t" name="Group_Background" xy="0,0" size="1920,1080" advanced="true">
+      <relation target="" sidePair="width-width,height-height"/>
+    </group>
+    <component id="n1_ds4t" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0">
+      <relation target="" sidePair="left-left,top-top"/>
+      <Label title="队伍"/>
+    </component>
+    <list id="n12_ds4t" name="List_Floor" xy="12,146" size="428,912" overflow="scroll" lineGap="10" defaultItem="ui://s5cy5qnpvawtozgz">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n15_ds4t" name="List_Troops" xy="466,144" size="1432,752" overflow="scroll" margin="0,0,2,0" defaultItem="ui://hh5r35dcds4t1">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n14_ds4t" name="Button_CreateTeam" src="gr0bozdl" pkg="s5cy5qnp" xy="1572,921">
+      <gearDisplay controller="Create_C" pages="0"/>
+      <relation target="n15_ds4t" sidePair="right-right,top-top"/>
+      <Button title="创建队伍"/>
+    </component>
+    <component id="n36_dyqf" name="Label_Tips" src="pui2oz41" pkg="s5cy5qnp" xy="470,901">
+      <gearDisplay controller="NumState_C" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Label title="已满"/>
+    </component>
+    <text id="n32_rsel" name="TextField_NoTeam" xy="588,382" size="1182,220" font="Noto Sans S Chinese Regular" fontSize="59" color="#a6d2ff" align="center" vAlign="middle" autoSize="none" text="无队伍">
+      <gearDisplay controller="State_C" pages="2"/>
+    </text>
+    <text id="n33_rsel" name="TextField_HelpTimes" xy="783,1007" size="232,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#a6d2ff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="协助次数：5">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n34_rsel" name="TextField_RoomNumber" xy="475,955" size="211,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#a6d2ff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="密室次数：55">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n35_rsel" name="TextField_Time" xy="475,1010" size="111,38" font="Noto Sans S Chinese Regular" fontSize="30" color="#a6d2ff" vAlign="middle" ubb="true" singleLine="true" text="13:40:35">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </text>
+  </displayList>
+</component>ds4t1.xml|2585|<component size="1428,194">
+  <controller name="State_C" pages="0,,1,,2," selected="0"/>
+  <controller name="Join_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n22_ds4t" name="Image_Background" src="lctzozjs" pkg="s5cy5qnp" xy="0,0" size="1428,194" alpha="0.7"/>
+    <graph id="n31_tpzz" name="Graph_Background2" xy="504,-3" size="186,73" type="rect" lineSize="0" fillColor="#ffb35317">
+      <gearDisplay controller="State_C" pages="2"/>
+    </graph>
+    <text id="n32_tpzz" name="TextField_Background" xy="519,9" size="153,54" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" text="仅限盟友">
+      <gearDisplay controller="State_C" pages="2"/>
+    </text>
+    <component id="n35_f2sz" name="Button_BackToTroop" src="gr0bozdm" pkg="s5cy5qnp" xy="1151,46" pivot="0.5,0.5" controller="State_C,0">
+      <gearDisplay controller="Join_C" pages="1"/>
+      <Button title="回到队伍"/>
+    </component>
+    <component id="n23_ds4t" name="Button_Join" src="gr0bozdm" pkg="s5cy5qnp" xy="1151,46" pivot="0.5,0.5" controller="State_C,0">
+      <gearDisplay controller="Join_C" pages="0"/>
+      <Button title="加入"/>
+    </component>
+    <component id="n26_ds4t" name="ProgressBar_TroopNumber" src="szirozh9" pkg="s5cy5qnp" xy="505,80" size="618,45">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <text id="n27_ds4t" name="TextField_FlagName" xy="7,41" size="156,61" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="【旗号】"/>
+    <text id="n34_f2sz" name="TextField_FightDescription" xy="160,127" size="95,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" singleLine="true" text="战斗力"/>
+    <text id="n28_ds4t" name="TextField_Name" xy="162,39" size="240,61" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="君主名字七个字"/>
+    <text id="n29_ds4t" name="TextField_Fight" xy="275,127" size="124,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" singleLine="true" text="2000000"/>
+    <text id="n30_mo7r" name="TextField_Floor" xy="628,16" size="353,61" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" text="220层密室">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n26_ds4t" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>ds4t2.xml|5996|<component size="1920,1080">
+  <controller name="Type_C" pages="0,挑战模式,1,协助模式" selected="1"/>
+  <displayList>
+    <component id="n7_ds4t" name="Component_Background" src="no0zozhl" pkg="s5cy5qnp" xy="1,-2" size="1919,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n22_j6nx" name="Component_Vesus" src="j6nx4" xy="813,242">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n65_n4yd" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0">
+      <relation target="" sidePair="left-left,top-top"/>
+      <Label title="队伍"/>
+    </component>
+    <graph id="n25_j6nx" name="Graph_Blue" xy="0,868" size="786,198" group="n54_j6nx" alpha="0.75" type="rect" lineSize="0" fillColor="#ff122b47"/>
+    <component id="n13_j6nx" name="Button_Leave" src="gr0bozdm" pkg="s5cy5qnp" xy="37,927" group="n54_j6nx" controller="State_C,0">
+      <Button title="退出队伍"/>
+    </component>
+    <component id="n26_j6nx" name="Button_Invite" src="gr0bozdm" pkg="s5cy5qnp" xy="304,927" group="n54_j6nx" controller="State_C,0">
+      <Button title="邀请队友"/>
+    </component>
+    <component id="n48_j6nx" name="Button_Shout" src="pnexozh7" pkg="s5cy5qnp" xy="568,941" size="190,77" group="n54_j6nx">
+      <Button title="一键喊话"/>
+    </component>
+    <group id="n54_j6nx" name="Group_Button" xy="0,868" size="786,198" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <text id="n72_f2sz" name="TextField_Clear" xy="689,628" size="144,60" group="n74_f2sz" font="Noto Sans S Chinese Regular" fontSize="30" color="#8fb6ff" vAlign="middle" autoSize="none" text="通关奖励">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </text>
+    <list id="n73_f2sz" name="List_Rewards" xy="852,699" size="503,167" group="n74_f2sz" scale="0.8,0.8" layout="row" overflow="scroll" scroll="horizontal" colGap="6" defaultItem="ui://s5cy5qnphqutz3m">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="" sidePair="left-left,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n71_f2sz" name="Component_Prize" src="hqutz3m" pkg="s5cy5qnp" xy="684,683" group="n74_f2sz">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </component>
+    <component id="n84_jhui" name="Component_GuildContribution" src="hqutz3m" pkg="s5cy5qnp" xy="886,689" group="n74_f2sz">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </component>
+    <group id="n74_f2sz" name="Group_Reward" xy="684,628" size="570,221" advanced="true">
+      <relation target="n7_ds4t" sidePair="center-center,middle-middle"/>
+    </group>
+    <graph id="n30_j6nx" name="Graph_Blue2" xy="792,872" size="478,191" group="n56_j6nx" alpha="0.75" type="rect" lineSize="0" fillColor="#ff122b47"/>
+    <text id="n51_j6nx" name="TextField_RoomNumber" xy="793,867" size="476,51" group="n56_j6nx" font="Noto Sans S Chinese Regular" fontSize="30" color="#9cd7ff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="副本次数：6次"/>
+    <text id="n31_j6nx" name="TextField_RoomName" xy="794,917" size="475,67" group="n56_j6nx" font="Noto Sans S Chinese Regular" fontSize="34" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="副本：220层重楼"/>
+    <text id="n32_j6nx" name="TextField_MinTroopsNumber" xy="795,981" size="475,67" group="n56_j6nx" font="Noto Sans S Chinese Regular" fontSize="34" color="#ffffff" align="center" vAlign="bottom" ubb="true" autoSize="shrink" singleLine="true" text="最低参与军队数：2"/>
+    <group id="n56_j6nx" name="Group_Instance" xy="792,867" size="478,196" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <graph id="n66_f2sz" name="Graph_Button" xy="1839,19" size="76,119" type="rect" lineSize="0" fillColor="#ff1a3c54">
+      <relation target="n70_f2sz" sidePair="center-center,middle-middle"/>
+    </graph>
+    <graph id="n67_f2sz" name="Graph_Button2" xy="1841,22" size="73,50" alpha="0.9" type="rect" lineSize="0" fillColor="#fff5df4e">
+      <gearDisplay controller="Type_C" pages="0,1"/>
+      <gearXY controller="Type_C" pages="1" values="1841,22" default="1841,85" tween="true"/>
+      <relation target="n70_f2sz" sidePair=""/>
+    </graph>
+    <text id="n68_f2sz" name="TextField_ChallengeMode" xy="1647,87" size="187,51" font="Noto Sans S Chinese Regular" fontSize="30" color="#9cd7ff" align="right" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="挑战模式">
+      <relation target="n70_f2sz" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n69_f2sz" name="TextField_AssistMode" xy="1647,22" size="187,51" font="Noto Sans S Chinese Regular" fontSize="30" color="#9cd7ff" align="right" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="协助模式">
+      <relation target="n70_f2sz" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n83_bcgz" name="Button_Mode" src="bcgz10" xy="1647,19" size="265,117">
+      <relation target="n70_f2sz" sidePair="center-center,middle-middle"/>
+      <Button checked="true"/>
+    </component>
+    <component id="n23_j6nx" name="Component_AttackerTroops" src="j6nx5" xy="31,150" size="632,699">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n50_j6nx" name="Component_DefenderTroops" src="j6nx5" xy="1262,150" size="632,699">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n28_j6nx" name="Button_Start" src="knyu29" pkg="s5cy5qnp" xy="1461,897" controller="Type_C,0">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Button title="开始挑战" titleColor="#fffade" titleFontSize="34"/>
+    </component>
+  </displayList>
+</component>dyqfg.xml|2331|<component size="1920,1080">
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n4_hqah" name="Button_BattleLog" src="hqahi" xy="10,156" size="90,90">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </component>
+    <component id="n8_hqah" name="Label_AttackInfo" src="hqahj" xy="13,1006" group="n14_hqah">
+      <gearDisplay controller="State_C" pages="0"/>
+    </component>
+    <component id="n11_hqah" name="Component_Attack1" src="hqahk" xy="441,921" group="n14_hqah"/>
+    <component id="n12_hqah" name="Component_Attack2" src="hqahk" xy="820,921" group="n14_hqah"/>
+    <component id="n13_hqah" name="Component_Attack3" src="hqahk" xy="1199,921" group="n14_hqah"/>
+    <component id="n15_hqah" name="Button_AttackAll" src="hqahi" xy="1585,968" size="90,90" group="n14_hqah">
+      <Button title="查看全部"/>
+    </component>
+    <component id="n17_hqah" name="Button_Skip" src="rmqpozfv" pkg="s5cy5qnp" xy="1749,954" size="100,100" group="n14_hqah">
+      <Button icon="ui://s5cy5qnpa1bwozi1"/>
+    </component>
+    <group id="n14_hqah" name="Group_MyTeam" xy="13,921" size="1836,144" advanced="true">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </group>
+    <component id="n18_hqah" name="Label_DefendInfo" src="hqahj" xy="1617,14" size="302,59" group="n24_hqah">
+      <gearDisplay controller="State_C" pages="0"/>
+      <Label title="200层重楼密室"/>
+    </component>
+    <component id="n19_hqah" name="Component_Defender1" src="hqahk" xy="431,17" group="n24_hqah"/>
+    <component id="n20_hqah" name="Component_Defender2" src="hqahk" xy="810,17" group="n24_hqah"/>
+    <component id="n21_hqah" name="Component_Defender3" src="hqahk" xy="1189,17" group="n24_hqah"/>
+    <component id="n22_hqah" name="Button_DefenderAll" src="hqahi" xy="331,63" size="90,90" group="n24_hqah">
+      <Button title="查看全部"/>
+    </component>
+    <group id="n24_hqah" name="Group_EnemyTeam" xy="331,14" size="1588,147" advanced="true">
+      <relation target="" sidePair="right-right,top-top"/>
+    </group>
+    <component id="n26_mo7r" name="ProgressBar_Player" src="mo7rt" xy="25,903" size="653,42" rotation="-90">
+      <relation target="" sidePair="left-left,middle-middle"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+  </displayList>
+</component>f2szw.xml|86|<component size="100,20" extention="Button">
+  <displayList/>
+  <Button/>
+</component>h3i113.xml|86|<component size="100,20" extention="Button">
+  <displayList/>
+  <Button/>
+</component>hqahi.xml|603|<component size="90,90" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <graph id="n1" name="icon" xy="0,0" size="90,90" alpha="0.7" touchable="false" type="rect" lineSize="0" fillColor="#fe000000">
+      <gearDisplay controller="button" pages="0,1"/>
+    </graph>
+    <text id="n4_hqah" name="title" xy="0,5" size="90,90" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" text="查看&#xA;战报"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>hqahj.xml|507|<component size="440,59" extention="Label">
+  <displayList>
+    <image id="n7_hqah" name="icon" src="vawtozh0" pkg="s5cy5qnp" xy="0,0" size="440,58" flip="hz">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_lxxu" name="title" xy="0,5" size="440,54" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" autoSize="none" text="【旗号】君主名字七个字的队伍">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>hqahk.xml|1185|<component size="374,144">
+  <controller name="Type_C" pages="0,,1," selected="0"/>
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n3_hqah" name="Component_GeneralIcon" src="xwimozid" pkg="s5cy5qnp" xy="0,14" size="130,130"/>
+    <image id="n9_hqah" name="Image_Base" src="cwf2j" pkg="s5cy5qnp" xy="130,51" size="242,89" color="#1e4475"/>
+    <text id="n5_hqah" name="TextField_LordIcon" xy="133,52" size="241,43" font="Noto Sans S Chinese Regular" fontSize="28" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="君主名字七个字"/>
+    <component id="n6_hqah" name="Label_Tips" src="pui2oz41" pkg="s5cy5qnp" xy="133,0">
+      <gearDisplay controller="Type_C" pages="0"/>
+    </component>
+    <text id="n10_hqah" name="TextField_Fight" xy="132,95" size="240,43" font="Noto Sans S Chinese Regular" fontSize="26" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="战斗力：123456"/>
+    <text id="n11_t18m" name="TextField_Lose" xy="51,65" size="45,50" fontSize="40" color="#ff0000" text="败">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+  </displayList>
+</component>hqahm.xml|1519|<component size="1920,1080">
+  <displayList>
+    <image id="n0_hqah" name="Image_Background" src="rmqpozfr" pkg="s5cy5qnp" xy="0,262" size="1126,704">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n27_qydp" name="Button_Background" src="f1djozo7" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n20_xwim" name="Image_Blue" src="no0zozht" pkg="s5cy5qnp" xy="360,274" size="348,80" group="n24_xwim" color="#5b7ab5"/>
+    <text id="n21_xwim" name="TextField_BattleDetails" xy="385,275" size="304,76" group="n24_xwim" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="战报"/>
+    <image id="n22_xwim" name="Image_Left" src="rmqpozfp" pkg="s5cy5qnp" xy="236,303" size="109,25" group="n24_xwim"/>
+    <image id="n23_xwim" name="Image_Right" src="rmqpozfp" pkg="s5cy5qnp" xy="720,304" size="109,25" group="n24_xwim" flip="hz"/>
+    <group id="n24_xwim" name="Group_BattleResult" xy="236,274" size="593,80" advanced="true">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </group>
+    <list id="n14_hqah" name="List_Log" xy="21,372" size="1094,577" overflow="scroll" lineGap="15" defaultItem="ui://hh5r35dchqahn" autoItemSize="false">
+      <relation target="" sidePair="left-left,middle-middle"/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>hqahn.xml|701|<component size="1105,138">
+  <displayList>
+    <component id="n13_hqah" name="Component_Winner" src="hqaho" xy="0,-1">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <text id="n10_hqah" name="TextField_Defeat" xy="462,12" size="100,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#152b4f" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="击败了">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n14_hqah" name="Component_Loser" src="hqaho" xy="559,0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>hqaho.xml|1572|<component size="546,144">
+  <controller name="Type_C" pages="0,我方,1,敌方" selected="0"/>
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <graph id="n9_hqah" name="Graph_Blue" xy="0,2" size="462,67" alpha="0.5" type="rect" lineSize="0" fillColor="#ff3399cc">
+      <gearColor controller="Type_C" pages="1" values="#cc3333" default="#3399cc"/>
+    </graph>
+    <text id="n7_hqah" name="TextField_NameInfo" xy="0,-5" size="335,61" font="Noto Sans S Chinese Regular" fontSize="30" color="#163b73" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="【旗号】君主名字七个字">
+      <gearColor controller="Type_C" pages="1" values="#731717,#000000" default="#163b73,#000000"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n8_hqah" name="TextField_WinNumber" xy="335,-4" size="126,60" font="Noto Sans S Chinese Regular" fontSize="30" color="#22e025" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="（2胜）">
+      <gearColor controller="Type_C" pages="1" values="#ffbaba,#000000" default="#22e025,#000000"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n10_hqah" name="TextField_Description" xy="2,78" size="545,67" font="Noto Sans S Chinese Regular" fontSize="28" color="#b36100" vAlign="middle" autoSize="none" text="获得了最高荣耀3连胜，让我们欢送他下场">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>j6nx4.xml|767|<component size="294,268">
+  <displayList>
+    <graph id="n19_j6nx" name="Graph_Base1" xy="0,1" size="267,267" type="eclipse" lineSize="0" fillColor="#ff29b8ff"/>
+    <graph id="n18_j6nx" name="Graph_Base2" xy="27,1" size="267,267" type="eclipse" lineSize="0" fillColor="#fffc3030"/>
+    <graph id="n15_j6nx" name="Graph_Base3" xy="13,0" size="267,267" type="eclipse" lineSize="0"/>
+    <graph id="n20_j6nx" name="Graph_Base4" xy="20,7" size="253,253" type="eclipse" lineSize="0" lineColor="#ff101d2b" fillColor="#ff101d2b"/>
+    <text id="n21_j6nx" name="TextField_Title" xy="23,19" size="238,223" font="Noto Sans S Chinese Regular" fontSize="157" color="#ffffff" align="center" vAlign="middle" autoSize="none" italic="true" text="vs"/>
+  </displayList>
+</component>j6nx5.xml|2072|<component size="632,704">
+  <controller name="troops_C" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n12_j6nx" name="Image_Background" src="rmqpozfr" pkg="s5cy5qnp" xy="0,0" size="632,704"/>
+    <image id="n15_j6nx" name="Image_BlueTitle" src="no0zozht" pkg="s5cy5qnp" xy="142,12" size="348,80" group="n19_j6nx" color="#5b7ab5"/>
+    <text id="n16_j6nx" name="TextField_MyDetails" xy="167,13" size="304,76" group="n19_j6nx" font="Noto Sans S Chinese Regular" fontSize="36" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="我方信息"/>
+    <image id="n17_j6nx" name="Image_Left" src="rmqpozfp" pkg="s5cy5qnp" xy="18,41" size="109,25" group="n19_j6nx"/>
+    <image id="n18_j6nx" name="Image_Right" src="rmqpozfp" pkg="s5cy5qnp" xy="502,42" size="109,25" group="n19_j6nx" flip="hz"/>
+    <group id="n19_j6nx" name="Group_MyTeam" xy="18,12" size="593,80" advanced="true">
+      <gearDisplay controller="troops_C" pages="0"/>
+    </group>
+    <image id="n29_j6nx" name="Image_EnemyDetails" src="no0zozht" pkg="s5cy5qnp" xy="143,12" size="348,80" group="n33_j6nx" color="#781f1f"/>
+    <text id="n30_j6nx" name="TextField_EnemyDetails" xy="168,13" size="304,76" group="n33_j6nx" font="Noto Sans S Chinese Regular" fontSize="36" color="#ff7575" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="敌方信息"/>
+    <image id="n31_j6nx" name="Image_Left1" src="rmqpozfp" pkg="s5cy5qnp" xy="19,41" size="109,25" group="n33_j6nx" color="#ff5959"/>
+    <image id="n32_j6nx" name="Image_Left2" src="rmqpozfp" pkg="s5cy5qnp" xy="503,42" size="109,25" group="n33_j6nx" color="#ff5959" flip="hz"/>
+    <group id="n33_j6nx" name="Group_EnemyTeam" xy="19,12" size="593,80" advanced="true">
+      <gearDisplay controller="troops_C" pages="1"/>
+    </group>
+    <list id="n28_j6nx" name="List_Troops" xy="21,93" size="600,590" overflow="scroll" margin="2,0,0,0" lineGap="5" defaultItem="ui://hh5r35dcj6nx8">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>j6nx7.xml|389|<component size="74,108" extention="Label">
+  <displayList>
+    <loader id="n27_j6nx" name="icon" xy="0,0" size="73,108" fill="scaleFree"/>
+    <text id="n25_j6nx" name="title" xy="0,2" size="73,106" font="Noto Sans S Chinese Regular" fontSize="32" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="队&#xA;长"/>
+  </displayList>
+</component>j6nx8.xml|3042|<component size="603,213" extention="Button">
+  <controller name="Header_C" pages="0,,1," selected="0"/>
+  <controller name="Mode_C" pages="0,,1," selected="0"/>
+  <controller name="State_C" pages="0,,1," selected="1"/>
+  <displayList>
+    <graph id="n14_j6nx" name="Graph_Background" xy="5,2" size="595,206" alpha="0.5" type="rect" lineSize="0" fillColor="#ff6eaae6">
+      <gearSize controller="State_C" pages="0" values="595,113,1,1" default="595,206,1,1"/>
+    </graph>
+    <text id="n21_j6nx" name="TextField_Name" xy="135,4" size="237,46" group="n27_j6nx" font="Noto Sans S Chinese Regular" fontSize="30" color="#000b24" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="君主名字七个字"/>
+    <text id="n22_j6nx" name="TextField_FlagName" xy="-6,4" size="141,54" group="n27_j6nx" font="Noto Sans S Chinese Regular" fontSize="36" color="#000b24" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="【旗号】"/>
+    <text id="n23_j6nx" name="TextField_FightAmount" xy="9,57" size="261,46" group="n27_j6nx" font="Noto Sans S Chinese Regular" fontSize="30" color="#113a5e" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="战斗力20000000"/>
+    <component id="n43_di4i" name="Component_Race" src="g3jhozvx" pkg="s5cy5qnp" xy="262,61" group="n27_j6nx" scale="0.8,0.8"/>
+    <group id="n27_j6nx" name="Group_Description" xy="-6,4" size="531,99" advanced="true"/>
+    <component id="n25_j6nx" name="Label_Leader" src="j6nx7" xy="525,0">
+      <gearDisplay controller="Header_C" pages="0"/>
+      <Label icon="ui://s5cy5qnprmqpozg3"/>
+    </component>
+    <graph id="n28_j6nx" name="Graph_Line1" xy="5,0" size="594,2" alpha="0.6" type="rect" lineSize="0" fillColor="#ff214469"/>
+    <graph id="n29_j6nx" name="Graph_Line" xy="5,208" size="594,2" alpha="0.6" type="rect" lineSize="0" fillColor="#ff214469">
+      <gearXY controller="State_C" pages="0" values="5,116" default="5,208"/>
+    </graph>
+    <component id="n38_mo7r" name="Button_Fire" src="ujpiozgp" pkg="s5cy5qnp" xy="378,113" size="156,85" group="n42_mo7r">
+      <gearDisplay controller="Header_C" pages="1"/>
+      <Button title="踢出"/>
+    </component>
+    <component id="n40_mo7r" name="Button_Down" src="pnexozh7" pkg="s5cy5qnp" xy="209,114" size="170,85" group="n42_mo7r">
+      <Button title="下移" icon="ui://s5cy5qnpg4naozec"/>
+    </component>
+    <component id="n41_mo7r" name="Button_Up" src="pnexozh7" pkg="s5cy5qnp" xy="39,114" size="170,86" group="n42_mo7r">
+      <Button title="上移"/>
+    </component>
+    <group id="n42_mo7r" name="Group_Button" xy="39,112" size="495,87" advanced="true">
+      <gearDisplay controller="State_C" pages="1"/>
+    </group>
+    <text id="n44_ss2c" name="TextField_Mode" xy="401,23" size="141,54" font="Noto Sans S Chinese Regular" fontSize="25" color="#333333" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="协助模式">
+      <gearDisplay controller="Mode_C" pages="1"/>
+    </text>
+  </displayList>
+  <Button/>
+  <relation target="n14_j6nx" sidePair="height-height"/>
+</component>j6nx9.xml|2017|<component size="1920,1080">
+  <controller name="State_C" pages="0,,2,,1," selected="0"/>
+  <displayList>
+    <graph id="n0_j6nx" name="Graph_Background" xy="0,0" size="1920,1080" alpha="0.5" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <component id="n22_f2sz" name="Button_Background" src="f2szw" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n19_hb8y" name="Image_Background2" src="rmqpozfr" pkg="s5cy5qnp" xy="340,222" size="1204,552" group="n23_ionx"/>
+    <image id="n16_rsel" name="Image_Background3" src="no0zozht" pkg="s5cy5qnp" xy="450,636" size="1027,84" group="n23_ionx" alpha="0.9" color="#254b7d"/>
+    <text id="n21_hb8y" name="TextField_Lord" xy="846,723" size="219,46" group="n23_ionx" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="只显示在线玩家"/>
+    <list id="n5_j6nx" name="List_Friends" xy="355,241" size="1183,396" group="n23_ionx" layout="flow_hz" overflow="scroll" clipSoftness="0,30" lineGap="16" colGap="10" defaultItem="ui://hh5r35dcrsele">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n17_rsel" name="Component_ButtonBackground" src="rself" xy="843,663" group="n23_ionx"/>
+    <graph id="n27_h3i1" name="Graph_WhiteRound" xy="843,661" size="40,40" group="n23_ionx" type="eclipse" lineSize="0">
+      <gearXY controller="State_C" pages="1" values="1037,661" default="843,661"/>
+    </graph>
+    <component id="n26_h3i1" name="Button_Guild" src="h3i113" xy="745,635" size="152,84" group="n23_ionx"/>
+    <component id="n28_h3i1" name="Button_Friends" src="h3i113" xy="1023,635" size="152,84" group="n23_ionx"/>
+    <group id="n23_ionx" name="Group_Info" xy="340,222" size="1204,552" advanced="true">
+      <relation target="n22_f2sz" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>mkvg12.xml|670|<component size="672,180">
+  <controller name="State_C" pages="0,有奖励,1,没奖励" selected="0"/>
+  <controller name="Type_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <text id="n0_mkvg" name="TextField_LordName" xy="8,70" size="335,46" fontSize="30" color="#ffffff" text="【旗号】君主名字七个字"/>
+    <text id="n1_mkvg" name="TextField_WinNumber" xy="335,59" size="133,73" fontSize="50" color="#ffffff" ubb="true" text="3连斩">
+      <gearDisplay controller="Type_C" pages="0"/>
+    </text>
+    <component id="n4_mkvg" name="Component_Prize" src="hqutz3m" pkg="s5cy5qnp" xy="490,9">
+      <gearDisplay controller="State_C" pages="0"/>
+    </component>
+  </displayList>
+</component>mo7rp.xml|1742|<component size="1920,1080">
+  <displayList>
+    <graph id="n0_mo7r" name="Graph_Background" xy="0,0" size="1920,1080" alpha="0.5" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <component id="n15_qydp" name="Button_Background" src="f1djozo7" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n1_mo7r" name="Image_Base" src="rmqpozfr" pkg="s5cy5qnp" xy="471,202" size="977,704">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <list id="n7_mo7r" name="List_Troops" xy="494,308" size="934,579" overflow="scroll" margin="5,0,9,0" lineGap="17" defaultItem="ui://hh5r35dcmo7rr">
+      <relation target="n1_mo7r" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n8_xwim" name="Image_BlueTitle" src="no0zozht" pkg="s5cy5qnp" xy="787,223" size="348,80" group="n12_xwim" color="#5b7ab5"/>
+    <text id="n9_xwim" name="TextField_Units" xy="812,224" size="304,76" group="n12_xwim" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="参战军队"/>
+    <image id="n10_xwim" name="Image_Left" src="rmqpozfp" pkg="s5cy5qnp" xy="663,252" size="109,25" group="n12_xwim"/>
+    <image id="n11_xwim" name="Image_Right" src="rmqpozfp" pkg="s5cy5qnp" xy="1147,253" size="109,25" group="n12_xwim" flip="hz"/>
+    <group id="n12_xwim" name="Group_FightUints" xy="663,223" size="593,80" advanced="true">
+      <relation target="n1_mo7r" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>mo7rr.xml|1115|<component size="915,100">
+  <controller name="State_C" pages="0,,1,,2,,3," selected="3"/>
+  <displayList>
+    <graph id="n9_mo7r" name="Graph_Background" xy="0,0" size="915,100" type="rect" lineSize="0" fillColor="#ff396b91"/>
+    <text id="n10_mo7r" name="TextFiled_Name" xy="4,8" size="240,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="君主名字七个字"/>
+    <text id="n11_mo7r" name="TextField_Fight" xy="3,59" size="310,40" font="Noto Sans S Chinese Regular" fontSize="26" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="初始战斗力1234567"/>
+    <text id="n13_mo7r" name="TextField_Wait" xy="689,27" size="216,40" font="Noto Sans S Chinese Regular" fontSize="26" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="已出战">
+      <gearText controller="State_C" pages="1,2,3" values="正在战斗|连胜|已出战" default="等待出战"/>
+    </text>
+    <component id="n14_fnpa" name="Component_Race" src="g3jhozvx" pkg="s5cy5qnp" xy="317,26"/>
+  </displayList>
+</component>mo7rt.xml|524|<component size="50,10" extention="ProgressBar">
+  <displayList>
+    <graph id="n1" name="Graph_Background" xy="0,0" size="50,10" type="rect" lineSize="0" lineColor="#ffa0a0a0" fillColor="#ffe61919" corner="6">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n2" name="bar" xy="0,0" size="50,10" type="rect" lineSize="0" fillColor="#ff1a7bdb" corner="6">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+  </displayList>
+  <ProgressBar/>
+</component>package.xml|2322|<packageDescription id="hh5r35dc" name="Backroom">
+  <resources>
+    <component id="bcgz10" name="Button_Mode" path="/Button/" size="100,20"/>
+    <component id="ds4t1" name="Component_Team" path="/Component/" size="1428,194"/>
+    <component id="f2szw" name="Button_Bg" path="/Button/" size="100,20"/>
+    <component id="h3i113" name="Button_Group" path="/Button/" size="100,20"/>
+    <component id="hqahi" name="Button_Check" path="/Button/" size="90,90"/>
+    <component id="hqahj" name="Label_TeamName" path="/Label/" size="440,59"/>
+    <component id="hqahk" name="Component_Lord" path="/Component/" size="374,144"/>
+    <component id="hqahn" name="Component_BattlelogInfo" path="/Component/" size="1105,138"/>
+    <component id="hqaho" name="Component_TeammateInfo" path="/Component/" size="546,144"/>
+    <component id="j6nx4" name="Component_VS" path="/Component/" size="294,268"/>
+    <component id="j6nx5" name="Component_MyTeam" path="/Component/" size="632,704"/>
+    <component id="j6nx7" name="Label_Leader" path="/Label/" size="74,108"/>
+    <component id="j6nx8" name="Button_Lord" path="/Button/" size="603,213"/>
+    <component id="mkvg12" name="Component_Junzhu" path="/Component/" size="672,180"/>
+    <component id="mo7rr" name="Component_Ranking" path="/Component/" size="915,100"/>
+    <component id="mo7rt" name="ProgressBar_Situation" path="/ProgressBar/" size="50,10"/>
+    <component id="rsele" name="Component_TeamName" path="/Component/" size="579,83"/>
+    <component id="rself" name="Component_BtnBg" path="/Component/" size="234,39"/>
+    <component id="7vz6u" name="VictoryMain" path="/" size="1920,1080" exported="true"/>
+    <component id="7vz6v" name="FailMain" path="/" size="1920,1080" exported="true"/>
+    <component id="ds4t0" name="BackroomMain" path="/" size="1920,1080" exported="true"/>
+    <component id="ds4t2" name="TroopsMain" path="/" size="1920,1080" exported="true"/>
+    <component id="dyqfg" name="BattlefieldMain" path="/" size="1920,1080" exported="true"/>
+    <component id="hqahm" name="BattlelogMain" path="/" size="1920,1080" exported="true"/>
+    <component id="j6nx9" name="InvitationMain" path="/" size="1920,1080" exported="true"/>
+    <component id="mo7rp" name="ArmyInfoMain" path="/" size="1920,1080" exported="true"/>
+  </resources>
+</packageDescription>rsele.xml|1659|<component size="579,83">
+  <controller name="State_C" pages="0,邀请,1,已邀请,2,未开启,3,无次数" selected="0"/>
+  <displayList>
+    <graph id="n8_j6nx" name="Graph_Background" xy="0,0" size="578,83" alpha="0.5" type="rect" lineSize="0" fillColor="#ff265d78" corner="8"/>
+    <text id="n7_j6nx" name="TextField_Name" xy="156,12" size="259,61" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="君主名字七个字"/>
+    <text id="n11_rsel" name="TextField_FlagName" xy="-1,11" size="156,61" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="【旗号】"/>
+    <component id="n12_hb8y" name="Button_Invite" src="gr0bozdm" pkg="s5cy5qnp" xy="407,4" pivot="0.5,0.5" size="170,73" controller="State_C,0">
+      <gearDisplay controller="State_C" pages="0"/>
+      <Button title="邀请"/>
+    </component>
+    <text id="n13_hb8y" name="TextField_Invitation" xy="447,23" size="100,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#ff0000" autoSize="none" text="已邀请">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <text id="n14_hb8y" name="TextField_Empty" xy="446,25" size="100,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#ff0000" autoSize="none" text="无次数">
+      <gearDisplay controller="State_C" pages="3"/>
+    </text>
+    <text id="n15_hb8y" name="TextField_Locked" xy="445,23" size="100,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#ff0000" autoSize="none" text="未开启">
+      <gearDisplay controller="State_C" pages="2"/>
+    </text>
+  </displayList>
+</component>rself.xml|832|<component size="234,39">
+  <displayList>
+    <graph id="n8_rsel" name="Graph_BlueRound" xy="0,-1" size="40,40" type="eclipse" lineSize="0" fillColor="#ff59b0f7"/>
+    <graph id="n6_rsel" name="Graph_Line" xy="46,18" size="141,2" type="rect" lineSize="0" fillColor="#ff59b0f7"/>
+    <graph id="n7_rsel" name="Graph_BlueRound2" xy="194,-1" size="40,40" type="eclipse" lineSize="0" fillColor="#ff59b0f7"/>
+    <text id="n9_rsel" name="TextField_Aliiance" xy="-87,-4" size="85,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#94d1ff" align="center" vAlign="middle" autoSize="shrink" text="联盟"/>
+    <text id="n10_rsel" name="TextField_Friend" xy="236,-4" size="85,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#94d1ff" align="center" vAlign="middle" autoSize="shrink" text="好友"/>
+  </displayList>
+</component>

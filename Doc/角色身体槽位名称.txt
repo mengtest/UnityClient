@@ -1,0 +1,19 @@
+﻿以下是角色身体各部位槽位命名约定：
+
+人型
+slot_base	脚底
+slot_center	正中心
+slot_head	头部
+slot_lefthand	左手
+slot_righthand	右手
+slot_weapon1	武器1
+slot_weapon2	武器2
+
+
+非人型
+slot_base	脚底
+slot_center	正中心
+slot_head	头部
+slot_weapon1	武器1
+slot_weapon2	武器2
+。。。未完待续

@@ -1,0 +1,1012 @@
+d7kl1a.xml|2685|<component size="1920,1080">
+  <displayList>
+    <component id="n13_py0s" name="Component_GraphBG" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <graph id="n12_gc9c" name="Graph_Background" xy="0,1" size="1920,1080" alpha="0" type="rect">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n1_cegz" name="Image_Background" src="k0n7oz3u" pkg="s5cy5qnp" xy="465,145" size="1024,768">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n2_cegz" name="Text_Guild" xy="621,250" size="165,59" fontSize="40" color="#ffffff" text="插旗联盟">
+      <relation target="n1_cegz" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n3_cegz" name="Text_GuildName" xy="827,249" size="285,59" fontSize="40" color="#ffffff" text="联盟名字七个字">
+      <relation target="n1_cegz" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n4_cegz" name="Text_FlagMan" xy="621,319" size="125,59" fontSize="40" color="#ffffff" text="插旗人">
+      <relation target="n1_cegz" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n5_cegz" name="Text_FlagName" xy="827,319" size="285,59" fontSize="40" color="#ffffff" text="君主名字七个字">
+      <relation target="n1_cegz" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n6_cegz" name="Text_Time" xy="621,393" size="165,59" fontSize="40" color="#ffffff" text="插旗时间">
+      <relation target="n1_cegz" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n7_cegz" name="Text_StartTime" xy="827,390" size="350,59" fontSize="40" color="#ffffff" text="2017-4-10 22:36:50">
+      <relation target="n1_cegz" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n8_cegz" name="Text_End" xy="621,471" size="165,59" fontSize="40" color="#ffffff" text="消失时间">
+      <relation target="n1_cegz" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n9_cegz" name="Text_EndTime" xy="827,465" size="350,59" fontSize="40" color="#ffffff" text="2017-4-17 22:36:50">
+      <relation target="n1_cegz" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n10_cegz" name="Text_Condition" xy="621,569" size="685,59" fontSize="40" color="#ffffff" text="掠夺此联盟任一君主城池后可摘除白旗">
+      <relation target="n1_cegz" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n11_cegz" name="Button_View" src="gr0bozdm" pkg="s5cy5qnp" xy="846,705" controller="State_C,0">
+      <relation target="n1_cegz" sidePair="center-center,middle-middle"/>
+      <Button title="查看联盟"/>
+    </component>
+  </displayList>
+</component>dp8u12.xml|222|<component size="212,50" extention="Label">
+  <displayList>
+    <text id="n21" name="title" xy="0,0" size="212,50" font="微软雅黑" fontSize="36" color="#ff9900" underline="true" text="（696,298）"/>
+  </displayList>
+</component>haic1h.xml|985|<component size="244,43" extention="Label">
+  <controller name="State_C" pages="0,有联盟,1,无联盟" selected="0"/>
+  <displayList>
+    <text id="n2_fgrh" name="title" xy="33,4" size="212,39" font="微软雅黑" fontSize="26" color="#9bd2ff" vAlign="middle" autoSize="shrink" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="联盟名字七个字">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n3_fgrh" sidePair="right-right,top-top"/>
+    </text>
+    <image id="n3_fgrh" name="icon" src="haic1i" xy="3,3">
+      <gearDisplay controller="State_C" pages="0"/>
+    </image>
+    <text id="n4_haic" name="Text_JoinAlliance" xy="41,1" size="129,39" font="微软雅黑" fontSize="26" color="#ffff00" vAlign="middle" autoSize="shrink" underline="true" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="加入联盟">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n3_fgrh" sidePair="right-right,top-top"/>
+    </text>
+  </displayList>
+</component>haic1l.xml|985|<component size="244,43" extention="Label">
+  <controller name="State_C" pages="0,有联盟,1,无联盟" selected="0"/>
+  <displayList>
+    <text id="n2_fgrh" name="title" xy="33,4" size="212,39" font="微软雅黑" fontSize="26" color="#9bd2ff" vAlign="middle" autoSize="shrink" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="联盟名字七个字">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n3_fgrh" sidePair="right-right,top-top"/>
+    </text>
+    <image id="n3_fgrh" name="icon" src="haic1i" xy="3,3">
+      <gearDisplay controller="State_C" pages="0"/>
+    </image>
+    <text id="n4_haic" name="Text_JoinAlliance" xy="41,1" size="129,39" font="微软雅黑" fontSize="26" color="#ffff00" vAlign="middle" autoSize="shrink" underline="true" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="邀请入盟">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n3_fgrh" sidePair="right-right,top-top"/>
+    </text>
+  </displayList>
+</component>i02l1y.xml|10681|<component size="1920,1080">
+  <controller name="Type_C" pages="0,看自己,1,看别人" selected="0"/>
+  <controller name="Flag_C" pages="0,有白旗,1,无白旗" selected="0"/>
+  <controller name="State_C" pages="0,未流亡,1,已流亡" selected="0"/>
+  <displayList>
+    <component id="n0" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="left-left,top-top"/>
+      <Label title="君主"/>
+    </component>
+    <image id="n30" name="Image_BlueBase" src="cwf2k" pkg="s5cy5qnp" xy="54,195" size="1713,830">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </image>
+    <component id="n6" name="Button_FormerName" src="gr0bozdm" pkg="s5cy5qnp" xy="1043,10" size="110,48">
+      <Button title="曾用名" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <text id="n9" name="Text_LordName" xy="520,11" size="80,36" font="微软雅黑" fontSize="25" color="#ffffff" text="名字：">
+      <relation target="n31" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n10" name="Text_Guild" xy="519,55" size="80,36" font="微软雅黑" fontSize="25" color="#ffffff" text="联盟：">
+      <relation target="n31" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n11" name="Text_Name" xy="602,11" size="257,50" font="微软雅黑" fontSize="25" color="#ffffff" vAlign="middle" autoSize="shrink" singleLine="true" text="君主名字七个字">
+      <relation target="n9" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n12" name="Text_Alliance" xy="601,55" size="30,36" font="微软雅黑" fontSize="25" color="#ffffff" vAlign="middle" text="无">
+      <relation target="n10" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n13" name="Text_Defend" xy="512,92" size="130,36" font="微软雅黑" fontSize="25" color="#ffffff" text="防御战力：">
+      <relation target="n31" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n14" name="Text_Situation" xy="1416,84" size="185,50" font="微软雅黑" fontSize="36" color="#ffffff" text="城池坐标："/>
+    <text id="n15" name="Text_LordLevel" xy="244,140" size="130,36" font="微软雅黑" fontSize="25" color="#ffffff" text="君主等级：">
+      <relation target="n31" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n16" name="Text_CityLevel" xy="1323,140" size="130,36" font="微软雅黑" fontSize="25" color="#ffffff" text="城池等级："/>
+    <text id="n17" name="Text_FightAmount" xy="638,92" size="140,36" font="微软雅黑" fontSize="25" color="#ffffff" vAlign="middle" text="123456789">
+      <relation target="n13" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n18" name="Text_LordLevelNumber" xy="368,141" size="35,36" font="微软雅黑" fontSize="25" color="#ffffff" vAlign="middle" text="50">
+      <relation target="n15" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n19" name="Text_CityLevelNumber" xy="1458,140" size="20,36" font="微软雅黑" fontSize="25" color="#ffffff" vAlign="middle" text="7">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n16" sidePair="left-right,top-top"/>
+    </text>
+    <image id="n20" name="Image_Accessory" src="jhye3" xy="1608,87">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n14" sidePair="left-right,top-top"/>
+    </image>
+    <component id="n38_dp8u" name="Label_Coords" src="dp8u12" xy="1666,84">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n20" sidePair="left-right,top-top"/>
+    </component>
+    <graph id="n34" name="Graph_Base1" xy="659,510" size="1037,3" type="rect" lineSize="0" fillColor="#ff4d6587">
+      <relation target="n30" sidePair="right-right,middle-middle"/>
+    </graph>
+    <component id="n24" name="ProgressBar_CityExp" src="7sz4ozib" pkg="s5cy5qnp" xy="1496,138" size="335,54">
+      <gearDisplay controller="State_C" pages="0"/>
+      <ProgressBar value="2630" max="5000"/>
+    </component>
+    <component id="n25" name="Button_Rename" src="pnexozh7" pkg="s5cy5qnp" xy="885,13" size="146,45">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <Button title="改名" titleColor="#ffffff" titleFontSize="25" icon="ui://hdkfki4kjhye0"/>
+    </component>
+    <component id="n26" name="Button_Settings" src="pnexozh7" pkg="s5cy5qnp" xy="1696,194" size="223,122">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="n30" sidePair="center-center,top-top"/>
+      <Button title="设置" titleColor="#ffffff" titleFontSize="35" icon="ui://hdkfki4kjhye6"/>
+    </component>
+    <component id="n27" name="Button_Ban" src="pnexozh7" pkg="s5cy5qnp" xy="1696,627" size="217,119">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <relation target="n37" sidePair="center-center,top-bottom"/>
+      <Button title="屏蔽" titleColor="#ffffff" titleFontSize="24" icon="ui://hdkfki4ke3vkk" selectedTitle="已屏蔽"/>
+    </component>
+    <component id="n28" name="Button_Friend" src="pnexozh7" pkg="s5cy5qnp" xy="1696,766" size="215,115">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <relation target="n27" sidePair="center-center,top-bottom"/>
+      <Button title="加好友" titleColor="#ffffff" titleFontSize="24" icon="ui://hdkfki4kjhye2"/>
+    </component>
+    <component id="n29" name="Label_Tips" src="qkljd" pkg="s5cy5qnp" xy="940,66" visible="false">
+      <relation target="n6" sidePair="top-bottom,center-center"/>
+    </component>
+    <loader id="n31" name="Loader_SmallIcon" xy="407,12" size="109,103" url="ui://s5cy5qnpov5eoz48" fill="scaleFree"/>
+    <component id="n37" name="Button_Chat" src="pnexozh7" pkg="s5cy5qnp" xy="1696,480" size="209,121">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <relation target="n70_i02l" sidePair="center-center,top-bottom"/>
+      <Button title="私聊" titleColor="#ffffff" titleFontSize="24" icon="ui://hdkfki4kjhye1"/>
+    </component>
+    <text id="n52_j03t" name="Text_Tips" xy="1634,83" size="185,50" font="微软雅黑" fontSize="36" color="#ff0000" text="城池已流亡">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n31" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n53_j03t" name="Text_Tips2" xy="1635,137" size="185,50" font="微软雅黑" fontSize="36" color="#ff0000" text="城池已流亡">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n31" sidePair="left-left,top-top"/>
+    </text>
+    <component id="n64_q3wv" name="Button_Stragety" src="q3wv18" xy="389,1022">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="" sidePair="bottom-bottom"/>
+    </component>
+    <component id="n66_q3wv" name="Button_Achievement" src="q3wv19" xy="186,1022">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="" sidePair="bottom-bottom"/>
+    </component>
+    <component id="n68_i02l" name="Label_MyUnion" src="haic1h" xy="638,53">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="n10" sidePair="left-right,top-top"/>
+    </component>
+    <component id="n69_i02l" name="Label_Union" src="haic1l" xy="663,50">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <relation target="n10" sidePair="left-right,top-top"/>
+    </component>
+    <component id="n70_i02l" name="Button_Farm" src="pnexozh7" pkg="s5cy5qnp" xy="1696,339" size="223,122">
+      <gearDisplay controller="Type_C" pages="0,1"/>
+      <relation target="n26" sidePair="center-center,top-bottom"/>
+      <Button title="农场" titleColor="#ffffff" titleFontSize="35" icon="ui://hdkfki4kjhye6"/>
+    </component>
+    <component id="n71_i02l" name="Button_Situation" src="pnexozh7" pkg="s5cy5qnp" xy="1696,194" size="223,122">
+      <gearDisplay controller="Type_C" pages="1"/>
+      <relation target="n30" sidePair="top-top,center-center"/>
+      <Button title="军情" titleColor="#ffffff" titleFontSize="35" icon="ui://hdkfki4kjhye6"/>
+    </component>
+    <graph id="n72_i02l" name="Graph_Base3" xy="672,844" size="1037,3" type="rect" lineSize="0" fillColor="#ff4d6587"/>
+    <loader id="n32" name="Loader_LargeIcon" xy="59,198" size="542,673" url="ui://s5cy5qnpov5eoz47" fill="scaleFree">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <component id="n23" name="ProgressBar_LordExp" src="ntr0ozj7" pkg="s5cy5qnp" xy="414,142" size="504,49">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <ProgressBar value="200" max="2000"/>
+    </component>
+    <component id="n40_gmur" name="Button_Flag" src="kb3o13" xy="66,222">
+      <gearDisplay controller="Flag_C" pages="0"/>
+      <relation target="n32" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n62_q3wv" name="Button_Handbook" src="q3wv17" xy="57,807">
+      <gearDisplay controller="Type_C" pages="0,1"/>
+      <relation target="" sidePair="bottom-bottom"/>
+    </component>
+    <component id="n67_q3wv" name="Button_ChangeIcon" src="jonb15" xy="480,230">
+      <gearDisplay controller="Type_C" pages="0"/>
+    </component>
+    <component id="n81_i02l" name="Text_Signature" src="i02l1z" xy="648,242" size="898,233"/>
+    <component id="n82_i02l" name="Button__InputVoice" src="gr0bozdo" pkg="s5cy5qnp" xy="1147,393" size="241,73" controller="Time_C,0,State_C,0">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="n81_i02l" sidePair="right-right,bottom-bottom"/>
+      <Button title="按住说话"/>
+    </component>
+    <list id="n90_i02l" name="List_Tag" xy="663,548" size="912,233" layout="flow_hz" overflow="scroll" lineGap="10" colGap="31" defaultItem="ui://hdkfki4ki02l20">
+      <relation target="n30" sidePair="center-center,middle-middle"/>
+      <item url="ui://hdkfki4ki02l21"/>
+      <item url="ui://hdkfki4ki02l21"/>
+      <item url="ui://hdkfki4ki02l21"/>
+      <item url="ui://hdkfki4ki02l21"/>
+      <item url="ui://hdkfki4ki02l21"/>
+      <item/>
+    </list>
+    <component id="n91_i02l" name="Button_AllTag" src="gr0bozdo" pkg="s5cy5qnp" xy="1613,641" size="125,73" controller="Time_C,0,State_C,0">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="n90_i02l" sidePair="left-right,middle-middle"/>
+      <Button title="全部"/>
+    </component>
+    <list id="n92_i02l" name="List_Medal" xy="342,867" size="1227,157" layout="row" scroll="horizontal" defaultItem="ui://hdkfki4ki02l22" align="center">
+      <relation target="n30" sidePair="bottom-bottom,center-center"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n93_i02l" name="Button_EditSignature" src="pnexozh7" pkg="s5cy5qnp" xy="1559,244" size="124,45">
+      <gearDisplay controller="Type_C" pages="0"/>
+      <relation target="n81_i02l" sidePair="left-right,top-top"/>
+      <Button title="编辑" titleColor="#ffffff" titleFontSize="25" icon="ui://hdkfki4kjhye0"/>
+    </component>
+  </displayList>
+</component>i02l1z.xml|1113|<component size="1048,233">
+  <controller name="State_C" pages="0,无语音签名,1,有语音签名" selected="0"/>
+  <displayList>
+    <text id="n73_i02l" name="Text_Signature" xy="0,2" size="113,50" font="微软雅黑" fontSize="36" color="#ffffff" text="签名："/>
+    <text id="n74_i02l" name="Text_Voice" xy="1,169" size="113,50" font="微软雅黑" fontSize="36" color="#ffffff" text="语音："/>
+    <text id="n75_i02l" name="Text_SignatureContent" xy="140,0" size="751,135" font="微软雅黑" fontSize="36" color="#ffffff" autoSize="none" text="这家伙很懒，什么都没留下，缺省文字策划配置"/>
+    <text id="n77_i02l" name="Text_VoiceContent" xy="142,166" size="265,59" font="微软雅黑" fontSize="36" color="#ffffff" autoSize="none" text="无">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <graph id="n81_i02l" name="Graph_Background" xy="139,161" size="201,62" type="rect" fillColor="#ff00ff66" corner="60">
+      <gearDisplay controller="State_C" pages="1"/>
+    </graph>
+    <text id="n83_i02l" name="Text_VoiceTime" xy="203,170" size="68,59" fontSize="40" text="60s">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+  </displayList>
+</component>i02l20.xml|322|<component size="274,105">
+  <displayList>
+    <graph id="n83_i02l" name="Graph_Background" xy="0,22" size="245,83" type="rect" fillColor="#ff66cc66"/>
+    <text id="n86_i02l" name="Text_Title" xy="12,22" size="224,97" fontSize="67" color="#ffffff" align="center" autoSize="height" text="+"/>
+  </displayList>
+</component>i02l21.xml|568|<component size="274,105">
+  <displayList>
+    <graph id="n83_i02l" name="Graph_Background" xy="0,22" size="245,83" type="rect" fillColor="#ffff9900"/>
+    <text id="n86_i02l" name="Text_Label" xy="12,39" size="224,59" fontSize="40" color="#ffffff" align="center" autoSize="height" text="标签五个字"/>
+    <graph id="n87_i02l" name="Graph_Tag" xy="224,0" size="49,48" type="eclipse" lineSize="0" fillColor="#ff3399cc"/>
+    <text id="n88_i02l" name="Text_Tag" xy="226,4" size="48,59" fontSize="40" color="#ffffff" autoSize="height" text="99"/>
+  </displayList>
+</component>i02l22.xml|332|<component size="150,150">
+  <displayList>
+    <loader id="n93_i02l" name="Loader_Icon" xy="34,22" size="83,96" url="ui://ls3uuggdd5hda" fill="scale"/>
+    <text id="n94_i02l" name="Text_Achievement" xy="11,105" size="134,46" fontSize="30" color="#ffffff" align="center" autoSize="height" text="成就配置"/>
+  </displayList>
+</component>i02l23.xml|603|<component size="1920,1080">
+  <displayList>
+    <component id="n0" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="left-left,top-top"/>
+      <Label title="成就"/>
+    </component>
+    <list id="n92_i02l" name="List_MedalCondition" xy="88,254" size="1774,670" layout="row" overflow="scroll" scroll="horizontal" defaultItem="ui://hdkfki4ki02l24" align="center">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>i02l24.xml|1579|<component size="400,600">
+  <controller name="State_C" pages="1,进度为0,0,进度未满,2,进度完成" selected="0"/>
+  <controller name="Type_C" pages="0,未完成,1,完成可领取" selected="0"/>
+  <displayList>
+    <graph id="n51_i02l" name="Graph_BlueBackground" xy="71,73" size="283,528" type="rect" lineSize="0" fillColor="#ff3399cc"/>
+    <graph id="n35_h9ak" name="Graph_Background" xy="48,0" size="340,340" alpha="0.7" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <loader id="n47_w29v" name="Loader_MedalIcon" xy="69,23" size="300,300" url="ui://ls3uuggdd5hda" align="center" vAlign="middle" fill="scale"/>
+    <image id="n43_7gvh" name="Image_TimeBarBG" src="i02l25" xy="41,-8" size="350,358"/>
+    <loader id="n49_w29v" name="Loader_TimeBar" xy="37,-5" size="350,350" fill="scaleFree" fillMethod="radial360" fillAmount="66">
+      <gearIcon controller="State_C" pages="1,2" values="|ui://hdkfki4ki02l26" default="ui://hdkfki4ki02l27"/>
+    </loader>
+    <text id="n50_i02l" name="Text_Now" xy="153,255" size="134,59" fontSize="40" color="#ffffff" align="center" autoSize="height" text="75"/>
+    <text id="n52_i02l" name="Text_Condition" xy="77,354" size="275,59" fontSize="40" color="#ffffff" align="center" autoSize="height" text="主城达到100级"/>
+    <text id="n53_i02l" name="Text_GetReward" xy="73,550" size="275,59" fontSize="40" color="#00ff00" align="center" autoSize="height" text="领取">
+      <gearDisplay controller="Type_C" pages="1"/>
+    </text>
+    <component id="n54_i02l" name="Button_Prop" src="hqutz3m" pkg="s5cy5qnp" xy="150,412" size="130,130"/>
+  </displayList>
+</component>i02l2a.xml|918|<component size="1920,1080">
+  <displayList>
+    <text id="n10_i02l" name="Text_Tips" xy="806,888" size="325,59" fontSize="40" color="#ffffff" text="点击任意位置继续">
+      <relation target="n11_i02l" sidePair="center-center,bottom-top"/>
+    </text>
+    <loader id="n11_i02l" name="Loader_MedalIcon" xy="776,175" size="404,375" url="ui://ls3uuggdd5hda" fill="scale">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <component id="n12_i02l" name="Component_RewardIcon" src="hqutz3m" pkg="s5cy5qnp" xy="906,696" size="130,130">
+      <relation target="n13_i02l" sidePair="center-center,middle-middle"/>
+    </component>
+    <text id="n13_i02l" name="Text_Condition" xy="834,603" size="275,59" fontSize="40" color="#ffffff" align="center" autoSize="height" text="主城达到100级">
+      <relation target="n11_i02l" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>i02l2c.xml|2631|<component size="1920,1080">
+  <controller name="State_C" pages="0,恢复中,1,已满" selected="0"/>
+  <displayList>
+    <component id="n0" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="left-left,top-top"/>
+      <Label title="策略"/>
+    </component>
+    <image id="n94_i02l" name="Image_ItemIcon" src="phdsozjb" pkg="s5cy5qnp" xy="1576,19">
+      <relation target="" sidePair="right-right,top-top"/>
+    </image>
+    <text id="n95_i02l" name="Text_ItemNum1" xy="1719,57" size="33,73" fontSize="50" color="#333333" text="6">
+      <relation target="n94_i02l" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n96_i02l" name="Text_ItemNum2" xy="1753,56" size="25,73" fontSize="50" color="#333333" text="/">
+      <relation target="n95_i02l" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n97_i02l" name="Text_ItemNum3" xy="1779,57" size="61,73" fontSize="50" color="#333333" text="12">
+      <relation target="n96_i02l" sidePair="left-right,top-top"/>
+    </text>
+    <list id="n104_i02l" name="List_Stragety" xy="46,158" size="1834,793" layout="flow_hz" overflow="scroll" lineGap="23" colGap="44" defaultItem="ui://hdkfki4ki02l2d">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n105_i02l" name="Button_GotoSituation" src="gr0bozdo" pkg="s5cy5qnp" xy="804,962" size="286,109" controller="Time_C,0,State_C,0">
+      <relation target="n104_i02l" sidePair="center-center,middle-middle"/>
+      <Button title="前往军情"/>
+    </component>
+    <image id="n106_i02l" name="Image_PopRecover" src="cwf2f" pkg="s5cy5qnp" xy="1704,0">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n95_i02l" sidePair="bottom-top,center-center"/>
+    </image>
+    <image id="n107_i02l" name="Image_PopFull" src="cwf2e" pkg="s5cy5qnp" xy="1707,1">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n95_i02l" sidePair="bottom-top,center-center"/>
+    </image>
+    <text id="n108_i02l" name="Text_Recover" xy="1720,4" size="107,33" fontSize="21" color="#ffffff" text="NN:NN:NN">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n106_i02l" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n109_i02l" name="Text_Full" xy="1745,1" size="47,33" fontSize="21" color="#ffffff" text="已满">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n107_i02l" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>i02l2d.xml|1310|<component size="880,353">
+  <controller name="State_C" pages="0,可用,1,倒计时中,2,未解锁" selected="0"/>
+  <displayList>
+    <graph id="n103_i02l" name="Graph_Background" xy="0,0" size="880,353" type="rect" lineSize="0" fillColor="#ff0066cc"/>
+    <loader id="n98_i02l" name="Loader_StragetyIcon" xy="0,0" size="300,300" url="ui://ls3uuggdd5hda" align="center" vAlign="middle" fill="scale"/>
+    <text id="n99_i02l" name="Text_Description" xy="303,6" size="577,243" fontSize="55" color="#ffffff" autoSize="none" text="使已方一支部队行军立即缩短N秒，冷却时间N小时啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"/>
+    <image id="n100_i02l" name="Loader_ItemIcon" src="phdsozjb" pkg="s5cy5qnp" xy="423,236">
+      <gearDisplay controller="State_C" pages="0,1"/>
+    </image>
+    <text id="n101_i02l" name="Text_ItemNumber1" xy="561,257" size="38,87" fontSize="60" color="#333333" text="6">
+      <gearDisplay controller="State_C" pages="0,1"/>
+    </text>
+    <text id="n102_i02l" name="Text_CountDown" xy="32,281" size="228,170" fontSize="60" color="#ff0000" autoSize="height" text="02:59:59">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <text id="n104_i02l" name="Text_Condition" xy="417,272" size="234,59" fontSize="40" color="#ff0000" text="君主N级开启">
+      <gearDisplay controller="State_C" pages="2"/>
+    </text>
+  </displayList>
+</component>i02l2e.xml|2172|<component size="1920,1080">
+  <controller name="State_C" pages="0,可换,1,不可切换,2,当前形象" selected="0"/>
+  <displayList>
+    <component id="n0" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="left-left,top-top"/>
+      <Label title="切换形象"/>
+    </component>
+    <loader id="n93_i02l" name="Loader_LargeIcon" xy="28,167" size="642,826" url="ui://s5cy5qnpov5eoz47" fill="scaleFree">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </loader>
+    <list id="n96_i02l" name="List_Head" xy="725,174" size="1171,624" layout="flow_hz" overflow="scroll" lineGap="15" colGap="32" lineItemCount="8" defaultItem="ui://hdkfki4ki02l2g">
+      <relation target="" sidePair="right-right,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n97_i02l" name="Button_ChangeHead" src="gr0bozdo" pkg="s5cy5qnp" xy="1119,857" size="286,109" controller="Time_C,0,State_C,0">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n96_i02l" sidePair="center-center,top-bottom"/>
+      <Button title="切换形象" titleFontSize="25"/>
+    </component>
+    <text id="n98_i02l" name="Text_Description2" xy="1176,885" size="165,59" fontSize="40" color="#ffffff" text="当前形象">
+      <gearDisplay controller="State_C" pages="2"/>
+      <relation target="n96_i02l" sidePair="center-center,top-bottom"/>
+    </text>
+    <text id="n99_i02l" name="Text_Description1" xy="1112,890" size="285,59" fontSize="40" color="#ff0000" text="请先获得该将魂">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n96_i02l" sidePair="center-center,top-bottom"/>
+    </text>
+  </displayList>
+</component>i02l2g.xml|893|<component size="117,118" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,lock" selected="0"/>
+  <displayList>
+    <graph id="n3_i02l" name="Graph_Frame" xy="0,0" size="117,118" type="rect" lineSize="0" fillColor="#ffffff00">
+      <gearDisplay controller="button" pages="1,2"/>
+    </graph>
+    <image id="n1" name="Image_Icon" src="ov5eoz48" pkg="s5cy5qnp" xy="4,4" size="110,110" grayed="true">
+      <gearDisplay controller="button" pages="2"/>
+      <gearColor controller="button" default="#ffffff"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="Image_IconCinefaction" src="ov5eoz48" pkg="s5cy5qnp" xy="4,4" size="110,110">
+      <gearDisplay controller="button" pages="0,1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>i02l2h.xml|2484|<component size="1920,1080">
+  <controller name="State_C" pages="0,正常,1,暂无印象,2,被对方禁止输入" selected="0"/>
+  <displayList>
+    <graph id="n0" name="Graph_Background" xy="0,0" size="1920,1080" alpha="0.6" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n14_i02l" name="Image_Base" src="cwf2k" pkg="s5cy5qnp" xy="465,215" size="1003,609">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <graph id="n15_i02l" name="Graph_InputTag" xy="781,664" size="360,100" alpha="0.7" type="rect" lineSize="0" fillColor="#ff0d1d37">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <relation target="n14_i02l" sidePair="left-left,top-top"/>
+    </graph>
+    <text id="n16_i02l" name="Text_InputTag" xy="820,669" size="287,91" input="true" font="微软雅黑" fontSize="36" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="点选或输入">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <relation target="n15_i02l" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n18_i02l" name="Text_Title" xy="769,260" size="427,56" font="微软雅黑" fontSize="40" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="您对该玩家的印象是？">
+      <relation target="n14_i02l" sidePair="left-left,top-top"/>
+    </text>
+    <component id="n19_i02l" name="Button_Confirm" src="gr0bozdm" pkg="s5cy5qnp" xy="1144,660" size="187,105" grayed="true" controller="State_C,0">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <relation target="n15_i02l" sidePair="left-right,top-top"/>
+      <Button title="确定" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <text id="n25_i02l" name="Text_Default" xy="907,457" size="165,59" fontSize="40" color="#ffffff" align="center" text="暂无印象">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <text id="n26_i02l" name="Text_Shield" xy="789,693" size="405,59" fontSize="40" color="#ffffff" align="center" text="对方已禁止您输入印象">
+      <gearDisplay controller="State_C" pages="2"/>
+    </text>
+    <list id="n27_i02l" name="List_Tag" xy="550,357" size="832,239" layout="flow_hz" overflow="scroll" defaultItem="ui://hdkfki4kr42d2n" vAlign="middle">
+      <gearDisplay controller="State_C" pages="0,2"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>i02l2k.xml|2477|<component size="1920,1080">
+  <controller name="State_C" pages="0,全部,1,日志" selected="0"/>
+  <displayList>
+    <graph id="n0" name="Graph_Background" xy="0,0" size="1920,1080" alpha="0.6" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n14_i02l" name="Image_Base" src="cwf2k" pkg="s5cy5qnp" xy="465,215" size="1075,609">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n18_i02l" name="Text_Title" xy="849,221" size="329,56" font="微软雅黑" fontSize="40" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="全部印象">
+      <relation target="n14_i02l" sidePair="center-center,middle-middle"/>
+    </text>
+    <list id="n32_i02l" name="List_TagRecord" xy="501,299" size="987,447" overflow="scroll" lineGap="15" defaultItem="ui://hdkfki4ki02l2l">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n14_i02l" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n33_ptp8" name="Text_Description" xy="752,768" size="536,43" font="微软雅黑" fontSize="30" color="#ff0000" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="屏蔽可使对方不能发送印象">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n14_i02l" sidePair="center-center,middle-middle"/>
+    </text>
+    <list id="n36_ptp8" name="List_TagAll" xy="475,300" size="1062,505" layout="flow_hz" overflow="scroll" lineGap="15" lineItemCount="3" defaultItem="ui://hdkfki4kptp82m">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n14_i02l" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n39_ptp8" name="Button_Change1" src="sjv5q" xy="1536,291" size="120,88">
+      <relation target="n14_i02l" sidePair=""/>
+      <Button checked="true" title="印象"/>
+    </component>
+    <component id="n40_ptp8" name="Button_Change2" src="sjv5q" xy="1540,403" size="120,88">
+      <relation target="n14_i02l" sidePair=""/>
+      <Button title="记录"/>
+    </component>
+  </displayList>
+</component>i02l2l.xml|719|<component size="1036,60">
+  <controller name="State_C" pages="0,自己,1,看别人" selected="0"/>
+  <displayList>
+    <text id="n25_i02l" name="Text_Date" xy="0,0" size="213,59" fontSize="40" color="#ffffff" align="center" text="2017/05/05"/>
+    <text id="n28_i02l" name="Text_Name" xy="192,0" size="309,59" fontSize="40" color="#00ff00" align="center" autoSize="height" underline="true" text="君主名字七个字"/>
+    <text id="n29_i02l" name="Text_Description" xy="509,0" size="221,59" fontSize="40" color="#ffffff" align="center" autoSize="none" text="留下印象："/>
+    <text id="n30_i02l" name="Text_Tag" xy="740,0" size="212,59" fontSize="40" color="#ffffff" align="center" autoSize="height" text="打不过就跑"/>
+  </displayList>
+</component>isxff.xml|412|<component size="1920,1080">
+  <displayList>
+    <component id="n0" name="Component_BG" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n13" name="Component_Main" src="q3hci" xy="458,235">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>jhye8.xml|9276|<component size="1920,1080">
+  <controller name="IsMainPlayer_C" pages="0,看自己,1,看别人" selected="0"/>
+  <controller name="buzuo" pages="0,v0.1,1,v0.2" selected="0"/>
+  <controller name="Flag_C" pages="0,有白旗,1,无白旗" selected="0"/>
+  <controller name="State_C" pages="0,未流亡,1,已流亡" selected="0"/>
+  <controller name="WhiteFlag_C" pages="0,,1," selected="0"/>
+  <controller name="Alliance_C" pages="0,有联盟,1,没有联盟" selected="0"/>
+  <displayList>
+    <component id="n0" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="君主"/>
+    </component>
+    <loader id="n32" name="Loader_LargeIcon" xy="60,198" size="642,826" url="ui://s5cy5qnpov5eoz47" fill="scaleFree">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <image id="n30" name="n30" src="cwf2k" pkg="s5cy5qnp" xy="702,201" size="1160,825">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n6" name="Button_FormerName" src="gr0bozdm" pkg="s5cy5qnp" xy="1646,211" size="214,97">
+      <relation target="n30" sidePair="center-center,middle-middle"/>
+      <Button title="曾用名" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <component id="n7" name="Button_Alliance" src="gr0bozdm" pkg="s5cy5qnp" xy="1646,334" size="214,97">
+      <gearDisplay controller="IsMainPlayer_C" pages="0"/>
+      <gearText controller="Alliance_C" pages="0" values="联盟" default="加入联盟"/>
+      <relation target="n30" sidePair="center-center,middle-middle"/>
+      <Button title="联盟" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <text id="n9" name="n9" xy="933,241" size="113,50" font="微软雅黑" fontSize="36" color="#ffffff" text="名字：">
+      <relation target="n31" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n10" name="n10" xy="933,339" size="113,50" font="微软雅黑" fontSize="36" color="#ffffff" text="联盟：">
+      <relation target="n31" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n11" name="Text_Name" xy="1046,241" size="257,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" autoSize="shrink" singleLine="true" text="君主名字七个字">
+      <relation target="n9" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n12" name="Text_Alliance" xy="1046,339" size="41,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" text="无">
+      <relation target="n10" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n13" name="n13" xy="740,437" size="185,50" font="微软雅黑" fontSize="36" color="#ffffff" text="防御战力：">
+      <relation target="n31" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n14" name="n14" xy="737,512" size="185,50" font="微软雅黑" fontSize="36" color="#ffffff" text="城池坐标：">
+      <relation target="n31" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n15" name="n15" xy="740,589" size="185,50" font="微软雅黑" fontSize="36" color="#ffffff" text="君主等级：">
+      <relation target="n31" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n16" name="n16" xy="736,666" size="185,50" font="微软雅黑" fontSize="36" color="#ffffff" text="城池等级：">
+      <relation target="n31" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n17" name="Text_FightAmount" xy="919,437" size="194,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" text="123456789">
+      <relation target="n13" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n18" name="Text_LordLevel" xy="917,590" size="47,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" text="50">
+      <relation target="n15" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n19" name="Text_CityLevel" xy="924,666" size="26,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" text="7">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n16" sidePair="left-right,top-top"/>
+    </text>
+    <image id="n20" name="n20" src="jhye3" xy="917,515">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n14" sidePair="left-right,top-top"/>
+    </image>
+    <component id="n38_dp8u" name="Label_Coords" src="dp8u12" xy="975,512">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n20" sidePair="left-right,top-top"/>
+    </component>
+    <component id="n23" name="ProgressBar_LordExp" src="7sz4ozib" pkg="s5cy5qnp" xy="1006,588" size="822,54">
+      <gearDisplay controller="IsMainPlayer_C" pages="0"/>
+      <relation target="n30" sidePair="left-right,top-top"/>
+      <ProgressBar value="1888" max="2000"/>
+    </component>
+    <graph id="n34" name="n34" xy="738,740" size="1089,3" type="rect" lineSize="0" fillColor="#ff4d6587">
+      <relation target="n31" sidePair="left-left,top-top"/>
+    </graph>
+    <component id="n24" name="ProgressBar_CityExp" src="7sz4ozib" pkg="s5cy5qnp" xy="1006,664" size="822,54">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n30" sidePair="left-right,top-top"/>
+      <ProgressBar value="2630" max="5000"/>
+    </component>
+    <component id="n25" name="Button_Rename" src="pnexozh7" pkg="s5cy5qnp" xy="1335,848" size="223,122">
+      <gearDisplay controller="IsMainPlayer_C" pages="0"/>
+      <relation target="n26" sidePair="right-left,bottom-bottom"/>
+      <Button title="改名" titleColor="#ffffff" titleFontSize="35" icon="ui://hdkfki4kjhye0"/>
+    </component>
+    <component id="n26" name="Button_Settings" src="pnexozh7" pkg="s5cy5qnp" xy="1610,848" size="223,122">
+      <gearDisplay controller="IsMainPlayer_C" pages="0"/>
+      <relation target="n30" sidePair="right-right,bottom-bottom"/>
+      <Button title="设置" titleColor="#ffffff" titleFontSize="35" icon="ui://hdkfki4kjhye6"/>
+    </component>
+    <component id="n27" name="Button_Mute" src="pnexozh7" pkg="s5cy5qnp" xy="1377,841" size="217,119">
+      <gearDisplay controller="buzuo" pages="1"/>
+      <relation target="n28" sidePair="right-left,bottom-bottom"/>
+      <Button title="屏蔽" titleColor="#ffffff" titleFontSize="24" icon="ui://hdkfki4ke3vkk" selectedTitle="已屏蔽"/>
+    </component>
+    <component id="n28" name="Button_Friend" src="pnexozh7" pkg="s5cy5qnp" xy="1634,845" size="215,115">
+      <gearDisplay controller="buzuo" pages="1"/>
+      <relation target="n30" sidePair="right-right,bottom-bottom"/>
+      <Button title="加好友" titleColor="#ffffff" titleFontSize="24" icon="ui://hdkfki4kjhye2"/>
+    </component>
+    <component id="n29" name="Label_Tips" src="qkljd" pkg="s5cy5qnp" xy="1298,198" visible="false">
+      <relation target="n11" sidePair="left-right,top-top"/>
+    </component>
+    <loader id="n31" name="Loader_SmallIcon" xy="743,238" size="160,160" url="ui://s5cy5qnpov5eoz48" fill="scaleFree">
+      <relation target="n30" sidePair="left-left,top-top"/>
+    </loader>
+    <component id="n37" name="Button_Chat" src="pnexozh7" pkg="s5cy5qnp" xy="1128,839" size="209,121">
+      <gearDisplay controller="buzuo" pages="1"/>
+      <relation target="n28" sidePair="right-left,bottom-bottom"/>
+      <Button title="私聊" titleColor="#ffffff" titleFontSize="24" icon="ui://hdkfki4kjhye1"/>
+    </component>
+    <component id="n40_gmur" name="Button_WhiteFlag" src="kb3o13" xy="583,206">
+      <gearDisplay controller="Flag_C" pages="0"/>
+      <relation target="n32" sidePair="right-right,top-top"/>
+    </component>
+    <text id="n52_j03t" name="n52" xy="927,665" size="185,50" font="微软雅黑" fontSize="36" color="#ffffff" text="城池已流亡">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n31" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n53_j03t" name="n53" xy="928,512" size="185,50" font="微软雅黑" fontSize="36" color="#ffffff" text="城池已流亡">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n31" sidePair="left-left,top-top"/>
+    </text>
+    <component id="n68_fz2k" name="WhiteFlag" src="d7kl1a" xy="0,0" size="1920,1080">
+      <gearDisplay controller="WhiteFlag_C" pages="1"/>
+    </component>
+    <component id="n60_q3wv" name="btn_lord" src="q3wv16" xy="40,1016" group="n69_kj5f">
+      <gearDisplay controller="IsMainPlayer_C" pages="0"/>
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </component>
+    <component id="n67_q3wv" name="btn_changeicon" src="jonb15" xy="767,401" group="n69_kj5f">
+      <gearDisplay controller="IsMainPlayer_C" pages="0"/>
+      <relation target="n31" sidePair="top-bottom,center-center"/>
+    </component>
+    <component id="n62_q3wv" name="btn_handbook" src="q3wv17" xy="215,1013" group="n69_kj5f">
+      <gearDisplay controller="IsMainPlayer_C" pages="0"/>
+      <relation target="" sidePair="bottom-bottom"/>
+    </component>
+    <component id="n64_q3wv" name="btn_stragety" src="q3wv18" xy="397,1013" group="n69_kj5f">
+      <gearDisplay controller="IsMainPlayer_C" pages="0"/>
+      <relation target="" sidePair="bottom-bottom"/>
+    </component>
+    <component id="n66_q3wv" name="btn_achievement" src="q3wv19" xy="582,1014" group="n69_kj5f">
+      <gearDisplay controller="IsMainPlayer_C" pages="0"/>
+      <relation target="" sidePair="bottom-bottom"/>
+    </component>
+    <group id="n69_kj5f" name="n69" xy="40,401" size="838,678" visible="false" advanced="true"/>
+  </displayList>
+</component>jonb15.xml|592|<component size="111,38">
+  <controller name="State_C" pages="0,看自己,1,看别人" selected="0"/>
+  <displayList>
+    <graph id="n50_oxej" name="Graph_Background" xy="0,0" size="111,38" type="rect" lineColor="#ffffffff" fillColor="#ff0066ff">
+      <gearDisplay controller="State_C" pages="0"/>
+    </graph>
+    <text id="n51_oxej" name="Text_Change" xy="6,2" size="100,34" fontSize="20" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" shadowColor="#000000" shadowOffset="1,1" text="更换形象">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+  </displayList>
+</component>kb3o13.xml|323|<component size="100,108">
+  <displayList>
+    <image id="n0_gmur" name="Image_Flag" src="dr701g" pkg="5m2ue2jo" xy="0,-4"/>
+    <text id="n1_gmur" name="Text_FlagName" xy="32,13" size="40,91" font="微软雅黑" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="旗号"/>
+  </displayList>
+</component>ousr2o.xml|149|<component size="400,400">
+  <displayList>
+    <image id="n0_ousr" name="n0" src="oz2of" pkg="4auusrtu" xy="-92,-117"/>
+  </displayList>
+</component>package.xml|4525|<packageDescription id="hdkfki4k" name="Lords">
+  <resources>
+    <component id="dp8u12" name="Label_Coords" path="/Label/" size="212,50"/>
+    <component id="haic1h" name="Label_Union_Mine" path="/Label/" size="244,43"/>
+    <component id="haic1l" name="Label_Union_Other" path="/Label/" size="244,43"/>
+    <component id="i02l1z" name="Component_Signature" path="/Component/" size="1048,233"/>
+    <component id="i02l20" name="Component_Tag_Add" path="/Component/" size="274,105"/>
+    <component id="i02l21" name="Component_Tag" path="/Component/" size="274,105"/>
+    <component id="i02l22" name="Component_MedalIcon" path="/Component/" size="150,150"/>
+    <component id="i02l24" name="Component_MedalCondition" path="/Component/" size="400,600"/>
+    <component id="i02l2d" name="Component_StragetyCard" path="/Component/" size="880,353"/>
+    <component id="i02l2g" name="Button_Head" path="/Button/" size="117,118"/>
+    <component id="i02l2l" name="Component_Tag_Record" path="/Component/" size="1036,60"/>
+    <component id="jonb15" name="Component_ChangeIcon" path="/Component/" size="111,38"/>
+    <component id="kb3o13" name="Component_whiteflag" path="/Component/" size="100,108"/>
+    <component id="ptp82m" name="Component_Tag_Delete" path="/Component/" size="357,105"/>
+    <component id="q3hci" name="Component_Rename" path="/Component/" size="1003,609"/>
+    <component id="q3wv16" name="Component_LordButton" path="/Component/" size="136,63"/>
+    <component id="q3wv17" name="Component_HandbookButton" path="/Component/" size="136,63"/>
+    <component id="q3wv18" name="Component_StragetyButton" path="/Component/" size="136,63"/>
+    <component id="q3wv19" name="Component_AchievementButton" path="/Component/" size="136,63"/>
+    <component id="r42d2n" name="Button_TagSelect" path="/Button/" size="274,105"/>
+    <component id="sjv510" name="Component_BlockItem" path="/Component/" size="1377,134"/>
+    <component id="sjv511" name="Component_BlockList" path="/Component/" size="1398,806"/>
+    <component id="sjv5q" name="Button_Tag" path="/Button/" size="354,132"/>
+    <component id="sjv5s" name="Button_Music" path="/Button/" size="61,66"/>
+    <component id="sjv5t" name="Button_Effect" path="/Button/" size="65,64"/>
+    <component id="sjv5z" name="Component_Setting" path="/Component/" size="1132,457"/>
+    <image id="e3vkk" name="Image_Ban" path="/Image/" size="55,55"/>
+    <image id="haic1i" name="lme" path="/Image/" size="32,40"/>
+    <image id="i02l25" name="quan_hui" path="/Image/" size="43,44"/>
+    <image id="i02l26" name="Image_RedBar" path="/Image/" size="43,44"/>
+    <image id="i02l27" name="Image_BlueBar" path="/Image/" size="43,44"/>
+    <image id="jhye0" name="Image_Rename" path="/Image/" size="88,68"/>
+    <image id="jhye1" name="Image_Chat" path="/Image/" size="94,65"/>
+    <image id="jhye2" name="Image_AddFriend" path="/Image/" size="68,60"/>
+    <image id="jhye3" name="Image_Coords" path="/Image/" size="40,45"/>
+    <image id="jhye6" name="Image_Settings" path="/Image/" size="62,62"/>
+    <image id="sjv5l" name="Image_Music" path="/Image/" size="37,51"/>
+    <image id="sjv5m" name="Image_MuteEffect" path="/Image/" size="43,51"/>
+    <image id="sjv5n" name="Image_MuteMusic" path="/Image/" size="50,47"/>
+    <image id="sjv5o" name="Image_Effect" path="/Image/" size="49,47"/>
+    <component id="d7kl1a" name="WhiteFlag" path="/" size="1920,1080" exported="true"/>
+    <component id="i02l1y" name="LordsMainV0.3" path="/" size="1920,1080" exported="true"/>
+    <component id="i02l23" name="MedalMainv0.3" path="/" size="1920,1080" exported="true"/>
+    <component id="i02l2a" name="PopUp_MedalRewardv0.3" path="/" size="1920,1080" exported="true"/>
+    <component id="i02l2c" name="StrategyMainv0.3" path="/" size="1920,1080" exported="true"/>
+    <component id="i02l2e" name="ChangeHeadv0.3" path="/" size="1920,1080" exported="true"/>
+    <component id="i02l2h" name="InputTagv0.3" path="/" size="1920,1080" exported="true"/>
+    <component id="i02l2k" name="AllTagv0.3" path="/" size="1920,1080" exported="true"/>
+    <component id="isxff" name="RenameMain" path="/" size="1920,1080" exported="true"/>
+    <component id="jhye8" name="LordsMain" path="/" size="1920,1080" exported="true"/>
+    <component id="ousr2o" name="Reference" path="/" size="400,400" exported="true"/>
+    <component id="sjv5p" name="SettingMain" path="/" size="1920,1080" exported="true"/>
+    <atlas id="atlas0" size="256,256" file="atlas0.png"/>
+  </resources>
+</packageDescription>ptp82m.xml|861|<component size="357,105">
+  <controller name="State_C" pages="0,自己查看,1,别人查看" selected="0"/>
+  <displayList>
+    <graph id="n83_i02l" name="Graph_Background" xy="0,22" size="245,83" type="rect" fillColor="#ffff9900"/>
+    <text id="n86_i02l" name="Text_Title" xy="12,39" size="224,59" fontSize="40" color="#ffffff" align="center" autoSize="height" text="标签五个字"/>
+    <graph id="n87_i02l" name="Graph_Tag" xy="224,0" size="49,48" type="eclipse" lineSize="0" fillColor="#ff3399cc"/>
+    <text id="n88_i02l" name="Text_Number" xy="226,4" size="48,59" fontSize="40" color="#ffffff" autoSize="height" text="99"/>
+    <component id="n95_ptp8" name="Button_Delete" src="gr0bozdm" pkg="s5cy5qnp" xy="277,21" size="65,83" controller="State_C,0">
+      <gearDisplay controller="State_C" pages="0"/>
+      <Button title="删"/>
+    </component>
+  </displayList>
+</component>q3hci.xml|1740|<component size="1003,609">
+  <displayList>
+    <image id="n2" name="Image_Background" src="cwf2k" pkg="s5cy5qnp" xy="0,0" size="1003,609">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <graph id="n4" name="Graph_BlueBase" xy="177,142" size="648,100" alpha="0.7" type="rect" lineSize="0" fillColor="#ff0d1d37">
+      <relation target="n2" sidePair="left-left,top-top"/>
+    </graph>
+    <text id="n5" name="Input_Name" xy="194,147" size="614,91" input="true" font="微软雅黑" fontSize="36" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="点此输入新名字">
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </text>
+    <component id="n6" name="Button_Change" src="knyu29" pkg="s5cy5qnp" xy="411,381" controller="Time_C,1,Type_C,0">
+      <relation target="n2" sidePair="left-left,top-top"/>
+      <Button title="更改"/>
+    </component>
+    <text id="n7" name="Text_ChangeName" xy="333,57" size="337,56" font="微软雅黑" fontSize="40" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="君主改名">
+      <relation target="n2" sidePair="left-left,top-top"/>
+    </text>
+    <component id="n8" name="Button_Copy" src="gr0bozdm" pkg="s5cy5qnp" xy="840,138" size="187,105" visible="false" controller="State_C,0">
+      <relation target="n4" sidePair="left-right,top-top"/>
+      <Button title="粘贴" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <text id="n13_r42d" name="Text_Cost" xy="462,303" size="79,50" font="微软雅黑" fontSize="36" color="#ffffff" align="center" vAlign="middle" text="cost">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>q3wv16.xml|355|<component size="136,63">
+  <displayList>
+    <image id="n55_q3wv" name="Image_Background" src="cwf2h" pkg="s5cy5qnp" xy="0,0"/>
+    <text id="n59_q3wv" name="Text_Lord" xy="13,6" size="111,49" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" shadowColor="#000000" shadowOffset="1,1" text="君主"/>
+  </displayList>
+</component>q3wv17.xml|358|<component size="136,63">
+  <displayList>
+    <image id="n56_q3wv" name="Image_Background" src="cwf2h" pkg="s5cy5qnp" xy="0,0"/>
+    <text id="n61_q3wv" name="Text_Handbook" xy="4,6" size="126,52" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" shadowColor="#000000" shadowOffset="1,1" text="图鉴"/>
+  </displayList>
+</component>q3wv18.xml|356|<component size="136,63">
+  <displayList>
+    <image id="n57_q3wv" name="Image_Stragety" src="cwf2h" pkg="s5cy5qnp" xy="0,0"/>
+    <text id="n63_q3wv" name="Text_Stragety" xy="8,8" size="122,46" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" shadowColor="#000000" shadowOffset="1,1" text="策略"/>
+  </displayList>
+</component>q3wv19.xml|361|<component size="136,63">
+  <displayList>
+    <image id="n58_q3wv" name="Image_Achivement" src="cwf2h" pkg="s5cy5qnp" xy="0,0"/>
+    <text id="n65_q3wv" name="Text_Achievement" xy="8,7" size="118,46" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" shadowColor="#000000" shadowOffset="1,1" text="成就"/>
+  </displayList>
+</component>r42d2n.xml|680|<component size="274,105" extention="Button" hitTest="n83_i02l">
+  <displayList>
+    <graph id="n83_i02l" name="Ground_Background" xy="0,22" size="245,83" type="rect" fillColor="#ffff9900"/>
+    <text id="n86_i02l" name="Text_Title" xy="12,39" size="224,59" fontSize="40" color="#ffffff" align="center" autoSize="height" text="标签五个字"/>
+    <graph id="n87_i02l" name="Graph_Tag" xy="224,0" size="49,48" type="eclipse" lineSize="0" fillColor="#ff3399cc"/>
+    <text id="n88_i02l" name="Text_TagNumber" xy="226,4" size="48,59" fontSize="40" color="#ffffff" autoSize="height" text="99"/>
+  </displayList>
+  <Button mode="Radio" downEffect="scale" downEffectValue="0.80"/>
+</component>sjv510.xml|1002|<component size="1377,134">
+  <displayList>
+    <graph id="n30" name="Graph_Background" xy="0,0" size="1377,134" type="rect" lineSize="0" fillColor="#ff183766"/>
+    <loader id="n31" name="Loader_LordIcon" xy="16,16" size="100,100" url="ui://hdkfki4kspwue" fill="scaleFree"/>
+    <text id="n32" name="Text_FlagName" xy="139,15" size="523,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="[旗号]君主名字七个字"/>
+    <text id="n33" name="Text_Level" xy="139,69" size="73,43" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" singleLine="true" text="等级:"/>
+    <text id="n34" name="Text_LevelNumber" xy="210,69" size="314,43" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" singleLine="true" text="70"/>
+    <component id="n35" name="Button_Remove" src="gr0bozdm" pkg="s5cy5qnp" xy="1163,16" size="203,106" controller="State_C,0">
+      <Button title="解除"/>
+    </component>
+  </displayList>
+</component>sjv511.xml|1099|<component size="1398,806" opaque="false">
+  <displayList>
+    <graph id="n3" name="Graph_Background" xy="0,50" size="1398,756" type="rect" lineSize="0" fillColor="#ff101a26">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <text id="n4" name="Text_Ban" xy="0,0" size="132,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" singleLine="true" text="屏蔽人数:">
+      <relation target="n3" sidePair="left-left,bottom-top"/>
+    </text>
+    <text id="n5" name="Text_BanList" xy="132,0" size="403,43" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="50/100">
+      <relation target="n4" sidePair="left-right,top-top"/>
+    </text>
+    <list id="n6" name="List_BanList" xy="8,59" size="1384,738" overflow="scroll" lineGap="10" defaultItem="ui://hdkfki4ksjv510">
+      <relation target="n3" sidePair="left-left,top-top"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>sjv5p.xml|1670|<component size="1920,1080">
+  <controller name="Tab_C" pages="0,声音,1,屏蔽名单" selected="0"/>
+  <controller name="buzuo" pages="0,v0.1,1,v0.2" selected="0"/>
+  <displayList>
+    <component id="n1" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="设置"/>
+    </component>
+    <image id="n20" name="Image_Base" src="cwf2k" pkg="s5cy5qnp" xy="334,152" size="1445,858">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n3" name="Button_Banlist" src="ntr0ozj4" pkg="s5cy5qnp" xy="69,399" size="226,204" controller="button,0">
+      <gearDisplay controller="buzuo" pages="1"/>
+      <relation target="n5" sidePair="left-left,top-bottom"/>
+      <Button title="屏蔽名单" titleFontSize="32" icon="ui://zat5frjddaq31g" controller="Tab_C" page="1"/>
+    </component>
+    <component id="n5" name="Button_Voice" src="ntr0ozj4" pkg="s5cy5qnp" xy="69,174" size="226,204" controller="button,1">
+      <relation target="n20" sidePair="left-left,top-top"/>
+      <Button checked="true" title="声音" icon="ui://zat5frjddaq31g" controller="Tab_C" page="0"/>
+    </component>
+    <component id="n26" name="Component_BanList" src="sjv511" xy="359,178">
+      <gearDisplay controller="buzuo" pages="1"/>
+      <relation target="n20" sidePair="left-left,top-top"/>
+    </component>
+    <component id="n27" name="Component_SoundPanel" src="sjv5z" xy="499,389">
+      <gearDisplay controller="Tab_C" pages="0"/>
+      <relation target="n20" sidePair="left-left,top-top"/>
+    </component>
+  </displayList>
+</component>sjv5q.xml|919|<component size="354,132" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <graph id="n6" name="icon" xy="0,0" size="338,132" type="rect" lineSize="0" fillColor="#ff41739a">
+      <gearSize controller="button" pages="1" values="354,132,1,1" default="338,132,1,1" tween="true"/>
+      <gearColor controller="button" pages="1" values="#46a0d4" default="#41739a" tween="true"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n4" name="title" xy="55,30" size="215,71" font="Noto Sans S Chinese Regular" fontSize="48" color="#ffffff" align="center" vAlign="middle" autoSize="height" singleLine="true" text="">
+      <gearXY controller="button" pages="0,1" values="55,30|78,40" tween="true"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>sjv5s.xml|489|<component size="61,66" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n1" name="Image_Music" src="sjv5l" xy="6,0" size="37,51" scale="1.3,1.3">
+      <gearDisplay controller="button" pages="0,2"/>
+    </image>
+    <image id="n2" name="Image_Silence" src="sjv5m" xy="6,0" size="43,51" scale="1.3,1.3">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>sjv5t.xml|474|<component size="65,64" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n4" name="Image_Speaker" src="sjv5o" xy="0,3" size="49,48" scale="1.3,1.3">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n5" name="Image_Silence" src="sjv5n" xy="0,2" scale="1.3,1.3">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>sjv5z.xml|1231|<component size="1132,457" opaque="false">
+  <displayList>
+    <component id="n1" name="Button_Effect" src="sjv5t" xy="237,337">
+      <relation target="n6" sidePair="left-right,top-top"/>
+    </component>
+    <component id="n2" name="Button_Music" src="sjv5s" xy="237,43">
+      <relation target="n5" sidePair="left-right,top-top"/>
+    </component>
+    <component id="n3" name="Slider_Music" src="iqo8ozig" pkg="s5cy5qnp" xy="325,39" size="798,88">
+      <relation target="n2" sidePair="left-right,top-top"/>
+      <Slider value="50" max="100"/>
+    </component>
+    <text id="n5" name="Text_BackgroundMusic" xy="0,48" size="197,66" font="微软雅黑" fontSize="48" color="#ffffff" ubb="true" singleLine="true" text="背景音乐">
+      <relation target="" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n6" name="Text_SoundEffect" xy="0,340" size="197,66" font="微软雅黑" fontSize="48" color="#ffffff" text="游戏音效">
+      <relation target="n5" sidePair="left-left,top-top"/>
+    </text>
+    <component id="n7_ckmd" name="Slider_Effect" src="iqo8ozig" pkg="s5cy5qnp" xy="325,326" size="798,88">
+      <relation target="n2" sidePair="left-right,top-top"/>
+      <Slider value="50" max="100"/>
+    </component>
+  </displayList>
+</component>

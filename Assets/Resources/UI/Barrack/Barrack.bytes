@@ -1,0 +1,324 @@
+cwf2g.xml|15002|<component size="1920,1080">
+  <controller name="Type_C" pages="0,新兵,1,伤兵" selected="0"/>
+  <controller name="Interesting_C" pages="0,隐藏伤兵,1," selected="0"/>
+  <displayList>
+    <component id="n2" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="士兵训练"/>
+    </component>
+    <component id="n79_xwim" name="Component_Light" src="no0zozhi" pkg="s5cy5qnp" xy="0,0" size="1920,1080" touchable="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n4" name="List_ConditionPanel" src="cwf2q" pkg="s5cy5qnp" xy="23,163">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </component>
+    <image id="n52_ywcp" name="Image_Light2" src="ywcp12" xy="969,139" pivot="0.5,0.5" scale="1.3,1" alpha="0" rotation="90">
+      <relation target="n51" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n55_ywcp" name="Image_Light1" src="ywcp15" xy="1101,278" pivot="0.5,0.5" alpha="0">
+      <relation target="n51" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n53_ywcp" name="Image_Base1" src="ywcp13" xy="1541,520" pivot="0.5,0.5" group="n72_ubg5" alpha="0" rotation="25"/>
+    <image id="n58_ywcp" name="Image_Base2" src="ywcp16" xy="1607,579" group="n72_ubg5" scale="0.25,0.25" alpha="0"/>
+    <image id="n59_ywcp" name="Image_Base3" src="ywcp16" xy="1648,524" group="n72_ubg5" scale="0.2,0.2" alpha="0"/>
+    <image id="n60_ywcp" name="Image_Base4" src="ywcp16" xy="1659,566" group="n72_ubg5" scale="0.3,0.3" alpha="0"/>
+    <image id="n61_ywcp" name="Image_Base5" src="ywcp16" xy="1657,622" group="n72_ubg5" scale="0.15,0.15" alpha="0"/>
+    <image id="n62_ywcp" name="Image_Base6" src="ywcp16" xy="1712,533" group="n72_ubg5" scale="0.2,0.2" alpha="0"/>
+    <group id="n72_ubg5" name="Group_Trans" xy="1541,520" size="256,121" advanced="true">
+      <relation target="n13" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n63_ywcp" name="Image_LightEffect1" src="ywcp13" xy="1538,849" pivot="0.5,0.5" group="n73_ubg5" alpha="0" rotation="43"/>
+    <image id="n64_ywcp" name="Image_LightEffect2" src="ywcp16" xy="1635,906" group="n73_ubg5" scale="0.25,0.25" alpha="0"/>
+    <image id="n65_ywcp" name="Image_LightEffect3" src="ywcp16" xy="1645,860" group="n73_ubg5" scale="0.15,0.15" alpha="0"/>
+    <image id="n66_ywcp" name="Image_LightEffect4" src="ywcp16" xy="1690,932" group="n73_ubg5" scale="0.3,0.3" alpha="0"/>
+    <image id="n67_ywcp" name="Image_LightEffect5" src="ywcp16" xy="1670,946" group="n73_ubg5" scale="0.15,0.15" alpha="0"/>
+    <image id="n68_ywcp" name="Image_LightEffect6" src="ywcp16" xy="1673,880" group="n73_ubg5" scale="0.2,0.2" alpha="0"/>
+    <image id="n69_ywcp" name="Image_LightEffect7" src="ywcp16" xy="1673,903" group="n73_ubg5" scale="0.25,0.25" alpha="0"/>
+    <image id="n70_ywcp" name="Image_LightEffect8" src="ywcp16" xy="1713,921" group="n73_ubg5" scale="0.15,0.15" alpha="0"/>
+    <image id="n71_ywcp" name="Image_LightEffect9" src="ywcp16" xy="1616,882" group="n73_ubg5" scale="0.2,0.2" alpha="0"/>
+    <group id="n73_ubg5" name="Group_Trans2" xy="1538,849" size="256,121" advanced="true">
+      <relation target="n26" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n27" name="Image_Base11" src="cwf2k" pkg="s5cy5qnp" xy="687,163" size="1201,206" group="n76_xwim"/>
+    <image id="n32" name="Image_Soldier" src="cwf2s" xy="738,179" group="n76_xwim"/>
+    <text id="n33" name="TextField_Soldier" xy="930,208" size="158,50" group="n76_xwim" font="微软雅黑" fontSize="36" color="#ffffff" text="士兵等阶:"/>
+    <text id="n34" name="TextField_Amount" xy="930,295" size="86,50" group="n76_xwim" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" singleLine="true" text="数量:"/>
+    <text id="n36" name="Text_SoldierLevel" xy="1091,208" size="78,50" group="n76_xwim" font="微软雅黑" fontSize="36" color="#0099ff" ubb="true" autoSize="height" singleLine="true" text="7"/>
+    <component id="n37" name="Button_Upgrade" src="iqo8ozif" pkg="s5cy5qnp" xy="1589,192" group="n76_xwim">
+      <Button title="进阶" icon="ui://lvfegrgtcwf29"/>
+    </component>
+    <component id="n40" name="Label_SoldierTips" src="pui2oz41" pkg="s5cy5qnp" xy="1079,248" group="n76_xwim"/>
+    <text id="n51" name="Text_SoldierAmount" xy="1018,291" pivot="0.5,0.5" size="487,56" group="n76_xwim" font="微软雅黑" fontSize="40" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="000/0000111"/>
+    <component id="n75_xwim" name="Label_Soldier" src="xwim18" xy="650,163" size="50,204" group="n76_xwim">
+      <Label title="士兵" titleFontSize="37"/>
+    </component>
+    <group id="n76_xwim" name="Group_Soldier" xy="650,163" size="1238,221" advanced="true">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </group>
+    <component id="n7" name="Component_Rookies" src="cwf2h" xy="680,382" group="n77_xwim">
+      <Button checked="true" controller="Type_C" page="0"/>
+    </component>
+    <component id="n13" name="Button_Train" src="iqo8ozif" pkg="s5cy5qnp" xy="1643,534" group="n77_xwim">
+      <Button title="训练" icon="ui://lvfegrgtcwf28"/>
+    </component>
+    <text id="n14" name="TextFiled_Rookie" xy="711,570" size="132,43" group="n77_xwim" font="微软雅黑" fontSize="30" color="#00cc00" ubb="true" singleLine="true" text="新兵总量:"/>
+    <text id="n16" name="Text_TrainAmount" xy="1034,569" size="298,50" group="n77_xwim" font="微软雅黑" fontSize="36" color="#ffffff" autoSize="height" text="训练:222"/>
+    <component id="n30" name="Label_Rookie" src="xwim19" xy="655,390" size="50,223" group="n77_xwim">
+      <Label title="新兵" titleFontSize="37"/>
+    </component>
+    <component id="n38" name="Label_NewSoldierTips" src="pui2oz41" pkg="s5cy5qnp" xy="901,522" group="n77_xwim"/>
+    <text id="n15" name="Text_NewSoldierAmount" xy="842,572" size="175,43" group="n77_xwim" font="微软雅黑" fontSize="30" color="#00cc00" ubb="true" autoSize="height" singleLine="true" text="0/0"/>
+    <component id="n81_xwim" name="Button_TrainSub" src="rmqpozfv" pkg="s5cy5qnp" xy="714,615" group="n77_xwim"/>
+    <component id="n82_xwim" name="Button_TrainAdd" src="rmqpozfv" pkg="s5cy5qnp" xy="1519,615" group="n77_xwim">
+      <Button icon="ui://s5cy5qnprmqpozft"/>
+    </component>
+    <component id="n83_xwim" name="Slider_Train" src="iqo8ozig" pkg="s5cy5qnp" xy="806,618" size="693,83" group="n77_xwim">
+      <Slider value="29" max="100"/>
+    </component>
+    <group id="n77_xwim" name="Group_Rookie" xy="655,382" size="1233,344" advanced="true">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </group>
+    <component id="n8" name="Component_Injured" src="cwf2i" xy="680,710" group="n78_xwim">
+      <Button controller="Type_C" page="1"/>
+    </component>
+    <text id="n22" name="TextField_Injured" xy="707,893" size="146,43" group="n78_xwim" font="微软雅黑" fontSize="30" color="#ff6600" ubb="true" autoSize="height" singleLine="true" text="伤兵总量:"/>
+    <text id="n23" name="Text_WoundedSoldierAmount" xy="853,894" size="159,43" group="n78_xwim" font="微软雅黑" fontSize="30" color="#ff6600" autoSize="height" text="0/0"/>
+    <text id="n24" name="Text_TreatAmount" xy="1045,885" size="149,50" group="n78_xwim" font="微软雅黑" fontSize="36" color="#ffffff" text="治疗:333"/>
+    <component id="n26" name="Button_Treat" src="iqo8ozif" pkg="s5cy5qnp" xy="1643,856" group="n78_xwim">
+      <Button title="治疗" icon="ui://lvfegrgtcwf2a"/>
+    </component>
+    <component id="n31" name="Label_InjuredSoldier" src="xwim1a" xy="655,713" size="50,223" group="n78_xwim">
+      <Label title="伤兵" titleFontSize="37"/>
+    </component>
+    <component id="n39" name="Label_WoundedSoldierTips" src="pui2oz41" pkg="s5cy5qnp" xy="908,827" group="n78_xwim"/>
+    <component id="n84_iqo8" name="Button_TreatSub" src="rmqpozfv" pkg="s5cy5qnp" xy="723,940" group="n78_xwim"/>
+    <component id="n85_iqo8" name="Button_TreatAdd" src="rmqpozfv" pkg="s5cy5qnp" xy="1528,940" group="n78_xwim">
+      <Button icon="ui://s5cy5qnprmqpozft"/>
+    </component>
+    <component id="n86_iqo8" name="Slider_Treat" src="iqo8ozig" pkg="s5cy5qnp" xy="814,944" size="693,83" group="n78_xwim">
+      <Slider value="29" max="100"/>
+    </component>
+    <group id="n78_xwim" name="Group_Injured" xy="655,710" size="1233,338" advanced="true">
+      <gearDisplay controller="Interesting_C" pages="1"/>
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </group>
+  </displayList>
+  <transition name="Add_T">
+    <item time="0" type="Alpha" target="n55_ywcp" value="0"/>
+    <item time="0" type="Alpha" target="n52_ywcp" tween="true" startValue="0" endValue="1" duration="1"/>
+    <item time="0" type="Scale" target="n55_ywcp" tween="true" startValue="0,1" endValue="1.3,1.3" duration="4"/>
+    <item time="0" type="Scale" target="n51" tween="true" startValue="1,1" endValue="1.1,1.1" duration="4"/>
+    <item time="0" type="XY" target="n52_ywcp" tween="true" startValue="807,141" endValue="1107,141" duration="8"/>
+    <item time="1" type="Alpha" target="n52_ywcp" tween="true" startValue="1" endValue="0.99" duration="5"/>
+    <item time="2" type="Alpha" target="n55_ywcp" value="1"/>
+    <item time="4" type="Scale" target="n55_ywcp" tween="true" startValue="1.3,1.3" endValue="1.5,0" duration="4"/>
+    <item time="4" type="Scale" target="n51" tween="true" startValue="1.1,1.1" endValue="1,1" duration="4"/>
+    <item time="6" type="Alpha" target="n52_ywcp" tween="true" startValue="0.99" endValue="0" duration="2"/>
+    <item time="6" type="Alpha" target="n55_ywcp" tween="true" startValue="1" endValue="0" duration="2"/>
+  </transition>
+  <transition name="Train_T">
+    <item time="0" type="Alpha" target="n58_ywcp" value="0"/>
+    <item time="0" type="Alpha" target="n53_ywcp" tween="true" startValue="1" endValue="1" duration="6"/>
+    <item time="0" type="Alpha" target="n60_ywcp" value="0"/>
+    <item time="0" type="Alpha" target="n61_ywcp" value="0"/>
+    <item time="0" type="Alpha" target="n59_ywcp" value="0"/>
+    <item time="0" type="Alpha" target="n62_ywcp" value="0"/>
+    <item time="0" type="Scale" target="n53_ywcp" tween="true" startValue="1,1" endValue="1,1" duration="8"/>
+    <item time="0" type="XY" target="n58_ywcp" tween="true" startValue="1623,578" endValue="1082,310" duration="9" ease="Linear"/>
+    <item time="0" type="XY" target="n53_ywcp" tween="true" startValue="1528,529.95" endValue="1039.3,302.15" duration="8"/>
+    <item time="1" type="Alpha" target="n58_ywcp" value="1"/>
+    <item time="1" type="XY" target="n59_ywcp" tween="true" startValue="1633,548" endValue="1135,309" duration="9" ease="Linear"/>
+    <item time="2" type="Alpha" target="n59_ywcp" value="1"/>
+    <item time="2" type="XY" target="n60_ywcp" tween="true" startValue="1659,566" endValue="1104,302" duration="9" ease="Circ.Out"/>
+    <item time="3" type="Alpha" target="n60_ywcp" value="1"/>
+    <item time="3" type="XY" target="n62_ywcp" tween="true" startValue="1704,585" endValue="1122,302" duration="9"/>
+    <item time="3" type="XY" target="n61_ywcp" tween="true" startValue="1665,606" endValue="1091,309" duration="9"/>
+    <item time="4" type="Alpha" target="n61_ywcp" value="1"/>
+    <item time="4" type="Alpha" target="n62_ywcp" value="1"/>
+    <item time="6" type="Alpha" target="n53_ywcp" tween="true" startValue="1" endValue="0.01" duration="2"/>
+    <item time="8" type="Alpha" target="n58_ywcp" tween="true" startValue="1" endValue="0.01" duration="2"/>
+    <item time="9" type="Alpha" target="n59_ywcp" tween="true" startValue="1" endValue="0.01" duration="2"/>
+    <item time="10" type="Alpha" target="n60_ywcp" tween="true" startValue="1" endValue="0.01" duration="2"/>
+    <item time="11" type="Alpha" target="n61_ywcp" tween="true" startValue="1" endValue="0.01" duration="2"/>
+    <item time="11" type="Alpha" target="n62_ywcp" tween="true" startValue="1" endValue="0.01" duration="2"/>
+  </transition>
+  <transition name="Treat_T">
+    <item time="0" type="Alpha" target="n65_ywcp" tween="true" startValue="0" endValue="1" duration="2"/>
+    <item time="0" type="Alpha" target="n63_ywcp" value="1"/>
+    <item time="0" type="Alpha" target="n71_ywcp" tween="true" startValue="0" endValue="1" duration="2"/>
+    <item time="0" type="Alpha" target="n64_ywcp" tween="true" startValue="0" endValue="1" duration="2"/>
+    <item time="0" type="XY" target="n63_ywcp" tween="true" startValue="1538.05,849.95" endValue="1022,317.9" duration="10"/>
+    <item time="1" type="Alpha" target="n68_ywcp" tween="true" startValue="0" endValue="1" duration="2"/>
+    <item time="1" type="XY" target="n65_ywcp" tween="true" startValue="1645,860" endValue="1112,308" duration="9"/>
+    <item time="1" type="XY" target="n71_ywcp" tween="true" startValue="1616,882" endValue="1061,310" duration="10"/>
+    <item time="1" type="XY" target="n64_ywcp" tween="true" startValue="1635,906" endValue="1085,303" duration="10"/>
+    <item time="2" type="Alpha" target="n67_ywcp" tween="true" startValue="0" endValue="1" duration="2"/>
+    <item time="2" type="Alpha" target="n69_ywcp" tween="true" startValue="0" endValue="1" duration="2"/>
+    <item time="2" type="XY" target="n68_ywcp" tween="true" startValue="1673,880" endValue="1117,304" duration="10"/>
+    <item time="3" type="Alpha" target="n66_ywcp" tween="true" startValue="0" endValue="1" duration="2"/>
+    <item time="3" type="Alpha" target="n70_ywcp" tween="true" startValue="0" endValue="1" duration="2"/>
+    <item time="3" type="XY" target="n69_ywcp" tween="true" startValue="1673,903" endValue="1132,302" duration="10"/>
+    <item time="3" type="XY" target="n67_ywcp" tween="true" startValue="1670,946" endValue="1048,310" duration="10"/>
+    <item time="4" type="XY" target="n66_ywcp" tween="true" startValue="1690,932" endValue="1073,301" duration="10"/>
+    <item time="4" type="XY" target="n70_ywcp" tween="true" startValue="1713,921" endValue="1156,308" duration="10"/>
+    <item time="9" type="Alpha" target="n63_ywcp" tween="true" startValue="1" endValue="0" duration="2"/>
+    <item time="9" type="Alpha" target="n65_ywcp" tween="true" startValue="1" endValue="0" duration="2"/>
+    <item time="10" type="Alpha" target="n71_ywcp" tween="true" startValue="1" endValue="0" duration="2"/>
+    <item time="10" type="Alpha" target="n64_ywcp" tween="true" startValue="1" endValue="0" duration="2"/>
+    <item time="11" type="Alpha" target="n68_ywcp" tween="true" startValue="1" endValue="0" duration="2"/>
+    <item time="12" type="Alpha" target="n69_ywcp" tween="true" startValue="1" endValue="0" duration="2"/>
+    <item time="12" type="Alpha" target="n67_ywcp" tween="true" startValue="1" endValue="0" duration="2"/>
+    <item time="13" type="Alpha" target="n66_ywcp" tween="true" startValue="1" endValue="0" duration="2"/>
+    <item time="13" type="Alpha" target="n70_ywcp" tween="true" startValue="1" endValue="0" duration="2"/>
+  </transition>
+</component>cwf2h.xml|425|<component size="1208,334" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n2_iqo8" name="Image_Light" src="gce7ozjt" pkg="s5cy5qnp" xy="0,0" size="1208,334">
+      <gearDisplay controller="button" pages="1,2,3"/>
+    </image>
+    <image id="n1" name="Image_Base" src="cwf2b" xy="12,12" size="1184,312"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>cwf2i.xml|420|<component size="1208,334" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n2" name="Image_Light" src="gce7ozjt" pkg="s5cy5qnp" xy="0,0" size="1208,334">
+      <gearDisplay controller="button" pages="1,2,3"/>
+    </image>
+    <image id="n3" name="Image_Base" src="cwf27" xy="11,11" size="1184,312"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>cwf2t.xml|3680|<component size="1920,1080">
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <controller name="Level_C" pages="1,weimanji,0,yimanji" selected="0"/>
+  <displayList>
+    <component id="n1" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="士兵进阶"/>
+    </component>
+    <component id="n2" name="Component_Condition" src="cwf2q" pkg="s5cy5qnp" xy="1,163" size="582,870">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </component>
+    <component id="n22" name="Component_Qi" src="f162z" xy="777,107">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n23" name="Component_Che" src="f162z" xy="1291,96">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n24" name="Component_Gong" src="f162z" xy="592,425">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n25" name="Component_Xie" src="f162z" xy="1521,429">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n26" name="Component_Bu" src="f162z" xy="1053,448">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n29" name="Button_Relations" src="jtoyozw2" pkg="s5cy5qnp" xy="1810,116" size="80,71">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button icon="ui://s5cy5qnpo3io1g"/>
+    </component>
+    <component id="n40_iqo8" name="Component_Shine" src="no0zozhi" pkg="s5cy5qnp" xy="0,0" size="1920,1080" touchable="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n5" name="Image_Base" src="no0zozht" pkg="s5cy5qnp" xy="440,891" size="1290,143" group="n41_uqot" alpha="0.6" color="#1e678f"/>
+    <text id="n14" name="Text_CurrDesc" xy="679,968" size="398,43" group="n41_uqot" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" singleLine="true" text="策划配置"/>
+    <text id="n15" name="Text_NextDesc" xy="1199,968" size="381,43" group="n41_uqot" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" singleLine="true" text="策划配置">
+      <gearDisplay controller="Level_C" pages="1"/>
+      <relation target="n36_kjd6" sidePair="left-left,top-bottom"/>
+    </text>
+    <image id="n16" name="Image_Arrow" src="ujpiozgo" pkg="s5cy5qnp" xy="1097,942" size="70,59" group="n41_uqot">
+      <gearDisplay controller="Level_C" pages="1"/>
+      <relation target="n5" sidePair="center-center,middle-middle"/>
+      <relation target="n5" sidePair=""/>
+    </image>
+    <component id="n36_kjd6" name="Label_NextLevel" src="iqo81c" xy="1210,913" size="181,47" group="n41_uqot">
+      <gearDisplay controller="Level_C" pages="1"/>
+      <relation target="n5" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n37_kjd6" name="Label_CurrLevel" src="kjd617" xy="677,907" size="181,47" group="n41_uqot">
+      <relation target="n5" sidePair="center-center,middle-middle"/>
+      <Label title="第5阶" icon="ui://lvfegrgtcwf24"/>
+    </component>
+    <component id="n38_iqo8" name="Button_Upgrade" src="iqo8ozif" pkg="s5cy5qnp" xy="1641,876" group="n41_uqot">
+      <Button title="进阶" icon="ui://lvfegrgtcwf29"/>
+    </component>
+    <group id="n41_uqot" name="Group_BottomRight" xy="440,876" size="1362,192" advanced="true">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </group>
+  </displayList>
+</component>f162z.xml|455|<component size="367,387">
+  <displayList>
+    <image id="n22" name="Image_Basement" src="d0qz11" xy="1,271">
+      <relation target="" sidePair="left-left,top-top"/>
+    </image>
+    <component id="n21" name="Label_SoldierType" src="g3jhozvv" pkg="s5cy5qnp" xy="158,327">
+      <relation target="n22" sidePair="center-center,top-top"/>
+    </component>
+    <graph id="n23_jpeh" name="Graph_Model" xy="46,36" size="191,268"/>
+  </displayList>
+</component>iqo81c.xml|366|<component size="198,55" extention="Label">
+  <displayList>
+    <image id="n4_iqo8" name="icon" src="ur0iozi0" pkg="s5cy5qnp" xy="1,0" size="190,55" color="#cc3300"/>
+    <text id="n1" name="title" xy="8,3" size="190,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="第6阶"/>
+  </displayList>
+</component>kjd617.xml|366|<component size="198,55" extention="Label">
+  <displayList>
+    <image id="n4_iqo8" name="icon" src="ur0iozi0" pkg="s5cy5qnp" xy="1,0" size="190,55" color="#339900"/>
+    <text id="n1" name="title" xy="8,3" size="190,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="第6阶"/>
+  </displayList>
+</component>package.xml|1818|<packageDescription id="lvfegrgt" name="Barrack">
+  <resources>
+    <component id="cwf2h" name="Button_Train" path="/Button/" size="1208,334"/>
+    <component id="cwf2i" name="Button_Treat" path="/Button/" size="1208,334"/>
+    <component id="f162z" name="Component_Model" path="/Component/" size="367,387"/>
+    <component id="iqo81c" name="Label_NextLevel" path="/Label/" size="198,55"/>
+    <component id="kjd617" name="Label_CurrLevel" path="/Label/" size="198,55"/>
+    <component id="xwim18" name="Label_Soldier" path="/Label/" size="50,259"/>
+    <component id="xwim19" name="Label_NewSoldier" path="/Label/" size="50,256"/>
+    <component id="xwim1a" name="Label_WoundedSoldier" path="/Label/" size="50,256"/>
+    <image id="cwf27" name="Image_WoundedSoldier" path="/Image/" size="1000,312"/>
+    <image id="cwf28" name="Image_Train" path="/Image/" size="138,92"/>
+    <image id="cwf29" name="Image_Upgrade" path="/Image/" size="96,92"/>
+    <image id="cwf2a" name="Image_Treat" path="/Image/" size="74,75"/>
+    <image id="cwf2b" name="Image_NewSoldier" path="/Image/" size="1000,312"/>
+    <image id="cwf2s" name="Image_SoldierIcon" path="/Image/" size="171,171"/>
+    <image id="d0qz11" name="Image_Stage" path="/Image/" size="366,113"/>
+    <image id="ywcp12" name="guangxian_02" path="/Image/" size="110,351"/>
+    <image id="ywcp13" name="guangxian_03" path="/Image/" size="256,100"/>
+    <image id="ywcp15" name="guoxian01" path="/Image/" size="300,75"/>
+    <image id="ywcp16" name="guandian_03" path="/Image/" size="128,128"/>
+    <component id="cwf2g" name="BarrackMain" path="/" size="1920,1080" exported="true"/>
+    <component id="cwf2t" name="UpgradeMain" path="/" size="1920,1080" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>xwim18.xml|498|<component size="50,259" extention="Label">
+  <displayList>
+    <image id="n2_xwim" name="icon" src="no0zozhs" pkg="s5cy5qnp" xy="0,2" size="50,257" color="#45ade6">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3_xwim" name="title" xy="1,14" size="48,243" font="微软雅黑" fontSize="30" color="#ffffff" align="center" autoSize="none" text="种植术">
+      <relation target="n2_xwim" sidePair="center-center,top-top"/>
+    </text>
+  </displayList>
+</component>xwim19.xml|499|<component size="50,256" extention="Label">
+  <displayList>
+    <image id="n2_xwim" name="icon" src="no0zozhs" pkg="s5cy5qnp" xy="0,-1" size="50,257" color="#66cc00">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3_xwim" name="title" xy="1,11" size="48,243" font="微软雅黑" fontSize="30" color="#ffffff" align="center" autoSize="none" text="种植术">
+      <relation target="n2_xwim" sidePair="center-center,top-top"/>
+    </text>
+  </displayList>
+</component>xwim1a.xml|499|<component size="50,256" extention="Label">
+  <displayList>
+    <image id="n2_xwim" name="icon" src="no0zozhs" pkg="s5cy5qnp" xy="0,-1" size="50,257" color="#cc3d00">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3_xwim" name="title" xy="1,11" size="48,243" font="微软雅黑" fontSize="30" color="#ffffff" align="center" autoSize="none" text="种植术">
+      <relation target="n2_xwim" sidePair="center-center,top-top"/>
+    </text>
+  </displayList>
+</component>

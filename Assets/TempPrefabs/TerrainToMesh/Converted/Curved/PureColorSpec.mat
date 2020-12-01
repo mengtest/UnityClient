@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PureColorSpec
+  m_Shader: {fileID: 4800000, guid: 76a9b206aa1867d4398c44a8a68198c7, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 8d5e8b261dbfd584b8e619807fdbbbff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Spectural
+      second:
+        m_Texture: {fileID: 2800000, guid: 3357180e66f16fb439b28a39d7b9cce5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecturalDetail
+      second:
+        m_Texture: {fileID: 2800000, guid: c0479ecbcffddab48b673cf4633022f8, type: 3}
+        m_Scale: {x: 8, y: 8}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecturalRate
+      second:
+        m_Texture: {fileID: 2800000, guid: 03af2ace63ac8e1408adb03beac1b364, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - first:
+        name: _RColor
+      second: {r: 0.9852941, g: 0.9325319, b: 0.63754326, a: 1}

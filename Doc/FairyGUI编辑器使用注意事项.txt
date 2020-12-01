@@ -1,0 +1,1 @@
+1.列表内item的url尽量不要写入到UIConfig.lua中,使用list.defaultItem做逻辑处理

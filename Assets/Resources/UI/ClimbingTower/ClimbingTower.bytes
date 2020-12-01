@@ -1,0 +1,680 @@
+81sk3d.xml|1794|<component size="1250,819">
+  <displayList>
+    <image id="n29_fmw6" name="Image_Base" src="cwf2k" pkg="s5cy5qnp" xy="20,7" size="1204,804">
+      <relation target="" sidePair="left-left,top-top"/>
+    </image>
+    <text id="n10" name="TextField_MopUp" xy="437,25" size="375,69" font="微软雅黑" fontSize="50" color="#cee5ff" align="center" vAlign="middle" leading="6" letterSpacing="2" autoSize="height" text="扫荡千重楼"/>
+    <text id="n11" name="TextField_MopUpTimes" xy="42,690" size="155,46" font="微软雅黑" fontSize="30" color="#fefeff" leading="6" ubb="true" singleLine="true" text="扫荡次数：&#xA;"/>
+    <text id="n12" name="TextField_Reset" xy="42,747" size="258,43" font="微软雅黑" fontSize="30" color="#fefeff" leading="6" ubb="true" autoSize="height" singleLine="true" text="每日10：10重置"/>
+    <text id="n15" name="TextField_Record" xy="790,748" size="57,39" font="微软雅黑" fontSize="26" color="#fefeff" leading="6" text="最高">
+      <relation target="n16" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n16" name="TextField_Max" xy="857,744" size="99,43" font="微软雅黑" fontSize="30" color="#ffef80" leading="6" ubb="true" autoSize="height" singleLine="true" text="20层"/>
+    <text id="n26" name="TextField_RemainTimes" xy="192,691" size="109,43" font="微软雅黑" fontSize="30" color="#fefeff" leading="6" ubb="true" autoSize="height" singleLine="true" text="30">
+      <relation target="n11" sidePair="right-right,top-top"/>
+    </text>
+    <component id="n28_gmml" name="Component_Award" src="skcl26" xy="43,114">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n32_9lik" name="Button_Skip" src="gr0bozdm" pkg="s5cy5qnp" xy="968,704" pivot="0.5,0.5" controller="State_C,0">
+      <Button title="跳过动画"/>
+    </component>
+  </displayList>
+</component>81sk3f.xml|784|<component size="1920,1080">
+  <displayList>
+    <component id="n39_81sk" name="Component_Background" src="81sk3g" xy="0,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n44_9lik" name="Button_Background" src="gmml2u" xy="3,0" size="1920,1080">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n41_9lik" name="Component_Skip" src="81sk3d" xy="335,132">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <image id="n40_fwpq" name="Image_Light" src="fwpq3i" xy="1578,792" pivot="0.5,0.5" size="275,121" alpha="0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+  </displayList>
+</component>81sk3g.xml|58|<component size="1920,1080">
+  <displayList/>
+</component>fwpq3l.xml|887|<movieclip interval="41" frameCount="24">
+  <frames>
+    <frame rect="47,46,108,107"/>
+    <frame rect="41,40,120,119"/>
+    <frame rect="35,35,130,129"/>
+    <frame rect="31,32,138,136"/>
+    <frame rect="29,29,142,141"/>
+    <frame rect="26,27,147,146"/>
+    <frame rect="24,25,151,150"/>
+    <frame rect="22,24,154,152"/>
+    <frame rect="21,22,157,156"/>
+    <frame rect="19,21,160,158"/>
+    <frame rect="18,19,162,162"/>
+    <frame rect="16,18,166,164"/>
+    <frame rect="15,17,168,166"/>
+    <frame rect="14,16,170,169"/>
+    <frame rect="13,15,172,171"/>
+    <frame rect="12,14,174,173"/>
+    <frame rect="10,13,177,175"/>
+    <frame rect="10,13,177,176"/>
+    <frame rect="9,12,179,177"/>
+    <frame rect="9,12,179,177"/>
+    <frame rect="9,12,178,177"/>
+    <frame rect="9,12,177,177"/>
+    <frame rect="9,12,178,177"/>
+    <frame rect="8,12,180,178"/>
+  </frames>
+</movieclip>fwpq3m.xml|544|<movieclip interval="41" frameCount="15">
+  <frames>
+    <frame rect="3,129,3,8"/>
+    <frame rect="3,91,17,46"/>
+    <frame rect="3,53,31,84"/>
+    <frame rect="3,15,44,122"/>
+    <frame rect="3,2,58,135"/>
+    <frame rect="3,2,72,135"/>
+    <frame rect="3,2,86,135"/>
+    <frame rect="13,2,88,135"/>
+    <frame rect="26,2,76,135"/>
+    <frame rect="41,2,61,135"/>
+    <frame rect="55,2,47,129"/>
+    <frame rect="68,2,34,90"/>
+    <frame rect="82,2,20,53"/>
+    <frame rect="95,2,7,17"/>
+    <frame rect="97,2,5,11"/>
+  </frames>
+</movieclip>gmml2u.xml|334|<component size="1920,1080" extention="Button">
+  <displayList>
+    <graph id="n0" name="Graph_Background" xy="0,0" size="1920,1080" alpha="0.7" type="rect" lineSize="0" lineColor="#03000000" fillColor="#ff070e21">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+  </displayList>
+  <Button/>
+</component>kkzy3p.xml|955|<component size="707,645" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n82_mfce" name="Image_Stairs" src="skclw" xy="215,2" size="329,201" scale="0.9,1"/>
+    <component id="n81_mfce" name="Button_Mission" src="skcl1k" xy="3,69" size="300,300">
+      <Button controller="button" page="1"/>
+    </component>
+    <component id="n83_eabf" name="Component_Description" src="mfce2g" xy="-359,154" touchable="false">
+      <gearDisplay controller="button" pages="1"/>
+    </component>
+    <image id="n84_eabf" name="Image_Arrow" src="skcl8" xy="-18,217" size="22,41" flip="hz">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="Selected_T" options="2">
+    <item time="0" type="Size" target="n81_mfce" value="301,300"/>
+    <item time="23" type="Size" target="n81_mfce" value="301,300"/>
+  </transition>
+</component>kkzy3q.xml|1085|<component size="980,388" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n51" name="Image_Stairs" src="skclw" xy="214,0" size="329,201" scale="0.9,1"/>
+    <component id="n50" name="Button_Mission" src="skcl1k" xy="-1,56" pivot="0.5,0.5">
+      <Button controller="button" page="1"/>
+    </component>
+    <component id="n53_eabf" name="Component_Description" src="mfce2g" xy="-359,135" touchable="false">
+      <gearDisplay controller="button" pages="1"/>
+    </component>
+    <image id="n54_eabf" name="Image_Arrow" src="skcl8" xy="-17,200" size="22,41" flip="hz">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="Selected_T" options="2" autoPlayRepeat="-1">
+    <item time="0" type="Scale" target="n50" tween="true" startValue="1,1" endValue="1.05,1.05" duration="18" ease="Linear"/>
+    <item time="18" type="Scale" target="n50" tween="true" startValue="1.05,1.05" endValue="1,1" duration="18" ease="Linear"/>
+  </transition>
+</component>kkzy3r.xml|941|<component size="707,394" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n74_mfce" name="Image_Stairs" src="skclw" xy="209,2" size="329,201" scale="0.9,1" flip="hz"/>
+    <component id="n73_mfce" name="Button_Mission" src="skcl1k" xy="408,63">
+      <Button controller="button" page="1"/>
+    </component>
+    <component id="n76_eabf" name="Component_Description" src="mfce2g" xy="737,160" touchable="false">
+      <gearDisplay controller="button" pages="1"/>
+    </component>
+    <image id="n75_eabf" name="Image_Arrow" src="skcl8" xy="710,225" size="22,41">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="Selected_T" options="2">
+    <item time="0" type="Size" target="n73_mfce" value="300,300"/>
+    <item time="18" type="Size" target="n73_mfce" value="300,300"/>
+  </transition>
+</component>kkzy3s.xml|848|<component size="707,668" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <component id="n78_mfce" name="Button_Mission" src="skcl1k" xy="405,346">
+      <Button checked="true" controller="button" page="1"/>
+    </component>
+    <component id="n79_eabf" name="Component_Description" src="mfce2g" xy="738,442" touchable="false">
+      <gearDisplay controller="button" pages="1"/>
+    </component>
+    <image id="n80_eabf" name="img_jiantou" src="skcl8" xy="712,505" size="22,41">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="Selected_T" options="2">
+    <item time="0" type="Size" target="n78_mfce" value="300,300"/>
+    <item time="14" type="Size" target="n78_mfce" value="300,300"/>
+  </transition>
+</component>kkzy3t.xml|3193|<component size="272,245">
+  <controller name="State_C" pages="0,3x,1,2x,2,1x,3,4x" selected="3"/>
+  <displayList>
+    <graph id="n21" name="gra_bg1" xy="0,76" size="272,169" group="n73_fmw6" alpha="0.8" type="rect" lineSize="0" fillColor="#ff112b40" corner="6">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </graph>
+    <graph id="n22" name="gra_bg2" xy="0,0" size="272,69" group="n73_fmw6" alpha="0.8" type="rect" lineSize="0" fillColor="#ff112b40" corner="6">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </graph>
+    <text id="n26" name="txt_curFloor" xy="6,13" size="255,43" group="n73_fmw6" font="微软雅黑" fontSize="30" color="#acd1f5" align="center" vAlign="middle" letterSpacing="2" ubb="true" autoSize="height" singleLine="true" text="当前第20层">
+      <relation target="n22" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n28" name="txt_reset" xy="1,132" size="270,43" group="n73_fmw6" font="微软雅黑" fontSize="30" color="#acd1f5" align="center" vAlign="middle" letterSpacing="2" ubb="true" autoSize="height" singleLine="true" text="每日10：10重置">
+      <relation target="n21" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n29" name="txt_zuigao" xy="39,187" size="104,43" group="n73_fmw6" font="微软雅黑" fontSize="30" color="#acd1f5" letterSpacing="2" ubb="true" autoSize="height" singleLine="true" text="最高：">
+      <relation target="n21" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n30" name="txt_max" xy="142,187" size="125,45" group="n73_fmw6" font="微软雅黑" fontSize="32" color="#fdee6b" letterSpacing="2" ubb="true" autoSize="height" singleLine="true" text="20">
+      <relation target="n21" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n35" name="img_xing3" src="nbqf3u" xy="30,90" size="42,40" group="n73_fmw6" color="#ffd52b">
+      <gearDisplay controller="State_C" pages="0,1,2"/>
+      <relation target="n21" sidePair="left-left,top-top"/>
+    </image>
+    <image id="n36" name="img_xing2" src="nbqf3u" xy="111,90" size="42,40" group="n73_fmw6" color="#ffd52b">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <relation target="n21" sidePair="center-center,top-top"/>
+    </image>
+    <image id="n37" name="img_xing" src="nbqf3u" xy="191,90" size="42,40" group="n73_fmw6" color="#ffd52b">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n21" sidePair="right-right,top-top"/>
+    </image>
+    <image id="n65_mfce" name="img_xinghei" src="nbqf3u" xy="29,88" size="42,40" group="n73_fmw6" color="#0d192e">
+      <gearDisplay controller="State_C" pages="3"/>
+    </image>
+    <image id="n66_mfce" name="img_xinghei2" src="nbqf3u" xy="110,89" size="42,40" group="n73_fmw6" color="#0d192e">
+      <gearDisplay controller="State_C" pages="3"/>
+    </image>
+    <image id="n67_mfce" name="img_xinghei3" src="nbqf3u" xy="191,89" size="42,40" group="n73_fmw6" color="#0d192e">
+      <gearDisplay controller="State_C" pages="3"/>
+    </image>
+    <group id="n73_fmw6" name="group_wenzi" xy="0,0" size="272,245" advanced="true">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </group>
+  </displayList>
+</component>lx2i2b.xml|3840|<component size="1920,1081" adaptationTest="FitSize">
+  <displayList>
+    <component id="n53_gmml" name="Component_Background" src="no0zozhl" pkg="s5cy5qnp" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n56_rnxd" name="Button_Background" src="gmml2u" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <text id="n40" name="TextField_Open" xy="707,972" size="503,43" font="微软雅黑" fontSize="30" color="#aaaaaa" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="宝箱请去背包开启">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <component id="n48" name="Component_Gain" src="lx2i2d" xy="0,387">
+      <relation target="n53_gmml" sidePair="center-center,middle-middle"/>
+    </component>
+    <image id="n29" name="Image_Effect" src="skclj" xy="771,26" pivot="0.52,0.47" size="381,385" group="n55_9lik">
+      <relation target="n48" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n30" name="Image_Base" src="skclg" xy="567,-5" size="784,753" group="n55_9lik">
+      <relation target="n29" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n31" name="Image_Complete" src="skcl6" xy="747,60" pivot="0.5,0.5" size="488,261" group="n55_9lik">
+      <relation target="n29" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n32" name="Image_CompleteLight" src="skclf" xy="669,2" pivot="0.5,0.5" size="614,141" group="n55_9lik">
+      <relation target="n29" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n49" name="Image_Flower1" src="skcld" xy="1260,119" size="32,14" group="n55_9lik" skew="22,17">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n50" name="Image_Flower2" src="skcld" xy="1234,155" size="18,15" group="n55_9lik" skew="74,70" alpha="0.7">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n52" name="Image_Flower3" src="skcld" xy="1602,882" size="18,15" group="n55_9lik" skew="74,70" alpha="0.7">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n54_guxq" name="Image_Shine" src="guxq2x" xy="788,31" pivot="0.5,0.5" group="n55_9lik" scale="1.3,1.3">
+      <relation target="n29" sidePair="center-center,middle-middle"/>
+    </image>
+    <group id="n55_9lik" name="Group_Complete" xy="567,-5" size="1053,902" advanced="true">
+      <relation target="n53_gmml" sidePair="center-center,top-top"/>
+    </group>
+  </displayList>
+  <transition name="Victory_T" options="2">
+    <item time="0" type="Alpha" target="n32" value="0"/>
+    <item time="0" type="Alpha" target="n30" tween="true" startValue="0" endValue="1" duration="12"/>
+    <item time="0" type="Alpha" target="n31" value="0"/>
+    <item time="0" type="Alpha" target="n29" tween="true" startValue="0" endValue="1" duration="12" ease="Linear"/>
+    <item time="0" type="Alpha" target="n54_guxq" value="0"/>
+    <item time="0" type="Rotation" target="n29" tween="true" startValue="180" endValue="0" duration="12"/>
+    <item time="6" type="Alpha" target="n31" tween="true" startValue="0" endValue="0.99" duration="6"/>
+    <item time="6" type="Alpha" target="n54_guxq" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="6" type="Alpha" target="n32" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="6" type="Scale" target="n32" tween="true" startValue="0,0" endValue="1,1" duration="6"/>
+    <item time="6" type="Scale" target="n31" tween="true" startValue="2,2" endValue="1,1" duration="6" ease="Bounce.Out"/>
+    <item time="12" type="Alpha" target="n54_guxq" tween="true" startValue="1" endValue="0" duration="5"/>
+  </transition>
+</component>lx2i2d.xml|2327|<component size="1920,445">
+  <displayList>
+    <image id="n33" name="Image_Base" src="owfyozfi" pkg="s5cy5qnp" xy="2,-31" pivot="0.5,0.5" size="1920,527">
+      <relation target="" sidePair="left-left,top-top"/>
+    </image>
+    <list id="n38" name="List_Acquire" xy="583,225" size="951,171" layout="row" overflow="scroll" scroll="horizontal" colGap="15" defaultItem="ui://s5cy5qnphqutz3m" autoItemSize="false">
+      <relation target="n39" sidePair="right-right,top-top"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n39" name="TextField_Acquire" xy="378,299" pivot="0.5,0.5" size="185,50" font="微软雅黑" fontSize="36" color="#003366" text="累计获得：">
+      <relation target="n33" sidePair="left-left,top-top"/>
+    </text>
+    <list id="n47" name="List_Details" xy="306,-14" pivot="0.5,0.5" size="1344,226" alpha="0.99" layout="row" colGap="23" defaultItem="ui://s5cy5qnpbt41ozf9" align="center">
+      <relation target="n33" sidePair="right-right,top-top"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <transition name="Victory_T">
+    <item time="0" type="Alpha" target="n39" value="0"/>
+    <item time="0" type="Alpha" target="n47" value="0"/>
+    <item time="0" type="Alpha" target="n38" value="0"/>
+    <item time="0" type="Scale" target="n33" tween="true" startValue="1,0.07" endValue="1,1.05" duration="6"/>
+    <item time="0" type="Scale" target="n47" value="1,1"/>
+    <item time="0" type="XY" target="n38" value="447,307"/>
+    <item time="6" type="Alpha" target="n38" tween="true" startValue="0" endValue="1" duration="7"/>
+    <item time="6" type="Alpha" target="n39" tween="true" startValue="0" endValue="1" duration="7"/>
+    <item time="6" type="Alpha" target="n47" tween="true" startValue="0" endValue="1" duration="7"/>
+    <item time="6" type="Scale" target="n47" tween="true" startValue="1.3,1.3" endValue="1,1" duration="7" ease="Bounce.Out"/>
+    <item time="6" type="Scale" target="n33" tween="true" startValue="1,1.05" endValue="1,1" duration="3"/>
+    <item time="6" type="XY" target="n38" tween="true" startValue="685,307" endValue="576,307" duration="5"/>
+    <item time="11" type="XY" target="n38" tween="true" startValue="576,307" endValue="576,307" duration="2"/>
+  </transition>
+</component>mfce2g.xml|971|<component size="339,169">
+  <displayList>
+    <graph id="n5" name="Graph_Background" xy="0,0" size="339,169" alpha="0.6" type="rect" lineSize="0" fillColor="#ff091324" corner="6"/>
+    <text id="n14" name="TextField_Sword" xy="24,20" size="124,58" font="微软雅黑" fontSize="40" color="#ffffff" ubb="true" autoSize="none" singleLine="true" text="战力：&#xA;&#xA;">
+      <relation target="n5" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n15" name="TextField_Description" xy="24,80" size="302,85" font="微软雅黑" fontSize="30" color="#b7deff" ubb="true" autoSize="none" text="一些描述一些描述">
+      <relation target="n5" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n58" name="TextField_Number" xy="135,21" size="202,58" font="微软雅黑" fontSize="40" color="#ffffff" ubb="true" autoSize="none" singleLine="true" text="1234567&#xA;&#xA;">
+      <relation target="n5" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>mfce2i.xml|1994|<component size="1920,1080">
+  <displayList>
+    <component id="n35_gmml" name="Button_Background" src="gmml2u" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n51_exch" name="Button_RightArrow" src="jtoyozw2" pkg="s5cy5qnp" xy="1689,538" size="73,40">
+      <relation target="" sidePair="right-right,middle-middle"/>
+      <Button icon="ui://s5cy5qnpujpiozgo"/>
+    </component>
+    <component id="n52_exch" name="Button_LeftArrow" src="jtoyozw2" pkg="s5cy5qnp" xy="162,538" size="73,40" rotation="180">
+      <relation target="" sidePair="left-left,middle-middle"/>
+      <Button icon="ui://s5cy5qnpujpiozgo"/>
+    </component>
+    <image id="n45_fmw6" name="Image_Background" src="cwf2k" pkg="s5cy5qnp" xy="357,122" size="1204,878" group="n53_h095">
+      <relation target="" sidePair="left-left,top-top"/>
+    </image>
+    <graph id="n42_gmml" name="Graph_BlackBackground" xy="374,217" size="1171,776" group="n53_h095" alpha="0.6" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <text id="n43_gmml" name="TextField_Floor" xy="818,136" size="284,69" group="n53_h095" font="微软雅黑" fontSize="50" color="#cee5ff" align="center" vAlign="middle" leading="6" letterSpacing="2" ubb="true" autoSize="height" singleLine="true" text="20层"/>
+    <component id="n46_exch" name="Component_Player1" src="mfce2n" xy="390,224" group="n53_h095"/>
+    <component id="n47_exch" name="Component_Player2" src="mfce2n" xy="390,377" group="n53_h095"/>
+    <component id="n48_exch" name="Component_Player3" src="mfce2n" xy="390,530" group="n53_h095"/>
+    <component id="n49_exch" name="Component_Player4" src="mfce2n" xy="390,683" group="n53_h095"/>
+    <component id="n50_exch" name="Component_Player5" src="mfce2n" xy="390,836" group="n53_h095"/>
+    <group id="n53_h095" name="Group_Info" xy="357,122" size="1204,878" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>mfce2n.xml|2535|<component size="1145,149">
+  <controller name="State_C" pages="0,全部,1,极限通关,2,空" selected="0"/>
+  <displayList>
+    <graph id="n35_fmw6" name="Graph_Background" xy="0,0" size="1145,149" group="n36_exch" alpha="0.8" type="rect" lineSize="0" lineColor="#ff2b4a78" fillColor="#ff2b4a78">
+      <gearColor controller="State_C" pages="1" values="#965224" default="#2b4a78"/>
+    </graph>
+    <component id="n33_mfce" name="Image_Limit" src="mfce2o" xy="415,53" group="n36_exch">
+      <gearDisplay controller="State_C" pages="1"/>
+    </component>
+    <component id="n21_mfce" name="Component_Head" src="xwimozid" pkg="s5cy5qnp" xy="12,9" group="n36_exch"/>
+    <component id="n34_mfce" name="List_Race" src="g3jhozvx" pkg="s5cy5qnp" xy="573,50" group="n36_exch">
+      <relation target="n33_mfce" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n26_mfce" name="Button_Replay" src="rmqpozfv" pkg="s5cy5qnp" xy="976,16" size="153,92" group="n36_exch">
+      <Button icon="ui://v7lqqrd6mfce2m"/>
+    </component>
+    <text id="n22_mfce" name="TextField_Flag" xy="142,35" size="119,39" group="n36_exch" font="微软雅黑" fontSize="26" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="【旗号】">
+      <relation target="n21_mfce" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n23_mfce" name="TextField_Name" xy="256,34" size="228,39" group="n36_exch" font="微软雅黑" fontSize="26" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="武将名字七个字">
+      <relation target="n22_mfce" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n24_mfce" name="TextField_Sword" xy="146,86" size="117,40" group="n36_exch" font="微软雅黑" fontSize="28" color="#ffffff" ubb="true" singleLine="true" text="战斗力：">
+      <relation target="n21_mfce" sidePair="right-right,top-top"/>
+    </text>
+    <text id="n25_mfce" name="TextField_FightAmount" xy="257,87" size="168,39" group="n36_exch" font="微软雅黑" fontSize="26" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="1234567">
+      <relation target="n24_mfce" sidePair="right-right,top-top"/>
+    </text>
+    <text id="n32_mfce" name="TextField_Time" xy="921,109" size="213,34" group="n36_exch" font="微软雅黑" fontSize="22" color="#55beff" text="21/02/27 16:49：57">
+      <relation target="n26_mfce" sidePair="right-right,top-top"/>
+    </text>
+    <group id="n36_exch" name="Group_Info" xy="0,0" size="1145,149" advanced="true">
+      <gearDisplay controller="State_C" pages="0,1"/>
+    </group>
+  </displayList>
+</component>mfce2o.xml|300|<component size="150,67">
+  <displayList>
+    <image id="n3_mfce" name="jixian" src="skcli" xy="0,0" size="150,62"/>
+    <text id="n4_mfce" name="wenzhi_jixian" xy="10,24" pivot="0,0.5" size="121,43" rotation="-11" font="微软雅黑" fontSize="30" color="#ffffff" text="极限通关"/>
+  </displayList>
+</component>okzd3c.xml|56|<component size="566,792">
+  <displayList/>
+</component>package.xml|4393|<packageDescription id="v7lqqrd6" name="ClimbingTower">
+  <resources>
+    <component id="81sk3d" name="Component_Skip" path="/Component/" size="1250,819"/>
+    <component id="81sk3g" name="Component_MopUp" path="/Component/" size="1920,1080"/>
+    <component id="gmml2u" name="Button_BG" path="/Button/" size="1920,1080"/>
+    <component id="kkzy3p" name="Button_DownFloor" path="/Button/" size="707,645"/>
+    <component id="kkzy3q" name="Button_LeftFloor" path="/Button/" size="980,388"/>
+    <component id="kkzy3r" name="Button_RightFloor" path="/Button/" size="707,394"/>
+    <component id="kkzy3s" name="Button_UpFloor" path="/Button/" size="707,668"/>
+    <component id="kkzy3t" name="Component_FloorInfo" path="/Component/" size="272,245"/>
+    <component id="lx2i2d" name="Component_GainInfo" path="/Component/" size="1920,445"/>
+    <component id="mfce2g" name="Component_Info" path="/Component/" size="339,169"/>
+    <component id="mfce2n" name="Component_LordInfo" path="/Component/" size="1145,149"/>
+    <component id="mfce2o" name="Component_Tag" path="/Component/" size="150,67"/>
+    <component id="okzd3c" name="Component_MySlot" path="/Component/" size="566,792"/>
+    <component id="skcl17" name="Button_TreasureBox" path="/Button/" size="86,90"/>
+    <component id="skcl1k" name="Button_FloorInfo" path="/Button/" size="300,300"/>
+    <component id="skcl1v" name="Component_MopupStart" path="/Component/" size="1250,819"/>
+    <component id="skcl21" name="Component_FloorTreasureBox" path="/Component/" size="1921,602"/>
+    <component id="skcl25" name="Component_GainItem" path="/Component/" size="1145,180"/>
+    <component id="skcl26" name="Component_InfoList" path="/Component/" size="1160,560"/>
+    <image id="fwpq3h" name="shitai" path="/Transition/" size="118,85"/>
+    <image id="guxq2x" name="guangxian" path="/Transition/" size="378,87"/>
+    <image id="mfce2m" name="Image_Video" path="/Image/" size="63,55"/>
+    <image id="nbqf3u" name="Image_Sign_Star_Empty" path="/Image/" size="29,29"/>
+    <image id="skcl16" name="Image_TreasureBox" path="/Image/" size="86,90"/>
+    <image id="skcl1c" name="Image_Strategy" path="/Image/" size="91,71"/>
+    <image id="skcl1h" name="Image_Stage" path="/Image/" size="207,138"/>
+    <image id="skcl1l" name="Image_Victory" path="/Image/" size="66,62"/>
+    <image id="skcl6" name="Image_Complete" path="/Image/" size="345,185"/>
+    <image id="skcl8" name="Image_Arrow" path="/Image/" size="14,16"/>
+    <image id="skcl9" name="Image_01" path="/Image/" size="114,4" scale="9grid" scale9grid="0,1,114,2"/>
+    <image id="skcla" name="Image_02" path="/Image/" size="56,23"/>
+    <image id="skclc" name="Image_03" path="/Image/" size="38,43"/>
+    <image id="skcld" name="Image_Petal" path="/Image/" size="18,15"/>
+    <image id="skclf" name="qian_15" path="/Transition/" size="378,87"/>
+    <image id="skclg" name="Image_04" path="/Image/" size="26,25"/>
+    <image id="skclh" name="Image_05" path="/Image/" size="180,178"/>
+    <image id="skcli" name="Image_06" path="/Image/" size="112,47"/>
+    <image id="skclj" name="Image_Effect" path="/Image/" size="266,269"/>
+    <image id="skclw" name="Image_Stairs" path="/Image/" size="262,160"/>
+    <component id="81sk3f" name="MopUpMain" path="/" size="1920,1080" exported="true"/>
+    <component id="lx2i2b" name="MopUpCompleteMain" path="/" size="1920,1081" exported="true"/>
+    <component id="mfce2i" name="FloorStrategyMain" path="/" size="1920,1080" exported="true"/>
+    <component id="skcl1p" name="MopUpStartMain" path="/" size="1920,1080" exported="true"/>
+    <component id="skcl1y" name="GainMain" path="/" size="1920,1080" exported="true"/>
+    <component id="skcln" name="ClimbingTowerMain" path="/" size="1920,1080" exported="true"/>
+    <image id="fwpq3i" name="fangxingguang" path="/Transition/" size="270,270" exported="true"/>
+    <image id="fwpq3j" name="guangquan00" path="/Transition/" size="512,512" exported="true"/>
+    <movieclip id="fwpq3l" name="lizi_donghua" path="/Transition/" size="200,200" exported="true"/>
+    <movieclip id="fwpq3m" name="saoguang" path="/Transition/" size="105,140" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <atlas id="atlas_fwpq3l" size="1024,1024" file="atlas_fwpq3l.png"/>
+    <atlas id="atlas_fwpq3m" size="512,512" file="atlas_fwpq3m.png"/>
+  </resources>
+</packageDescription>skcl17.xml|858|<component size="86,90" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n1" name="Image_Box" src="skcl16" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_9jki" name="Image_Base" src="cwf2j" pkg="s5cy5qnp" xy="-39,100" size="164,38" color="#2653ad" flip="hz"/>
+    <text id="n3_9jki" name="TextField_Box" xy="34,101" size="91,40" font="微软雅黑" fontSize="28" color="#cbeaff" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="层宝箱"/>
+    <text id="n4_9jki" name="TextField_BoxFloor" xy="-47,100" size="81,40" font="微软雅黑" fontSize="28" color="#cbeaff" align="right" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="21"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.90"/>
+</component>skcl1k.xml|1794|<component size="300,300" extention="Button">
+  <controller name="State_C" pages="0,未过关,1,当前关,2,已过关" selected="0"/>
+  <displayList>
+    <image id="n19_fwpq" name="Image_Base" src="fwpq3h" xy="-12,113" size="110,81" scale="3,3" alpha="0.01"/>
+    <image id="n4" name="Image_Hill" src="skcl1h" xy="9,136" size="288,196" color="#c8c8c8">
+      <gearColor controller="State_C" pages="0" values="#c8c8c8" default="#ffffff"/>
+      <relation target="" sidePair="left-left,top-top"/>
+    </image>
+    <text id="n5" name="TextField_Floor" xy="84,216" size="146,45" alpha="0.5" font="微软雅黑" fontSize="32" color="#dfefff" align="center" vAlign="middle" letterSpacing="2" ubb="true" autoSize="height" singleLine="true" text="第20层">
+      <gearColor controller="State_C" pages="0,1,2" values="#dfefff,#000000|#dfefff,#000000|#dfefff,#000000"/>
+    </text>
+    <loader id="n7" name="Loader_Icon" xy="78,8" size="151,151" url="ui://43m475k2yqyk6" color="#c8c8c8">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <gearColor controller="State_C" pages="0" values="#c8c8c8" default="#ffffff"/>
+    </loader>
+    <image id="n14" name="Image_Light" src="skclh" xy="60,-6">
+      <gearDisplay controller="State_C" pages="2"/>
+    </image>
+    <image id="n16" name="Image_Win" src="skcl1l" xy="111,63" size="77,72">
+      <gearDisplay controller="State_C" pages="2"/>
+    </image>
+  </displayList>
+  <Button mode="Radio" downEffect="scale" downEffectValue="0.90"/>
+  <transition name="xuanzhong" options="2" autoPlayRepeat="-1">
+    <item time="0" type="Alpha" target="n19_fwpq" tween="true" startValue="0.3" endValue="1" duration="18" ease="Linear"/>
+    <item time="18" type="Alpha" target="n19_fwpq" tween="true" startValue="1" endValue="0.3" duration="18" ease="Linear"/>
+  </transition>
+</component>skcl1p.xml|813|<component size="1920,1080">
+  <displayList>
+    <component id="n21_gmml" name="Button_Background" src="gmml2u" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n19" name="Component_Start" src="skcl1v" xy="637,115">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n36_okzd" name="Component_MySlot" src="okzd3c" xy="58,103">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n35_idnq" name="Button_Change" src="gr0bozdm" pkg="s5cy5qnp" xy="203,904" pivot="0.5,0.5" size="275,107" controller="State_C,0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="更换"/>
+    </component>
+  </displayList>
+</component>skcl1v.xml|3010|<component size="1250,819">
+  <displayList>
+    <image id="n38_fmw6" name="Image_Background" src="cwf2k" pkg="s5cy5qnp" xy="24,7" size="1204,804">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <graph id="n39_fmw6" name="Graph_Line" xy="40,668" size="1170,4" alpha="0.8" type="rect" lineSize="0" fillColor="#ff003366">
+      <relation target="n36_go9a" sidePair="top-bottom,center-center"/>
+    </graph>
+    <text id="n10" name="TextField_Title" xy="342,25" size="526,69" font="微软雅黑" fontSize="50" color="#cee5ff" align="center" leading="6" letterSpacing="2" ubb="true" autoSize="height" singleLine="true" text="扫荡千重楼"/>
+    <text id="n11" name="TextField_Times" xy="42,690" size="155,46" font="微软雅黑" fontSize="30" color="#fefeff" leading="6" text="扫荡次数：&#xA;"/>
+    <text id="n12" name="TextField_Reset" xy="42,747" size="227,43" font="微软雅黑" fontSize="30" color="#fefeff" leading="6" ubb="true" singleLine="true" text="每日10：10重置"/>
+    <component id="n14" name="Button_Start" src="gr0bozdm" pkg="s5cy5qnp" xy="969,695" size="221,94" controller="State_C,0">
+      <Button title="开始"/>
+    </component>
+    <text id="n15" name="TextField_Record" xy="790,748" size="68,39" font="微软雅黑" fontSize="26" color="#fefeff" leading="6" ubb="true" autoSize="height" singleLine="true" text="最高">
+      <relation target="n16" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n16" name="TextField_RecordFloor" xy="857,744" size="105,43" font="微软雅黑" fontSize="30" color="#ffef80" leading="6" ubb="true" autoSize="height" singleLine="true" text="20层"/>
+    <text id="n26" name="TextField_RemainTimes" xy="192,691" size="74,43" font="微软雅黑" fontSize="30" color="#fefeff" leading="6" ubb="true" autoSize="height" singleLine="true" text="30">
+      <relation target="n11" sidePair="right-right,top-top"/>
+    </text>
+    <text id="n36_go9a" name="TextField_Description" xy="35,110" size="1179,555" font="微软雅黑" fontSize="36" color="#add8ff" align="center" ubb="true" autoSize="none" text="策划文字描述策划文字描述策划文字描述策划文字描述策划文字&#xA;描述策划文字描述策划文字描述"/>
+    <image id="n37_fwpq" name="Image_Light" src="fwpq3i" xy="941,677" pivot="0.5,0.5" size="281,128" alpha="0">
+      <relation target="n14" sidePair="center-center,middle-middle"/>
+    </image>
+  </displayList>
+  <transition name="Start_T">
+    <item time="0" type="Alpha" target="n37_fwpq" tween="true" startValue="0" endValue="0.5" duration="12"/>
+    <item time="0" type="Scale" target="n14" tween="true" startValue="1,1" endValue="1.05,1.05" duration="12"/>
+    <item time="0" type="Scale" target="n37_fwpq" tween="true" startValue="1,1" endValue="1.05,1.05" duration="12"/>
+    <item time="12" type="Alpha" target="n37_fwpq" tween="true" startValue="0.5" endValue="0" duration="12"/>
+    <item time="12" type="Scale" target="n14" tween="true" startValue="1.05,1.05" endValue="1,1" duration="12"/>
+    <item time="12" type="Scale" target="n37_fwpq" tween="true" startValue="1.05,1.05" endValue="1,1" duration="12"/>
+  </transition>
+</component>skcl1y.xml|427|<component size="1920,1080" adaptationTest="FitSize">
+  <displayList>
+    <component id="n13_gmml" name="Button_Background" src="gmml2u" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n11" name="Component_Gain" src="skcl21" xy="0,221" size="1920,610">
+      <relation target="" sidePair="width-width,middle-middle"/>
+    </component>
+  </displayList>
+</component>skcl21.xml|2807|<component size="1921,602">
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n3" name="Button_Acquire" src="gr0bozdm" pkg="s5cy5qnp" xy="831,507" size="258,95">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n0" sidePair="center-center,top-top"/>
+      <Button title="领取"/>
+    </component>
+    <image id="n9" name="Image_Figure" src="skcl9" xy="737,0" size="443,60" group="n18_fwpq"/>
+    <image id="n6" name="Image_FigureLeft" src="skclc" xy="735,0" size="53,60" group="n18_fwpq"/>
+    <image id="n10" name="Image_FigureRight" src="skclc" xy="1130,0" size="53,60" group="n18_fwpq" flip="hz"/>
+    <group id="n18_fwpq" name="Group_Base" xy="735,0" size="448,60" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <text id="n7" name="TextField_FloorNumber" xy="861,-1" pivot="0.5,0.5" size="255,69" group="n20_fwpq" font="微软雅黑" fontSize="50" color="#b6dfff" leading="6" text="层重楼宝箱"/>
+    <text id="n11" name="TextField_Floor" xy="797,-1" pivot="0.5,0.5" size="63,70" group="n20_fwpq" font="微软雅黑" fontSize="50" color="#b6dfff" leading="6" text="20&#xA;"/>
+    <group id="n20_fwpq" name="Group_Content" xy="797,-1" size="319,70" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n0" name="Image_Basement" src="owfyozfi" pkg="s5cy5qnp" xy="1,85" pivot="0.5,0.5" size="1920,371" alpha="0.99">
+      <relation target="" sidePair="width-width,middle-middle"/>
+    </image>
+    <list id="n5" name="List_Item" xy="703,122" pivot="0.5,0.5" size="532,293" layout="flow_hz" overflow="scroll" lineGap="20" colGap="18" defaultItem="ui://s5cy5qnphqutz3m" align="center">
+      <relation target="n0" sidePair="center-center,top-top"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <transition name="enter_T">
+    <item time="0" type="Alpha" target="n5" value="0"/>
+    <item time="0" type="Alpha" target="n18_fwpq" tween="true" startValue="0.01" endValue="0.99" duration="9"/>
+    <item time="0" type="Alpha" target="n20_fwpq" tween="true" startValue="0" endValue="1" duration="9"/>
+    <item time="0" type="Scale" target="n0" tween="true" startValue="1,0.1" endValue="1,1.05" duration="6"/>
+    <item time="0" type="Scale" target="n5" value="1,1"/>
+    <item time="4" type="Alpha" target="n5" tween="true" startValue="0" endValue="1" duration="8"/>
+    <item time="4" type="Scale" target="n5" tween="true" startValue="1.5,1.5" endValue="1,1" duration="8" ease="Bounce.Out"/>
+    <item time="6" type="Scale" target="n0" tween="true" startValue="1,1.05" endValue="1,1" duration="3"/>
+  </transition>
+</component>skcl25.xml|858|<component size="1145,180">
+  <displayList>
+    <graph id="n24_fmw6" name="Graph_Base" xy="0,0" size="1145,179" alpha="0.8" type="rect" lineSize="0" lineColor="#ff2b4a78" fillColor="#ff2b4a78"/>
+    <list id="n16" name="List_Gain" xy="476,7" size="627,166" layout="row" overflow="scroll" colGap="20" defaultItem="ui://s5cy5qnphqutz3m" autoItemSize="false">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n17" name="TextField_Floor" xy="125,67" size="103,50" font="微软雅黑" fontSize="36" color="#add8ff" autoSize="height" text="19层">
+      <relation target="n19" sidePair="right-right,top-top"/>
+    </text>
+    <image id="n18" name="Image_FigureRight" src="skcla" xy="232,77" size="81,33"/>
+    <image id="n19" name="Image_FigureLeft" src="skcla" xy="24,77" size="81,33" flip="hz"/>
+  </displayList>
+</component>skcl26.xml|536|<component size="1160,560">
+  <displayList>
+    <graph id="n26" name="Graph_Background" xy="0,0" size="1160,560" alpha="0.6" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <list id="n25" name="List_MopUp" xy="8,8" size="1144,544" overflow="scroll" lineGap="11" defaultItem="ui://v7lqqrd6skcl25">
+      <relation target="n26" sidePair="left-left,top-top"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>skcln.xml|4059|<component size="1920,1080">
+  <controller name="State_C" pages="0,扫荡,1,挑战" selected="0"/>
+  <displayList>
+    <component id="n0" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="千重楼"/>
+    </component>
+    <list id="n55" name="List_Mission" xy="402,0" size="884,911" overflow="scroll" scrollBarFlags="512" clipSoftness="0,100" lineGap="-56" defaultItem="ui://v7lqqrd6kkzy3q" vAlign="middle">
+      <relation target="" sidePair="center-center,height-height"/>
+      <item url="ui://v7lqqrd6kkzy3s"/>
+      <item/>
+      <item url="ui://v7lqqrd6kkzy3r"/>
+      <item url="ui://v7lqqrd6kkzy3p"/>
+    </list>
+    <image id="n57" name="Image_Base" src="fmw6ozio" pkg="s5cy5qnp" xy="0,825" size="1920,82" alpha="0.82" color="#0a1e35" flip="vt">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="Image_Basement" src="cwf2k" pkg="s5cy5qnp" xy="0,905" size="1920,175">
+      <relation target="" sidePair="width-width,bottom-bottom"/>
+    </image>
+    <component id="n75_fmw6" name="Component_Shine" src="no0zozhi" pkg="s5cy5qnp" xy="0,0" size="1920,1080" touchable="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <list id="n6" name="List_Acquire" xy="818,908" size="612,167" layout="row" overflow="scroll" scroll="horizontal" colGap="28" defaultItem="ui://s5cy5qnphqutz3m" autoItemSize="false">
+      <relation target="n2" sidePair="center-center,middle-middle"/>
+      <item/>
+    </list>
+    <text id="n7" name="TextField_FloorAward" xy="609,965" size="177,56" font="微软雅黑" fontSize="40" color="#ffffff" ubb="true" autoSize="shrink" singleLine="true" text="本层奖励">
+      <relation target="n2" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n76_h095" name="Component_FloorInfo" src="kkzy3t" xy="1621,650">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </component>
+    <component id="n23" name="Button_Box" src="skcl17" xy="1762,355" size="120,125">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </component>
+    <component id="n33" name="Button_Strategy" src="iqo8ozif" pkg="s5cy5qnp" xy="1736,160" size="162,167">
+      <relation target="" sidePair="right-right,middle-middle"/>
+      <Button title="攻略" icon="ui://v7lqqrd6skcl1c"/>
+    </component>
+    <component id="n71_9jki" name="Button_MopUp" src="gr0bozdl" pkg="s5cy5qnp" xy="1956,1066" pivot="0.5,0.5" size="49,30">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n2" sidePair="right-right,bottom-bottom"/>
+      <Button title="扫荡" icon="ui://v7lqqrd69jki2z"/>
+    </component>
+    <component id="n74_fmw6" name="Button_Challenge" src="gr0bozdl" pkg="s5cy5qnp" xy="1956,1067" pivot="0.5,0.5" size="49,30">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n2" sidePair="right-right,bottom-bottom"/>
+      <Button title="挑战" icon="ui://v7lqqrd69jki2z"/>
+    </component>
+    <image id="n72_fwpq" name="Image_Light" src="fwpq3i" xy="1584,955" pivot="0.5,0.5" size="260,77" alpha="0.01">
+      <relation target="n2" sidePair="right-right,bottom-bottom"/>
+    </image>
+  </displayList>
+  <transition name="Challenge_T">
+    <item time="0" type="Alpha" target="n72_fwpq" tween="true" startValue="0.01" endValue="0.3" duration="15"/>
+    <item time="0" type="Scale" target="n71_9jki" tween="true" startValue="1,1" endValue="1.03,1.03" duration="15"/>
+    <item time="0" type="Scale" target="n72_fwpq" tween="true" startValue="1,1" endValue="1.03,1.03" duration="15"/>
+    <item time="15" type="Alpha" target="n72_fwpq" tween="true" startValue="0.3" endValue="0.01" duration="15"/>
+    <item time="15" type="Scale" target="n72_fwpq" tween="true" startValue="1.03,1.03" endValue="1.05,1.05" duration="15"/>
+    <item time="15" type="Scale" target="n71_9jki" tween="true" startValue="1.03,1.03" endValue="1,1" duration="15"/>
+  </transition>
+</component>

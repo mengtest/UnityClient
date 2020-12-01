@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: GroundMaterial
+  m_Shader: {fileID: 4800000, guid: e677d8c66c541414e9548c055be9eec1, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _Alpha1
+      second:
+        m_Texture: {fileID: 2800000, guid: 5d112825803a8ba49b186d5b25e0fcb8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Alpha2
+      second:
+        m_Texture: {fileID: 2800000, guid: 1b9f411606653b9498f029009b735208, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Splat1
+      second:
+        m_Texture: {fileID: 2800000, guid: e5d3ea4da748cf745912816cc1f27c8b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Splat2
+      second:
+        m_Texture: {fileID: 2800000, guid: fe612ac699cb75544a8e2a990acc5f55, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Splat3
+      second:
+        m_Texture: {fileID: 2800000, guid: 8f2a53a5e4c42694d951b87df5506b36, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Splat4
+      second:
+        m_Texture: {fileID: 2800000, guid: 6e3341fd1bf73a6429319358e31957e6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Splat5
+      second:
+        m_Texture: {fileID: 2800000, guid: 579a0c6afa78c0a4c855b34ad75e1f3e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Splat6
+      second:
+        m_Texture: {fileID: 2800000, guid: 27cbd1953fe6efa458f133b7d824a0be, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Splat7
+      second:
+        m_Texture: {fileID: 2800000, guid: c4e946fc14549214598bb9d1a16c3d5f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Splat8
+      second:
+        m_Texture: {fileID: 2800000, guid: 029faf2490a9ac94ab255a66734e131d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _SplatScale
+      second: 5
+    m_Colors: []

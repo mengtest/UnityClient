@@ -1,0 +1,105 @@
+72iv1.xml|1706|<component size="1920,1080" opaque="false">
+  <controller name="State_C" pages="3,None,0,Select,1,GroundMenu" selected="0"/>
+  <displayList>
+    <component id="n19_et6n" name="Button_SelectLevel" src="g52xozih" pkg="s5cy5qnp" xy="0,408" group="n20_et6n">
+      <Button title="选择关卡" titleFontSize="22"/>
+    </component>
+    <component id="n23_rdl7" name="Button_Save" src="g52xozih" pkg="s5cy5qnp" xy="0,510" group="n20_et6n">
+      <Button title="保存" titleFontSize="22"/>
+    </component>
+    <group id="n20_et6n" name="Group_Menu" xy="0,408" size="100,202" advanced="true">
+      <gearDisplay controller="State_C" pages="3,1"/>
+    </group>
+    <component id="n13_rmn2" name="Image_Bg" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0" size="1920,1080" group="n16_72iv">
+      <gearDisplay controller="State_C" pages="0,1,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <text id="n15_72iv" name="Label_Title" xy="460,160" size="169,49" group="n16_72iv" fontSize="40" color="#ffff00" align="center" vAlign="middle" bold="true" text="选择关卡"/>
+    <list id="n2_pivk" name="List_SelectLevel" xy="460,209" size="1000,600" group="n16_72iv" overflow="scroll" defaultItem="ui://s5cy5qnpgr0bozdm">
+      <item/>
+    </list>
+    <component id="n22_dynr" name="Button_Close" src="72iv5" xy="1362,110" group="n16_72iv"/>
+    <group id="n16_72iv" name="Group_SelectLevel" xy="0,0" size="1920,1080" advanced="true">
+      <gearDisplay controller="State_C" pages="0"/>
+    </group>
+    <component id="n21_dynr" name="Page_GroundMenu" src="dynr7" xy="938,490" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="State_C" pages="1"/>
+    </component>
+  </displayList>
+</component>72iv5.xml|357|<component size="96,96" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="72iv6" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>7vn60.xml|690|<component size="1920,1080" opaque="false" adaptationTest="FitSize">
+  <displayList>
+    <component id="n6_hzy2" name="Image_Bg" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0" size="1920,1080">
+      <gearDisplay controller=""/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <text id="n2_7vn6" name="Label_Title" xy="585,200" size="169,49" fontSize="40" color="#ffff00" align="center" vAlign="middle" bold="true" text="选择关卡"/>
+    <component id="n3_72iv" name="Button_Close" src="72iv5" xy="1237,150"/>
+    <list id="n1_7vn6" name="List_Levels" xy="585,280" size="750,600" overflow="scroll" defaultItem="ui://s5cy5qnpgr0bozdm"/>
+  </displayList>
+</component>dynr7.xml|1181|<component size="529,550" pivot="0.5,0.5" anchor="true" opaque="false">
+  <displayList>
+    <image id="n0" name="img_tanchuquan" src="dynr8" xy="38,56">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n1" name="Button_Top" src="dynr9" xy="190,5">
+      <gearXY controller=""/>
+      <relation target="n0" sidePair="left-left,top-top"/>
+      <Button title="水面" icon="ui://hfe9kaqkdynrh"/>
+    </component>
+    <component id="n2" name="Button_Right" src="dynr9" xy="386,200">
+      <gearXY controller=""/>
+      <relation target="n0" sidePair="left-left,top-top"/>
+      <Button title="空地" icon="ui://hfe9kaqkdynrf"/>
+    </component>
+    <component id="n3" name="Button_Left" src="dynr9" xy="2,200">
+      <gearXY controller=""/>
+      <relation target="n0" sidePair="left-left,top-top"/>
+      <Button title="障碍物" icon="ui://hfe9kaqkdynre"/>
+    </component>
+    <component id="n10" name="Button_Bottom" src="dynr9" xy="190,395">
+      <gearDisplay controller=""/>
+      <gearXY controller=""/>
+      <relation target="n0" sidePair="left-left,top-top"/>
+      <Button title="取消笔刷"/>
+    </component>
+  </displayList>
+</component>dynr9.xml|788|<component size="143,143" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="dynra" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4" name="n4" src="dynrb" xy="16,123"/>
+    <loader id="n3" name="icon" xy="0,0" size="143,143" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n2" name="title" xy="0,119" size="143,35" font="微软雅黑" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>package.xml|1125|<packageDescription id="hfe9kaqk" name="Tools">
+  <resources>
+    <component id="72iv5" name="Button_Close" path="/Button/" size="96,96"/>
+    <component id="dynr9" name="Button_Outside" path="/Button/" size="143,143"/>
+    <image id="72iv6" name="yj_20" path="/Image/" size="96,96"/>
+    <image id="dynr8" name="jzcz_06" path="/Image/" size="450,443"/>
+    <image id="dynra" name="jzcz_47" path="/Image/" size="143,143"/>
+    <image id="dynrb" name="jzcz_44" path="/Image/" size="115,26"/>
+    <component id="72iv1" name="MapEditorMain" path="/" size="1920,1080" exported="true"/>
+    <component id="7vn60" name="ToolsMain" path="/" size="1920,1080" exported="true"/>
+    <component id="dynr7" name="GroundMenuMain" path="/" size="529,550" exported="true"/>
+    <image id="dynre" name="Image_zhangaiwu" path="/Image/" size="97,88" exported="true"/>
+    <image id="dynrf" name="Image_kongdi" path="/Image/" size="104,81" exported="true"/>
+    <image id="dynrh" name="Image_shuimian" path="/Image/" size="99,68" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>

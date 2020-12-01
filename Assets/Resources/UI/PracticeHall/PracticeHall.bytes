@@ -1,0 +1,467 @@
+eqzv1q.xml|3630|<component size="1922,1082">
+  <controller name="State_C" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n26_eqzv" name="Image_yuan" src="s0rp1x" xy="300,0" size="1359,1082"/>
+    <component id="n31_eqzv" name="com_dangban" src="eqzv1r" xy="408,58"/>
+    <image id="n29_eqzv" name="Image_chuanglian2" src="nfhooznc" pkg="s5cy5qnp" xy="0,74" size="268,1005" flip="hz"/>
+    <image id="n28_eqzv" name="Image_chuanglian" src="nfhooznc" pkg="s5cy5qnp" xy="1653,74" size="268,1005"/>
+    <list id="n4_phds" name="list_wujiang" xy="1,103" size="239,859" scale="1.1,1.1" overflow="scroll" margin="1,0,0,0" clipSoftness="0,30" lineGap="-30" defaultItem="ui://rqtv1qewoz2o1x">
+      <relation target="" sidePair="left-left,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n12_phds" name="com_wujiangtouxiang" src="oz2o1e" pkg="rqtv1qew" xy="765,315" size="484,649" controller="Team_C,0,Expedition_C,0,Quality_C,0,ReLife_C,0,BG_C,1,Soul_C,0,Develop_C,0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n13_phds" name="btn_zhiyebu" src="eqzv1s" xy="1156,244" size="204,206">
+      <relation target="n12_phds" sidePair="bottom-bottom,left-left"/>
+    </component>
+    <component id="n15_phds" name="btn_zhiyegong" src="eqzv1s" xy="1244,731" size="236,238">
+      <relation target="n12_phds" sidePair="left-left,top-top"/>
+      <Button icon="ui://rqtv1qewoz2o2b"/>
+    </component>
+    <component id="n18_phds" name="btn_zhiyeqi" src="eqzv1s" xy="1305,483" size="219,220">
+      <relation target="n12_phds" sidePair="bottom-bottom,left-left"/>
+      <Button icon="ui://rqtv1qewoz2o28"/>
+    </component>
+    <text id="n21_phds" name="txt_qindianji" xy="1514,154" size="378,43" font="Noto Sans S Chinese Regular" fontSize="28" color="#987346" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="请点击您需要转换的职业">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <component id="n3_phds" name="btn_zhuanzi" src="gr0bozdl" pkg="s5cy5qnp" xy="1619,963" group="n23_phds">
+      <Button title="转职"/>
+    </component>
+    <text id="n19_phds" name="txt_wenben" xy="1291,1009" size="260,43" group="n23_phds" font="Noto Sans S Chinese Regular" fontSize="28" color="#bf816e" align="right" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="转职需求武将等级"/>
+    <text id="n20_phds" name="txt_shuzi" xy="1549,1009" size="60,43" group="n23_phds" font="Noto Sans S Chinese Regular" fontSize="28" color="#ffe89b" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="55"/>
+    <text id="n22_phds" name="txt_shijian" xy="1575,921" size="337,46" group="n23_phds" font="Noto Sans S Chinese Regular" fontSize="30" color="#ff6600" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="11：11：11">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <group id="n23_phds" name="groud_youxiajiao" xy="1291,921" size="621,140" advanced="true">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </group>
+    <component id="n24_zmr7" name="btn_zhiyeche" src="eqzv1s" xy="533,549" size="200,202">
+      <relation target="n12_phds" sidePair="bottom-bottom,left-left"/>
+      <Button icon="ui://rqtv1qewoz2o2a"/>
+    </component>
+    <component id="n25_zmr7" name="btn_zhiyeqi2" src="eqzv1s" xy="537,225" size="193,195">
+      <relation target="n12_phds" sidePair="bottom-bottom,left-left"/>
+      <Button icon="ui://rqtv1qewoz2o29"/>
+    </component>
+  </displayList>
+</component>eqzv1r.xml|485|<component size="1514,87">
+  <displayList>
+    <image id="n27_eqzv" name="Image_dangban" src="nfhoozni" pkg="s5cy5qnp" xy="0,0" size="1514,87"/>
+    <image id="n30_eqzv" name="Image_dangban2" src="nfhooznh" pkg="s5cy5qnp" xy="128,19" size="4,57"/>
+    <image id="n31_eqzv" name="Image_dangban2" src="nfhooznh" pkg="s5cy5qnp" xy="676,19" size="21,57"/>
+    <image id="n32_eqzv" name="Image_dangban2" src="nfhooznh" pkg="s5cy5qnp" xy="1332,15" size="4,61"/>
+  </displayList>
+</component>eqzv1s.xml|538|<component size="175,163" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n4_zmr7" name="img_soldier" src="s0rp1y" xy="-1,9" size="165,151" rotation="-2">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n2_phds" name="icon" xy="34,26" size="109,98" url="ui://rqtv1qewoz2o27" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button mode="Check"/>
+</component>eqzv1t.xml|2017|<component size="1920,1000">
+  <displayList>
+    <list id="n24" name="List_Practice" xy="266,144" size="1487,499" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="2" colGap="-10" defaultItem="ui://qkemzv2frfbxn">
+      <relation target="" sidePair="middle-middle,center-center"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n31_eqzv" name="Image_chuanglian2" src="nfhooznc" pkg="s5cy5qnp" xy="1651,3" size="268,997">
+      <relation target="" sidePair="right-right,height-height"/>
+    </image>
+    <image id="n29_eqzv" name="Image_chuanglian" src="nfhooznc" pkg="s5cy5qnp" xy="0,3" size="268,1005" flip="hz"/>
+    <list id="n30_eqzv" name="List_General" xy="3,105" size="239,792" scale="1.1,1.1" overflow="scroll" margin="1,0,0,0" clipSoftness="0,30" lineGap="-30" defaultItem="ui://rqtv1qewoz2o1x">
+      <relation target="" sidePair="left-left,height-height"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n32_eqzv" name="com_dangban" src="eqzv1r" xy="405,8" size="1514,87">
+      <relation target="" sidePair="top-top,right-right"/>
+    </component>
+    <component id="n25_d9dv" name="Button_Practice" src="gr0bozdm" pkg="s5cy5qnp" xy="1095,890" size="253,101" group="n33_r42d">
+      <Button title="一键修炼" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <component id="n26_ntr0" name="Button_Upgrade" src="gr0bozdm" pkg="s5cy5qnp" xy="1368,890" size="253,101" group="n33_r42d">
+      <Button title="修炼台升级" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <component id="n28_ntr0" name="Button_Get" src="gr0bozdm" pkg="s5cy5qnp" xy="1641,890" size="253,101" group="n33_r42d">
+      <Button title="一键领取" titleColor="#ffffff" titleFontSize="30"/>
+    </component>
+    <group id="n33_r42d" name="Group_Btns" xy="1095,890" size="799,101" advanced="true">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </group>
+  </displayList>
+</component>hdkc1h.xml|340|<movieclip interval="83" frameCount="8">
+  <frames>
+    <frame rect="14,19,172,78"/>
+    <frame rect="14,26,172,71"/>
+    <frame rect="14,23,172,74"/>
+    <frame rect="14,20,172,77"/>
+    <frame rect="15,23,171,74"/>
+    <frame rect="13,26,171,71"/>
+    <frame rect="13,25,173,72"/>
+    <frame rect="13,20,173,77"/>
+  </frames>
+</movieclip>irvk1m.xml|684|<component size="195,43">
+  <displayList>
+    <text id="n36" name="huodejingyan" xy="0,0" size="195,43" alpha="0" font="微软雅黑" fontSize="30" color="#33cc00" vAlign="middle" shadowColor="#000000" shadowOffset="0,3" text="经验+580000">
+      <gearDisplay controller=""/>
+    </text>
+  </displayList>
+  <transition name="piaojingyan">
+    <item time="0" type="Alpha" target="n36" tween="true" startValue="0" endValue="1" duration="12"/>
+    <item time="0" type="XY" target="n36" tween="true" startValue="0,0" endValue="0,-150" duration="24" ease="Circ.Out"/>
+    <item time="12" type="Alpha" target="n36" tween="true" startValue="1" endValue="0" duration="12"/>
+  </transition>
+</component>irvk1n.xml|749|<component size="248,86" extention="Label">
+  <controller name="Level_C" pages="0,,1,,2,,3,,4," selected="0"/>
+  <displayList>
+    <loader id="n50_irvk" name="icon" xy="0,0" size="248,86" url="ui://qkemzv2frfbx9" align="center" vAlign="middle" fill="scaleFree">
+      <gearIcon controller="Level_C" pages="0,1,2,4" values="ui://qkemzv2frfbx9|ui://qkemzv2frfbxa|ui://qkemzv2frfbxd|ui://qkemzv2frfbxb" default="ui://qkemzv2frfbxe"/>
+    </loader>
+    <text id="n44_hn8a" name="title" xy="76,32" size="95,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" align="center" vAlign="middle" text="普通位">
+      <gearText controller="Level_C" pages="0,2,3,4" values="普通位|白银位|黄金位|至尊位" default="青铜位"/>
+    </text>
+  </displayList>
+</component>irvk1o.xml|1435|<component size="282,282">
+  <controller name="xiulian" pages="0,空闲中,1,修炼中,2,未开启" selected="0"/>
+  <displayList>
+    <image id="n33" name="n33" src="rfbx3" xy="0,0" pivot="0.5,0.5" size="282,282">
+      <gearDisplay controller="xiulian" pages="0,2"/>
+    </image>
+    <image id="n41_hdkc" name="n41" src="ywcp1j" xy="20,18" pivot="0.5,0.5" alpha="0.5">
+      <gearDisplay controller="xiulian" pages="0"/>
+    </image>
+  </displayList>
+  <transition name="daiji" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Alpha" target="n33" tween="true" startValue="1" endValue="0.8" duration="24"/>
+    <item time="0" type="Alpha" target="n41_hdkc" tween="true" startValue="1" endValue="0.5" duration="24"/>
+    <item time="0" type="Scale" target="n33" tween="true" startValue="1,1" endValue="1.1,1.1" duration="24"/>
+    <item time="0" type="Scale" target="n41_hdkc" tween="true" startValue="1,1" endValue="1.1,1.1" duration="24" ease="Linear"/>
+    <item time="24" type="Alpha" target="n33" tween="true" startValue="0.8" endValue="1" duration="24"/>
+    <item time="24" type="Alpha" target="n41_hdkc" tween="true" startValue="0.5" endValue="1" duration="24"/>
+    <item time="24" type="Scale" target="n33" tween="true" startValue="1.1,1.1" endValue="1,1" duration="24"/>
+    <item time="24" type="Scale" target="n41_hdkc" tween="true" startValue="1.1,1.1" endValue="1,1" duration="24" ease="Linear"/>
+  </transition>
+</component>irvk1p.xml|1910|<component size="512,512">
+  <displayList>
+    <image id="n56_irvk" name="n56" src="bt41ozfe" pkg="s5cy5qnp" xy="127,127" pivot="0.5,0.5" alpha="0"/>
+    <image id="n57_irvk" name="n57" src="rfbxi" xy="194,224" pivot="0.5,0.5" size="122,61" alpha="0"/>
+    <image id="n58_irvk" name="n58" src="bt41ozfc" pkg="s5cy5qnp" xy="-1,-1" pivot="0.5,0.5" scale="0.6,0.6" alpha="0"/>
+  </displayList>
+  <transition name="shengji">
+    <item time="0" type="Alpha" target="n57_irvk" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Alpha" target="n56_irvk" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Alpha" target="n58_irvk" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Rotation" target="n56_irvk" tween="true" startValue="0" endValue="180" duration="24" ease="Linear"/>
+    <item time="0" type="Scale" target="n56_irvk" tween="true" startValue="0,0" endValue="1.2,1.2" duration="6"/>
+    <item time="0" type="Scale" target="n57_irvk" tween="true" startValue="0,0" endValue="1.2,1.2" duration="6"/>
+    <item time="0" type="Scale" target="n58_irvk" tween="true" startValue="0,0" endValue="0.8,0.8" duration="18" ease="Circ.Out"/>
+    <item time="6" type="Alpha" target="n58_irvk" tween="true" startValue="1" endValue="0" duration="12"/>
+    <item time="6" type="Alpha" target="n57_irvk" tween="true" startValue="1" endValue="1" duration="3"/>
+    <item time="6" type="Scale" target="n57_irvk" tween="true" startValue="1.2,1.2" endValue="1,1" duration="3"/>
+    <item time="6" type="Scale" target="n56_irvk" tween="true" startValue="1.2,1.2" endValue="1,1" duration="3"/>
+    <item time="18" type="Alpha" target="n57_irvk" tween="true" startValue="1" endValue="0.01" duration="6"/>
+    <item time="18" type="Alpha" target="n56_irvk" tween="true" startValue="1" endValue="0" duration="6"/>
+  </transition>
+</component>nfho1v.xml|5454|<component size="1920,1080">
+  <controller name="State_C" pages="1,能转生,0,已达到最高" selected="0"/>
+  <displayList>
+    <image id="n42_l3hl" name="Image_chuanglian2" src="nfhooznc" pkg="s5cy5qnp" xy="0,75" size="268,1005" flip="hz"/>
+    <image id="n43_l3hl" name="Image_chuanglian1" src="nfhooznc" pkg="s5cy5qnp" xy="1652,76" size="268,1005"/>
+    <image id="n47_l3hl" name="imge_zhuozi" src="l3hlozo1" pkg="s5cy5qnp" xy="173,731" size="1826,345" group="n51_l3hl"/>
+    <image id="n55_l3hl" name="img_yingyin3" src="l3hlozo2" pkg="s5cy5qnp" xy="254,872" size="1690,77" group="n51_l3hl" alpha="0.38" color="#0a0909"/>
+    <image id="n46_l3hl" name="img_bian" src="l3hlozo0" pkg="s5cy5qnp" xy="266,190" size="1629,710" group="n51_l3hl"/>
+    <image id="n50_l3hl" name="img_dibain1" src="l3hlozo3" pkg="s5cy5qnp" xy="728,212" size="711,665" group="n51_l3hl"/>
+    <image id="n52_l3hl" name="img_dibain2" src="l3hlozo4" pkg="s5cy5qnp" xy="790,499" size="586,368" group="n51_l3hl"/>
+    <image id="n53_l3hl" name="imge_di" src="l3hlozo6" pkg="s5cy5qnp" xy="791,275" size="582,214" group="n51_l3hl"/>
+    <image id="n48_l3hl" name="img_yingyin" src="l3hlozo2" pkg="s5cy5qnp" xy="294,910" size="461,21" group="n51_l3hl" color="#0a0909"/>
+    <image id="n49_l3hl" name="img_yingyin2" src="l3hlozo2" pkg="s5cy5qnp" xy="1398,909" size="461,21" group="n51_l3hl" color="#0a0909"/>
+    <group id="n51_l3hl" name="gra_bian" xy="173,190" size="1826,886" advanced="true"/>
+    <image id="n13_phds" name="img_jiantou" src="g4naozec" pkg="s5cy5qnp" xy="1184,337" size="135,79" group="n36_wcnl"/>
+    <text id="n11_phds" name="txt_wujiang" xy="765,217" size="629,66" group="n36_wcnl" font="Noto Sans S Chinese Regular" fontSize="32" color="#845f51" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="武将达到              开启第一次转生"/>
+    <text id="n14_phds" name="txt_shuxing" xy="846,285" size="125,66" group="n36_wcnl" font="Noto Sans S Chinese Regular" fontSize="32" color="#773e28" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="属性："/>
+    <text id="n15_phds" name="txt_shuzi" xy="970,285" size="212,66" group="n36_wcnl" font="Noto Sans S Chinese Regular" fontSize="32" color="#773e28" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="+4000"/>
+    <text id="n16_phds" name="txt_shuzi2" xy="970,347" size="213,66" group="n36_wcnl" font="Noto Sans S Chinese Regular" fontSize="32" color="#773e28" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="+4000"/>
+    <text id="n18_phds" name="txt_shuxing2" xy="846,347" size="125,66" group="n36_wcnl" font="Noto Sans S Chinese Regular" fontSize="32" color="#773e28" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="统率："/>
+    <text id="n20_phds" name="txt_shuzi4" xy="970,414" size="213,66" group="n36_wcnl" font="Noto Sans S Chinese Regular" fontSize="32" color="#773e28" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="+4000"/>
+    <text id="n21_phds" name="txt_chengzhang" xy="846,414" size="125,66" group="n36_wcnl" font="Noto Sans S Chinese Regular" fontSize="32" color="#773e28" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="成长："/>
+    <text id="n40_hh5k" name="txt_zuigao" xy="1452,476" size="394,128" group="n36_wcnl" font="Noto Sans S Chinese Regular" fontSize="51" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="已转生至最高">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <text id="n54_l3hl" name="txt_dengji1" xy="945,218" size="173,66" group="n36_wcnl" font="Noto Sans S Chinese Regular" fontSize="32" color="#569e00" align="center" vAlign="middle" ubb="true" autoSize="none" bold="true" singleLine="true" text="120级"/>
+    <group id="n36_wcnl" name="groud_shuzi" xy="765,217" size="1081,387" advanced="true"/>
+    <component id="n10_phds" name="progressBar_dengji" src="7sz4ozib" pkg="s5cy5qnp" xy="939,997" size="666,54">
+      <gearDisplay controller="State_C" pages="1"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <text id="n27_phds" name="txt_dengji" xy="858,994" size="87,66" font="Noto Sans S Chinese Regular" fontSize="29" color="#d18027" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="等级：">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <component id="n35_wcnl" name="btn_icon" src="nfho1w" xy="851,514" size="502,357">
+      <gearDisplay controller="State_C" pages="1"/>
+    </component>
+    <component id="n8_phds" name="btn_zhuansheng" src="gr0bozdl" pkg="s5cy5qnp" xy="1618,956">
+      <gearDisplay controller="State_C" pages="1"/>
+      <Button title="转生"/>
+    </component>
+    <list id="n41_l3hl" name="list_wujiang" xy="3,105" size="239,859" scale="1.1,1.1" overflow="scroll" margin="1,0,0,0" clipSoftness="0,30" lineGap="-30" defaultItem="ui://rqtv1qewoz2o1x">
+      <relation target="" sidePair="left-left,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n44_l3hl" name="com_kapai" src="oz2o1e" pkg="rqtv1qew" xy="294,150" controller="Team_C,0,Expedition_C,0,Quality_C,0,ReLife_C,0,BG_C,0,Soul_C,0,Develop_C,0"/>
+    <component id="n45_l3hl" name="com_kapai2" src="oz2o1e" pkg="rqtv1qew" xy="1390,150" controller="Team_C,0,Expedition_C,0,Quality_C,0,ReLife_C,1,BG_C,0,Soul_C,0,Develop_C,0">
+      <gearDisplay controller="State_C" pages="1"/>
+    </component>
+  </displayList>
+</component>nfho1w.xml|1803|<component size="481,362">
+  <displayList>
+    <component id="n28_wcnl" name="btn_icon" src="hqutz3m" pkg="s5cy5qnp" xy="4,0" size="140,140"/>
+    <text id="n30_wcnl" name="txt_shuzi1" xy="1,139" size="148,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#83cc0e" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#3a6b06" singleLine="true" text="+5"/>
+    <component id="n31_wcnl" name="btn_icon2" src="hqutz3m" pkg="s5cy5qnp" xy="169,0" size="140,140"/>
+    <text id="n32_wcnl" name="txt_shuzi2" xy="164,139" size="151,47" font="Noto Sans S Chinese Regular" fontSize="30" color="#83cc0e" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#3a6b06" singleLine="true" text="+5"/>
+    <component id="n33_wcnl" name="btn_icon3" src="hqutz3m" pkg="s5cy5qnp" xy="334,0" size="140,140"/>
+    <text id="n34_wcnl" name="txt_shuzi3" xy="329,139" size="152,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#83cc0e" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#3a6b06" singleLine="true" text="+5"/>
+    <component id="n35_wcnl" name="btn_icon4" src="hqutz3m" pkg="s5cy5qnp" xy="4,176" size="140,140"/>
+    <text id="n36_wcnl" name="txt_shuzi4" xy="-2,316" size="151,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#83cc0e" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#3a6b06" singleLine="true" text="+5"/>
+    <component id="n37_fnr2" name="btn_icon5" src="hqutz3m" pkg="s5cy5qnp" xy="169,176" size="140,140"/>
+    <text id="n38_fnr2" name="txt_shuzi5" xy="161,315" size="151,46" font="Noto Sans S Chinese Regular" fontSize="30" color="#83cc0e" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#3a6b06" singleLine="true" text="+5"/>
+  </displayList>
+</component>package.xml|3108|<packageDescription id="qkemzv2f" name="PracticeHall">
+  <resources>
+    <component id="eqzv1q" name="Component_Page03" path="/Page/" size="1922,1082"/>
+    <component id="eqzv1r" name="Component_dangban" path="/Component/" size="1514,87"/>
+    <component id="eqzv1s" name="Button_Crops" path="/Button/" size="175,163"/>
+    <component id="eqzv1t" name="Component_Page01" path="/Page/" size="1920,1000"/>
+    <component id="irvk1m" name="Component_Exp" path="/Component/" size="195,43"/>
+    <component id="irvk1n" name="Label_Stage" path="/Label/" size="248,86"/>
+    <component id="irvk1o" name="Component_Default" path="/Component/" size="282,282"/>
+    <component id="irvk1p" name="Component_Upgrade" path="/Component/" size="512,512"/>
+    <component id="nfho1v" name="Component_Page02" path="/Page/" size="1920,1080"/>
+    <component id="nfho1w" name="Component_Prop" path="/Component/" size="481,362"/>
+    <component id="rfbxn" name="Component_Stage" path="/Component/" size="357,500"/>
+    <component id="rfbxo" name="Component_GeneralIcon" path="/Component/" size="226,225"/>
+    <component id="rfbxs" name="Component_UpgradeItem" path="/Component/" size="1717,122"/>
+    <component id="rfbxv" name="Component_UpgradeMenuItem" path="/Component/" size="296,496"/>
+    <component id="rfbxw" name="Component_UpgradeMenu" path="/Component/" size="1339,647"/>
+    <component id="rfbxx" name="Button_General" path="/Button/" size="245,267"/>
+    <image id="rfbx3" name="xlg_45" path="/Image/" size="123,123"/>
+    <image id="rfbx6" name="xlg_31" path="/Image/" size="65,109"/>
+    <image id="rfbx7" name="xlg_27" path="/Image/" size="42,32"/>
+    <image id="rfbx9" name="Image_PuTong" path="/Image/" size="248,86"/>
+    <image id="rfbxa" name="Image_QingTong" path="/Image/" size="256,95"/>
+    <image id="rfbxb" name="Image_ZhiZun" path="/Image/" size="259,99"/>
+    <image id="rfbxd" name="Image_BaiYin" path="/Image/" size="263,99"/>
+    <image id="rfbxe" name="Image_HuangJin" path="/Image/" size="272,99"/>
+    <image id="rfbxf" name="xlg_03" path="/Image/" size="96,12"/>
+    <image id="rfbxh" name="xlg_61" path="/Image/" size="79,18"/>
+    <image id="rfbxi" name="xlg_60" path="/Image/" size="71,36"/>
+    <image id="rfbxq" name="xlg_62" path="/Image/" size="245,245"/>
+    <image id="rfbxy" name="xlg_67" path="/Image/" size="55,30"/>
+    <image id="s0rp1x" name="Image_BG_ChangeJob01" path="/Image/" size="548,442"/>
+    <image id="s0rp1y" name="Image_BG_ChangeJob02" path="/Image/" size="140,128"/>
+    <image id="ywcp1j" name="qiu" path="/Image/" size="256,256"/>
+    <movieclip id="hdkc1h" name="MovieClip_Stage" path="/MovieClip/" size="200,100"/>
+    <component id="rfbxg" name="PracticeHallMain" path="/" size="1920,1080" exported="true"/>
+    <component id="rfbxr" name="UpgradeMain" path="/" size="1920,1080" exported="true"/>
+    <component id="rfbxt" name="UpgradeMenuMain" path="/" size="1920,1080" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <atlas id="atlas_hdkc1h" size="512,512" file="atlas_hdkc1h.png"/>
+  </resources>
+</packageDescription>rfbxg.xml|1919|<component size="1920,1080" overflow="hidden">
+  <controller name="yeqian_ctrl" pages="0,修炼,1,转生,2,转职" selected="0"/>
+  <displayList>
+    <component id="n34_eqzv" name="Component_Practice" src="eqzv1t" xy="0,72" size="1920,1000">
+      <gearDisplay controller="yeqian_ctrl" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n1" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,1" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="修炼馆"/>
+    </component>
+    <component id="n32_eqzv" name="com_zhuanzhi" src="eqzv1q" xy="0,0">
+      <gearDisplay controller="yeqian_ctrl" pages="2"/>
+    </component>
+    <component id="n35_l3hl" name="com_zhuangshang" src="nfho1v" xy="0,0">
+      <gearDisplay controller="yeqian_ctrl" pages="1"/>
+    </component>
+    <component id="n29_eqzv" name="btn_xiulian" src="nfhooznl" pkg="s5cy5qnp" xy="267,936" size="170,141" group="n36_r42d">
+      <Button checked="true" icon="ui://s5cy5qnpnfhooznn" selectedIcon="ui://s5cy5qnpnfhooznm" controller="yeqian_ctrl" page="0"/>
+    </component>
+    <component id="n30_eqzv" name="btn_zhuansheng" src="nfhooznl" pkg="s5cy5qnp" xy="443,936" size="170,141" group="n36_r42d">
+      <Button title="转生" icon="ui://s5cy5qnpnfhooznp" selectedIcon="ui://s5cy5qnpnfhoozno" controller="yeqian_ctrl" page="1"/>
+    </component>
+    <component id="n31_eqzv" name="btn_zhuanzhi" src="nfhooznl" pkg="s5cy5qnp" xy="619,936" size="170,141" group="n36_r42d">
+      <Button title="转职" icon="ui://s5cy5qnpnfhooznq" selectedIcon="ui://s5cy5qnpnfhooznr" controller="yeqian_ctrl" page="2"/>
+    </component>
+    <group id="n36_r42d" name="Group_Toggles" xy="267,936" size="522,141" visible="false" advanced="true">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </group>
+  </displayList>
+</component>rfbxn.xml|3206|<component size="357,500">
+  <controller name="State_C" pages="0,空闲中,1,修炼中,2,未开启" selected="2"/>
+  <displayList>
+    <component id="n55_irvk" name="com_daiji" src="irvk1o" xy="33,95"/>
+    <component id="n29" name="Button_General" src="rfbxx" xy="50,99">
+      <gearDisplay controller="State_C" pages="1"/>
+    </component>
+    <image id="n31" name="img_suo" src="rfbxy" xy="143,185">
+      <gearDisplay controller="State_C" pages="2"/>
+    </image>
+    <text id="n32" name="Text_RequiredLevel" xy="92,222" size="163,35" font="微软雅黑" fontSize="24" color="#ffffff" align="center" vAlign="middle" text="君主等级8开启">
+      <gearDisplay controller="State_C" pages="2"/>
+    </text>
+    <text id="n34" name="Text_State" xy="78,225" size="197,35" font="微软雅黑" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" text="拖拽武将至修炼台">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <component id="n52_irvk" name="com_piaojingyan" src="irvk1m" xy="78,169"/>
+    <image id="n37" name="img_xiaoguo" src="rfbxh" xy="53,207" pivot="0.5,0.5" size="241,54" alpha="0">
+      <gearDisplay controller="State_C" pages="1"/>
+    </image>
+    <image id="n39_hdkc" name="img_shengjixiaoguo" src="bt41ozfe" pkg="s5cy5qnp" xy="-7,64" pivot="0.5,0.5" alpha="0"/>
+    <image id="n38" name="img_shengji" src="rfbxi" xy="114,201" pivot="0.5,0.5" size="122,61" alpha="0">
+      <gearDisplay controller="State_C" pages="1"/>
+    </image>
+    <image id="n40_hdkc" name="img_shengjiguangquan" src="bt41ozfc" pkg="s5cy5qnp" xy="-134,-63" pivot="0.5,0.5" scale="0.6,0.6" alpha="0"/>
+    <component id="n54_irvk" name="Label_Stage" src="irvk1n" xy="54,392" controller="Level_C,0">
+      <Label title="普通位"/>
+    </component>
+    <movieclip id="n43_hdkc" name="anim_dizuoguang" src="hdkc1h" xy="80,280" pivot="0.5,0.5" size="197,100" scale="2,2">
+      <gearDisplay controller="State_C" pages="1"/>
+    </movieclip>
+    <component id="n59_irvk" name="com_shengji" src="irvk1p" xy="-71,-9"/>
+    <image id="n25" name="img_xiulianzhong" src="rfbxf" xy="74,2" size="241,44" group="n60_drb4">
+      <relation target="n26" sidePair="width-width,height-height"/>
+      <relation target="n24" sidePair="left-left,top-top"/>
+    </image>
+    <loader id="n24" name="Loader_GeneralType" xy="36,0" size="50,50" group="n60_drb4" url="ui://s5cy5qnpqklja">
+      <relation target="n26" sidePair="right-left,top-top"/>
+    </loader>
+    <text id="n26" name="Text_Name" xy="88,7" size="173,35" group="n60_drb4" font="微软雅黑" fontSize="24" color="#ffffff" align="center" vAlign="middle" text="武将名字七个咋"/>
+    <text id="n27" name="Text_Level" xy="260,6" size="33,35" group="n60_drb4" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="80">
+      <relation target="n26" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n28" name="txt_dengji" xy="290,6" size="29,35" group="n60_drb4" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="级">
+      <relation target="n27" sidePair="left-right,top-top"/>
+    </text>
+    <group id="n60_drb4" name="Group_Title" xy="36,0" size="283,50" advanced="true">
+      <gearDisplay controller="State_C" pages="1"/>
+    </group>
+  </displayList>
+</component>rfbxo.xml|288|<component size="226,225" mask="n20">
+  <displayList>
+    <loader id="n19" name="Loader_Icon" xy="0,0" size="225,225" url="ui://4fhq5iy6yqyk6" fill="scaleMatchWidth"/>
+    <graph id="n20" name="wujiangtu" xy="0,0" size="225,225" type="eclipse" lineSize="0"/>
+  </displayList>
+</component>rfbxr.xml|785|<component size="1920,1080">
+  <displayList>
+    <component id="n1" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="修炼台升级"/>
+    </component>
+    <list id="n12" name="List_Stage" xy="96,185" size="1735,834" overflow="scroll" scrollBarFlags="2" clipSoftness="0,100" lineGap="30" defaultItem="ui://qkemzv2frfbxs" vAlign="middle">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>rfbxs.xml|1272|<component size="1717,122">
+  <controller name="State_C" pages="0,未满级,1,已满级" selected="0"/>
+  <displayList>
+    <graph id="n5" name="Graph_BG" xy="116,23" size="1439,77" alpha="0.6" type="rect" lineSize="0" fillColor="#ff3d5269">
+      <gearSize controller="State_C" pages="0" values="1439,77,1,1" default="1601,77,1,1"/>
+    </graph>
+    <text id="n6" name="n6" xy="360,39" size="149,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" text="修炼效率"/>
+    <text id="n7" name="Text_Efficiency" xy="517,39" size="100,50" font="微软雅黑" fontSize="36" color="#ff6600" vAlign="middle" text="300%"/>
+    <text id="n8" name="Text_Output" xy="687,39" size="269,50" font="微软雅黑" fontSize="36" color="#33cc00" vAlign="middle" text="39000经验/小时"/>
+    <text id="n9" name="n9" xy="1521,39" size="113,50" font="微软雅黑" fontSize="36" color="#cccccc" vAlign="middle" text="已满阶">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+    <component id="n10" name="Button_Upgrade" src="gr0bozdm" pkg="s5cy5qnp" xy="1435,0" pivot="0.5,0.5" size="282,122" controller="State_C,0">
+      <gearDisplay controller="State_C" pages="0"/>
+      <Button title="升阶"/>
+    </component>
+    <component id="n22_w29v" name="Label_Stage" src="irvk1n" xy="16,16"/>
+  </displayList>
+</component>rfbxt.xml|401|<component size="1920,1080">
+  <displayList>
+    <component id="n14_nj1g" name="Component_BG" src="ud82ozmd" pkg="s5cy5qnp" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n13" name="Component_Main" src="rfbxw" xy="290,216">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>rfbxv.xml|1007|<component size="296,496">
+  <controller name="c1" pages="" selected="-1"/>
+  <controller name="c2" pages="" selected="-1"/>
+  <displayList>
+    <image id="n2" name="n2" src="rfbx6" xy="0,0" size="296,496"/>
+    <text id="n4" name="n4" xy="73,68" size="149,50" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" text="修炼效率"/>
+    <text id="n5" name="Text_Efficiency" xy="103,112" size="99,54" font="Noto Sans S Chinese Regular" fontSize="36" color="#ff6600" vAlign="middle" text="300%"/>
+    <image id="n11_w29v" name="Image_YuanBao" src="rfbx7" xy="98,316">
+      <gearDisplay controller="c2" pages=""/>
+    </image>
+    <text id="n7" name="Text_Cost" xy="142,315" size="47,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="200"/>
+    <component id="n8" name="Button_Upgrade" src="gr0bozdm" pkg="s5cy5qnp" xy="30,380" size="236,99">
+      <Button title="升阶"/>
+    </component>
+    <component id="n12_w29v" name="Label_Stage" src="irvk1n" xy="24,178"/>
+  </displayList>
+</component>rfbxw.xml|719|<component size="1339,647">
+  <displayList>
+    <image id="n1" name="n1" src="cwf2k" pkg="s5cy5qnp" xy="0,0" size="1339,647">
+      <relation target="n11" sidePair="width-width,height-height"/>
+    </image>
+    <list id="n11" name="List_Upgrade" xy="47,111" size="1246,503" layout="row" colGap="20" defaultItem="ui://qkemzv2frfbxv" align="center">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n12" name="n12" xy="547,27" size="245,66" font="微软雅黑" fontSize="48" color="#ffffff" vAlign="middle" text="可升阶选择">
+      <relation target="n11" sidePair="center-center,bottom-top"/>
+    </text>
+  </displayList>
+</component>rfbxx.xml|538|<component size="245,267" extention="Button">
+  <displayList>
+    <graph id="n7_w29v" name="Graph_BG" xy="0,22" size="245,245" alpha="0.6" type="eclipse" lineSize="0" fillColor="#ff000000"/>
+    <component id="n5" name="Component_General" src="rfbxo" xy="9,31"/>
+    <image id="n8_w29v" name="Image_Exp" src="rfbxq" xy="0,21" fillMethod="radial360" fillAmount="66"/>
+    <component id="n9_w29v" name="Label_Tips" src="pui2oz41" pkg="s5cy5qnp" xy="59,0"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>

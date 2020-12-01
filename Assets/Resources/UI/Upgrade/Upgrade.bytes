@@ -1,0 +1,58 @@
+dp6h0.xml|4038|<component size="1920,1080" overflow="hidden">
+  <controller name="Level_C" pages="0,未满级,1,满级" selected="0"/>
+  <controller name="Speedup_C" pages="0,显示,1,不显示" selected="0"/>
+  <displayList>
+    <component id="n1" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="仓库升级"/>
+    </component>
+    <component id="n3" name="Component_Condition" src="cwf2q" pkg="s5cy5qnp" xy="23,163">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </component>
+    <graph id="n30_ntr0" name="img_dibian" xy="704,772" size="1182,260" group="n31_ntr0" type="rect" lineSize="0" fillColor="#ff2f5178" corner="8"/>
+    <image id="n20" name="img_lvdi" src="ur0iozi0" pkg="s5cy5qnp" xy="734,800" group="n31_ntr0" color="#219623"/>
+    <image id="n21" name="img_hongdi" src="ur0iozi0" pkg="s5cy5qnp" xy="1160,799" group="n31_ntr0" color="#b31717"/>
+    <text id="n7" name="Text_CurrLevel" xy="831,800" size="26,50" group="n31_ntr0" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" singleLine="true" text="5">
+      <relation target="n20" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n10" name="Text_CurrDes" xy="742,884" size="335,108" group="n31_ntr0" font="微软雅黑" fontSize="30" color="#bae3ff" ubb="true" autoSize="none" text="仓库资源储存上线提高"/>
+    <component id="n18" name="Button_Upgrade" src="knyu29" pkg="s5cy5qnp" xy="1631,881" group="n31_ntr0" controller="Time_C,1,Type_C,0">
+      <gearDisplay controller="Level_C" pages="0"/>
+      <Button title="升级" sound="ui://s5cy5qnpjnmaz3e"/>
+    </component>
+    <text id="n23" name="Text_NextDes" xy="1174,884" size="335,108" group="n31_ntr0" font="微软雅黑" fontSize="30" color="#bae3ff" ubb="true" autoSize="none" text="仓库资源储存上线提高">
+      <gearText controller="Level_C" pages="1" values="敬请期待" default="仓库资源储存上线提高"/>
+    </text>
+    <text id="n24" name="Text_NextLevel" xy="1252,799" size="26,50" group="n31_ntr0" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" singleLine="true" text="5">
+      <gearText controller="Level_C" pages="0,1" values="5|满级"/>
+      <relation target="n21" sidePair="left-right,middle-middle"/>
+    </text>
+    <text id="n28" name="txt_yimanji" xy="1669,882" size="149,66" group="n31_ntr0" font="微软雅黑" fontSize="48" color="#ffffff" text="已满级">
+      <gearDisplay controller="Level_C" pages="1"/>
+    </text>
+    <text id="n29_ntr0" name="Text_Speedup" xy="1561,825" size="309,56" group="n31_ntr0" font="Noto Sans S Chinese Regular" fontSize="30" color="#66ff00" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="已提速55分钟">
+      <gearDisplay controller="Speedup_C" pages="0"/>
+      <relation target="n18" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <image id="n32_ntr0" name="img_jiantou" src="ujpiozgo" pkg="s5cy5qnp" xy="980,793" group="n31_ntr0"/>
+    <text id="n33_y1ly" name="Text_01" xy="753,800" size="77,50" group="n31_ntr0" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" singleLine="true" text="等级">
+      <relation target="n20" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n34_y1ly" name="Text_02" xy="1175,799" size="77,50" group="n31_ntr0" font="微软雅黑" fontSize="36" color="#ffffff" ubb="true" singleLine="true" text="等级">
+      <relation target="n20" sidePair="left-left,top-top"/>
+    </text>
+    <group id="n31_ntr0" name="group_yannjiu" xy="704,772" size="1182,260" advanced="true">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </group>
+  </displayList>
+  <transition name="Effect_T" options="2">
+    <item time="0" type="Alpha" target="n3" tween="true" startValue="0" endValue="1" duration="9"/>
+    <item time="0" type="XY" target="n3" tween="true" startValue="-652,163" endValue="39,163" duration="9"/>
+    <item time="9" type="Alpha" target="n3" tween="true" startValue="1"/>
+    <item time="9" type="XY" target="n3" tween="true" startValue="39,163" endValue="23,163" duration="2"/>
+  </transition>
+</component>package.xml|189|<packageDescription id="zcmbd9kg" name="Upgrade">
+  <resources>
+    <component id="dp6h0" name="UpgradeMain" path="/" size="1920,1080" exported="true"/>
+  </resources>
+</packageDescription>

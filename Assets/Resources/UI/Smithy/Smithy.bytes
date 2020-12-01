@@ -1,0 +1,355 @@
+fgrh0.xml|1500|<component size="1920,1080">
+  <displayList>
+    <component id="n23_jend" name="Component_BG" src="no0zozhl" pkg="s5cy5qnp" xy="1,0" size="1922,1082" alpha="0.7">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n24_jend" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,0">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="铁匠铺"/>
+    </component>
+    <graph id="n30_ntr0" name="Graph_Base" xy="198,144" size="1533,644" alpha="0.6" type="rect" lineSize="0" fillColor="#ff163252">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <image id="n31_ntr0" name="Image_Side" src="ntr012" xy="198,145" size="1534,643">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <list id="n28_ice3" name="List_Smelting" xy="198,149" size="1528,631" layout="flow_hz" selectionMode="multipleSingleClick" overflow="scroll" margin="0,0,16,0" clipSoftness="0,50" lineGap="2" colGap="8" defaultItem="ui://rqtv1qewnbqfv">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n27_p2pn" name="Component_Smelting" src="p2pn4" xy="2,780">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </component>
+  </displayList>
+</component>fgrh2.xml|649|<component size="59,59" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n3" name="icon" xy="0,0" size="59,59" url="ui://s5cy5qnpigjb1o" align="center" vAlign="middle"/>
+    <image id="n4_hn8a" name="Image_Tick" src="fgrh3" xy="8,-5">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n5_hn8a" name="title" xy="-106,2" size="105,53" font="微软雅黑" fontSize="34" align="center" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" text="测试"/>
+  </displayList>
+  <Button mode="Check" downEffect="scale" downEffectValue="0.90"/>
+</component>i04of.xml|1400|<component size="650,640">
+  <controller name="Selected_C" pages="0,一个都没选,1,,2,,3,,4,,5,,6,,7," selected="0"/>
+  <displayList>
+    <component id="n7_s7dy" name="Button_EquipmentIcon1" src="s7dy8" xy="268,0" controller="Quality_C,0">
+      <Button controller="Selected_C" page="1"/>
+    </component>
+    <component id="n11_s7dy" name="Button_EquipmentIcon2" src="s7dy8" xy="76,95" controller="Quality_C,0">
+      <Button icon="ui://4trbzbckyqyk1" controller="Selected_C" page="7"/>
+    </component>
+    <component id="n32_s7dy" name="Button_EquipmentIcon3" src="s7dy8" xy="15,317" controller="Quality_C,0">
+      <Button controller="Selected_C" page="6"/>
+    </component>
+    <component id="n33_s7dy" name="Button_EquipmentIcon4" src="s7dy8" xy="138,489" controller="Quality_C,0">
+      <Button controller="Selected_C" page="5"/>
+    </component>
+    <component id="n34_s7dy" name="Button_EquipmentIcon5" src="s7dy8" xy="388,489" controller="Quality_C,0">
+      <Button controller="Selected_C" page="4"/>
+    </component>
+    <component id="n35_s7dy" name="Button_EquipmentIcon6" src="s7dy8" xy="521,317" controller="Quality_C,0">
+      <Button controller="Selected_C" page="3"/>
+    </component>
+    <component id="n36_s7dy" name="Button_EquipmentIcon7" src="s7dy8" xy="465,95" controller="Quality_C,0">
+      <Button controller="Selected_C" page="2"/>
+    </component>
+  </displayList>
+</component>i04oi.xml|798|<component size="299,232">
+  <controller name="State_C" pages="1,,0," selected="1"/>
+  <displayList>
+    <component id="n14_s7dy" name="Label_Tips" src="pui2oz41" pkg="s5cy5qnp" xy="167,0">
+      <gearDisplay controller="State_C" pages="0"/>
+      <Label title="已满"/>
+    </component>
+    <component id="n27_s7dy" name="Button_Forge" src="gr0bozdo" pkg="s5cy5qnp" xy="34,101" size="222,86" controller="Time_C,0,State_C,0">
+      <Button title="锻造"/>
+    </component>
+    <text id="n42_v9g5" name="Text_RemainTimes" xy="34,56" size="239,40" font="Noto Sans S Chinese Regular" fontSize="26" color="#90746b" align="center" vAlign="middle" ubb="true" bold="true" singleLine="true" text="剩余锻造次数：100">
+      <relation target="n27_s7dy" sidePair="center-center"/>
+    </text>
+  </displayList>
+</component>i04om.xml|1453|<component size="400,567">
+  <displayList>
+    <image id="n68_i04o" name="Image_Background" src="effmozp4" pkg="s5cy5qnp" xy="0,0" size="400,567"/>
+    <image id="n112_effm" name="Image_Pattern01" src="effmozp7" pkg="s5cy5qnp" xy="310,-1"/>
+    <image id="n114_effm" name="Image_Pattern02" src="effmozp7" pkg="s5cy5qnp" xy="1,-1" flip="hz"/>
+    <image id="n118_effm" name="Image_Pattern03" src="effmozp7" pkg="s5cy5qnp" xy="0,551" flip="both"/>
+    <image id="n117_effm" name="Image_Pattern04" src="effmozp7" pkg="s5cy5qnp" xy="310,551" flip="vt"/>
+    <image id="n115_effm" name="Image_BackgroundWhite" src="effmozp9" pkg="s5cy5qnp" xy="33,27" size="350,350"/>
+    <text id="n73_i04o" name="Text_EquipmentName" xy="116,44" size="187,39" font="Noto Sans S Chinese Regular" fontSize="25" color="#272625" align="center" vAlign="middle" ubb="true" bold="true" singleLine="true" text="装备名字七个字"/>
+    <image id="n76_i04o" name="Image_Basement" src="effm1c" xy="90,279" size="248,69"/>
+    <text id="n101_i04o" name="Text_Amount" xy="142,295" size="154,39" font="Noto Sans S Chinese Regular" fontSize="25" color="#ffffff" align="center" ubb="true" autoSize="none" singleLine="true" text="已拥有：5件"/>
+    <image id="n116_effm" name="Image_Line" src="effmozpa" pkg="s5cy5qnp" xy="72,89" size="273,2"/>
+    <text id="n120_py0s" name="Text_Attribute" xy="117,99" size="190,39" fontSize="25" color="#4b4b4b" autoSize="height" text=""/>
+  </displayList>
+</component>i04oo.xml|2932|<component size="1334,750">
+  <displayList>
+    <image id="n28_i04o" name="Image_Background" src="nfhoozne" pkg="s5cy5qnp" xy="0,0" size="1334,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n1_i04o" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1334,750" controller="Type_C,0">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="合成"/>
+    </component>
+    <image id="n65_effm" name="Image_BackgroundLeft" src="kc74ozoj" pkg="s5cy5qnp" xy="28,95" size="157,639" group="n71_effm" flip="hz"/>
+    <image id="n66_effm" name="Image_BackgroundRight" src="effmozp4" pkg="s5cy5qnp" xy="181,89" size="1130,647" group="n71_effm"/>
+    <image id="n72_effm" name="Image_TopBar" src="effmozpc" pkg="s5cy5qnp" xy="187,99" size="1118,55" group="n71_effm"/>
+    <image id="n73_effm" name="Image_BottomBar" src="effmozpc" pkg="s5cy5qnp" xy="192,714" size="1114,22" group="n71_effm" alpha="0.5" flip="vt"/>
+    <image id="n67_effm" name="Image_Pattern1" src="effmozp5" pkg="s5cy5qnp" xy="1222,93" group="n71_effm"/>
+    <image id="n68_effm" name="Image_Pattern2" src="effmozp5" pkg="s5cy5qnp" xy="181,93" group="n71_effm" flip="hz"/>
+    <image id="n69_effm" name="Image_Pattern3" src="effmozp8" pkg="s5cy5qnp" xy="1219,717" group="n71_effm"/>
+    <image id="n70_effm" name="Image_Pattern4" src="effmozp8" pkg="s5cy5qnp" xy="183,717" group="n71_effm" flip="hz"/>
+    <group id="n71_effm" name="Group_MainBoard" xy="28,89" size="1285,648" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <list id="n31_i04o" name="List_TabButtons" xy="53,126" size="180,473" overflow="scroll" lineGap="10" defaultItem="ui://dg2z41q1i04oq" align="center">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n61_p45e" name="List_Suits" xy="209,164" size="1100,543" overflow="scroll" margin="0,0,4,0" lineGap="1" defaultItem="ui://dg2z41q1p45ex">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n62_p45e" name="Text_PieceAmount" xy="564,99" size="422,47" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffdfab" align="center" letterSpacing="4" ubb="true" autoSize="shrink" singleLine="true" text="轩辕帝王套装碎片：15">
+      <relation target="n71_effm" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n74_gwtn" name="Image_Basement" src="i04og" xy="2,677" size="187,72">
+      <relation target="" sidePair="bottom-bottom,left-left"/>
+    </image>
+    <component id="n29_i04o" name="Button_Function" src="mlaq6" xy="19,601">
+      <relation target="n74_gwtn" sidePair="bottom-bottom,center-center"/>
+    </component>
+  </displayList>
+</component>i04oq.xml|1580|<component size="157,119" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n5_i04o" name="Image_Background1" src="ujpiozgb" pkg="s5cy5qnp" xy="4,0" size="141,118" group="n10_effm" flip="hz">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <loader id="n9_effm" name="Loader_Icon1" xy="46,10" size="66,68" group="n10_effm" url="ui://dg2z41q1effm1f" align="center" vAlign="middle" fill="scaleFree"/>
+    <group id="n10_effm" name="Group_1" xy="4,0" size="141,118" advanced="true">
+      <gearDisplay controller="button" pages="0"/>
+    </group>
+    <image id="n4_i04o" name="Image_Background2" src="ujpiozgc" pkg="s5cy5qnp" xy="4,0" size="148,118" group="n13_effm" flip="hz">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <loader id="n12_effm" name="Loader_Icon2" xy="33,-2" size="98,100" group="n13_effm" url="ui://dg2z41q1effm1e" align="center" vAlign="middle" fill="scaleFree"/>
+    <group id="n13_effm" name="Group_2" xy="4,-2" size="148,120" advanced="true">
+      <gearDisplay controller="button" pages="1"/>
+    </group>
+    <text id="n6_i04o" name="Text_Title" xy="29,75" size="98,33" font="Noto Sans S Chinese Regular" fontSize="21" color="#808180" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="轩辕套装">
+      <gearXY controller="button" pages="0,1" values="29,75|38,76"/>
+      <gearColor controller="button" pages="0,1" values="#808180,#000000|#ffe373,#000000"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>lve61h.xml|144|<component size="400,400">
+  <displayList>
+    <image id="n0_lve6" name="n0" src="yqyk0" pkg="48zstrjk" xy="0,1"/>
+  </displayList>
+</component>mlaq5.xml|2884|<component size="1334,750">
+  <controller name="State_C" pages="0,显示弹框,1,不显示弹框" selected="0"/>
+  <displayList>
+    <image id="n0_mlaq" name="Image_Background" src="nfhoozne" pkg="s5cy5qnp" xy="0,0" size="1336,752">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n1_mlaq" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1334,750" controller="Type_C,0">
+      <relation target="" sidePair="left-left,top-top"/>
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="锻造"/>
+    </component>
+    <image id="n109_effm" name="Image_Platform" src="effm18" xy="236,225">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n116_gwtn" name="Image_RoundLeft" src="gwtn1g" xy="73,71">
+      <relation target="n109_effm" sidePair="left-left,middle-middle"/>
+    </image>
+    <image id="n117_gwtn" name="Image_RoundRight" src="gwtn1g" xy="395,71" flip="hz">
+      <relation target="n116_gwtn" sidePair="left-right,middle-middle"/>
+    </image>
+    <component id="n50_i04o" name="Component_EquipmentMenu" src="i04of" xy="69,73">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n106_i04o" name="Component_EquipmentInfo" src="i04om" xy="863,80">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </component>
+    <component id="n107_i04o" name="Button_Forge" src="i04oi" xy="926,450" controller="State_C,1">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n110_ryne" name="Button_QuickForge" src="gr0bozdm" pkg="s5cy5qnp" xy="970,651">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n107_i04o" sidePair="center-center,top-bottom"/>
+      <Button title="一键锻造"/>
+    </component>
+    <image id="n111_jvph" name="Image_Bottom" src="i04og" xy="1,679" size="122,72">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </image>
+    <image id="n112_jvph" name="Image_Bottom1" src="i04og" xy="65,679" size="222,72">
+      <relation target="n111_jvph" sidePair="left-right,middle-middle"/>
+    </image>
+    <image id="n113_jvph" name="Image_Line" src="effm14" xy="117,680">
+      <relation target="n112_jvph" sidePair="middle-middle,center-center"/>
+    </image>
+    <component id="n114_jvph" name="Button_Equipment" src="mlaq6" xy="3,616">
+      <relation target="n111_jvph" sidePair="middle-middle,center-center"/>
+    </component>
+    <component id="n115_jvph" name="Button_Smelting" src="mlaq6" xy="116,616">
+      <relation target="n112_jvph" sidePair="center-center,middle-middle"/>
+      <Button title="熔炼" icon="ui://dg2z41q1effm17"/>
+    </component>
+  </displayList>
+</component>mlaq6.xml|854|<component size="111,149" extention="Button">
+  <displayList>
+    <image id="n114_effm" name="Image_Background" src="effm16" xy="0,0" size="111,114"/>
+    <loader id="n113_c8c1" name="icon" xy="13,12" size="83,87" url="ui://dg2z41q1mlaq7" align="center" fill="scale"/>
+    <text id="n112_c8c1" name="title" xy="28,103" size="57,39" font="Noto Sans S Chinese Regular" fontSize="25" color="#c7b4b3" align="center" bold="true" strokeColor="#170707" strokeSize="2" text="装备"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+  <transition name="MovieClip_ChangeColor">
+    <item time="0" type="Color" target="n113_c8c1" tween="true" startValue="#ffffff" endValue="#ffff00" duration="6"/>
+    <item time="6" type="Color" target="n113_c8c1" tween="true" startValue="#ffff00" endValue="#ffffff" duration="6"/>
+  </transition>
+</component>p2pn4.xml|1685|<component size="1922,300">
+  <displayList>
+    <image id="n0_hn8a" name="Image_Background" src="cwf2k" pkg="s5cy5qnp" xy="0,0" size="1922,300"/>
+    <text id="n1_hn8a" name="Text_Description" xy="25,140" size="1017,155" font="微软雅黑" fontSize="30" color="#ffffff" vAlign="middle" autoSize="none" text="提示：熔炼装备获得七星沙熔炼装备获得七星沙熔炼装备获得七星沙熔炼装备获得&#xA;"/>
+    <component id="n16_hn8a" name="Button_Green" src="fgrh2" xy="343,32">
+      <Button title="绿色" titleColor="#33ff00" icon="ui://s5cy5qnpigjb1p"/>
+    </component>
+    <component id="n17_hn8a" name="Button_White" src="fgrh2" xy="135,32">
+      <Button title="白色" titleColor="#ffffff" icon="ui://s5cy5qnphn8aoz9k"/>
+    </component>
+    <component id="n18_hn8a" name="Button_Blue" src="fgrh2" xy="551,32">
+      <Button title="蓝色" titleColor="#00ccff" icon="ui://s5cy5qnpigjb1q"/>
+    </component>
+    <component id="n19_hn8a" name="Button_Purple" src="fgrh2" xy="759,32">
+      <Button title="紫色" titleColor="#ff00ff" icon="ui://s5cy5qnpigjb1r"/>
+    </component>
+    <component id="n20_hn8a" name="Button_Orange" src="fgrh2" xy="967,32">
+      <Button title="橙色" titleColor="#ff9900" icon="ui://s5cy5qnpigjb1s"/>
+    </component>
+    <component id="n22_hn8a" name="Button_Red" src="fgrh2" xy="1175,32">
+      <Button title="红色" titleColor="#ff3300" icon="ui://s5cy5qnpigjb1t"/>
+    </component>
+    <component id="n2_hn8a" name="Button_Smelting" src="gr0bozdm" pkg="s5cy5qnp" xy="1288,104" size="284,108">
+      <Button title="熔炼"/>
+    </component>
+    <component id="n23_ntr0" name="Button_Reforging" src="gr0bozdm" pkg="s5cy5qnp" xy="1597,106" size="284,108">
+      <Button title="重铸"/>
+    </component>
+  </displayList>
+</component>p45eu.xml|465|<component size="158,158">
+  <displayList>
+    <loader id="n44_effm" name="Loader_Icon" xy="0,0" size="158,157" url="ui://s5cy5qnpeffmozph" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n34_p45e" name="Loader_Equipment" xy="8,8" size="142,142" url="ui://s5cy5qnpp26oozcs" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+</component>p45ex.xml|2054|<component size="1100,150">
+  <displayList>
+    <image id="n16_i04o" name="Image_Background" src="effmozpd" pkg="s5cy5qnp" xy="0,0" size="1100,150">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n61_effm" name="Image_Bar" src="effmozpi" pkg="s5cy5qnp" xy="0,0" size="1100,41">
+      <relation target="n16_i04o" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n43_p45e" name="Component_EquipmentIcon" src="p45eu" xy="16,13" size="116,116">
+      <relation target="n16_i04o" sidePair="left-left,middle-middle"/>
+    </component>
+    <text id="n45_p45e" name="Text_EquipmentName" xy="141,12" size="180,39" font="Noto Sans S Chinese Regular" fontSize="25" color="#fcddbc" vAlign="middle" ubb="true" text="轩辕帝王头盔名">
+      <relation target="n43_p45e" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n46_p45e" name="Text_EquipmentDescription" xy="136,50" size="697,61" font="Noto Sans S Chinese Regular" fontSize="22" color="#b8b7b7" leading="0" ubb="true" autoSize="none" text="装备描述最多2行字够了吧装备描述最多2行字够了吧装备描述最多2行字够了吧装备描述最多2行字够了吧装备描述">
+      <relation target="n45_p45e" sidePair="top-bottom,left-left"/>
+    </text>
+    <component id="n56_p45e" name="Button_Compound" src="gr0bozdo" pkg="s5cy5qnp" xy="886,10" size="175,69" controller="Time_C,0,State_C,0">
+      <relation target="n16_i04o" sidePair="right-right,top-top"/>
+      <Button title="合成" titleFontSize="32"/>
+    </component>
+    <text id="n59_p45e" name="Text_Cost" xy="885,86" size="165,43" font="Noto Sans S Chinese Regular" fontSize="24" color="#ced7de" align="center" ubb="true" autoSize="none" text="消耗碎片：5">
+      <relation target="n56_p45e" sidePair="center-center,top-bottom"/>
+    </text>
+    <text id="n60_v9g5" name="Text_EquipmentProperty" xy="135,113" size="345,33" font="Noto Sans S Chinese Regular" fontSize="21" color="#e99897" vAlign="middle" ubb="true" text="攻击： +99999           体力： +99999 ">
+      <relation target="n46_p45e" sidePair="top-bottom,left-left"/>
+    </text>
+  </displayList>
+</component>package.xml|2731|<packageDescription id="dg2z41q1" name="Smithy">
+  <resources>
+    <component id="fgrh2" name="Button_Test" path="/Button/" size="59,59"/>
+    <component id="i04of" name="Component_EquipMenu" path="/Component/" size="650,640"/>
+    <component id="i04oi" name="Button_Forge" path="/Button/" size="299,232"/>
+    <component id="i04om" name="Component_EquipInfo" path="/Component/" size="400,567"/>
+    <component id="i04oq" name="Button_Tab" path="/Button/" size="157,119"/>
+    <component id="mlaq6" name="Button_Function" path="/Button/" size="111,149"/>
+    <component id="p2pn4" name="Component_HandleMenu" path="/Component/" size="1922,300"/>
+    <component id="p45eu" name="Component_EquipItem" path="/Component/" size="158,158"/>
+    <component id="p45ex" name="Component_SuitItem" path="/Component/" size="1100,150"/>
+    <component id="s7dy8" name="Button_Prop" path="/Button/" size="114,114"/>
+    <image id="e2omc" name="Image_Lock" path="/Image/" size="81,80"/>
+    <image id="effm14" name="Image_Line" path="/Image/" size="3,71"/>
+    <image id="effm16" name="Image_Round" path="/Image/" size="98,99"/>
+    <image id="effm17" name="Image_Smelting" path="/Image/" size="85,90"/>
+    <image id="effm18" name="Image_Platform" path="/Image/" size="318,318"/>
+    <image id="effm19" name="Image_EquipmentBackground" path="/Image/" size="110,110"/>
+    <image id="effm1a" name="Image_EquipmentFrame" path="/Image/" size="104,104"/>
+    <image id="effm1b" name="Image_Halo" path="/Image/" size="133,133"/>
+    <image id="effm1c" name="Image_Bottom" path="/Image/" size="40,48" scale="9grid" scale9grid="17,19,5,8"/>
+    <image id="effm1e" name="Image_Suit1" path="/Image/" size="98,100"/>
+    <image id="effm1f" name="Image_Suit" path="/Image/" size="66,68"/>
+    <image id="fgrh3" name="Image_Tick" path="/Image/" size="55,55"/>
+    <image id="gwtn1g" name="Image_BigRound" path="/Image/" size="323,632"/>
+    <image id="i04og" name="Image_Basement" path="/Image/" size="80,72" scale="9grid" scale9grid="6,0,5,72"/>
+    <image id="mlaq7" name="Image_EquipmentIcon" path="/Image/" size="83,87"/>
+    <image id="ntr012" name="Image_BlueSide" path="/Image/" size="66,48" scale="9grid" scale9grid="29,32,2,4"/>
+    <component id="fgrh0" name="SmithyMain" path="/" size="1920,1080" exported="true"/>
+    <component id="i04oo" name="SuitCompoundMain" path="/" size="1334,750" exported="true"/>
+    <component id="lve61h" name="Reference" path="/" size="400,400" exported="true"/>
+    <component id="mlaq5" name="ForgeMain" path="/" size="1334,750" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <atlas id="atlas_effm18" size="512,512" file="atlas_effm18.png"/>
+  </resources>
+</packageDescription>s7dy8.xml|1394|<component size="114,114" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <controller name="Quality_C" pages="0,无,1,白色,5,绿色,4,蓝色,6,紫色,2,橙色,3,红色" selected="0"/>
+  <displayList>
+    <image id="n10_effm" name="Image_Background" src="effm19" xy="0,0" size="114,114"/>
+    <image id="n12_effm" name="Image_Halo" src="effm1b" xy="0,0" size="114,114" alpha="0">
+      <gearDisplay controller="button" pages="1"/>
+      <gearLook controller="Quality_C" pages="0,1,5,4,6,2,3" values="0,0,0|0.8,0,0|0.8,0,0|0.8,0,0|0.8,0,0|0.8,0,0|0.8,0,0"/>
+      <gearColor controller="Quality_C" pages="0,5,4,6,2,3" values="#ffffff|#26b4c7|#3d94ff|#9875ff|#e86f2e|#ad2121" default="#ffffff"/>
+    </image>
+    <image id="n11_effm" name="Image_Round" src="effm1a" xy="0,0" size="114,114" color="#84878c">
+      <gearColor controller="Quality_C" pages="1,5,4,6,2,3" values="#ffffff|#5effdf|#4cbeff|#c559ff|#ff7a38|#ff4c42" default="#84878c"/>
+    </image>
+    <loader id="n4" name="Loader_EquipmentIcon" xy="0,1" size="113,113" url="ui://s5cy5qnpp26oozcu" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="Quality_C" pages="1,5,4,6,2,3"/>
+    </loader>
+    <image id="n6_e2om" name="Image_Lock" src="e2omc" xy="17,17" size="81,80">
+      <gearDisplay controller="Quality_C" pages="0"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

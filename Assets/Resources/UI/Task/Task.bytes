@@ -1,0 +1,149 @@
+package.xml|1039|<packageDescription id="b5xcywft" name="Task">
+  <resources>
+    <component id="wftb8" name="ProgressBar_Task" path="/ProgressBar/" size="100,50"/>
+    <component id="wftb9" name="Component_TaskItem" path="/Component/" size="1538,171"/>
+    <image id="qbu8n" name="huangsetiao" path="/Image/" size="233,117" scale="9grid" scale9grid="221,0,2,116"/>
+    <image id="wftb6" name="rwycj_08" path="/Image/" size="15,29"/>
+    <image id="wftbd" name="rwycj_112" path="/Image/" size="280,36"/>
+    <image id="wftbe" name="rwycj_111" path="/Image/" size="172,46"/>
+    <component id="wftb0" name="TaskMain" path="/" size="1920,1103" exported="true"/>
+    <component id="wftbc" name="TaskRewardsMain" path="/" size="1920,1080" exported="true"/>
+    <image id="tgcjp" name="anniu" path="/Image/" size="185,85" exported="true"/>
+    <image id="tgcjq" name="anniu_huawen" path="/Image/" size="160,58" exported="true" scale="9grid" scale9grid="1,0,158,58"/>
+    <atlas id="atlas0" size="512,512" file="atlas0.png"/>
+  </resources>
+</packageDescription>wftb0.xml|2503|<component size="1920,1103">
+  <controller name="Tab_C" pages="0,主线,1,每日,2,成就" selected="0"/>
+  <controller name="v0.1" pages="0,做,1,不做" selected="0"/>
+  <displayList>
+    <component id="n24_qbu8" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1103" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="任务"/>
+    </component>
+    <graph id="n21" name="gra_diban" xy="26,133" size="1873,949" group="n39_dv21" alpha="0.72" type="rect" lineSize="0" fillColor="#ff0a3152"/>
+    <image id="n29_qbu8" name="img_huawen" src="qbu8ozeq" pkg="s5cy5qnp" xy="26,1019" size="62,62" group="n39_dv21"/>
+    <image id="n30_qbu8" name="img_huawen2" src="qbu8ozeq" pkg="s5cy5qnp" xy="1834,131" size="62,62" group="n39_dv21" flip="both"/>
+    <group id="n39_dv21" name="Group_Frame" xy="26,131" size="1873,951" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <list id="n20" name="List_BranchTask" xy="330,357" size="1543,707" overflow="scroll" scrollBarFlags="2" clipSoftness="0,150" lineGap="10" defaultItem="ui://b5xcywftwftb9">
+      <relation target="n23" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n23" name="Component_MainTask" src="wftb9" xy="330,172">
+      <relation target="n21" sidePair="center-center,middle-middle"/>
+    </component>
+    <image id="n31_qbu8" name="img_zhuanmao" src="qbu8ozer" pkg="s5cy5qnp" xy="145,837" size="15,41" group="n33_qbu8"/>
+    <graph id="n32_qbu8" name="gra_xian" xy="152,133" size="4,698" group="n33_qbu8" alpha="0.69" type="rect" lineSize="0" fillColor="#ff21588d"/>
+    <component id="n27_qbu8" name="btn_zhuxian" src="ntr0ozj4" pkg="s5cy5qnp" xy="27,234" size="280,265" group="n33_qbu8" controller="button,1">
+      <Button checked="true" controller="Tab_C" page="0"/>
+    </component>
+    <graph id="n36_qbu8" name="gra_xian2" xy="285,414" size="4,642" group="n33_qbu8" alpha="0.69" type="rect" lineSize="0" fillColor="#ff4e7ba3"/>
+    <graph id="n37_qbu8" name="gra_xian3" xy="285,133" size="4,192" group="n33_qbu8" alpha="0.69" type="rect" lineSize="0" fillColor="#ff4e7ba3"/>
+    <group id="n33_qbu8" name="group_renwuzhonglei" xy="27,133" size="280,923" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>wftb8.xml|814|<component size="100,50" extention="ProgressBar">
+  <displayList>
+    <graph id="n1" name="n1" xy="0,0" size="100,50" alpha="0.99" type="rect" lineSize="0" lineColor="#ffa0a0a0" fillColor="#ff173342">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n2" name="bar" xy="0,0" size="100,50" type="rect" lineSize="0" lineColor="#ff00ffff" fillColor="#ff2ca0dc">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n3" name="title" xy="-170,30" size="100,39" font="微软雅黑" fontSize="26" color="#a9e1ff" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" text="555">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>wftb9.xml|3138|<component size="1538,171" overflow="hidden">
+  <controller name="wancheng" pages="1,已完成,0,未完成" selected="0"/>
+  <displayList>
+    <image id="n27_dv21" name="img_diban" src="lctzozjs" pkg="s5cy5qnp" xy="1,0" size="1537,170"/>
+    <image id="n19" name="img_diban2" src="lctzozjs" pkg="s5cy5qnp" xy="-41,0" size="513,171">
+      <gearDisplay controller="wancheng" pages="1"/>
+    </image>
+    <loader id="n13" name="loader_leixing" xy="28,32" size="89,84" url="ui://s5cy5qnpqbu8ozel" fill="scaleFree"/>
+    <image id="n34_dv21" name="img_huangse" src="qbu8n" xy="237,6" size="1297,159" alpha="0.6">
+      <gearDisplay controller="wancheng" pages="1"/>
+    </image>
+    <component id="n15" name="progressBar_renwu" src="wftb8" xy="189,107" size="443,13">
+      <ProgressBar value="5" max="10"/>
+    </component>
+    <list id="n16" name="list_jiangli" xy="636,7" pivot="0.5,0.5" size="722,160" scale="0.7,0.7" layout="row" overflow="scroll" scroll="horizontal" colGap="10" defaultItem="ui://s5cy5qnphqutz3m" align="right">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n22" name="img_wenben" src="wftb6" xy="1378,63">
+      <gearDisplay controller="wancheng" pages="0"/>
+    </image>
+    <text id="n26_sg3h" name="txt_neirong" xy="186,53" size="543,43" font="微软雅黑" fontSize="27" color="#bae1ff" vAlign="middle" ubb="true" autoSize="none" shadowColor="#000000" shadowOffset="1,1" text="内容内容内容内容内容内容内容内容内容内容"/>
+    <text id="n28_dv21" name="txt_leixing" xy="186,10" size="109,49" font="微软雅黑" fontSize="34" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" text="【主】"/>
+    <text id="n35_rxmm" name="txt_biaoti" xy="295,13" size="433,43" font="微软雅黑" fontSize="27" color="#bae1ff" vAlign="middle" ubb="true" autoSize="none" shadowColor="#000000" shadowOffset="1,1" text="内容内容内容内容内容内容内容内容内容内容"/>
+    <component id="n32_dv21" name="btn_qianwang" src="gr0bozdm" pkg="s5cy5qnp" xy="1277,30" controller="State_C,0">
+      <gearDisplay controller="wancheng" pages="0"/>
+      <Button title="前往"/>
+    </component>
+    <component id="n37_n9p7" name="btn_lingqu" src="gr0bozdl" pkg="s5cy5qnp" xy="1296,16" size="258,140" scale="0.8,0.9">
+      <gearDisplay controller="wancheng" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="领取"/>
+    </component>
+  </displayList>
+  <transition name="wancheng_yun">
+    <item time="0" type="XY" target="n19" tween="true" startValue="-454.86,0.05" endValue="1477.77,0.45" duration="24"/>
+    <item time="24" type="XY" target="n19" tween="true" startValue="1477.77,0.45" repeat="-1"/>
+  </transition>
+  <transition name="dianji" autoPlay="true" autoPlayRepeat="-1"/>
+  <transition name="huode">
+    <item time="0" type="Scale" target="n16" tween="true" startValue="0.7,0.7" endValue="0.75,0.8" duration="10" repeat="-1" yoyo="true"/>
+    <item time="10" type="Scale" target="n16" tween="true" startValue="0.75,0.8" endValue="0.7,0.7" duration="14" repeat="-1" yoyo="true"/>
+    <item time="24" type="Scale" target="n16" tween="true" startValue="0.7,0.7" repeat="-1" yoyo="true"/>
+  </transition>
+</component>wftbc.xml|2605|<component size="1920,1080">
+  <displayList>
+    <graph id="n0" name="gra_beijing" xy="0,0" size="1920,1080" alpha="0.8" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n1" name="img_jianglibeijing" src="wftbd" xy="960,523" pivot="0.5,0.5" anchor="true" size="1920,238"/>
+    <image id="n2" name="img_renwujiangli" src="wftbe" xy="967,402" pivot="0.5,0.5" anchor="true" size="172,46" scale="2,2"/>
+    <list id="n4" name="list_jiangli" xy="974,541" pivot="0.5,0.5" anchor="true" size="968,168" scale="1.2,1.2" layout="row" selectionMode="none" colGap="10" defaultItem="ui://s5cy5qnphqutz3m" autoItemSize="false" align="center">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <transition name="Effect_T">
+    <item time="0" type="Alpha" target="n0" tween="true" startValue="0" endValue="0.8" duration="6"/>
+    <item time="0" type="Alpha" target="n1" value="0"/>
+    <item time="0" type="Alpha" target="n4" value="0"/>
+    <item time="0" type="Alpha" target="n2" value="0"/>
+    <item time="0" type="XY" target="n4" value="974,541"/>
+    <item time="6" type="Alpha" target="n1" tween="true" startValue="0" endValue="1" duration="5"/>
+    <item time="6" type="Alpha" target="n2" value="1"/>
+    <item time="6" type="Size" target="n1" tween="true" startValue="1920,49.12" endValue="1920,238.73" duration="5"/>
+    <item time="11" type="Alpha" target="n4" tween="true" startValue="0" endValue="1" duration="5"/>
+    <item time="11" type="Scale" target="n4" tween="true" startValue="0.5,0.5" endValue="1.1,1.1" duration="5"/>
+    <item time="16" type="Scale" target="n4" tween="true" startValue="1.1,1.1" endValue="1,1" duration="2"/>
+    <item time="33" type="Alpha" target="n2" tween="true" startValue="1" endValue="0" duration="5"/>
+    <item time="33" type="Alpha" target="n1" tween="true" startValue="1" endValue="0" duration="5"/>
+    <item time="33" type="Alpha" target="n0" tween="true" startValue="0.8" endValue="0" duration="5"/>
+    <item time="45" type="Alpha" target="n4" tween="true" startValue="1" endValue="0" duration="9"/>
+    <item time="45" type="Scale" target="n4" tween="true" startValue="1,1" endValue="0.5,0.5" duration="9"/>
+    <item time="45" type="XY" target="n4" tween="true" startValue="975,541.59" endValue="975,528.59" duration="2"/>
+    <item time="47" type="XY" target="n4" tween="true" startValue="975,528.59" endValue="975,985.59" duration="7"/>
+    <item time="54" type="Scale" target="n4" tween="true" startValue="0.5,0.5"/>
+  </transition>
+</component>

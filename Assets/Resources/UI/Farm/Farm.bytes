@@ -1,0 +1,467 @@
+o4dl0.xml|3367|<component size="360,535" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <controller name="State_C" pages="0,有冲突,1,无冲突" selected="0"/>
+  <controller name="Full_C" pages="0,未满,1,已满" selected="0"/>
+  <displayList>
+    <graph id="n4" name="Graph_Base" xy="0,0" size="360,535" type="rect" lineSize="0" fillColor="#ff2f84aa"/>
+    <loader id="n5" name="icon" xy="23,299" size="309,213" align="center" vAlign="bottom">
+      <relation target="n4" sidePair="left-left,bottom-bottom"/>
+    </loader>
+    <text id="n6" name="title" xy="41,144" size="261,87" font="Noto Sans S Chinese Regular" fontSize="60" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="铜矿">
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n7" name="Text_Square" xy="18,15" size="59,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" singleLine="true" text="占地:">
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n8" name="Text_Yield" xy="18,50" size="59,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="产量:">
+      <relation target="n7" sidePair="left-left,top-bottom"/>
+    </text>
+    <text id="n9" name="Text_CoverArea" xy="76,15" size="75,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" singleLine="true" text="20333">
+      <relation target="n7" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n10" name="Text_Output" xy="76,50" size="147,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" text="200000/小时">
+      <relation target="n8" sidePair="left-right,top-top"/>
+    </text>
+    <graph id="n11" name="Graph_Line" xy="8,91" size="341,3" type="rect" lineSize="0" fillColor="#ff78bedd">
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </graph>
+    <text id="n12" name="Text_Predict" xy="137,231" size="77,35" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" singleLine="true" text="可收获">
+      <relation target="n6" sidePair="left-left,top-bottom"/>
+    </text>
+    <text id="n13" name="Text_Harvest" xy="36,265" size="286,50" font="微软雅黑" fontSize="36" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="5555">
+      <gearColor controller="Full_C" pages="1" values="#ff6600,#000000" default="#ffffff,#000000"/>
+      <relation target="n12" sidePair="left-left,top-bottom"/>
+    </text>
+    <component id="n20" name="Label_Tips" src="pui2oz41" pkg="s5cy5qnp" xy="79,-34">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n9" sidePair="left-left,top-top"/>
+    </component>
+    <component id="n23" name="Label_CoverAreaTips" src="t10wm" xy="148,14" size="64,35">
+      <relation target="n9" sidePair="left-right,top-top"/>
+      <Label title="-10%"/>
+    </component>
+    <component id="n24" name="Label_OutputTips" src="t10wm" xy="222,49" size="64,35">
+      <relation target="n10" sidePair="left-right,top-top"/>
+      <Label title="-10%  "/>
+    </component>
+    <component id="n25" name="Label_HarvestTips" src="t10wm" xy="213,230" size="64,35">
+      <relation target="n12" sidePair="left-left,top-top"/>
+      <Label title="-10%   "/>
+    </component>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>o4dl4.xml|2098|<component size="505,106">
+  <controller name="State_C" pages="0,自己的,1,敌人的,2,盟友的" selected="0"/>
+  <displayList>
+    <image id="n0_wfm2" name="Image_Background" src="rjc5ozmn" pkg="s5cy5qnp" xy="0,0" size="504,106" flip="both">
+      <relation target="n1_wfm2" sidePair="left-left,top-top"/>
+    </image>
+    <component id="n1_wfm2" name="Label_LordIcon" src="g52xozii" pkg="s5cy5qnp" xy="2,0" size="105,105">
+      <Label title="24"/>
+    </component>
+    <text id="n2_wfm2" name="TextField_PlayName" xy="108,3" size="253,42" font="微软雅黑" fontSize="29" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="玩家名字七个字">
+      <gearDisplay controller="State_C" pages="0,1,2"/>
+      <gearColor controller="State_C" pages="1,2" values="#ff0000,#000000|#0033ff,#000000" default="#ffffff,#000000"/>
+      <relation target="n1_wfm2" sidePair="left-right,top-top"/>
+    </text>
+    <component id="n7_wfm2" name="Button_FarmManage" src="gr0bozdm" pkg="s5cy5qnp" xy="352,59" size="152,47" controller="State_C,0">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n8_wfm2" sidePair="center-center,top-bottom"/>
+      <Button title="农场管理" titleFontSize="20"/>
+    </component>
+    <text id="n8_wfm2" name="TextField_PlayNameFarm" xy="379,3" size="102,42" font="微软雅黑" fontSize="29" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="的农场">
+      <relation target="n0_wfm2" sidePair="right-right,top-top"/>
+    </text>
+    <text id="n9_wfm2" name="TextField_AllianceName" xy="109,57" size="248,42" font="微软雅黑" fontSize="29" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="联盟名字七个字">
+      <gearDisplay controller="State_C" pages="0,1,2"/>
+      <gearColor controller="State_C" pages="1,2" values="#ff0000,#000000|#0000ff,#000000" default="#ffffff,#000000"/>
+      <relation target="n1_wfm2" sidePair="left-right,top-top"/>
+    </text>
+  </displayList>
+</component>o4dlj.xml|2509|<component size="1920,1080">
+  <controller name="State_C" pages="0,我的农场,1,别人农场" selected="0"/>
+  <displayList>
+    <component id="n2_wfm2" name="Button_OneKey" src="gr0bozdm" pkg="s5cy5qnp" xy="697,998" size="205,67">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="n23_zxdy" sidePair="left-right,middle-middle"/>
+      <Button title="一键种地" titleFontSize="25"/>
+    </component>
+    <component id="n23_zxdy" name="Component_SocialList" src="zxdyv" xy="0,149">
+      <relation target="" sidePair="left-right,middle-middle"/>
+    </component>
+    <component id="n25_zxdy" name="Component_LordInfo" src="o4dl4" xy="0,0">
+      <relation target="" sidePair="left-left,top-top"/>
+    </component>
+    <component id="n26_zxdy" name="Button_RetrunFarm" src="gr0bozdm" pkg="s5cy5qnp" xy="1652,23" size="205,67">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="返回我农场" titleFontSize="25"/>
+    </component>
+    <component id="n27_zxdy" name="Button_RetrunCity" src="zxdy12" xy="1700,889">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </component>
+    <text id="n28_zxdy" name="TextField_StealTips" xy="948,977" size="405,59" fontSize="40" color="#ffffff" text="长按地块可批量偷资源">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n2_wfm2" sidePair="left-right,bottom-bottom"/>
+    </text>
+    <text id="n29_zxdy" name="TextField_TodaySteal" xy="969,1029" size="256,59" fontSize="40" color="#ffffff" text="今日还可被偷:">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n28_zxdy" sidePair="left-left,top-bottom"/>
+    </text>
+    <text id="n30_zxdy" name="TextField_TodayStealTime" xy="1248,1031" size="34,59" fontSize="40" color="#00ff00" text="N">
+      <gearDisplay controller="State_C" pages="1"/>
+      <relation target="n29_zxdy" sidePair="left-right,top-top"/>
+    </text>
+    <component id="n39_zxdy" name="Component_Help1" src="zxdy16" xy="1320,519">
+      <gearDisplay controller="State_C" pages="1"/>
+    </component>
+    <component id="n40_zxdy" name="Component_Help2" src="zxdy17" xy="1577,423">
+      <gearDisplay controller="State_C" pages="1"/>
+    </component>
+    <component id="n42_rjc5" name="Component_CityInfo" src="rjc5ozmm" pkg="s5cy5qnp" xy="1372,-1">
+      <gearDisplay controller="State_C" pages="0"/>
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+  </displayList>
+</component>o4dlk.xml|4656|<component size="1920,1080">
+  <controller name="State_C" pages="0,有冲突 有闲置,1,有冲突 无闲置,2,无冲突 有闲置,3,无冲突 无闲置" selected="0"/>
+  <displayList>
+    <component id="n1" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1920,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="农场"/>
+    </component>
+    <image id="n3" name="img_di" src="cwf2k" pkg="s5cy5qnp" xy="74,200" size="1782,823">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n13" name="Button_Check" src="gr0bozdm" pkg="s5cy5qnp" xy="1517,224" size="291,132">
+      <relation target="n4" sidePair="right-right,top-top"/>
+      <Button title="查看" titleColor="#ffffff" titleFontSize="36"/>
+    </component>
+    <component id="n14" name="Button_GoldMine" src="o4dl0" xy="141,405">
+      <relation target="n3" sidePair="left-left,top-top"/>
+      <Button icon="ui://c8c3ab85o4dlg"/>
+    </component>
+    <component id="n15" name="Button_Sawmill" src="o4dl0" xy="569,405">
+      <relation target="n14" sidePair="left-left,top-top"/>
+      <Button title="木材场" icon="ui://c8c3ab85o4dlh"/>
+    </component>
+    <component id="n16" name="Button_Cropland" src="o4dl0" xy="997,406">
+      <relation target="n15" sidePair="left-left,top-top"/>
+      <Button title="粮田" icon="ui://c8c3ab85o4dle"/>
+    </component>
+    <component id="n17" name="Button_StonePit" src="o4dl0" xy="1433,406">
+      <relation target="n16" sidePair="left-left,top-top"/>
+      <Button title="石场" icon="ui://c8c3ab85o4dlf"/>
+    </component>
+    <graph id="n4" name="gra_di2" xy="139,230" size="1365,123" group="n18_fmw6" alpha="0.8" type="rect" lineSize="0" fillColor="#ff0d1d37">
+      <relation target="n3" sidePair="left-left,top-top"/>
+    </graph>
+    <text id="n5" name="txt_chengchi" xy="179,271" size="158,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" singleLine="true" text="城池等级:">
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n6" name="Text_CityLevel" xy="335,271" size="97,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="8">
+      <relation target="n5" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n7" name="txt_yongyou" xy="512,271" size="230,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" singleLine="true" text="拥有土地数量:">
+      <relation target="n6" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n8" name="Text_GroundCount" xy="740,271" size="178,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="100">
+      <relation target="n7" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n9" name="txt_chongtu" xy="947,271" size="158,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#d93f1b" vAlign="middle" ubb="true" singleLine="true" text="冲突土地:">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <gearXY controller="State_C" pages="0,1,3" values="947,271|981,271|1014,271" default="1014,271"/>
+      <relation target="n8" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n10" name="Text_ConflictCount" xy="1104,271" size="103,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#d93f1b" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="20">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <gearXY controller="State_C" pages="0,1,2,3" values="1104,271|1104,271|1104,271|1135,271"/>
+      <relation target="n9" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n11" name="txt_xianzhi" xy="1194,271" size="158,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#00cc00" vAlign="middle" ubb="true" singleLine="true" text="闲置土地:">
+      <gearDisplay controller="State_C" pages="0,2"/>
+      <gearXY controller="State_C" pages="0,1,2,3" values="1194,271|1213,271|1194,271|1213,271"/>
+      <relation target="n10" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n12" name="Text_UnusedCount" xy="1349,271" size="117,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#00cc00" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="8">
+      <gearDisplay controller="State_C" pages="0,2"/>
+      <gearXY controller="State_C" pages="0,1,2,3" values="1349,271|1349,271|1349,271|1349,271"/>
+      <relation target="n11" sidePair="left-right,top-top"/>
+    </text>
+    <group id="n18_fmw6" name="group_dengji" xy="139,230" size="1365,123" advanced="true"/>
+  </displayList>
+</component>package.xml|2397|<packageDescription id="c8c3ab85" name="Farm">
+  <resources>
+    <component id="o4dl0" name="Button_Farm" path="/Button/" size="360,535"/>
+    <component id="o4dl4" name="Component_LordInfo" path="/Component/" size="505,106"/>
+    <component id="t10wm" name="Label_Percent" path="/Label/" size="10,35"/>
+    <component id="zxdy11" name="Button_SocialNews" path="/Button/" size="557,131"/>
+    <component id="zxdy12" name="Button_RetrunCity" path="/Button/" size="198,198"/>
+    <component id="zxdy15" name="Component_Bar_Experience" path="/Component/" size="335,90"/>
+    <component id="zxdy16" name="Component_Help1" path="/Component/" size="223,379"/>
+    <component id="zxdy17" name="Component_Help2" path="/Component/" size="334,332"/>
+    <component id="zxdyp" name="Button_Tag" path="/Button/" size="100,35"/>
+    <component id="zxdyr" name="Button_DrawSocialList" path="/Button/" size="72,188"/>
+    <component id="zxdyv" name="Component_Social" path="/Component/" size="667,884"/>
+    <component id="zxdyw" name="Component_MemberList" path="/Component/" size="561,776"/>
+    <component id="zxdyx" name="Button_SocialTime" path="/Button/" size="557,131"/>
+    <component id="zxdyz" name="Button_AddUnion" path="/Button/" size="400,292"/>
+    <image id="o4dle" name="Image_Cropland" path="/Image/" size="291,148"/>
+    <image id="o4dlf" name="Image_StonePit" path="/Image/" size="291,176"/>
+    <image id="o4dlg" name="Image_GoldMine" path="/Image/" size="294,184"/>
+    <image id="o4dlh" name="Image_Sawmill" path="/Image/" size="291,207"/>
+    <image id="zxdy10" name="Image_Union" path="/Image/" size="200,146"/>
+    <image id="zxdy13" name="Img_BG_RetrunCity" path="/Image/" size="192,191"/>
+    <image id="zxdy14" name="Img_Title_RetrunCity" path="/Image/" size="93,50"/>
+    <image id="zxdyo" name="Image_Toggle" path="/Image/" size="76,29"/>
+    <image id="zxdys" name="Img_BG_Draw" path="/Image/" size="45,47" scale="9grid" scale9grid="21,0,3,46"/>
+    <image id="zxdyy" name="Image_Ban" path="/Image/" size="46,46"/>
+    <component id="o4dlj" name="FarmMainv0.3" path="/" size="1920,1080" exported="true"/>
+    <component id="o4dlk" name="FarmMain" path="/" size="1920,1080" exported="true"/>
+    <component id="zxdy18" name="FarmManagev0.3" path="/" size="1920,1080" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+  </resources>
+</packageDescription>t10wm.xml|561|<component size="10,35" extention="Label">
+  <displayList>
+    <graph id="n3" name="icon" xy="0,0" size="0,35" type="rect" lineSize="0" fillColor="#ffd93f1b">
+      <relation target="n1" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n1" name="title" xy="0,0" size="10,35" font="微软雅黑" fontSize="24" color="#ffffff" align="center" vAlign="middle" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <relation target="n1" sidePair="width-width,height-height"/>
+</component>zxdy11.xml|1065|<component size="557,131" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <controller name="State_C" pages="0,未屏蔽,1,已屏蔽" selected="0"/>
+  <displayList>
+    <graph id="n11" name="Graph_Background" xy="0,0" size="557,131" type="rect" lineSize="0" fillColor="#ff4e83ac">
+      <gearDisplay controller="button" pages="1"/>
+    </graph>
+    <loader id="n5" name="Loader_LordIcon" xy="15,18" size="97,97" url="ui://43m475k2yqyk6" fill="scaleFree"/>
+    <image id="n10" name="Image_Ban" src="zxdyy" xy="80,83" size="32,32" color="#ff3300">
+      <gearDisplay controller="State_C" pages="1"/>
+    </image>
+    <text id="n6" name="TextField_Title" xy="132,23" size="319,43" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" singleLine="true" text="[旗号]君主名字七个字"/>
+    <text id="n7" name="TextField_News" xy="130,80" size="321,42" alpha="0.5" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="我怎么了你的农场"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>zxdy12.xml|346|<component size="198,198" extention="Button">
+  <displayList>
+    <loader id="n123_c8c1" name="Loader_ComeBack" xy="0,0" size="192,192" url="ui://c8c3ab85zxdy13"/>
+    <loader id="n125_fhoz" name="Loader_Text" xy="49,130" size="93,47" url="ui://c8c3ab85zxdy14"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>zxdy15.xml|345|<component size="335,90">
+  <displayList>
+    <component id="n40_q88l" name="Component_Experience" src="7sz4ozib" pkg="s5cy5qnp" xy="60,22" size="224,46">
+      <ProgressBar value="5" max="10"/>
+    </component>
+    <component id="n42_q88l" name="Button_Box" src="q88lozmk" pkg="s5cy5qnp" xy="241,11" size="64,65"/>
+  </displayList>
+</component>zxdy16.xml|797|<component size="223,379">
+  <controller name="State_C" pages="0,处于休息状态,1,未处于休息状态" selected="0"/>
+  <displayList>
+    <text id="n31_zxdy" name="TextField_TodayHelp1" xy="0,329" size="176,59" fontSize="40" color="#ffffff" text="犒劳对方:"/>
+    <text id="n32_zxdy" name="TextFiled_TodayHelp1_Time" xy="190,329" size="34,59" fontSize="40" color="#00ff00" text="N"/>
+    <component id="n36_zxdy" name="Button_Comfort" src="gr0bozdm" pkg="s5cy5qnp" xy="21,0" size="169,67">
+      <gearDisplay controller="State_C" pages="0"/>
+      <Button title="犒劳" titleFontSize="25"/>
+    </component>
+    <text id="n38_zxdy" name="TextField_CountDown" xy="19,76" size="201,59" fontSize="40" color="#00ff00" text="NN:NN:NN">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+  </displayList>
+</component>zxdy17.xml|451|<component size="334,332">
+  <controller name="State_C" pages="0,可浇水,1,不可浇水" selected="0"/>
+  <displayList>
+    <component id="n35_zxdy" name="Component_TodayHelp" src="zxdy15" xy="0,242" size="333,90"/>
+    <component id="n37_zxdy" name="Button_Help" src="gr0bozdm" pkg="s5cy5qnp" xy="95,0" size="169,67">
+      <gearDisplay controller="State_C" pages="0"/>
+      <Button title="浇水" titleFontSize="25"/>
+    </component>
+  </displayList>
+</component>zxdy18.xml|4680|<component size="1920,1080">
+  <controller name="State_C" pages="0,有冲突 有闲置,1,有冲突 无闲置,2,无冲突 有闲置,3,无冲突 无闲置" selected="0"/>
+  <displayList>
+    <component id="n1" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" controller="Type_C,1">
+      <relation target="" sidePair="left-left,top-top"/>
+      <Label title="农场管理"/>
+    </component>
+    <image id="n3" name="Image_Background" src="cwf2k" pkg="s5cy5qnp" xy="74,200" size="1782,823">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n13" name="Button_Check" src="gr0bozdm" pkg="s5cy5qnp" xy="1517,224" size="291,132">
+      <relation target="n4" sidePair="right-right,top-top"/>
+      <Button title="查看" titleColor="#ffffff" titleFontSize="36"/>
+    </component>
+    <component id="n14" name="Button_GoldMine" src="o4dl0" xy="141,405">
+      <relation target="n3" sidePair="left-left,top-top"/>
+      <Button icon="ui://c8c3ab85o4dlg"/>
+    </component>
+    <component id="n15" name="Button_Sawmill" src="o4dl0" xy="569,405">
+      <relation target="n14" sidePair="left-left,top-top"/>
+      <Button title="木材场" icon="ui://c8c3ab85o4dlh"/>
+    </component>
+    <component id="n16" name="Button_Cropland" src="o4dl0" xy="997,406">
+      <relation target="n15" sidePair="left-left,top-top"/>
+      <Button title="粮田" icon="ui://c8c3ab85o4dle"/>
+    </component>
+    <component id="n17" name="Button_StonePit" src="o4dl0" xy="1433,406">
+      <relation target="n16" sidePair="left-left,top-top"/>
+      <Button title="石场" icon="ui://c8c3ab85o4dlf"/>
+    </component>
+    <graph id="n4" name="Graph_Base" xy="139,230" size="1365,123" group="n18_fmw6" alpha="0.8" type="rect" lineSize="0" fillColor="#ff0d1d37">
+      <relation target="n3" sidePair="left-left,top-top"/>
+    </graph>
+    <text id="n5" name="TextField_City" xy="179,271" size="158,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" singleLine="true" text="城池等级:">
+      <relation target="n4" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n6" name="TextField_CityLevel" xy="335,271" size="97,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="8">
+      <relation target="n5" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n7" name="TextField_Assess" xy="512,271" size="230,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" singleLine="true" text="拥有土地数量:">
+      <relation target="n6" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n8" name="TextField_GroundNumber" xy="740,271" size="178,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="100">
+      <relation target="n7" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n9" name="TextField_Conflict" xy="947,271" size="158,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#d93f1b" vAlign="middle" ubb="true" singleLine="true" text="冲突土地:">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <gearXY controller="State_C" pages="0,1,3" values="947,271|981,271|1014,271" default="1014,271"/>
+      <relation target="n8" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n10" name="TextField_ConflictNumber" xy="1104,271" size="103,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#d93f1b" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="20">
+      <gearDisplay controller="State_C" pages="0,1"/>
+      <gearXY controller="State_C" pages="0,1,2,3" values="1104,271|1104,271|1104,271|1135,271"/>
+      <relation target="n9" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n11" name="TextField_Empty" xy="1194,271" size="158,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#00cc00" vAlign="middle" ubb="true" singleLine="true" text="闲置土地:">
+      <gearDisplay controller="State_C" pages="0,2"/>
+      <gearXY controller="State_C" pages="0,1,2,3" values="1194,271|1194,271|1194,271|1213,271"/>
+      <relation target="n10" sidePair="left-right,top-top"/>
+    </text>
+    <text id="n12" name="TextField_Unused" xy="1349,271" size="117,50" group="n18_fmw6" font="微软雅黑" fontSize="36" color="#00cc00" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="8">
+      <gearDisplay controller="State_C" pages="0,2"/>
+      <gearXY controller="State_C" pages="0,1,2,3" values="1349,271|1349,271|1349,271|1349,271"/>
+      <relation target="n11" sidePair="left-right,top-top"/>
+    </text>
+    <group id="n18_fmw6" name="Group_Level" xy="139,230" size="1365,123" advanced="true"/>
+  </displayList>
+</component>zxdyp.xml|574|<component size="100,35" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n7_zxdy" name="icon" src="zxdyo" xy="9,4">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n4" name="title" xy="0,0" size="100,35" font="微软雅黑" fontSize="24" color="#acbdce" align="center" vAlign="middle" autoSize="none" singleLine="true" text="">
+      <gearColor controller="button" pages="0,1" values="#acbdce,#000000|#ffffff,#000000"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>zxdyr.xml|758|<component size="72,188" extention="Button">
+  <controller name="State_C" pages="0,收起,1,展开" selected="0"/>
+  <displayList>
+    <image id="n5_szir" name="Image_Background" src="zxdys" xy="71,0" size="188,71" rotation="90" color="#6ecaff"/>
+    <text id="n2" name="TextField_Title1" xy="7,35" size="53,157" font="微软雅黑" fontSize="39" color="#fffada" align="center" autoSize="none" text="收  起">
+      <gearDisplay controller="State_C" pages="0"/>
+    </text>
+    <text id="n6_zxdy" name="TextField__Title2" xy="7,35" size="53,111" font="微软雅黑" fontSize="39" color="#fffada" align="center" autoSize="none" text="展开">
+      <gearDisplay controller="State_C" pages="1"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>zxdyv.xml|2513|<component size="667,884">
+  <controller name="Page_C" pages="0,成员页,1,最近页" selected="0"/>
+  <displayList>
+    <graph id="n4_zxdy" name="Graph_Background" xy="0,0" size="596,881" type="rect" lineSize="0" fillColor="#ff214b6b"/>
+    <text id="n13_zxdy" name="TextField_Social" xy="198,22" size="186,59" fontSize="40" color="#ffffff" autoSize="height" text="农场互动">
+      <relation target="n4_zxdy" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n14_zxdy" name="TextField_StealTime" xy="160,827" size="228,59" fontSize="40" color="#ffffff" autoSize="none" text="今日可偷：">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n15_zxdy" name="TextField_StealTime2" xy="401,827" size="38,59" fontSize="40" color="#00ff00" autoSize="height" text="N">
+      <relation target="n14_zxdy" sidePair="left-right,top-top"/>
+    </text>
+    <component id="n17_zxdy" name="Button_Recent" src="zxdyp" xy="90,104">
+      <Button title="最近" page="0"/>
+    </component>
+    <component id="n18_zxdy" name="Button_Guild" src="zxdyp" xy="188,104">
+      <relation target="n17_zxdy" sidePair="left-right,top-top"/>
+      <relation target="" sidePair=""/>
+      <Button checked="true" title="联盟" page="1"/>
+    </component>
+    <component id="n19_zxdy" name="Button_Friend" src="zxdyp" xy="290,104">
+      <relation target="n18_zxdy" sidePair="left-right,top-top"/>
+      <Button title="好友" page="2"/>
+    </component>
+    <component id="n20_zxdy" name="Button_Enemy" src="zxdyp" xy="383,104">
+      <relation target="n19_zxdy" sidePair="left-right,top-top"/>
+      <Button title="对立" page="3"/>
+    </component>
+    <component id="n21_zxdy" name="Component_Slider" src="m6dfu" pkg="lyv9eezh" xy="128,153">
+      <relation target="n17_zxdy" sidePair="left-left,top-bottom"/>
+    </component>
+    <component id="n22_zxdy" name="Button_DrawSocialList" src="zxdyr" xy="595,347">
+      <relation target="n4_zxdy" sidePair="left-right,middle-middle"/>
+    </component>
+    <list id="n23_zxdy" name="List_Recently" xy="41,183" size="556,607" overflow="hidden" defaultItem="ui://c8c3ab85zxdy11">
+      <gearDisplay controller="Page_C" pages="1"/>
+      <relation target="n4_zxdy" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n24_zxdy" name="List_Member" src="zxdyw" xy="41,183" size="519,618">
+      <gearDisplay controller="Page_C" pages="0"/>
+    </component>
+  </displayList>
+</component>zxdyw.xml|1137|<component size="561,776">
+  <controller name="State_C" pages="0,正常,1,联盟为空,2,好友为空,3,对立为空" selected="0"/>
+  <displayList>
+    <list id="n21" name="List_Group" xy="0,0" size="561,776" overflow="scroll" scrollBarFlags="2" defaultItem="ui://c8c3ab85zxdyx">
+      <gearDisplay controller="State_C" pages="0"/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n25" name="Label_Add" src="zxdyz" xy="81,444">
+      <gearDisplay controller="State_C" pages="1"/>
+    </component>
+    <text id="n22" name="TextField_Instructions" xy="33,363" size="495,50" font="微软雅黑" fontSize="36" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="height" singleLine="true" text="您当前没有加入联盟">
+      <gearDisplay controller="State_C" pages="1,2,3"/>
+      <gearText controller="State_C" pages="2,3" values="您当前没有好友|您当前没有对立势力" default="您当前没有加入联盟"/>
+    </text>
+    <text id="n26" name="TextField_Tips" xy="33,444" size="498,96" font="微软雅黑" fontSize="36" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="世界频道联盟频道点击玩家头像可加好友">
+      <gearDisplay controller="State_C" pages="2"/>
+    </text>
+  </displayList>
+</component>zxdyx.xml|1871|<component size="557,131" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <controller name="State_C" pages="0,未屏蔽,1,已屏蔽" selected="0"/>
+  <displayList>
+    <graph id="n11" name="Graph_Background" xy="0,0" size="557,131" type="rect" lineSize="0" fillColor="#ff4e83ac">
+      <gearDisplay controller="button" pages="1"/>
+    </graph>
+    <loader id="n5" name="Loader_LordIcon" xy="15,18" size="97,97" url="ui://43m475k2yqyk6" fill="scaleFree"/>
+    <image id="n10" name="Image_Ban" src="zxdyy" xy="80,83" size="32,32" color="#ff3300">
+      <gearDisplay controller="State_C" pages="1"/>
+    </image>
+    <text id="n6" name="TextField_FlagName" xy="132,23" size="319,43" font="微软雅黑" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" singleLine="true" text="[旗号]君主名字七个字"/>
+    <text id="n7" name="TextField_Help" xy="130,72" size="63,42" alpha="0.5" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="犒劳"/>
+    <text id="n12_zxdy" name="TextField_HelpTimes" xy="195,74" size="31,42" alpha="0.5" font="微软雅黑" fontSize="24" color="#00ff00" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="N"/>
+    <text id="n13_zxdy" name="TextField_Watering" xy="242,73" size="63,42" alpha="0.5" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="浇水"/>
+    <text id="n14_zxdy" name="TextField_WateringTimes" xy="307,74" size="31,42" alpha="0.5" font="微软雅黑" fontSize="24" color="#00ff00" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="N"/>
+    <text id="n15_zxdy" name="TextField_Steal" xy="353,75" size="89,42" alpha="0.5" font="微软雅黑" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="偷资源"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>zxdyz.xml|546|<component size="400,292" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n3_fmw6" name="icon" xy="0,0" size="400,292" url="ui://c8c3ab85zxdy10" fill="scale"/>
+    <text id="n2" name="title" xy="114,15" size="181,54" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="加入联盟"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.90"/>
+</component>

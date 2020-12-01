@@ -1,0 +1,182 @@
+guxq1y.xml|887|<movieclip interval="41" frameCount="24">
+  <frames>
+    <frame rect="47,46,108,107"/>
+    <frame rect="41,40,120,119"/>
+    <frame rect="35,35,130,129"/>
+    <frame rect="31,32,138,136"/>
+    <frame rect="29,29,142,141"/>
+    <frame rect="26,27,147,146"/>
+    <frame rect="24,25,151,150"/>
+    <frame rect="22,24,154,152"/>
+    <frame rect="21,22,157,156"/>
+    <frame rect="19,21,160,158"/>
+    <frame rect="18,19,162,162"/>
+    <frame rect="16,18,166,164"/>
+    <frame rect="15,17,168,166"/>
+    <frame rect="14,16,170,169"/>
+    <frame rect="13,15,172,171"/>
+    <frame rect="12,14,174,173"/>
+    <frame rect="10,13,177,175"/>
+    <frame rect="10,13,177,176"/>
+    <frame rect="9,12,179,177"/>
+    <frame rect="9,12,179,177"/>
+    <frame rect="9,12,178,177"/>
+    <frame rect="9,12,177,177"/>
+    <frame rect="9,12,178,177"/>
+    <frame rect="8,12,180,178"/>
+  </frames>
+</movieclip>package.xml|1784|<packageDescription id="ehmekfbf" name="Academy">
+  <resources>
+    <component id="txmy14" name="Component_TechList" path="/Component/" size="1834,387"/>
+    <component id="vhxtk" name="Button_Tech" path="/Button/" size="281,320"/>
+    <image id="ji4f1a" name="guangyun" path="/Image/" size="270,270"/>
+    <image id="ji4f1h" name="guangquan00" path="/Image/" size="512,512"/>
+    <movieclip id="guxq1y" name="MovieClip_Effect" path="/MovieClip/" size="200,200"/>
+    <component id="vhxth" name="AcademyMain" path="/" size="1920,1137" exported="true"/>
+    <component id="vhxto" name="UpgradeTechnologyMain" path="/" size="1962,1080" exported="true"/>
+    <image id="vhxt0" name="neizhengicon5" path="/Image/" size="270,270" exported="true"/>
+    <image id="vhxt1" name="neizhengicon4" path="/Image/" size="269,270" exported="true"/>
+    <image id="vhxt2" name="neizhengicon3" path="/Image/" size="270,270" exported="true"/>
+    <image id="vhxt3" name="neizhengicon2" path="/Image/" size="270,270" exported="true"/>
+    <image id="vhxt4" name="neizhengicon1" path="/Image/" size="270,270" exported="true"/>
+    <image id="vhxtc" name="junshiicon5" path="/Image/" size="270,270" exported="true"/>
+    <image id="vhxtd" name="junshiicon4" path="/Image/" size="269,270" exported="true"/>
+    <image id="vhxte" name="junshiicon3" path="/Image/" size="270,270" exported="true"/>
+    <image id="vhxtf" name="junshiicon2" path="/Image/" size="270,270" exported="true"/>
+    <image id="vhxtg" name="junshiicon1" path="/Image/" size="270,270" exported="true"/>
+    <atlas id="atlas0" size="1024,1024" file="atlas0.png"/>
+    <atlas id="atlas100" size="1024,1024" file="atlas0_1.png"/>
+    <atlas id="atlas_guxq1y" size="1024,1024" file="atlas_guxq1y.png"/>
+  </resources>
+</packageDescription>txmy14.xml|570|<component size="1834,387">
+  <displayList>
+    <image id="n47" name="Image_BackGround" src="no0zozhr" pkg="s5cy5qnp" xy="14,0" size="1820,387" color="#6ca1eb">
+      <relation target="" sidePair="left-left,top-top"/>
+    </image>
+    <list id="n58_e3cz" name="List_Technology" xy="145,44" size="1597,300" layout="row" colGap="50" defaultItem="ui://ehmekfbfvhxtk">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n60_no0z" name="Label_Technology" src="no0zozhw" pkg="s5cy5qnp" xy="0,0"/>
+  </displayList>
+</component>vhxth.xml|786|<component size="1920,1137">
+  <displayList>
+    <component id="n65_vawt" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,-1" size="1920,1137" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="书院"/>
+    </component>
+    <list id="n64" name="List_Technology" xy="69,199" size="1785,909" overflow="scroll" scrollBarFlags="2" lineGap="20" defaultItem="ui://ehmekfbftxmy14">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n66_no0z" name="Component_Shine" src="no0zozhi" pkg="s5cy5qnp" xy="0,-1" size="1920,1137" touchable="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+  </displayList>
+</component>vhxtk.xml|1376|<component size="281,320" pivot="0.5,0.5" extention="Button">
+  <controller name="Level_C" pages="0,可升级,1,满级,2,0级" selected="0"/>
+  <displayList>
+    <loader id="n9" name="icon" xy="6,3" size="270,270" url="ui://ehmekfbfvhxt4">
+      <relation target="" sidePair="top-top,center-center"/>
+    </loader>
+    <component id="n10_no0z" name="Label_Technology" src="no0zozhv" pkg="s5cy5qnp" xy="0,0">
+      <relation target="n9" sidePair="left-left,top-top"/>
+    </component>
+    <image id="n3" name="Image_Effect" src="no0zozht" pkg="s5cy5qnp" xy="41,229" size="198,79" color="#183047">
+      <gearDisplay controller="Level_C" pages="0,1"/>
+      <relation target="n9" sidePair="top-bottom,center-center"/>
+    </image>
+    <text id="n5" name="title" xy="44,224" size="192,87" font="Noto Sans S Chinese Regular" fontSize="60" color="#ffffff" align="center" vAlign="middle" autoSize="height" text="5">
+      <gearDisplay controller="Level_C" pages="0,1"/>
+      <gearColor controller="Level_C" pages="1" values="#ff6600,#000000" default="#ffffff,#000000"/>
+    </text>
+    <image id="n6" name="Image_Lock" src="no0zozhu" pkg="s5cy5qnp" xy="113,288" color="#f76a1e">
+      <gearDisplay controller="Level_C" pages="1"/>
+      <relation target="n3" sidePair="center-center,top-bottom"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>vhxto.xml|6409|<component size="1962,1080">
+  <controller name="Level_C" pages="2,第一级,0,未满级,1,已满级" selected="0"/>
+  <controller name="Speedup_C" pages="0,没vip,1,有vip" selected="0"/>
+  <displayList>
+    <component id="n47" name="Label_BackTitle" src="urauozvu" pkg="s5cy5qnp" xy="0,0" size="1962,1080" controller="Type_C,1">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="升级"/>
+    </component>
+    <component id="n59_a1bw" name="Component_Light" src="no0zozhi" pkg="s5cy5qnp" xy="0,0" size="1962,1080" touchable="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3" name="Component_Condition" src="cwf2q" pkg="s5cy5qnp" xy="32,162">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </component>
+    <loader id="n23" name="Loader_TechIcon" xy="1062,225" size="470,470" group="n58_a1bw" url="ui://ehmekfbfvhxt3" fill="scale"/>
+    <image id="n19" name="Image_Shadow" src="no0zozht" pkg="s5cy5qnp" xy="1144,624" size="296,66" group="n58_a1bw" color="#2b75a6">
+      <gearDisplay controller="Level_C" pages="0,1"/>
+    </image>
+    <text id="n20" name="Text_Level" xy="1153,626" size="277,71" group="n58_a1bw" font="Noto Sans S Chinese Regular" fontSize="48" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="5">
+      <gearDisplay controller="Level_C" pages="0,1"/>
+    </text>
+    <component id="n55_no0z" name="Label_Technology" src="no0zozhv" pkg="s5cy5qnp" xy="1058,222" size="72,330" group="n58_a1bw">
+      <Label titleFontSize="36"/>
+    </component>
+    <group id="n58_a1bw" name="Group_Icon" xy="1058,222" size="474,475" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n48_e3cz" name="Image_Point2" src="ji4f1a" xy="1171,333" pivot="0.5,0.5" size="270,270" group="n53_no0z" alpha="0"/>
+    <image id="n49_guxq" name="Image_Point1" src="ji4f1h" xy="1043,203" pivot="0.5,0.5" group="n53_no0z" alpha="0"/>
+    <movieclip id="n50_guxq" name="MovieClip_Effect" src="guxq1y" xy="1205,375" pivot="0.5,0.5" size="200,200" group="n53_no0z" alpha="0"/>
+    <group id="n53_no0z" name="Group_Effect" xy="1043,203" size="512,512" advanced="true">
+      <relation target="n58_a1bw" sidePair="center-center,middle-middle"/>
+    </group>
+    <graph id="n56_ur0i" name="Image_Base" xy="750,776" size="1182,260" group="n57_ur0i" type="rect" lineSize="0" fillColor="#ff2f5178" corner="8"/>
+    <component id="n12" name="Button_Research" src="knyu29" pkg="s5cy5qnp" xy="1664,892" group="n57_ur0i" controller="Time_C,1,Type_C,0">
+      <gearDisplay controller="Level_C" pages="2,0"/>
+      <Button title="研究" sound="ui://s5cy5qnpjnmaz3g"/>
+    </component>
+    <image id="n26" name="Image_Base1" src="ur0iozi0" pkg="s5cy5qnp" xy="773,803" size="187,46" group="n57_ur0i" color="#219623"/>
+    <image id="n27" name="Image_Base2" src="ur0iozi0" pkg="s5cy5qnp" xy="1250,802" size="187,46" group="n57_ur0i" color="#b31717">
+      <gearDisplay controller="Level_C" pages="0,1"/>
+    </image>
+    <text id="n28" name="Text_CurrLevel" xy="770,800" size="177,54" group="n57_ur0i" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffffff" ubb="true" autoSize="height" singleLine="true" text="第5级"/>
+    <text id="n31" name="Text_NextLevel" xy="1264,800" size="160,54" group="n57_ur0i" font="Noto Sans S Chinese Regular" fontSize="36" color="#ffffff" autoSize="height" text="第6级">
+      <gearDisplay controller="Level_C" pages="0"/>
+    </text>
+    <image id="n34" name="Image_Arrow" src="ujpiozgo" pkg="s5cy5qnp" xy="1048,797" group="n57_ur0i">
+      <gearDisplay controller="Level_C" pages="0,1"/>
+    </image>
+    <text id="n35" name="Text_NextDesc" xy="1264,879" size="308,136" group="n57_ur0i" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" text="策划配置文字">
+      <gearDisplay controller="Level_C" pages="0"/>
+    </text>
+    <text id="n13" name="Text_SpeedUp" xy="1603,806" size="309,56" group="n57_ur0i" font="Noto Sans S Chinese Regular" fontSize="30" color="#66ff00" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="已提速55分钟"/>
+    <text id="n25" name="TextField_Research" xy="1688,881" size="149,66" group="n57_ur0i" font="微软雅黑" fontSize="48" color="#ffffff" text="已满级">
+      <gearDisplay controller="Level_C" pages="1"/>
+    </text>
+    <text id="n37" name="TextField_MaxLevel" xy="1270,803" size="145,50" group="n57_ur0i" font="微软雅黑" fontSize="36" color="#ffffff" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="暂无">
+      <gearDisplay controller="Level_C" pages="1"/>
+    </text>
+    <text id="n38" name="TextFiled_MaxDescription" xy="1268,879" size="125,43" group="n57_ur0i" font="微软雅黑" fontSize="30" color="#ffffff" align="center" vAlign="middle" text="敬请期待">
+      <gearDisplay controller="Level_C" pages="1"/>
+    </text>
+    <text id="n61_r42d" name="Text_CurrDesc" xy="770,879" size="308,136" group="n57_ur0i" font="Noto Sans S Chinese Regular" fontSize="30" color="#ffffff" ubb="true" autoSize="shrink" text="策划配置文字"/>
+    <group id="n57_ur0i" name="Group_Research" xy="750,776" size="1182,260" advanced="true">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </group>
+  </displayList>
+  <transition name="Upgrade_T" options="2">
+    <item time="0" type="Alpha" target="n49_guxq" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="0" type="Alpha" target="n48_e3cz" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="0" type="Alpha" target="n50_guxq" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="0" type="Scale" target="n50_guxq" value="3,3"/>
+    <item time="0" type="Scale" target="n49_guxq" tween="true" startValue="0.5,0.5" endValue="1.5,1.5" duration="18"/>
+    <item time="0" type="Scale" target="n48_e3cz" tween="true" startValue="1.5,1.5" endValue="2.1,2.1" duration="4"/>
+    <item time="4" type="Alpha" target="n48_e3cz" tween="true" startValue="1" endValue="0" duration="8"/>
+    <item time="4" type="Alpha" target="n49_guxq" tween="true" startValue="1" endValue="0" duration="14"/>
+    <item time="4" type="Scale" target="n48_e3cz" tween="true" startValue="2.1,2.1" endValue="2.3,2.3" duration="8"/>
+    <item time="23" type="Alpha" target="n50_guxq" value="0"/>
+  </transition>
+</component>

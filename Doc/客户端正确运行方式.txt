@@ -1,0 +1,2 @@
+1.在每次更新UI时,运行前需要用到Tools栏的AnalysisFairyGUI对UI的byte文件进行解析.
+2.从github上获取到最新的代码后,xlua栏先Clear Generate Code,再Generate Code.

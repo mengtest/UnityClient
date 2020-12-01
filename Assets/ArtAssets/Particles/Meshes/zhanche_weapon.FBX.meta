@@ -1,0 +1,385 @@
+fileFormatVersion: 2
+guid: a1051a1e2dfda554d9a61f911d85fdc9
+timeCreated: 1496389574
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001_horse
+    100002: Bip001_horse Head
+    100004: Bip001_horse HeadNub
+    100006: Bip001_horse L Calf
+    100008: Bip001_horse L Clavicle
+    100010: Bip001_horse L Finger0
+    100012: Bip001_horse L Finger01
+    100014: Bip001_horse L Finger0Nub
+    100016: Bip001_horse L Foot
+    100018: Bip001_horse L Forearm
+    100020: Bip001_horse L Hand
+    100022: Bip001_horse L Thigh
+    100024: Bip001_horse L Toe0
+    100026: Bip001_horse L Toe01
+    100028: Bip001_horse L Toe0Nub
+    100030: Bip001_horse L UpperArm
+    100032: Bip001_horse Neck
+    100034: Bip001_horse Neck1
+    100036: Bip001_horse Pelvis
+    100038: Bip001_horse R Calf
+    100040: Bip001_horse R Clavicle
+    100042: Bip001_horse R Finger0
+    100044: Bip001_horse R Finger01
+    100046: Bip001_horse R Finger0Nub
+    100048: Bip001_horse R Foot
+    100050: Bip001_horse R Forearm
+    100052: Bip001_horse R Hand
+    100054: Bip001_horse R Thigh
+    100056: Bip001_horse R Toe0
+    100058: Bip001_horse R Toe01
+    100060: Bip001_horse R Toe0Nub
+    100062: Bip001_horse R UpperArm
+    100064: Bip001_horse Spine
+    100066: Bip001_horse Spine1
+    100068: Bip001_horse Spine2
+    100070: Bip001_man
+    100072: Bip001_man Head
+    100074: Bip001_man HeadNub
+    100076: Bip001_man L Calf
+    100078: Bip001_man L Clavicle
+    100080: Bip001_man L Finger0
+    100082: Bip001_man L Finger01
+    100084: Bip001_man L Finger0Nub
+    100086: Bip001_man L Finger1
+    100088: Bip001_man L Finger11
+    100090: Bip001_man L Finger1Nub
+    100092: Bip001_man L Finger2
+    100094: Bip001_man L Finger21
+    100096: Bip001_man L Finger2Nub
+    100098: Bip001_man L Foot
+    100100: Bip001_man L Forearm
+    100102: Bip001_man L Hand
+    100104: Bip001_man L Thigh
+    100106: Bip001_man L Toe0
+    100108: Bip001_man L Toe0Nub
+    100110: Bip001_man L UpperArm
+    100112: Bip001_man Neck
+    100114: Bip001_man Pelvis
+    100116: Bip001_man Prop1
+    100118: Bip001_man R Calf
+    100120: Bip001_man R Clavicle
+    100122: Bip001_man R Finger0
+    100124: Bip001_man R Finger01
+    100126: Bip001_man R Finger0Nub
+    100128: Bip001_man R Finger1
+    100130: Bip001_man R Finger11
+    100132: Bip001_man R Finger1Nub
+    100134: Bip001_man R Finger2
+    100136: Bip001_man R Finger21
+    100138: Bip001_man R Finger2Nub
+    100140: Bip001_man R Foot
+    100142: Bip001_man R Forearm
+    100144: Bip001_man R Hand
+    100146: Bip001_man R Thigh
+    100148: Bip001_man R Toe0
+    100150: Bip001_man R Toe0Nub
+    100152: Bip001_man R UpperArm
+    100154: Bip001_man Spine
+    100156: Bip001_man Spine1
+    100158: Bip001_man Spine2
+    100160: Bone_M_D_01
+    100162: Bone_M_D_02
+    100164: Bone_M_D_end
+    100166: Bone_M_L_Shoulder_01
+    100168: Bone_M_L_Shoulder_end
+    100170: Bone_M_R_Shoulder_01
+    100172: Bone_M_R_Shoulder_end
+    100174: Bone_tail_01
+    100176: Bone_tail_02
+    100178: Bone_tail_03
+    100180: Bone_tail_end
+    100182: Bone_zong_01
+    100184: Bone_zong_02
+    100186: Bone_zong_03
+    100188: Bone_zong_04
+    100190: Bone_zong_end
+    100192: che_slot_base
+    100194: Dummy_che_body_01
+    100196: Dummy_che_sheng_L_01
+    100198: Dummy_che_sheng_R_01
+    100200: Dummy_lunzi_L_01
+    100202: Dummy_lunzi_R_01
+    100204: horse
+    100206: Object001
+    100208: Object002
+    100210: Object003
+    100212: Object004
+    100214: Object005
+    100216: Object006
+    100218: Object007
+    100220: Object008
+    100222: Object009
+    100224: Object010
+    100226: Object011
+    100228: Object012
+    100230: Object013
+    100232: Object014
+    100234: slot_base
+    100236: slot_center
+    100238: slot_head
+    100240: slot_lefthand
+    100242: slot_righthand
+    100244: slot_weapon1
+    100246: z_DTrajEdit_RootNode_001
+    100248: z_DTrajEdit_SpacingDots_001
+    100250: z_DTrajEdit_Trajectory_001
+    100252: zhanche1_man
+    100254: //RootNode
+    100256: zhanche_weapon
+    400000: Bip001_horse
+    400002: Bip001_horse Head
+    400004: Bip001_horse HeadNub
+    400006: Bip001_horse L Calf
+    400008: Bip001_horse L Clavicle
+    400010: Bip001_horse L Finger0
+    400012: Bip001_horse L Finger01
+    400014: Bip001_horse L Finger0Nub
+    400016: Bip001_horse L Foot
+    400018: Bip001_horse L Forearm
+    400020: Bip001_horse L Hand
+    400022: Bip001_horse L Thigh
+    400024: Bip001_horse L Toe0
+    400026: Bip001_horse L Toe01
+    400028: Bip001_horse L Toe0Nub
+    400030: Bip001_horse L UpperArm
+    400032: Bip001_horse Neck
+    400034: Bip001_horse Neck1
+    400036: Bip001_horse Pelvis
+    400038: Bip001_horse R Calf
+    400040: Bip001_horse R Clavicle
+    400042: Bip001_horse R Finger0
+    400044: Bip001_horse R Finger01
+    400046: Bip001_horse R Finger0Nub
+    400048: Bip001_horse R Foot
+    400050: Bip001_horse R Forearm
+    400052: Bip001_horse R Hand
+    400054: Bip001_horse R Thigh
+    400056: Bip001_horse R Toe0
+    400058: Bip001_horse R Toe01
+    400060: Bip001_horse R Toe0Nub
+    400062: Bip001_horse R UpperArm
+    400064: Bip001_horse Spine
+    400066: Bip001_horse Spine1
+    400068: Bip001_horse Spine2
+    400070: Bip001_man
+    400072: Bip001_man Head
+    400074: Bip001_man HeadNub
+    400076: Bip001_man L Calf
+    400078: Bip001_man L Clavicle
+    400080: Bip001_man L Finger0
+    400082: Bip001_man L Finger01
+    400084: Bip001_man L Finger0Nub
+    400086: Bip001_man L Finger1
+    400088: Bip001_man L Finger11
+    400090: Bip001_man L Finger1Nub
+    400092: Bip001_man L Finger2
+    400094: Bip001_man L Finger21
+    400096: Bip001_man L Finger2Nub
+    400098: Bip001_man L Foot
+    400100: Bip001_man L Forearm
+    400102: Bip001_man L Hand
+    400104: Bip001_man L Thigh
+    400106: Bip001_man L Toe0
+    400108: Bip001_man L Toe0Nub
+    400110: Bip001_man L UpperArm
+    400112: Bip001_man Neck
+    400114: Bip001_man Pelvis
+    400116: Bip001_man Prop1
+    400118: Bip001_man R Calf
+    400120: Bip001_man R Clavicle
+    400122: Bip001_man R Finger0
+    400124: Bip001_man R Finger01
+    400126: Bip001_man R Finger0Nub
+    400128: Bip001_man R Finger1
+    400130: Bip001_man R Finger11
+    400132: Bip001_man R Finger1Nub
+    400134: Bip001_man R Finger2
+    400136: Bip001_man R Finger21
+    400138: Bip001_man R Finger2Nub
+    400140: Bip001_man R Foot
+    400142: Bip001_man R Forearm
+    400144: Bip001_man R Hand
+    400146: Bip001_man R Thigh
+    400148: Bip001_man R Toe0
+    400150: Bip001_man R Toe0Nub
+    400152: Bip001_man R UpperArm
+    400154: Bip001_man Spine
+    400156: Bip001_man Spine1
+    400158: Bip001_man Spine2
+    400160: Bone_M_D_01
+    400162: Bone_M_D_02
+    400164: Bone_M_D_end
+    400166: Bone_M_L_Shoulder_01
+    400168: Bone_M_L_Shoulder_end
+    400170: Bone_M_R_Shoulder_01
+    400172: Bone_M_R_Shoulder_end
+    400174: Bone_tail_01
+    400176: Bone_tail_02
+    400178: Bone_tail_03
+    400180: Bone_tail_end
+    400182: Bone_zong_01
+    400184: Bone_zong_02
+    400186: Bone_zong_03
+    400188: Bone_zong_04
+    400190: Bone_zong_end
+    400192: che_slot_base
+    400194: Dummy_che_body_01
+    400196: Dummy_che_sheng_L_01
+    400198: Dummy_che_sheng_R_01
+    400200: Dummy_lunzi_L_01
+    400202: Dummy_lunzi_R_01
+    400204: horse
+    400206: Object001
+    400208: Object002
+    400210: Object003
+    400212: Object004
+    400214: Object005
+    400216: Object006
+    400218: Object007
+    400220: Object008
+    400222: Object009
+    400224: Object010
+    400226: Object011
+    400228: Object012
+    400230: Object013
+    400232: Object014
+    400234: slot_base
+    400236: slot_center
+    400238: slot_head
+    400240: slot_lefthand
+    400242: slot_righthand
+    400244: slot_weapon1
+    400246: z_DTrajEdit_RootNode_001
+    400248: z_DTrajEdit_SpacingDots_001
+    400250: z_DTrajEdit_Trajectory_001
+    400252: zhanche1_man
+    400254: zhanche_weapon
+    400256: //RootNode
+    2300000: Object001
+    2300002: Object002
+    2300004: Object003
+    2300006: Object004
+    2300008: Object005
+    2300010: Object006
+    2300012: Object007
+    2300014: Object008
+    2300016: Object009
+    2300018: Object010
+    2300020: Object011
+    2300022: Object012
+    2300024: Object013
+    2300026: Object014
+    2300028: zhanche_weapon
+    2300030: //RootNode
+    3300000: Object001
+    3300002: Object002
+    3300004: Object003
+    3300006: Object004
+    3300008: Object005
+    3300010: Object006
+    3300012: Object007
+    3300014: Object008
+    3300016: Object009
+    3300018: Object010
+    3300020: Object011
+    3300022: Object012
+    3300024: Object013
+    3300026: Object014
+    3300028: zhanche_weapon
+    3300030: //RootNode
+    4300000: horse
+    4300002: zhanche1_man
+    4300004: zhanche_weapon
+    4300006: Object005
+    4300008: Object006
+    4300010: Object007
+    4300012: Object008
+    4300014: Object014
+    4300016: Object001
+    4300018: Object012
+    4300020: Object013
+    4300022: Object004
+    4300024: Object002
+    4300026: Object011
+    4300028: Object010
+    4300030: Object009
+    4300032: Object003
+    9500000: //RootNode
+    13700000: horse
+    13700002: zhanche1_man
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
