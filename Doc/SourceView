@@ -34,6 +34,15 @@
                           -> ResourceManager.onUpdateLogic() -> 空运行
      AudioManager因为没有需要心跳推动，所以只是开了Play、SetVolumn等接口供调用（相应的用上LuaCallCSharp就给了lua使用）
 
-     
+  所以，C#部分的框架就是这么推进。
+
+2、Lua部分的框架
+
+main是第一个被加载的文件（在上面的d部分），这里对Lua中的GameManager对象，NetworkManager对象，提供了C#绑定，用于调用它们的update()和GameManager的fixedUpdate()
+
+main里面，有这么些全局变量：
+DataTrunk、NetworkManager、TimerManager、LevelManager、UIManager、ConfigManager、GameObjectManager、AudioManager
+
+UIManager中提供了方法，OpenController，用于打开一个面板。所有面板都需要在UI.core.UIDefine中定义，这样每个面板中只要知道名字，就能打开其他的面板。
 
 
