@@ -1,0 +1,39 @@
+1、进入场景只有Bootup这个可执行的程序
+  只有Awake，会做初始化工作。包括：创建GameManager物体，定targetFrame、runInBackground、Screen.sleepTimeout。
+  然后就会有三个组件被挂载到GameManager物体上：
+  （a）SceneLoader
+  （b）LuaManager
+  （c）ResourceManager
+  （d）GameManager
+
+  其中，
+  
+  （a）SceneLoader提供一个LoadScene的接口，里面使用Unity的Update()提供心跳，这个类主要是用于异步加载场景提供进度、完成功能
+  （b）LuaManager提供几个接口，可以执行lua文件，FixUpdate()用来给lua提供心跳。这个类还实现IManager功能，OnInitialize、OnUpdateLogic、OnDestruct，都在后面的GameManager中被调用。
+  （c）ResourceManager提供LoadPrefab、LoadAsset等功能，还实现了IManager接口。
+  （d）GameManager是最重的一个地方,有Unity的Awake、Update，还实现了IManager接口。不过IManager接口的调用都是Awake等Unity的心跳提供更新。这里，会有几个模块进入：
+       NetworkManager、LuaManager、ResourceManager、AudioManager、CSharpCallLuaDelegates，还提供了解压缩包的功能。
+
+     GameManager通过自身的Awake，让NetworkManager、LuaManager、ResourceManager、AudioManager、CSharpCallLuaDelegates都OnInitialize（最后一个是Initialize）。
+     这里特别说明的是最后一个，这个初始化DoFile("main")，启动了第一个lua文件。这个运行后就把lua的GameManager和NetworkManager绑定好了。而后，lua的GameManager（在C#中是
+     CSharpCallLuaDelegates.Instance.LuaGameManagerEntry的init()就会被调用。所以，lua侧的GameManager初始化完毕。
+
+     这样，整体的初始化结束。
+
+     GameManager通过自身的Update()，给NetworkManager、LuaManager、ResourceManager提供OnUpdateLogic。
+     NetworkManager在每帧给Http调用提供心跳，从网络缓冲中取数据通过CSharpCallLuaDelegates.LuaNetworkEntry.onReceiveMsg()处理逻辑。
+     LuaManager在每帧调用CSharpCallLuaDelegates.LuaGameManagerEntry.update()
+     ResouceManager在每帧是空的。
+
+     总结：
+     到初始化完毕，每帧有
+     SceneLoader.Update()
+     LuaManager.FixUpdate() -> CSharpCallLuaDelegates.LuaGameManagerEntry.fixUpdate()
+     GameManager.Update() -> NetworkManager.onUpdateLogic()  -> HttpHelper.Invoke()（静态类）、CSharpCallLuaDelegates.LuaGameManagerEntry.update()
+                          -> LuaManager.onUpdateLogic()      -> CSharpCallLuaDelegates.LuaGameManagerEntry.update()
+                          -> ResourceManager.onUpdateLogic() -> 空运行
+     AudioManager因为没有需要心跳推动，所以只是开了Play、SetVolumn等接口供调用（相应的用上LuaCallCSharp就给了lua使用）
+
+     
+
+
