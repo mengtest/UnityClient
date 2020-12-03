@@ -46,3 +46,60 @@ DataTrunk、NetworkManager、TimerManager、LevelManager、UIManager、ConfigMan
 UIManager中提供了方法，OpenController，用于打开一个面板。所有面板都需要在UI.core.UIDefine中定义，这样每个面板中只要知道名字，就能打开其他的面板。
 
 
+3、UI部分
+
+每个UI对用户来说就只是controller，使用OpenController打开。这个方法中会
+
+UIManager中，initialize方法最后调用下面的方法，开启第一个画面：
+（a)UIManager.openController(UIManager.ControllerName.LoginMain)，参数实际上是字符串“UI.Login.LoginMainController”，代表了Lua文件夹UI/Login/LoginMainController.lua，openController本身就是调用下面的（b）。
+
+（b）Facade::openController方法会通过名字检查一个controller是否已经加载过，过程如下：
+    每个Control，在lua文件头部都是调用
+    UIManager.Controller(controlName, viewName)，这个是做了一个实例(该实例继承Controller)。因为继承的自定义写法，构造方法最后会调用
+    UIManager.registerController(self)，这个其实调用
+    Facade.registerController(data)，才是真正的往自身的table ControllerCenter中填入了“窗口”的control名字和view的名字
+
+    然后才是：
+    
+    没有加载的就会使用ctrl:create()
+    这里面会查看对应的view是不是空的（一个controller对应一个view)，不空表示已经加载过了，就会直接返回。否则就把view的lua require进来，然后调用view::LoadView()，在给创建的view一个onCreate()回调；然后是查看subController有没有，有的话为每个subController：create()，这个就是现在说的一样；最后是根据UIDisposeConfig中的数据，给controller一个定时器，用来自动销毁它。（实际上估计没有用，里面只配置了3个值，其中两个还是-1（永久），一个3）。
+
+
+    Controller:create() -> require View
+                         -> View:LoadView
+                         -> self:onCreate()
+                         -> subController:create()
+                         -> self.TimerCd = newTimer()，通过给这个Timer一个自己的destroy回调让自动回收发挥作用。
+
+
+    Facade:openController方法在调用上面的create()后，紧接着就是调用ctrl:open(data)
+
+    Controller:open() -> self:onOpen()
+                      -> self.SubCtrl:open()
+                      -> UIManager.pushingStack(self)
+                      -> TimerCd:pause() （如果有timer绑上）
+
+    到此可以看出openController虽然调用create()和open()，但是create中一开始就会通过对应的view是否为空来判别第一次还是第n次，只有第一次才会走上面的一切。但是open()就会在第一次、第n次都一样走动。
+
+    由第一个画面（该画面由LoginMainController.lua和LoginView.lua配合完成。Controller中还有2、3个subCtrl）提供的功能，当Loin OK的时候来看,
+
+    local function loginOk()
+      if not _C.IsOpen then
+          return
+      end
+
+      -- 有角色
+      _C:close()
+      LevelManager.loadScene(LevelType.MainCity)
+    end
+
+    这里会调用Controller:close()（因为没有重载的），看一下这个close()做什么
+
+    Controller:close() -> UIManager:popingStack(self)
+                       -> subCtrl:close()
+                       -> self:onClose()
+                       -> timer处理
+
+    这个和Controller:destroy()还是有差别的
+
+
