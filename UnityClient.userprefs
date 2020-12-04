@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Editor\BuildSteps.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Bootup.cs" Line="25" Column="6" />
+      <File FileName="Assets\Editor\LPCTools.cs" Line="25" Column="19" />
+      <File FileName="Assets\Editor\BuildSteps.cs" Line="181" Column="3" />
+      <File FileName="Assets\Editor\AssetBundlePacker.cs" Line="257" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

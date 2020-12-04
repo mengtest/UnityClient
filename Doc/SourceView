@@ -101,5 +101,9 @@ UIManager中，initialize方法最后调用下面的方法，开启第一个画�
                        -> timer处理
 
     这个和Controller:destroy()还是有差别的
+	
+	
+4、NetworkManager、Connection、RnetStream关系
+NetworkManager是有心跳，每帧http.invoke和tryDeQueue。Connection。它问Connection三个方法：Connect、SendMessage、Close
 
 
